@@ -1,0 +1,200 @@
+<ROOT TIMESTAMP="1447091855" VER="1.00">
+	<Theme NAME="Theme">
+		<Skins NAME="Skins">
+			<Skin ADJ_CLR="00808040" BKGND="HouseBot3\Background1_640.png" B_TRANS="0" KEYPT="0" MOUSE_TRK="0" MT_SC_MULT="1.200000" NAME="Main Panel" POP_LFT="0" POP_TOP="0" TP_CLR="00000000" TYPE="PRI">
+				<Buttons NAME="Buttons">
+					<Button ADJ_CLR="00000080" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="18" FNT_UL="0" FNT_WT="700" FUNCTION="Exit" I_FILE="HouseBot3\ButtonSmall.png" SCALE="" S_CX="" S_CY="" TEXT="Exit" TP_CLR="ffffffff" TRAN_CT="0" TYPE="Generic" X="548" X_OFFSET="-1" Y="448" Y_OFFSET="4" ZORDR="2"/>
+					<Button ACT_PRESS="0" ADJ_CLR="00808040" D_ID="119" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="14" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\SmallRoundAVControls_3x1.png" P_ID="804" P_VALUE="Playing" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="ffffffff" TRAN_CT="0" TYPE="SPC" X="60" X_OFFSET="-1" Y="317" Y_OFFSET="4" ZORDR="3"/>
+					<Button ACT_PRESS="0" ADJ_CLR="00808040" D_ID="119" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="14" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\SmallRoundAVControls_1x2.png" P_ID="804" P_VALUE="Paused" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="ffffffff" TRAN_CT="0" TYPE="SPC" X="60" X_OFFSET="-1" Y="268" Y_OFFSET="4" ZORDR="4"/>
+					<Button ACT_PRESS="0" ADJ_CLR="00808040" D_ID="119" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="14" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\SmallRoundAVControls_5x1.png" P_ID="804" P_VALUE="Stopped" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="ffffffff" TRAN_CT="0" TYPE="SPC" X="60" X_OFFSET="-1" Y="394" Y_OFFSET="4" ZORDR="5"/>
+					<Button ACT_PRESS="0" ADJ_CLR="00808040" D_ID="119" FNT="" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="14" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\SmallRoundAVControls_2x1.png" P_ID="804" P_VALUE="Fast Rewinding" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="00ff00ff" TYPE="SPC" X="12" X_OFFSET="-1" Y="312" Y_OFFSET="4" ZORDR="10"/>
+					<Button ACT_PRESS="0" ADJ_CLR="00808040" D_ID="119" FNT="" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="14" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\SmallRoundAVControls_2x2.png" P_ID="804" P_VALUE="Fast Forwarding" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="00ff00ff" TRAN_CT="0" TYPE="SPC" X="132" X_OFFSET="-1" Y="312" Y_OFFSET="4" ZORDR="11"/>
+					<Button ACT_PRESS="0" ADJ_CLR="00808040" D_ID="119" FNT="" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="14" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\SmallRoundAVControls_4x1.png" P_ID="804" P_VALUE="Previous" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="00ff00ff" TRAN_CT="0" TYPE="SPC" X="12" X_OFFSET="-1" Y="356" Y_OFFSET="4" ZORDR="12"/>
+					<Button ACT_PRESS="0" ADJ_CLR="00808040" D_ID="119" FNT="" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="14" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\SmallRoundAVControls_4x2.png" P_ID="804" P_VALUE="Next" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="ffffffff" TRAN_CT="0" TYPE="SPC" X="132" X_OFFSET="-1" Y="356" Y_OFFSET="4" ZORDR="13"/>
+					<Button ACT_PRESS="1" ADJ_CLR="00808040" D_ID="119" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="18" FNT_UL="0" FNT_WT="700" P_ID="805" SCALE="" SC_FLAGS="0" SC_KEY="" S_CX="" S_CY="" TEXT="Mode" TP_CLR="ffffffff" TXT_P_ST="1" TYPE="MSPC" X="16" X_OFFSET="-1" Y="236" Y_OFFSET="2" ZORDR="15">
+						<States NAME="States">
+							<State CH_VALUE="Playlist" FNT="Arial" FNT_CLR="0067564b" FNT_CSET="0" FNT_IT="0" FNT_SZ="18" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\ButtonSmall.png" TEXT="Song" VALUE="Song"/>
+							<State CH_VALUE="Movie" FNT="Arial" FNT_CLR="0067564b" FNT_CSET="0" FNT_IT="0" FNT_SZ="18" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\ButtonSmall.png" TEXT="Playlist" VALUE="Playlist"/>
+							<State CH_VALUE="Artist" FNT="Arial" FNT_CLR="0067564b" FNT_CSET="0" FNT_IT="0" FNT_SZ="18" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\ButtonSmall.png" TEXT="Movie" VALUE="Movie"/>
+							<State CH_VALUE="Album" FNT="Arial" FNT_CLR="0067564b" FNT_CSET="0" FNT_IT="0" FNT_SZ="18" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\ButtonSmall.png" TEXT="Artist" VALUE="Artist"/>
+							<State CH_VALUE="Song" FNT="Arial" FNT_CLR="0067564b" FNT_CSET="0" FNT_IT="0" FNT_SZ="18" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\ButtonSmall.png" TEXT="Album" VALUE="Album"/>
+						</States>
+					</Button>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="119" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" P_ID="68" SCALE="" S_CX="" S_CY="" TEXT="Mute" TP_CLR="ffffffff" TXT_P_ST="0" TYPE="MSPC" X="419" X_OFFSET="26" Y="394" Y_OFFSET="5" ZORDR="17">
+						<States NAME="States">
+							<D_St CH_VALUE="Yes" I_FILE="HouseBot3\Check1Off.png"/>
+							<State CH_VALUE="No" I_FILE="HouseBot3\Check1On.png" VALUE="Yes"/>
+						</States>
+					</Button>
+					<Button ACT_PRESS="0" ADJ_CLR="00804000" CLOSE_SW="0" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\ButtonSmall.png" NEW_PANEL="Movies" SCALE="1" S_CX="93" S_CY="26" TEXT="Get Movies" TP_CLR="" TRAN_CT="0" TYPE="PC" X="8" X_OFFSET="-1" Y="49" Y_OFFSET="4" ZORDR="19"/>
+					<Button ACT_PRESS="0" ADJ_CLR="00804000" CLOSE_SW="0" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\ButtonSmall.png" NEW_PANEL="Artists" SCALE="1" S_CX="55" S_CY="18" TEXT="Artist" TP_CLR="" TRAN_CT="0" TYPE="PC" X="124" X_OFFSET="-1" Y="92" Y_OFFSET="-1" ZORDR="20"/>
+					<Button ACT_PRESS="0" ADJ_CLR="00804000" CLOSE_SW="0" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\ButtonSmall.png" NEW_PANEL="Albums" SCALE="1" S_CX="55" S_CY="18" TEXT="Album" TP_CLR="" TRAN_CT="0" TYPE="PC" X="124" X_OFFSET="-1" Y="116" Y_OFFSET="-1" ZORDR="21"/>
+					<Button ACT_PRESS="0" ADJ_CLR="00804000" CLOSE_SW="0" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\ButtonSmall.png" NEW_PANEL="Tracks" SCALE="1" S_CX="55" S_CY="18" TEXT="Title" TP_CLR="" TRAN_CT="0" TYPE="PC" X="124" X_OFFSET="-1" Y="140" Y_OFFSET="-1" ZORDR="22"/>
+				</Buttons>
+				<ListControls NAME="ListControls"/>
+				<TextControls NAME="TextControls">
+					<Text BK_CLR="00b16c59" CX="180" CY="24" D_ID="119" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" P_ID="804" TP_BK="1" T_ALMNT="1" T_OSET="0" X="8" Y="449"/>
+					<Text BK_CLR="00b16c59" CX="420" CY="22" D_ID="119" FNT="Arial" FNT_CLR="00000000" FNT_CSET="177" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" P_ID="790" TP_BK="1" T_ALMNT="0" T_OSET="0" X="188" Y="90"/>
+					<Text BK_CLR="00b16c59" CX="420" CY="22" D_ID="119" FNT="Arial" FNT_CLR="00000000" FNT_CSET="177" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" P_ID="789" TP_BK="1" T_ALMNT="0" T_OSET="0" X="188" Y="114"/>
+					<Text BK_CLR="00b16c59" CX="421" CY="22" D_ID="119" FNT="Arial" FNT_CLR="00000000" FNT_CSET="177" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" P_ID="797" TP_BK="1" T_ALMNT="0" T_OSET="0" X="188" Y="138"/>
+				</TextControls>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" FNT="Arial" FNT_CLR="006b100e" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="700" TEXT="Kodi XBMC Test Theme" TP_BK="1" X="12" Y="8"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Arial" FNT_CLR="006b100e" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" TEXT="Play Mode" TP_BK="1" T_ALMNT="0" T_OSET="0" X="20" Y="217"/>
+				</LabelControls>
+				<EditControls NAME="EditControls"/>
+				<Images NAME="Images">
+					<Image ADJ_CLR="00808040" BK_CLR="" D_ID="0" FNT="" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="14" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\SmallRoundAVControls_1x1.png" I_TYPE="0" P_ID="0" SCALE="" S_CX="" S_CY="" TP_CLR="ffffffff" X="12" Y="268" ZORDR="6"/>
+					<Image ADJ_CLR="00808040" BK_CLR="" D_ID="0" FNT="" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="14" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\SmallRoundAVControls_1x3.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="48" S_CY="44" TEXT="" TP_CLR="ffffffff" X="132" Y="268" ZORDR="7"/>
+					<Image ADJ_CLR="00808040" BK_CLR="" D_ID="0" FNT="" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="14" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\SmallRoundAVControls_6x1.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="48" S_CY="44" TEXT="" TP_CLR="ffffffff" X="12" Y="399" ZORDR="8"/>
+					<Image ADJ_CLR="00808040" BK_CLR="" D_ID="0" FNT="" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="14" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\SmallRoundAVControls_6x2.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="48" S_CY="44" TP_CLR="ffffffff" X="132" Y="399" ZORDR="9"/>
+					<Image ADJ_CLR="00808040" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="22" FNT_UL="0" FNT_WT="700" H_TXT="0" I_FILE="HouseBot3\Group_216x140.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="1" S_CX="509" S_CY="114" TEXT="Now Playing" TP_CLR="ffffffff" W_TXT="0" X="116" X_TXT="15" Y="56" Y_TXT="3" ZORDR="14"/>
+					<Image ADJ_CLR="00808040" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="18" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="HouseBot3\Group_216x140.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="1" S_CX="215" S_CY="80" TEXT="Volume" TP_CLR="ffffffff" TRAN_LEV="0" W_TXT="0" X="404" X_TXT="7" Y="344" Y_TXT="2" ZORDR="16"/>
+					<Image ADJ_CLR="ffffffff" BK_CLR="" D_ID="119" FNT="Arial" FNT_CLR="0067564b" FNT_IT="0" FNT_SZ="22" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="HouseBot3\Disk1.png" I_TYPE="1" KASP="0" P_ID="796" SCALE="1" S_CX="90" S_CY="90" TEXT="" TP_CLR="ffffffff" W_TXT="0" X="8" X_TXT="0" Y="76" Y_TXT="0" ZORDR="18"/>
+					<Image ADJ_CLR="ffffffff" BK_CLR="" D_ID="119" FNT="Arial" FNT_CLR="0067564b" FNT_IT="0" FNT_SZ="22" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="HouseBot3\Disk1.png" I_TYPE="1" KASP="1" P_ID="792" SCALE="1" S_CX="493" S_CY="369" TEXT="" TP_CLR="ffffffff" W_TXT="0" X="120" X_TXT="0" Y="60" Y_TXT="0" ZORDR="1"/>
+				</Images>
+				<SliderControls NAME="SliderControls">
+					<Slider ADJ_CLR="" BK_IMG="HouseBot3\SliderBack1.png" CDRAG="1" D_ID="119" MAX="100" MIN="0" ORIENTATION="H" P_ID="37" TP_CLR="" T_IMG="HouseBot3\SliderKnobGray2.png" VALUE_X_OFFSET="10" VALUE_Y_OFFSET="10" X="412" Y="376"/>
+				</SliderControls>
+			</Skin>
+			<Skin ADJ_CLR="ffffffff" BKGND="Glassy\Background6402.png" B_TRANS="0" KEYPT="0" MOUSE_TRK="0" MT_SC_MULT="1.200000" NAME="Movies" POP_LFT="0" POP_TOP="0" TP_CLR="00000000" TYPE="POP">
+				<Buttons NAME="Buttons">
+					<Button ADJ_CLR="00000080" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="18" FNT_UL="0" FNT_WT="700" FUNCTION="PrevPanel" I_FILE="HouseBot3\ButtonSmall.png" SCALE="" S_CX="" S_CY="" TEXT="Close" TP_CLR="" TRAN_CT="0" TYPE="Generic" X="540" X_OFFSET="-1" Y="448" Y_OFFSET="4" ZORDR="1"/>
+				</Buttons>
+				<ListControls NAME="ListControls">
+					<List ADJ_CLR="00808040" BAR_IMG="HouseBot3\ListBarGray.png" BK_CLR="00999999" BK_IMG="HouseBot3\ListBackground1.png" CX="501" CY="340" D_ID="119" D_ID_CHANGE="119" D_ID_CHANGE_DBCLK="0" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="18" FNT_UL="0" FNT_WT="400" LISTING_TITLE="Movie, File, Thumbnail, Fanart, Poster" L_SCRL="0" NAME="Movie List" NOHDR="0" NO_HSCROLL="1" OD="0" P_ID="777" P_ID_CHANGE="784" P_ID_CHANGE_DBCLK="0" X="17" Y="67"/>
+				</ListControls>
+				<TextControls NAME="TextControls">
+					<Text BK_CLR="00b16c59" CX="80" CY="20" D_ID="119" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" P_ID="784" TP_BK="1" T_ALMNT="0" T_OSET="0" X="91" Y="453"/>
+				</TextControls>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" FNT="Arial" FNT_CLR="006b100e" FNT_CSET="0" FNT_IT="0" FNT_SZ="24" FNT_UL="0" FNT_WT="700" TEXT="Movie Selection" TP_BK="1" X="12" Y="8"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Arial" FNT_CLR="006b100e" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" TEXT="Movie ID:" TP_BK="1" T_ALMNT="0" T_OSET="0" X="17" Y="455"/>
+				</LabelControls>
+				<EditControls NAME="EditControls"/>
+				<Images NAME="Images"/>
+				<SliderControls NAME="SliderControls"/>
+				<EnterList NAME="EnterList">
+					<Item D_ID="119" P_ID="803" P_VALUE="GetMovies" TYPE="PropertyChange"/>
+				</EnterList>
+			</Skin>
+			<Skin ADJ_CLR="ffffffff" BKGND="Glassy\Background6402.png" B_TRANS="0" KEYPT="0" MOUSE_TRK="0" MT_SC_MULT="1.200000" NAME="Artists" POP_LFT="0" POP_TOP="0" TP_CLR="00000000" TYPE="POP">
+				<Buttons NAME="Buttons">
+					<Button ADJ_CLR="00000080" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="18" FNT_UL="0" FNT_WT="700" FUNCTION="PrevPanel" I_FILE="HouseBot3\ButtonSmall.png" SCALE="" S_CX="" S_CY="" TEXT="Close" TP_CLR="" TRAN_CT="0" TYPE="Generic" X="540" X_OFFSET="-1" Y="447" Y_OFFSET="4" ZORDR="1"/>
+					<Button ACT_PRESS="0" ADJ_CLR="00804000" D_ID="119" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\ButtonSmall.png" P_ID="780" P_VALUE="" SCALE="0" S_CX="0" S_CY="0" TEXT="Remove" TP_CLR="ffffffff" TRAN_CT="0" TYPE="SPC" X="205" X_OFFSET="-1" Y="447" Y_OFFSET="-1" ZORDR="2"/>
+					<Button ACT_PRESS="0" ADJ_CLR="00804000" CLOSE_SW="0" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\ButtonSmall.png" NEW_PANEL="Genres" SCALE="1" S_CX="130" S_CY="26" TEXT="Change Genre" TP_CLR="" TRAN_CT="0" TYPE="PC" X="389" X_OFFSET="-1" Y="9" Y_OFFSET="4" ZORDR="3"/>
+					<Button ACT_PRESS="0" ADJ_CLR="00804000" D_ID="119" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\ButtonSmall.png" P_ID="803" P_VALUE="GetArtists" SCALE="0" S_CX="0" S_CY="0" TEXT="Refresh" TP_CLR="ffffffff" TRAN_CT="0" TYPE="SPC" X="537" X_OFFSET="-1" Y="10" Y_OFFSET="-1" ZORDR="4"/>
+				</Buttons>
+				<ListControls NAME="ListControls">
+					<List ADJ_CLR="00ffc6c6" BAR_IMG="HouseBot3\ListBarGray.png" BK_CLR="00999999" BK_IMG="HouseBot3\ListBackground1.png" CX="600" CY="331" D_ID="119" D_ID_CHANGE="119" D_ID_CHANGE_DBCLK="0" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="18" FNT_UL="0" FNT_WT="400" LISTING_TITLE="Artist" L_SCRL="0" NAME="Artist List" NOHDR="0" NO_HSCROLL="0" OD="0" P_ID="774" P_ID_CHANGE="780" P_ID_CHANGE_DBCLK="0" X="19" Y="70"/>
+				</ListControls>
+				<TextControls NAME="TextControls">
+					<Text BK_CLR="00b16c59" CX="80" CY="20" D_ID="119" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" P_ID="780" TP_BK="1" X="103" Y="449"/>
+				</TextControls>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" FNT="Arial" FNT_CLR="006b100e" FNT_CSET="0" FNT_IT="0" FNT_SZ="24" FNT_UL="0" FNT_WT="700" TEXT="Artist Selection" TP_BK="1" X="12" Y="8"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" TEXT="Artist ID:" TP_BK="1" T_ALMNT="0" T_OSET="0" X="23" Y="450"/>
+				</LabelControls>
+				<EditControls NAME="EditControls"/>
+				<Images NAME="Images"/>
+				<SliderControls NAME="SliderControls"/>
+				<EnterList NAME="EnterList">
+					<Item D_ID="119" P_ID="803" P_VALUE="GetArtists" TYPE="PropertyChange"/>
+				</EnterList>
+			</Skin>
+			<Skin ADJ_CLR="ffffffff" BKGND="Glassy\Background6402.png" B_TRANS="0" KEYPT="0" MOUSE_TRK="0" MT_SC_MULT="1.200000" NAME="Albums" POP_LFT="0" POP_TOP="0" TP_CLR="00000000" TYPE="POP">
+				<Buttons NAME="Buttons">
+					<Button ADJ_CLR="00000080" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="18" FNT_UL="0" FNT_WT="700" FUNCTION="PrevPanel" I_FILE="HouseBot3\ButtonSmall.png" SCALE="" S_CX="" S_CY="" TEXT="Close" TP_CLR="" TRAN_CT="0" TYPE="Generic" X="540" X_OFFSET="-1" Y="448" Y_OFFSET="4" ZORDR="1"/>
+					<Button ACT_PRESS="0" ADJ_CLR="00804000" D_ID="119" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\ButtonSmall.png" P_ID="781" P_VALUE="" SCALE="0" S_CX="0" S_CY="0" TEXT="Remove" TP_CLR="ffffffff" TRAN_CT="0" TYPE="SPC" X="205" X_OFFSET="-1" Y="447" Y_OFFSET="-1" ZORDR="2"/>
+					<Button ACT_PRESS="0" ADJ_CLR="00804000" CLOSE_SW="0" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\ButtonSmall.png" NEW_PANEL="Genres" SCALE="1" S_CX="130" S_CY="26" TEXT="Change Genre" TP_CLR="" TRAN_CT="0" TYPE="PC" X="390" X_OFFSET="-1" Y="9" Y_OFFSET="4" ZORDR="3"/>
+					<Button ACT_PRESS="0" ADJ_CLR="00804000" D_ID="119" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\ButtonSmall.png" P_ID="803" P_VALUE="GetAlbums" SCALE="0" S_CX="0" S_CY="0" TEXT="Refresh" TP_CLR="ffffffff" TRAN_CT="0" TYPE="SPC" X="538" X_OFFSET="-1" Y="10" Y_OFFSET="-1" ZORDR="4"/>
+				</Buttons>
+				<ListControls NAME="ListControls">
+					<List ADJ_CLR="00ffc6c6" BAR_IMG="HouseBot3\ListBarGray.png" BK_CLR="00999999" BK_IMG="HouseBot3\ListBackground1.png" CX="600" CY="331" D_ID="119" D_ID_CHANGE="119" D_ID_CHANGE_DBCLK="0" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="18" FNT_UL="0" FNT_WT="400" LISTING_TITLE="Albums,Artist,Year,Album Art" L_SCRL="0" NAME="Album List" NOHDR="0" NO_HSCROLL="0" OD="0" P_ID="775" P_ID_CHANGE="781" P_ID_CHANGE_DBCLK="0" X="19" Y="70"/>
+				</ListControls>
+				<TextControls NAME="TextControls">
+					<Text BK_CLR="00b16c59" CX="80" CY="20" D_ID="119" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" P_ID="781" TP_BK="1" X="103" Y="449"/>
+				</TextControls>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" FNT="Arial" FNT_CLR="006b100e" FNT_CSET="0" FNT_IT="0" FNT_SZ="24" FNT_UL="0" FNT_WT="700" TEXT="Album Selection" TP_BK="1" X="12" Y="8"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" TEXT="Album ID:" TP_BK="1" T_ALMNT="0" T_OSET="0" X="23" Y="450"/>
+				</LabelControls>
+				<EditControls NAME="EditControls"/>
+				<Images NAME="Images"/>
+				<SliderControls NAME="SliderControls"/>
+				<EnterList NAME="EnterList">
+					<Item D_ID="119" P_ID="803" P_VALUE="GetAlbums" TYPE="PropertyChange"/>
+				</EnterList>
+			</Skin>
+			<Skin ADJ_CLR="ffffffff" BKGND="Glassy\Background6402.png" B_TRANS="0" KEYPT="0" MOUSE_TRK="0" MT_SC_MULT="1.200000" NAME="Tracks" POP_LFT="0" POP_TOP="0" TP_CLR="00000000" TYPE="POP">
+				<Buttons NAME="Buttons">
+					<Button ADJ_CLR="00000080" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="18" FNT_UL="0" FNT_WT="700" FUNCTION="PrevPanel" I_FILE="HouseBot3\ButtonSmall.png" SCALE="" S_CX="" S_CY="" TEXT="Close" TP_CLR="" TRAN_CT="0" TYPE="Generic" X="540" X_OFFSET="-1" Y="448" Y_OFFSET="4" ZORDR="1"/>
+					<Button ACT_PRESS="0" ADJ_CLR="00804000" D_ID="119" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\ButtonSmall.png" P_ID="780" P_VALUE="" SCALE="0" S_CX="0" S_CY="0" TEXT="Remove" TP_CLR="ffffffff" TRAN_CT="0" TYPE="SPC" X="217" X_OFFSET="-1" Y="447" Y_OFFSET="-1" ZORDR="2"/>
+					<Button ACT_PRESS="0" ADJ_CLR="00804000" CLOSE_SW="0" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\ButtonSmall.png" NEW_PANEL="Genres" SCALE="1" S_CX="130" S_CY="26" TEXT="Change Genre" TP_CLR="" TRAN_CT="0" TYPE="PC" X="400" X_OFFSET="-1" Y="7" Y_OFFSET="4" ZORDR="3"/>
+					<Button ACT_PRESS="0" ADJ_CLR="00804000" D_ID="119" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot3\ButtonSmall.png" P_ID="803" P_VALUE="GetSongs" SCALE="0" S_CX="0" S_CY="0" TEXT="Refresh" TP_CLR="ffffffff" TRAN_CT="0" TYPE="SPC" X="548" X_OFFSET="-1" Y="8" Y_OFFSET="-1" ZORDR="4"/>
+				</Buttons>
+				<ListControls NAME="ListControls">
+					<List ADJ_CLR="00ffc6c6" BAR_IMG="HouseBot3\ListBarGray.png" BK_CLR="00999999" BK_IMG="HouseBot3\ListBackground1.png" CX="600" CY="331" D_ID="119" D_ID_CHANGE="119" D_ID_CHANGE_DBCLK="0" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="18" FNT_UL="0" FNT_WT="400" LISTING_TITLE="Tracks,Artist,Album,Length" L_SCRL="0" NAME="Track List" NOHDR="0" NO_HSCROLL="0" OD="0" P_ID="776" P_ID_CHANGE="782" P_ID_CHANGE_DBCLK="0" X="19" Y="70"/>
+				</ListControls>
+				<TextControls NAME="TextControls">
+					<Text BK_CLR="00b16c59" CX="80" CY="20" D_ID="119" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" P_ID="782" TP_BK="1" X="103" Y="449"/>
+				</TextControls>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" FNT="Arial" FNT_CLR="006b100e" FNT_CSET="0" FNT_IT="0" FNT_SZ="24" FNT_UL="0" FNT_WT="700" TEXT="Track Selection" TP_BK="1" X="12" Y="8"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" TEXT="Track ID:" TP_BK="1" T_ALMNT="0" T_OSET="0" X="23" Y="450"/>
+				</LabelControls>
+				<EditControls NAME="EditControls"/>
+				<Images NAME="Images"/>
+				<SliderControls NAME="SliderControls"/>
+				<EnterList NAME="EnterList">
+					<Item D_ID="119" P_ID="803" P_VALUE="GetSongs" TYPE="PropertyChange"/>
+				</EnterList>
+			</Skin>
+			<Skin ADJ_CLR="ffffffff" BKGND="Glassy\Background6402.png" B_TRANS="0" KEYPT="0" MOUSE_TRK="0" MT_SC_MULT="1.200000" NAME="Genres" POP_LFT="0" POP_TOP="0" TP_CLR="00000000" TYPE="POP">
+				<Buttons NAME="Buttons">
+					<Button ADJ_CLR="00000080" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="18" FNT_UL="0" FNT_WT="700" FUNCTION="PrevPanel" I_FILE="HouseBot3\ButtonSmall.png" SCALE="" S_CX="" S_CY="" TEXT="Close" TP_CLR="" TRAN_CT="0" TYPE="Generic" X="540" X_OFFSET="-1" Y="448" Y_OFFSET="4" ZORDR="1"/>
+				</Buttons>
+				<ListControls NAME="ListControls">
+					<List ADJ_CLR="00ffc6c6" BAR_IMG="HouseBot3\ListBarGray.png" BK_CLR="00999999" BK_IMG="HouseBot3\ListBackground1.png" CX="300" CY="341" D_ID="119" D_ID_CHANGE="119" D_ID_CHANGE_DBCLK="0" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="18" FNT_UL="0" FNT_WT="400" LISTING_TITLE="Genres" L_SCRL="0" NAME="Genres" NOHDR="0" NO_HSCROLL="0" OD="0" P_ID="801" P_ID_CHANGE="785" P_ID_CHANGE_DBCLK="0" X="20" Y="68"/>
+				</ListControls>
+				<TextControls NAME="TextControls">
+					<Text BK_CLR="00b16c59" CX="80" CY="20" D_ID="119" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" P_ID="785" TP_BK="1" X="103" Y="449"/>
+				</TextControls>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" FNT="Arial" FNT_CLR="006b100e" FNT_CSET="0" FNT_IT="0" FNT_SZ="24" FNT_UL="0" FNT_WT="700" TEXT="Genre Selection" TP_BK="1" X="12" Y="8"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" TEXT="Genre ID:" TP_BK="1" T_ALMNT="0" T_OSET="0" X="23" Y="450"/>
+				</LabelControls>
+				<EditControls NAME="EditControls"/>
+				<Images NAME="Images"/>
+				<SliderControls NAME="SliderControls"/>
+				<EnterList NAME="EnterList">
+					<Item D_ID="119" P_ID="803" P_VALUE="GetArtists" TYPE="PropertyChange"/>
+				</EnterList>
+			</Skin>
+		</Skins>
+	</Theme>
+	<Dependencies NAME="Dependencies">
+		<File PATH="HouseBot3\Background1_640.png"/>
+		<File PATH="HouseBot3\ButtonSmall.png"/>
+		<File PATH="HouseBot3\SmallRoundAVControls_3x1.png"/>
+		<File PATH="HouseBot3\SmallRoundAVControls_1x2.png"/>
+		<File PATH="HouseBot3\SmallRoundAVControls_5x1.png"/>
+		<File PATH="HouseBot3\SmallRoundAVControls_2x1.png"/>
+		<File PATH="HouseBot3\SmallRoundAVControls_2x2.png"/>
+		<File PATH="HouseBot3\SmallRoundAVControls_4x1.png"/>
+		<File PATH="HouseBot3\SmallRoundAVControls_4x2.png"/>
+		<File PATH="HouseBot3\Check1Off.png"/>
+		<File PATH="HouseBot3\Check1On.png"/>
+		<File PATH="HouseBot3\SliderKnobGray2.png"/>
+		<File PATH="HouseBot3\SliderBack1.png"/>
+		<File PATH="HouseBot3\SmallRoundAVControls_1x1.png"/>
+		<File PATH="HouseBot3\SmallRoundAVControls_1x3.png"/>
+		<File PATH="HouseBot3\SmallRoundAVControls_6x1.png"/>
+		<File PATH="HouseBot3\SmallRoundAVControls_6x2.png"/>
+		<File PATH="HouseBot3\Group_216x140.png"/>
+		<File PATH="HouseBot3\Disk1.png"/>
+		<File PATH="Glassy\Background6402.png"/>
+		<File PATH="HouseBot3\ListBarGray.png"/>
+		<File PATH="HouseBot3\ListBackground1.png"/>
+	</Dependencies>
+</ROOT>

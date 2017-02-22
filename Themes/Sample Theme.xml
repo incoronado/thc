@@ -1,0 +1,438 @@
+<ROOT VER="1.00">
+	<Theme KEY_CLICK="" NAME="Theme" STARTUP_TYPE="1" START_SKIN="Main Panel">
+		<Skins NAME="Skins">
+			<Skin BKGND="HouseBot Dark\HBD_Background640.bmp" B_TRANS="1" NAME="Main Panel" POP_LFT="0" POP_TOP="0" TP_CLR="00ff00ff">
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Arial" FNT_CLR="00c0c0c0" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="700" L_TYPE="Title" TEXT="HouseBot Sample Theme Introduction" TP_BK="1" X="12" Y="8"/>
+					<Label BK_CLR="00ff0000" CX="342" CY="35" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="If this Theme is running in a Software Remote, you can exit at any time by pressing the 'Exit Remote' Button." TP_BK="1" X="172" Y="400"/>
+					<Label BK_CLR="00ff0000" CX="596" CY="18" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="This sample Theme will help illustrate many of the possibilities available for creating your own Themes." TP_BK="1" X="12" Y="144"/>
+					<Label BK_CLR="00ff0000" CX="179" CY="18" FNT="Arial" FNT_CLR="00b4defe" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_TYPE="Heading 1" TEXT="What is a Theme?" TP_BK="1" X="12" Y="56"/>
+					<Label BK_CLR="00ff0000" CX="596" CY="51" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="A Theme defines a user interface that can be used by a Software Remote.  Themes consist of one or more Panels (windows).  The Panels are configured through a drag-and-drop style user interface that allows it to be customized for each users specific configuration." TP_BK="1" X="12" Y="76"/>
+					<Label BK_CLR="00ff0000" CX="31" CY="36" FNT="Symbol" FNT_CLR="00d9ffff" FNT_CSET="2" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="700" L_TYPE="" TEXT="Þ" TP_BK="1" X="520" Y="396"/>
+					<Label BK_CLR="00ff0000" CX="196" CY="18" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="View this Theme in:" TP_BK="1" X="12" Y="180"/>
+					<Label BK_CLR="00ff0000" CX="539" CY="18" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="• The HouseBot Theme Editor to examine how Theme Controls are configured." TP_BK="1" X="32" Y="204"/>
+					<Label BK_CLR="00ff0000" CX="539" CY="18" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="• A Software Remote to see how the various Theme Controls function." TP_BK="1" X="32" Y="220"/>
+					<Label BK_CLR="00ff0000" CX="179" CY="18" FNT="Arial" FNT_CLR="00b4defe" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_TYPE="Heading 1" TEXT="Getting Started" TP_BK="1" X="12" Y="252"/>
+					<Label BK_CLR="00ff0000" CX="596" CY="33" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="The navigation on this sample is setup to allow you to step through each Panel on a Software Remote to experiment with the various Theme Controls." TP_BK="1" X="12" Y="276"/>
+					<Label BK_CLR="00ff0000" CX="596" CY="33" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="In a Software Remote, you can either click the 'Next' button in the corer of each Panel, or press the 'Index' button to jump to the Panel index." TP_BK="1" X="12" Y="316"/>
+					<Label BK_CLR="00ff0000" CX="596" CY="33" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="In the Theme Editor, you can click the Panel tabs at the top of the screen to jump to the different Panels." TP_BK="1" X="12" Y="356"/>
+				</LabelControls>
+				<TextControls NAME="TextControls"/>
+				<Buttons NAME="Buttons">
+					<Button FNT="Arial" FNT_CLR="005f40bb" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" FUNCTION="Exit" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" TEXT="Exit Remote" TP_CLR="000000ff" TYPE="Generic" X="556" X_OFFSET="7" Y="400" Y_OFFSET="2" ZORDR="3"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Text and Labels" OP_STYLE="0" TEXT="Next" TP_CLR="000000ff" TYPE="PC" X="516" X_OFFSET="3" Y="456" Y_OFFSET="-1" ZORDR="2"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Index" OP_STYLE="0" TEXT="Index" TP_CLR="000000ff" TYPE="PC" X="36" X_OFFSET="3" Y="456" Y_OFFSET="-1" ZORDR="1"/>
+				</Buttons>
+			</Skin>
+			<Skin BKGND="HouseBot Dark\HBD_BackgroundPopup.bmp" B_TRANS="1" NAME="Index" POP_ATT="1" POP_LFT="-1" POP_TOP="-1" PTYPE="1" TP_CLR="00ff00ff" TYPE="POP">
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="163" CY="26" FNT="Arial" FNT_CLR="00c0c0c0" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="700" L_TYPE="Title" TEXT="Sample Index" TP_BK="1" X="12" Y="8"/>
+				</LabelControls>
+				<Buttons NAME="Buttons">
+					<Button FNT="Arial" FNT_CLR="005f40bb" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" FUNCTION="PrevPanel" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" TEXT="Close" TP_CLR="000000ff" TYPE="Generic" X="352" X_OFFSET="3" Y="244" Y_OFFSET="-1" ZORDR="8"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Text and Labels" OP_STYLE="0" TEXT="Text / Labels" TP_CLR="000000ff" TYPE="PC" X="56" X_OFFSET="7" Y="64" Y_OFFSET="5" ZORDR="7"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Buttons And Indicators" OP_STYLE="0" TEXT="Buttons /  Indicators" TP_CLR="000000ff" TYPE="PC" X="56" X_OFFSET="7" Y="138" Y_OFFSET="5" ZORDR="6"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Buttons And Indicators - 2" OP_STYLE="0" TEXT="Buttons /  Indicators" TP_CLR="000000ff" TYPE="PC" X="56" X_OFFSET="7" Y="212" Y_OFFSET="5" ZORDR="5"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Images" OP_STYLE="0" TEXT="Images" TP_CLR="000000ff" TYPE="PC" X="190" X_OFFSET="-1" Y="64" Y_OFFSET="-1" ZORDR="4"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Other Controls" OP_STYLE="0" TEXT="Misc. Controls" TP_CLR="000000ff" TYPE="PC" X="190" X_OFFSET="7" Y="138" Y_OFFSET="5" ZORDR="3"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Popup Intro" OP_STYLE="0" TEXT="Popup Panels" TP_CLR="000000ff" TYPE="PC" X="190" X_OFFSET="7" Y="212" Y_OFFSET="5" ZORDR="2"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Transparencies" OP_STYLE="0" TEXT="Trans. Controls" TP_CLR="000000ff" TYPE="PC" X="324" X_OFFSET="10" Y="64" Y_OFFSET="4" ZORDR="1"/>
+				</Buttons>
+				<Images NAME="Images"/>
+			</Skin>
+			<Skin BKGND="HouseBot Dark\HBD_Background640.bmp" B_TRANS="1" NAME="Text and Labels" POP_LFT="0" POP_TOP="0" TP_CLR="00ff00ff">
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_TYPE="" TEXT="Today is:" TP_BK="1" X="12" Y="104"/>
+					<Label BK_CLR="00ff0000" CX="229" CY="67" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="Here is a static lable.  It can contain any text and wrap to additional lines.  Its transparent background makes it blend in with the Panel background." TP_BK="1" X="12" Y="164"/>
+					<Label BK_CLR="00ff0000" CX="318" CY="54" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="These are Property Labels.  They automatically reflect the state of ANY Property Value in HouseBot.  These are mapped to display the System Time Properties." TP_BK="1" X="300" Y="100"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Arial" FNT_CLR="00c0c0c0" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="700" L_TYPE="Title" TEXT="Text and Labels" TP_BK="1" X="12" Y="8"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Symbol" FNT_CLR="00d9ffff" FNT_CSET="2" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="700" L_TYPE="" TEXT="Ý" TP_BK="1" X="36" Y="132"/>
+					<Label BK_CLR="00ff0000" CX="29" CY="36" FNT="Symbol" FNT_CLR="00d9ffff" FNT_CSET="2" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="700" L_TYPE="" TEXT="Ü" TP_BK="1" X="268" Y="86"/>
+					<Label BK_CLR="00ff0000" CX="592" CY="18" FNT="Arial" FNT_CLR="00b4defe" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_TYPE="Heading 1" TEXT="This Panel displays samples of static text labels and Property labels." TP_BK="1" X="12" Y="56"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Arial" FNT_CLR="0053a9ff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="'Static Labels' can use any font or color." TP_BK="1" X="12" Y="252"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="They can have a set background color too." TP_BK="0" X="12" Y="277"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Arial" FNT_CLR="00c2c285" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="They can use symbol fonts to display symbols.  The arrows in this sample use the 'Symbol' font." TP_BK="1" X="12" Y="302"/>
+					<Label BK_CLR="00ff0000" CX="250" CY="16" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="Or they can use a transparent background." TP_BK="1" X="269" Y="277"/>
+					<Label BK_CLR="00ff0000" CX="591" CY="19" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="Static text and Property labels are used in Panels throughout this sample." TP_BK="1" X="12" Y="328"/>
+				</LabelControls>
+				<TextControls NAME="TextControls">
+					<Text BK_CLR="00b16c59" CX="111" CY="18" D_ID="2" FNT="Arial" FNT_CLR="00c0c0c0" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_TYPE="Heading 1" P_ID="74" TP_BK="1" X="88" Y="104"/>
+					<Text BK_CLR="00b16c59" CX="208" CY="18" D_ID="2" FNT="Arial" FNT_CLR="00c0c0c0" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_TYPE="Heading 1" P_ID="49" TP_BK="1" X="88" Y="124"/>
+				</TextControls>
+				<Buttons NAME="Buttons">
+					<Button FNT="Arial" FNT_CLR="005f40bb" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" FUNCTION="Exit" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" TEXT="Exit Remote" TP_CLR="000000ff" TYPE="Generic" X="556" X_OFFSET="7" Y="400" Y_OFFSET="2" ZORDR="3"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Buttons And Indicators" OP_STYLE="0" TEXT="Next" TP_CLR="000000ff" TYPE="PC" X="516" X_OFFSET="3" Y="456" Y_OFFSET="-1" ZORDR="2"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Index" OP_STYLE="0" TEXT="Index" TP_CLR="000000ff" TYPE="PC" X="36" X_OFFSET="3" Y="456" Y_OFFSET="-1" ZORDR="1"/>
+				</Buttons>
+			</Skin>
+			<Skin BKGND="HouseBot Dark\HBD_Background640.bmp" B_TRANS="1" NAME="Buttons And Indicators" POP_LFT="0" POP_TOP="0" TP_CLR="00ff00ff" TYPE="PRI">
+				<TextControls NAME="TextControls">
+					<Text BK_CLR="00a6a6a6" CX="140" CY="18" D_ID="3" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_TYPE="Heading 2" P_ID="35" TP_BK="1" X="28" Y="116"/>
+				</TextControls>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="411" CY="51" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="'Multi-State Buttons' can change appearance depending on the current Property Value.  They can also change Properties differently depending on the current value." TP_BK="1" X="212" Y="140"/>
+					<Label BK_CLR="00ff0000" CX="200" CY="36" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="'Property Change Buttons' can simply change a Property Value." TP_BK="1" X="212" Y="204"/>
+					<Label BK_CLR="00ff0000" CX="200" CY="53" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="'Indicators' can display a different image depending on the current value of a Property." TP_BK="1" X="16" Y="272"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Arial" FNT_CLR="00c0c0c0" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="700" L_TYPE="Title" TEXT="Buttons and Indicators" TP_BK="1" X="12" Y="8"/>
+					<Label BK_CLR="00ff0000" CX="592" CY="18" FNT="Arial" FNT_CLR="00b4defe" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_TYPE="Heading 1" TEXT="This Panel uses samples of Button and Indicator controls." TP_BK="1" X="16" Y="60"/>
+					<Label BK_CLR="00ff0000" CX="584" CY="19" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="These controls work with the 'Sample Theme Device' to simulate VCR Controls." TP_BK="1" X="16" Y="92"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Symbol" FNT_CLR="00d9ffff" FNT_CSET="2" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="700" L_TYPE="" TEXT="Ü" TP_BK="1" X="176" Y="140"/>
+					<Label BK_CLR="00ff0000" CX="31" CY="36" FNT="Symbol" FNT_CLR="00d9ffff" FNT_CSET="2" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="700" L_TYPE="" TEXT="Ü" TP_BK="1" X="176" Y="200"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Symbol" FNT_CLR="00d9ffff" FNT_CSET="2" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="700" L_TYPE="" TEXT="Ý" TP_BK="1" X="42" Y="236"/>
+					<Label BK_CLR="00ff0000" CX="279" CY="19" FNT="Arial" FNT_CLR="00b4defe" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" L_TYPE="Heading 1" TEXT="Other button controls can be used to:" TP_BK="1" X="260" Y="324"/>
+					<Label BK_CLR="00ff0000" CX="184" CY="19" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="• Execute Tasks" TP_BK="1" X="276" Y="344"/>
+					<Label BK_CLR="00ff0000" CX="184" CY="19" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="• Set a Mode state" TP_BK="1" X="276" Y="363"/>
+					<Label BK_CLR="00ff0000" CX="200" CY="36" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="Panel Change Buttons will jump to a new Panel (window)." TP_BK="1" X="16" Y="376"/>
+					<Label BK_CLR="00ff0000" CX="18" CY="36" FNT="Symbol" FNT_CLR="00d9ffff" FNT_CSET="2" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="700" L_TYPE="" TEXT="ß" TP_BK="1" X="58" Y="412"/>
+					<Label BK_CLR="00ff0000" CX="184" CY="19" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="• Start an Application" TP_BK="1" X="276" Y="382"/>
+					<Label BK_CLR="00ff0000" CX="99" CY="19" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="Minimize Button" TP_BK="1" X="464" Y="16"/>
+					<Label BK_CLR="00ff0000" CX="31" CY="36" FNT="Symbol" FNT_CLR="00d9ffff" FNT_CSET="2" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="700" L_TYPE="" TEXT="Þ" TP_BK="1" X="560" Y="3"/>
+					<Label BK_CLR="00ff0000" CX="184" CY="19" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="• Blank the Screen" TP_BK="1" X="276" Y="401"/>
+					<Label BK_CLR="00ff0000" CX="184" CY="19" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="• And more..." TP_BK="1" X="276" Y="420"/>
+					<Label BK_CLR="00ff0000" CX="362" CY="51" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="Button images are simply Windows Bitmap (BMP), Portable Network Graphics (PNG), or Jpeg (JPG) files.  You can choose from HouseBot style buttons, or create your own." TP_BK="1" X="252" Y="260"/>
+				</LabelControls>
+				<Buttons NAME="Buttons">
+					<Button D_ID="3" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_POS="" L_TYPE="Rectangular Button" P_ID="35" TEXT="" TP_CLR="000000ff" TXT_P_ST="1" TYPE="MSPC" X="96" X_OFFSET="-1" Y="152" Y_OFFSET="-1" ZORDR="6">
+						<States NAME="States">
+							<D_St CH_VALUE="Stopped" FNT="Arial" FNT_CLR="00918ef2" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_ButtonOn.bmp" TEXT="Stop"/>
+							<State CH_VALUE="Playing" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_ButtonOff.bmp" TEXT="Play" VALUE="Stopped"/>
+						</States>
+					</Button>
+					<Button D_ID="3" FNT="Arial" FNT_CLR="005f40bb" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" P_ID="35" P_VALUE="Recording" TEXT="Record" TP_CLR="000000ff" TYPE="SPC" X="96" X_OFFSET="3" Y="212" Y_OFFSET="-1" ZORDR="5"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Index" OP_STYLE="0" TEXT="Index" TP_CLR="000000ff" TYPE="PC" X="36" X_OFFSET="3" Y="456" Y_OFFSET="-1" ZORDR="4"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Buttons And Indicators - 2" OP_STYLE="0" TEXT="Next" TP_CLR="000000ff" TYPE="PC" X="516" X_OFFSET="3" Y="456" Y_OFFSET="-1" ZORDR="3"/>
+					<Button FNT="Arial" FNT_CLR="005f40bb" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" FUNCTION="Exit" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" TEXT="Exit Remote" TP_CLR="000000ff" TYPE="Generic" X="556" X_OFFSET="7" Y="400" Y_OFFSET="2" ZORDR="2"/>
+					<Button FNT="Symbol" FNT_CLR="00ffffff" FNT_CSET="2" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" FUNCTION="Min" I_FILE="HouseBot Dark\HBD_ButtonSmall.bmp" L_POS="" L_TYPE="Rectangular Button" TEXT="¾" TP_CLR="000000ff" TYPE="Generic" X="596" X_OFFSET="-1" Y="15" Y_OFFSET="0" ZORDR="1"/>
+				</Buttons>
+				<Indicators NAME="Indicators">
+					<Indicator D_ID="3" I_FILE="Common\LEDs.bmp" NUM_IMAGES="3" P_ID="35" TP_CLR="000000ff" X="44" Y="216">
+						<States NAME="States">
+
+							<State COND="0" IMAGE="3" VALUE="Recording"/>
+							<State COND="0" IMAGE="2" VALUE="Playing"/>
+							<State COND="0" IMAGE="1" VALUE="Stopped"/>
+						</States>
+					</Indicator>
+				</Indicators>
+			</Skin>
+			<Skin BKGND="HouseBot Dark\HBD_Background640.bmp" B_TRANS="1" NAME="Buttons And Indicators - 2" POP_LFT="0" POP_TOP="0" TP_CLR="00ff00ff" TYPE="PRI">
+				<TextControls NAME="TextControls">
+					<Text BK_CLR="00a6a6a6" CX="140" CY="18" D_ID="3" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_TYPE="Heading 2" P_ID="35" TP_BK="1" X="60" Y="312"/>
+				</TextControls>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Arial" FNT_CLR="00c0c0c0" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="700" L_TYPE="Title" TEXT="Buttons and Indicators (continued)" TP_BK="1" X="12" Y="8"/>
+					<Label BK_CLR="00ff0000" CX="592" CY="18" FNT="Arial" FNT_CLR="00b4defe" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_TYPE="Heading 1" TEXT="This Panel uses more samples of Button and Indicator controls." TP_BK="1" X="16" Y="60"/>
+					<Label BK_CLR="00ff0000" CX="248" CY="53" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="'Multi-State Buttons' can take on forms other than buttons.  Here the control is used as a checkbox and radio buttons!" TP_BK="1" X="40" Y="108"/>
+					<Label BK_CLR="00ff0000" CX="220" CY="68" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="'Stop', 'Play', and 'Record' are actually transparent 'Multi-State' buttons.  This allows you to click the text or the radio button!" TP_BK="1" X="196" Y="212"/>
+					<Label BK_CLR="00ff0000" CX="31" CY="36" FNT="Symbol" FNT_CLR="00d9ffff" FNT_CSET="2" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="700" L_TYPE="" TEXT="Ü" TP_BK="1" X="156" Y="220"/>
+				</LabelControls>
+				<Buttons NAME="Buttons">
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Index" OP_STYLE="0" TEXT="Index" TP_CLR="000000ff" TYPE="PC" X="36" X_OFFSET="3" Y="456" Y_OFFSET="-1" ZORDR="10"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Images" OP_STYLE="0" TEXT="Next" TP_CLR="000000ff" TYPE="PC" X="516" X_OFFSET="3" Y="456" Y_OFFSET="-1" ZORDR="9"/>
+					<Button FNT="Arial" FNT_CLR="005f40bb" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" FUNCTION="Exit" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" TEXT="Exit Remote" TP_CLR="000000ff" TYPE="Generic" X="556" X_OFFSET="7" Y="400" Y_OFFSET="2" ZORDR="8"/>
+					<Button D_ID="3" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_POS="" L_TYPE="Checkbox" P_ID="35" TEXT="" TP_CLR="000000ff" TXT_P_ST="0" TYPE="MSPC" X="40" X_OFFSET="3" Y="164" Y_OFFSET="-1" ZORDR="7">
+						<States NAME="States">
+							<D_St CH_VALUE="Stopped" I_FILE="HouseBot Dark\HBD_ButtonCheck.bmp"/>
+							<State CH_VALUE="Playing" I_FILE="HouseBot Dark\HBD_ButtonUnCheck.bmp" VALUE="Stopped"/>
+							<State CH_VALUE="Stopped" I_FILE="HouseBot Dark\HBD_ButtonCheck.bmp" VALUE="Playing"/>
+						</States>
+					</Button>
+					<Button D_ID="3" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_POS="" L_TYPE="Radio Button" P_ID="35" TEXT="" TP_CLR="000000ff" TXT_P_ST="0" TYPE="MSPC" X="40" X_OFFSET="3" Y="204" Y_OFFSET="-1" ZORDR="6">
+						<States NAME="States">
+							<D_St CH_VALUE="Stopped" I_FILE="HouseBot Dark\HBD_ButtonRadioNo.bmp"/>
+							<State CH_VALUE="Stopped" I_FILE="HouseBot Dark\HBD_ButtonRadioYes.bmp" VALUE="Stopped"/>
+						</States>
+					</Button>
+					<Button D_ID="3" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_POS="" L_TYPE="Radio Button" P_ID="35" TEXT="" TP_CLR="000000ff" TXT_P_ST="0" TYPE="MSPC" X="40" X_OFFSET="3" Y="232" Y_OFFSET="-1" ZORDR="5">
+						<States NAME="States">
+							<D_St CH_VALUE="Playing" I_FILE="HouseBot Dark\HBD_ButtonRadioNo.bmp"/>
+							<State CH_VALUE="Playing" I_FILE="HouseBot Dark\HBD_ButtonRadioYes.bmp" VALUE="Playing"/>
+						</States>
+					</Button>
+					<Button D_ID="3" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_POS="" L_TYPE="Radio Button" P_ID="35" TEXT="" TP_CLR="000000ff" TXT_P_ST="0" TYPE="MSPC" X="40" X_OFFSET="3" Y="260" Y_OFFSET="-1" ZORDR="4">
+						<States NAME="States">
+							<D_St CH_VALUE="Recording" I_FILE="HouseBot Dark\HBD_ButtonRadioNo.bmp"/>
+							<State CH_VALUE="Recording" I_FILE="HouseBot Dark\HBD_ButtonRadioYes.bmp" VALUE="Recording"/>
+						</States>
+					</Button>
+					<Button D_ID="3" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_POS="" L_TYPE="Radio Button" P_ID="35" TEXT="Stop" TP_CLR="000000ff" TXT_P_ST="0" TYPE="MSPC" X="64" X_OFFSET="0" Y="203" Y_OFFSET="-1" ZORDR="3">
+						<States NAME="States">
+							<D_St CH_VALUE="Stopped" I_FILE="Common\TransparentButton.bmp"/>
+							<State CH_VALUE="Stopped" I_FILE="Common\TransparentButton.bmp" VALUE="Stopped"/>
+						</States>
+					</Button>
+					<Button D_ID="3" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_POS="" L_TYPE="Radio Button" P_ID="35" TEXT="Play" TP_CLR="000000ff" TXT_P_ST="0" TYPE="MSPC" X="64" X_OFFSET="0" Y="232" Y_OFFSET="-1" ZORDR="2">
+						<States NAME="States">
+							<D_St CH_VALUE="Playing" I_FILE="Common\TransparentButton.bmp"/>
+							<State CH_VALUE="Playing" I_FILE="Common\TransparentButton.bmp" VALUE="Playing"/>
+						</States>
+					</Button>
+					<Button D_ID="3" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_POS="" L_TYPE="Radio Button" P_ID="35" TEXT="Record" TP_CLR="000000ff" TXT_P_ST="0" TYPE="MSPC" X="64" X_OFFSET="0" Y="258" Y_OFFSET="-1" ZORDR="1">
+						<States NAME="States">
+							<D_St CH_VALUE="Recording" I_FILE="Common\TransparentButton.bmp"/>
+							<State CH_VALUE="Recording" I_FILE="Common\TransparentButton.bmp" VALUE="Recording"/>
+						</States>
+					</Button>
+				</Buttons>
+				<Indicators NAME="Indicators">
+					<Indicator D_ID="3" I_FILE="Common\LEDs.bmp" NUM_IMAGES="3" P_ID="35" TP_CLR="000000ff" X="40" Y="312">
+						<States NAME="States">
+
+							<State COND="0" IMAGE="3" VALUE="Recording"/>
+							<State COND="0" IMAGE="2" VALUE="Playing"/>
+							<State COND="0" IMAGE="1" VALUE="Stopped"/>
+						</States>
+					</Indicator>
+				</Indicators>
+			</Skin>
+			<Skin BKGND="HouseBot Dark\HBD_Background640.bmp" B_TRANS="1" NAME="Images" POP_LFT="0" POP_TOP="0" TP_CLR="00ff00ff" TYPE="PRI">
+				<TextControls NAME="TextControls"/>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Arial" FNT_CLR="00c0c0c0" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="700" L_TYPE="Title" TEXT="Images" TP_BK="1" X="12" Y="8"/>
+					<Label BK_CLR="00ff0000" CX="592" CY="18" FNT="Arial" FNT_CLR="00b4defe" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_TYPE="Heading 1" TEXT="This panel displays samples of Image controls." TP_BK="1" X="16" Y="60"/>
+					<Label BK_CLR="00ff0000" CX="291" CY="35" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="This is a STATIC image.  It does not change while the Software Remote is running." TP_BK="1" X="324" Y="88"/>
+					<Label BK_CLR="00ff0000" CX="588" CY="32" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="The image below is a DYNAMIC image.  It will automatically change when the associated Property Value that contains the image file name changes." TP_BK="1" X="20" Y="272"/>
+					<Label BK_CLR="00ff0000" CX="139" CY="35" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="Press this button to change the image." TP_BK="1" X="404" Y="312"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Symbol" FNT_CLR="00d9ffff" FNT_CSET="2" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="700" L_TYPE="" TEXT="Þ" TP_BK="1" X="524" Y="308"/>
+					<Label BK_CLR="00ff0000" CX="588" CY="19" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="Images can be in Windows Bitmap (BMP), Portable Network Graphics (PNG), or Jpeg (JPG) format." TP_BK="1" X="20" Y="232"/>
+				</LabelControls>
+				<Buttons NAME="Buttons">
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Index" OP_STYLE="0" TEXT="Index" TP_CLR="000000ff" TYPE="PC" X="36" X_OFFSET="3" Y="456" Y_OFFSET="-1" ZORDR="4"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Transparencies" OP_STYLE="0" TEXT="Next" TP_CLR="000000ff" TYPE="PC" X="516" X_OFFSET="3" Y="456" Y_OFFSET="-1" ZORDR="3"/>
+					<Button FNT="Arial" FNT_CLR="005f40bb" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" FUNCTION="Exit" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" TEXT="Exit Remote" TP_CLR="000000ff" TYPE="Generic" X="556" X_OFFSET="7" Y="400" Y_OFFSET="2" ZORDR="2"/>
+					<Button ACT_PRESS="0" D_ID="3" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_POS="" L_TYPE="Rectangular Button" P_ID="144" TEXT="" TP_CLR="000000ff" TXT_P_ST="1" TYPE="MSPC" X="556" X_OFFSET="6" Y="308" Y_OFFSET="4" ZORDR="1">
+						<States NAME="States">
+							<State CH_VALUE="%%HB_Themes%%\Common\CeBoticsLogo.png" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" TEXT="CeBotics Logo" VALUE="%%HB_Themes%%\Common\HouseBotLogo.png"/>
+							<State CH_VALUE="%%HB_Themes%%\Common\HouseBotLogo.png" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" TEXT="HouseBot Logo" VALUE="%%HB_Themes%%\Common\CeBoticsLogo.png"/>
+						</States>
+					</Button>
+				</Buttons>
+				<Indicators NAME="Indicators"/>
+				<Images NAME="Images">
+					<Image BK_CLR="" D_ID="3" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="Common\HouseBotLogo.png" I_TYPE="1" L_TYPE="" P_ID="144" TEXT="" TP_CLR="000000ff" W_TXT="0" X="16" X_TXT="0" Y="316" Y_TXT="0" ZORDR="6"/>
+					<Image BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="Common\HouseBotLogo.png" I_TYPE="0" L_TYPE="" P_ID="0" TEXT="" TP_CLR="000000ff" X="4" Y="104" ZORDR="5"/>
+				</Images>
+				<EditControls NAME="EditControls"/>
+			</Skin>
+			<Skin BKGND="HouseBot Dark\HBD_Background640.bmp" B_TRANS="1" NAME="Other Controls" POP_LFT="0" POP_TOP="0" TP_CLR="00ff00ff" TYPE="PRI">
+				<TextControls NAME="TextControls">
+					<Text BK_CLR="00b16c59" CX="34" CY="15" D_ID="3" FNT="Arial" FNT_CLR="0053a9ff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_TYPE="Heading 3" P_ID="37" TP_BK="1" X="288" Y="140"/>
+				</TextControls>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="152" CY="26" FNT="Arial" FNT_CLR="00c0c0c0" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="700" L_TYPE="Title" TEXT="Other Controls" TP_BK="1" X="12" Y="8"/>
+					<Label BK_CLR="00ff0000" CX="592" CY="18" FNT="Arial" FNT_CLR="00b4defe" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_TYPE="Heading 1" TEXT="This panel displays samples Gauges, Sliders, and Edit controls." TP_BK="1" X="16" Y="60"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_TYPE="Heading 2" TEXT="Current Volume:" TP_BK="1" X="148" Y="138"/>
+					<Label BK_CLR="00ff0000" CX="170" CY="38" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="It can be changed with a Slider control." TP_BK="1" X="228" Y="220"/>
+					<Label BK_CLR="00ff0000" CX="170" CY="53" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="Or change it by entering a value and pressing ENTER in the Edit control." TP_BK="1" X="228" Y="268"/>
+					<Label BK_CLR="00ff0000" CX="585" CY="19" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="The controls below will all change the 'Volume' Property of the 'Sample Theme Device'." TP_BK="1" X="16" Y="100"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Symbol" FNT_CLR="00d9ffff" FNT_CSET="2" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="700" L_TYPE="" TEXT="Þ" TP_BK="1" X="404" Y="216"/>
+					<Label BK_CLR="00ff0000" CX="31" CY="36" FNT="Symbol" FNT_CLR="00d9ffff" FNT_CSET="2" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="700" L_TYPE="" TEXT="Þ" TP_BK="1" X="402" Y="268"/>
+					<Label BK_CLR="00ff0000" CX="113" CY="52" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="The Gauge shows the current value graphically." TP_BK="1" X="32" Y="176"/>
+					<Label BK_CLR="00ff0000" CX="170" CY="18" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="Or change it with a button." TP_BK="1" X="228" Y="333"/>
+					<Label BK_CLR="00ff0000" CX="31" CY="36" FNT="Symbol" FNT_CLR="00d9ffff" FNT_CSET="2" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="700" L_TYPE="" TEXT="Þ" TP_BK="1" X="402" Y="320"/>
+				</LabelControls>
+				<Buttons NAME="Buttons">
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Index" OP_STYLE="0" TEXT="Index" TP_CLR="000000ff" TYPE="PC" X="36" X_OFFSET="3" Y="456" Y_OFFSET="-1" ZORDR="4"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Popup Intro" OP_STYLE="0" TEXT="Next" TP_CLR="000000ff" TYPE="PC" X="516" X_OFFSET="3" Y="456" Y_OFFSET="-1" ZORDR="3"/>
+					<Button FNT="Arial" FNT_CLR="005f40bb" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" FUNCTION="Exit" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" TEXT="Exit Remote" TP_CLR="000000ff" TYPE="Generic" X="556" X_OFFSET="7" Y="400" Y_OFFSET="2" ZORDR="2"/>
+					<Button D_ID="3" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="" L_POS="" L_TYPE="Rectangular Button" P_ID="37" TEXT="" TP_CLR="000000ff" TXT_P_ST="1" TYPE="MSPC" X="440" X_OFFSET="-1" Y="332" Y_OFFSET="-1" ZORDR="1">
+						<States NAME="States">
+							<State CH_VALUE="50" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_Button.bmp" TEXT="50" VALUE="10"/>
+							<State CH_VALUE="75" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_Button.bmp" TEXT="75" VALUE="50"/>
+							<State CH_VALUE="100" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_Button.bmp" TEXT="100" VALUE="75"/>
+							<State CH_VALUE="10" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_Button.bmp" TEXT="10" VALUE="100"/>
+						</States>
+					</Button>
+				</Buttons>
+				<Indicators NAME="Indicators"/>
+				<Images NAME="Images"/>
+				<EditControls NAME="EditControls">
+					<Edit BK_CLR="00d9ffff" CX="29" CY="15" D_ID="3" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="14" FNT_UL="0" FNT_WT="700" P_ID="37" TP_BK="0" X="440" Y="284"/>
+				</EditControls>
+				<GaugeControls NAME="GaugeControls">
+					<Gauge BK_IMG="HouseBot Dark\HBD_VGaugeBackground.bmp" D_ID="3" MAX="100" MIN="0" ORIENTATION="V" P_ID="37" VALUE_IMAGE="HouseBot Dark\HBD_VGaugeValue.bmp" VALUE_X_OFFSET="0" VALUE_Y_OFFSET="5" X="60" Y="240"/>
+				</GaugeControls>
+				<SliderControls NAME="SliderControls">
+					<Slider BK_IMG="HouseBot Dark\HBD_HSliderBackground.bmp" D_ID="3" MAX="100" MIN="0" ORIENTATION="H" P_ID="37" T_IMG="HouseBot Dark\HBD_HSliderValue.bmp" VALUE_X_OFFSET="10" VALUE_Y_OFFSET="10" X="440" Y="224"/>
+				</SliderControls>
+			</Skin>
+			<Skin BKGND="HouseBot Dark\HBD_Background640.bmp" B_TRANS="1" NAME="Popup Intro" POP_LFT="0" POP_TOP="0" TP_CLR="00ff00ff">
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="144" CY="26" FNT="Arial" FNT_CLR="00c0c0c0" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="700" L_TYPE="Title" TEXT="Popup Panels" TP_BK="1" X="12" Y="8"/>
+					<Label BK_CLR="00ff0000" CX="229" CY="18" FNT="Arial" FNT_CLR="00b4defe" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_TYPE="Heading 1" TEXT="What are Panels?" TP_BK="1" X="12" Y="56"/>
+					<Label BK_CLR="00ff0000" CX="596" CY="19" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="Themes are constructed with two different types of Panels (windows)." TP_BK="1" X="12" Y="88"/>
+					<Label BK_CLR="00ff0000" CX="110" CY="16" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="• Primary Panels -" TP_BK="1" X="36" Y="108"/>
+					<Label BK_CLR="00ff0000" CX="446" CY="35" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="Will replace existing Panels and provide the main background window for the Software Remote." TP_BK="1" X="148" Y="108"/>
+					<Label BK_CLR="00ff0000" CX="446" CY="35" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="Will popup over existing Primary (or other popup) Panels.  Their position can be movable or fixed." TP_BK="1" X="148" Y="144"/>
+					<Label BK_CLR="00ff0000" CX="110" CY="16" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="• Popup Panels -" TP_BK="1" X="36" Y="144"/>
+					<Label BK_CLR="00ff0000" CX="596" CY="19" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="The buttons below use Panel Change Button controls to call up various types of popup Panels." TP_BK="1" X="16" Y="196"/>
+					<Label BK_CLR="00ff0000" CX="255" CY="68" FNT="Arial" FNT_CLR="0053a9ff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="You MUST Close each of the popup panels after pressing one of the style demonstrations above before viewing another style." TP_BK="1" X="236" Y="368"/>
+					<Label BK_CLR="00ff0000" CX="229" CY="18" FNT="Arial" FNT_CLR="00b4defe" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_TYPE="Heading 1" TEXT="Panel Open Styles:" TP_BK="1" X="232" Y="244"/>
+				</LabelControls>
+				<TextControls NAME="TextControls"/>
+				<Buttons NAME="Buttons">
+					<Button FNT="Arial" FNT_CLR="005f40bb" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" FUNCTION="Exit" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" TEXT="Exit Remote" TP_CLR="000000ff" TYPE="Generic" X="556" X_OFFSET="7" Y="400" Y_OFFSET="2" ZORDR="11"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Index" OP_STYLE="0" TEXT="Index" TP_CLR="000000ff" TYPE="PC" X="36" X_OFFSET="3" Y="456" Y_OFFSET="-1" ZORDR="10"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Transparent" TEXT="Transparent" TP_CLR="000000ff" TYPE="PC" X="44" X_OFFSET="3" Y="256" Y_OFFSET="-1" ZORDR="9"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Popup 1" TEXT="Multiple" TP_CLR="000000ff" TYPE="PC" X="44" X_OFFSET="-1" Y="318" Y_OFFSET="-1" ZORDR="8"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Popup 2" OP_STYLE="1" POP_LFT="-1" POP_TOP="-1" TEXT="Center" TP_CLR="000000ff" TYPE="PC" X="432" X_OFFSET="-1" Y="300" Y_OFFSET="-1" ZORDR="7"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Popup 2" OP_STYLE="3" POP_LFT="-1" POP_TOP="-1" TEXT="Right" TP_CLR="000000ff" TYPE="PC" X="332" X_OFFSET="-1" Y="328" Y_OFFSET="-1" ZORDR="6"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Popup 2" OP_STYLE="2" POP_LFT="-1" POP_TOP="-1" TEXT="Left" TP_CLR="000000ff" TYPE="PC" X="330" X_OFFSET="-1" Y="276" Y_OFFSET="-1" ZORDR="5"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Popup 2" OP_STYLE="5" POP_LFT="-1" POP_TOP="-1" TEXT="Up" TP_CLR="000000ff" TYPE="PC" X="232" X_OFFSET="-1" Y="276" Y_OFFSET="-1" ZORDR="4"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Popup 2" OP_STYLE="4" POP_LFT="-1" POP_TOP="-1" TEXT="Down" TP_CLR="000000ff" TYPE="PC" X="232" X_OFFSET="-1" Y="328" Y_OFFSET="-1" ZORDR="3"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Popup Types" OP_STYLE="0" TEXT="Types" TP_CLR="000000ff" TYPE="PC" X="44" X_OFFSET="-1" Y="380" Y_OFFSET="-1" ZORDR="2"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Main Panel" OP_STYLE="0" TEXT="Start" TP_CLR="000000ff" TYPE="PC" X="516" X_OFFSET="3" Y="456" Y_OFFSET="-1" ZORDR="1"/>
+				</Buttons>
+				<Images NAME="Images"/>
+			</Skin>
+			<Skin BKGND="Common\Panel Transparent.bmp" B_TRANS="1" NAME="Transparent" TP_CLR="00ff00ff" TYPE="POP">
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="305" CY="26" FNT="Arial" FNT_CLR="00c0c0c0" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="700" L_TYPE="Title" TEXT="Panel with Transparent Areas" TP_BK="1" X="12" Y="8"/>
+					<Label BK_CLR="00ff0000" CX="150" CY="54" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="Rectangular areas can overlay applictions to reveal underlying buttons." TP_BK="1" X="72" Y="160"/>
+					<Label BK_CLR="00ff0000" CX="215" CY="54" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="This Panel has transparent edges and holes.  You can click right through the holes!" TP_BK="1" X="32" Y="60"/>
+				</LabelControls>
+				<Buttons NAME="Buttons">
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" FUNCTION="PrevPanel" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" TEXT="Close Panel" TP_CLR="000000ff" TYPE="Generic" X="340" X_OFFSET="11" Y="220" Y_OFFSET="3" ZORDR="1"/>
+				</Buttons>
+			</Skin>
+			<Skin BKGND="HouseBot Dark\HBD_BackgroundPopup.bmp" B_TRANS="1" NAME="Popup 1" POP_ATT="1" POP_LFT="-1" POP_TOP="-1" PTYPE="1" TP_CLR="00ff00ff" TYPE="POP">
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="87" CY="26" FNT="Arial" FNT_CLR="00c0c0c0" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="700" L_TYPE="Title" TEXT="Popup 1" TP_BK="1" X="12" Y="8"/>
+					<Label BK_CLR="00ff0000" CX="425" CY="38" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="Popups provide more controls while still allowing access to the controls of the main Panel." TP_BK="1" X="12" Y="52"/>
+					<Label BK_CLR="00ff0000" CX="425" CY="38" FNT="Arial" FNT_CLR="00ffffc4" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="Popups can be moved by clicking on the background and dragging the Panel." TP_BK="1" X="12" Y="104"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="Popups can spawn other Popups too." TP_BK="1" X="64" Y="196"/>
+					<Label BK_CLR="00ff0000" CX="425" CY="38" FNT="Arial" FNT_CLR="00ffffc4" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="Once the Panel has been moved, it will remember its new position." TP_BK="1" X="12" Y="144"/>
+					<Label BK_CLR="00ff0000" CX="263" CY="39" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="Or you can close this Poup when calling the next Popup." TP_BK="1" X="18" Y="228"/>
+					<Label BK_CLR="00ff0000" CX="99" CY="19" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="Press to Close" TP_BK="1" X="272" Y="13"/>
+					<Label BK_CLR="00ff0000" CX="31" CY="36" FNT="Symbol" FNT_CLR="00d9ffff" FNT_CSET="2" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="700" L_TYPE="" TEXT="Þ" TP_BK="1" X="364" Y="0"/>
+				</LabelControls>
+				<Buttons NAME="Buttons">
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" FUNCTION="PrevPanel" I_FILE="HouseBot Dark\HBD_ButtonSmall.bmp" L_POS="" L_TYPE="Rectangular Button" TEXT="X" TP_CLR="000000ff" TYPE="Generic" X="400" X_OFFSET="-1" Y="12" Y_OFFSET="-1" ZORDR="3"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Popup 2" POP_LFT="-1" POP_TOP="-1" TEXT="Another Popup" TP_CLR="000000ff" TYPE="PC" X="288" X_OFFSET="13" Y="180" Y_OFFSET="4" ZORDR="2"/>
+					<Button CLOSE_SW="1" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Popup 2" POP_LFT="-1" POP_TOP="-1" TEXT="Another Popup" TP_CLR="000000ff" TYPE="PC" X="288" X_OFFSET="13" Y="232" Y_OFFSET="4" ZORDR="1"/>
+				</Buttons>
+			</Skin>
+			<Skin BKGND="HouseBot Dark\HBD_BackgroundPPC.bmp" B_TRANS="0" NAME="Popup 2" POP_ATT="1" POP_LFT="-1" POP_TOP="-1" PTYPE="1" TYPE="POP">
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="87" CY="26" FNT="Arial" FNT_CLR="00c0c0c0" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="700" L_TYPE="Title" TEXT="Popup 2" TP_BK="1" X="12" Y="8"/>
+					<Label BK_CLR="00ff0000" CX="212" CY="45" FNT="Arial" FNT_CLR="00b4defe" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="You MUST Close this popup panel to continue." TP_BK="1" X="16" Y="116"/>
+				</LabelControls>
+				<Buttons NAME="Buttons">
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" FUNCTION="PrevPanel" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" TEXT="Close Panel" TP_CLR="000000ff" TYPE="Generic" X="84" X_OFFSET="11" Y="252" Y_OFFSET="3" ZORDR="1"/>
+				</Buttons>
+			</Skin>
+			<Skin BKGND="HouseBot Dark\HBD_Background640.bmp" B_TRANS="1" MTYPE="MOV" NAME="Popup Types" POP_ATT="1" POP_LFT="0" POP_TOP="0" PTYPE="0" TP_CLR="00ff00ff" TYPE="PRI">
+				<DirectoryControls NAME="DirectoryControls"/>
+				<ListControls NAME="ListControls"/>
+				<Buttons NAME="Buttons">
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="18" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Movable - Attached" POP_ATT="0" POP_LFT="1" POP_TOP="2" PTYPE="0" TEXT="Movable Attached" TP_CLR="000000ff" TYPE="PC" X="20" X_OFFSET="6" Y="64" Y_OFFSET="3" ZORDR="5"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="18" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Movable" OP_STYLE="0" POP_ATT="0" POP_LFT="1" POP_TOP="2" PTYPE="0" TEXT="Movable" TP_CLR="000000ff" TYPE="PC" X="20" X_OFFSET="6" Y="133" Y_OFFSET="-1" ZORDR="4"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="18" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Fixed - Attached" POP_ATT="0" POP_LFT="1" POP_TOP="2" PTYPE="0" TEXT="Fixed Attached" TP_CLR="000000ff" TYPE="PC" X="20" X_OFFSET="6" Y="202" Y_OFFSET="3" ZORDR="3"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="18" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Fixed" OP_STYLE="0" POP_ATT="0" POP_LFT="1" POP_TOP="2" PTYPE="0" TEXT="Fixed" TP_CLR="000000ff" TYPE="PC" X="20" X_OFFSET="6" Y="272" Y_OFFSET="-1" ZORDR="2"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" FUNCTION="PrevPanel" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" TEXT="Close Panel" TP_CLR="000000ff" TYPE="Generic" X="536" X_OFFSET="11" Y="388" Y_OFFSET="3" ZORDR="1"/>
+				</Buttons>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="138" CY="26" FNT="Arial" FNT_CLR="00c0c0c0" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="700" L_TYPE="Title" TEXT="Popup Types" TP_BK="1" X="12" Y="8"/>
+					<Label BK_CLR="00ff0000" CX="519" CY="39" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" TP_BK="1" TEXT="Movable Attached Popup.  Can be moved, but will also move with Primary Panel." TP_BK="1" X="108" Y="64"/>
+					<Label BK_CLR="00ff0000" CX="519" CY="39" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" TP_BK="1" TEXT="Movable Popup.  Can be moved, and will NOT move with Primary Panel." TP_BK="1" X="108" Y="136"/>
+					<Label BK_CLR="00ff0000" CX="519" CY="39" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" TP_BK="1" TEXT="Fixed Attached Popup.  Can NOT be moved, but will move with Primary Panel." TP_BK="1" X="108" Y="208"/>
+					<Label BK_CLR="00ff0000" CX="519" CY="39" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" TP_BK="1" TEXT="Fixed Popup.  Can NOT be moved, and will NOT move with Primary Panel." TP_BK="1" X="108" Y="280"/>
+					<Label BK_CLR="00ff0000" CX="585" CY="22" FNT="Arial" FNT_CLR="0080ff80" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" TP_BK="1" TEXT="Press all of the samples buttons above to see how they all react at the same time!" TP_BK="1" X="24" Y="352"/>
+					<Label BK_CLR="00ff0000" CX="486" CY="34" FNT="Arial" FNT_CLR="00b4defe" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" TP_BK="1" TEXT="This is another primary (background) Panel.  To return to the previous primary Panel, press the 'Close' button." TP_BK="1" X="24" Y="388"/>
+				</LabelControls>
+				<Images NAME="Images"/>
+			</Skin>
+			<Skin BKGND="HouseBot Dark\HBD_BackgroundPopup.bmp" B_TRANS="1" NAME="Movable - Attached" POP_ATT="1" POP_LFT="0" POP_TOP="0" PTYPE="0" TP_CLR="00ff00ff" TYPE="POP">
+				<Buttons NAME="Buttons">
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" FUNCTION="PrevPanel" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" TEXT="Close" TP_CLR="000000ff" TYPE="Generic" X="344" X_OFFSET="-1" Y="212" Y_OFFSET="-1" ZORDR="1"/>
+				</Buttons>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="385" CY="29" FNT="Arial" FNT_CLR="00c0c0c0" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="700" L_TYPE="Title" TEXT="Movable - Attached Popup" TP_BK="1" X="12" Y="8"/>
+					<Label BK_CLR="00ff0000" CX="401" CY="58" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" TP_BK="1" TEXT="This panel can be moved anywhere on the screen by clicking on an open area of the window and dragging the panel." TP_BK="1" X="12" Y="60"/>
+					<Label BK_CLR="00ff0000" CX="401" CY="40" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" TP_BK="1" TEXT="Since it is 'Attached', it will move when the main panel is moved." TP_BK="1" X="12" Y="124"/>
+					<Label BK_CLR="00ff0000" CX="401" CY="39" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" TP_BK="1" TEXT="It will remember its last position and open in the same place the next time." TP_BK="1" X="12" Y="172"/>
+				</LabelControls>
+			</Skin>
+			<Skin BKGND="HouseBot Dark\HBD_BackgroundPopup.bmp" B_TRANS="1" NAME="Movable" POP_ATT="0" POP_LFT="0" POP_TOP="0" TP_CLR="00ff00ff" TYPE="POP">
+				<Buttons NAME="Buttons">
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" FUNCTION="PrevPanel" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" TEXT="Close" TP_CLR="000000ff" TYPE="Generic" X="344" X_OFFSET="-1" Y="212" Y_OFFSET="-1" ZORDR="1"/>
+				</Buttons>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="244" CY="29" FNT="Arial" FNT_CLR="00c0c0c0" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="700" L_TYPE="Title" TEXT="Movable - Popup" TP_BK="1" X="12" Y="8"/>
+					<Label BK_CLR="00ff0000" CX="401" CY="58" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" TP_BK="1" TEXT="This panel can be moved anywhere on the screen by clicking on an open area of the window and dragging the panel." TP_BK="1" X="12" Y="60"/>
+					<Label BK_CLR="00ff0000" CX="401" CY="39" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" TP_BK="1" TEXT="It will remember its last position and open in the same place the next time." TP_BK="1" X="12" Y="140"/>
+				</LabelControls>
+			</Skin>
+			<Skin BKGND="HouseBot Dark\HBD_BackgroundPopup.bmp" B_TRANS="1" NAME="Fixed" POP_ATT="0" POP_LFT="10" POP_TOP="30" PTYPE="1" TP_CLR="00ff00ff" TYPE="POP">
+				<Buttons NAME="Buttons">
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" FUNCTION="PrevPanel" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" TEXT="Close" TP_CLR="000000ff" TYPE="Generic" X="344" X_OFFSET="-1" Y="212" Y_OFFSET="-1" ZORDR="1"/>
+				</Buttons>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="172" CY="26" FNT="Arial" FNT_CLR="00c0c0c0" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="700" L_TYPE="Title" TEXT="Fixed - Popup" TP_BK="1" X="12" Y="8"/>
+					<Label BK_CLR="00ff0000" CX="401" CY="39" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" TP_BK="1" TEXT="This panel can NOT be moved by clicking and dragging the panel." TP_BK="1" X="12" Y="60"/>
+					<Label BK_CLR="00ff0000" CX="401" CY="57" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" TP_BK="1" TEXT="Fixed Panels are set to open at specific coordinates." TP_BK="1" X="12" Y="120"/>
+				</LabelControls>
+			</Skin>
+			<Skin BKGND="HouseBot Dark\HBD_BackgroundPopup.bmp" B_TRANS="1" NAME="Fixed - Attached" POP_ATT="1" POP_LFT="-1" POP_TOP="-1" PTYPE="1" TP_CLR="00ff00ff" TYPE="POP">
+				<Buttons NAME="Buttons">
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" FUNCTION="PrevPanel" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" TEXT="Close" TP_CLR="000000ff" TYPE="Generic" X="344" X_OFFSET="-1" Y="212" Y_OFFSET="-1" ZORDR="1"/>
+				</Buttons>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="240" CY="26" FNT="Arial" FNT_CLR="00c0c0c0" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="700" L_TYPE="Title" TEXT="Fixed - Attached" TP_BK="1" X="12" Y="8"/>
+					<Label BK_CLR="00ff0000" CX="401" CY="40" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" TP_BK="1" TEXT="Since it is 'Attached', it will move when the main panel is moved." TP_BK="1" X="12" Y="100"/>
+					<Label BK_CLR="00ff0000" CX="401" CY="39" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" TP_BK="1" TEXT="This panel can NOT be moved by clicking and dragging the panel." TP_BK="1" X="12" Y="56"/>
+					<Label BK_CLR="00ff0000" CX="401" CY="57" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" TP_BK="1" TEXT="Fixed Panels are set to open at specific coordinates.  This particular Panel is set to open in the center of the primary Panel." TP_BK="1" X="12" Y="148"/>
+				</LabelControls>
+			</Skin>
+			<Skin BKGND="HouseBot Dark\HBD_Background640.bmp" B_TRANS="1" NAME="Transparencies" POP_LFT="0" POP_TOP="0" TP_CLR="00ff00ff" TYPE="PRI">
+				<TextControls NAME="TextControls"/>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Arial" FNT_CLR="00c0c0c0" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="700" L_TYPE="Title" TEXT="Control Transparencies" TP_BK="1" X="12" Y="8"/>
+					<Label BK_CLR="00ff0000" CX="592" CY="18" FNT="Arial" FNT_CLR="00b4defe" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" L_TYPE="Heading 1" TEXT="This panel displays controls that have transparencies." TP_BK="1" X="16" Y="60"/>
+					<Label BK_CLR="00ff0000" CX="588" CY="19" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="Image controls can be layered to create unique effects using partial tranparencies." TP_BK="1" X="16" Y="104"/>
+					<Label BK_CLR="00ff0000" CX="345" CY="52" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="The two images on this Panel have semi-transparent areas which allow the background or the panel in the previous layer to show through." TP_BK="1" X="16" Y="136"/>
+					<Label BK_CLR="00ff0000" CX="257" CY="55" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="Image controls are always displayed behind other controls.  Multiple images can be layered on top of each other, if needed." TP_BK="1" X="16" Y="192"/>
+					<Label BK_CLR="00ff0000" CX="257" CY="68" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="Other controls can also contain transparent (or semi-transparent) regions that allow the images or panel background to show through." TP_BK="1" X="16" Y="260"/>
+					<Label BK_CLR="00ff0000" CX="257" CY="68" FNT="Arial" FNT_CLR="00d9ffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" L_TYPE="" TEXT="The example on this Panel shows two semi-transparent Button controls showing the images behind." TP_BK="1" X="16" Y="336"/>
+				</LabelControls>
+				<Buttons NAME="Buttons">
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Index" OP_STYLE="0" TEXT="Index" TP_CLR="000000ff" TYPE="PC" X="36" X_OFFSET="3" Y="456" Y_OFFSET="-1" ZORDR="7"/>
+					<Button FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="HouseBot Dark\HBD_Button.bmp" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Other Controls" OP_STYLE="0" TEXT="Next" TP_CLR="000000ff" TYPE="PC" X="516" X_OFFSET="3" Y="456" Y_OFFSET="-1" ZORDR="6"/>
+					<Button FNT="Arial" FNT_CLR="005f40bb" FNT_CSET="0" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" FUNCTION="Exit" I_FILE="HouseBot Dark\HBD_ButtonLarge.bmp" L_POS="" L_TYPE="Rectangular Button" TEXT="Exit Remote" TP_CLR="000000ff" TYPE="Generic" X="556" X_OFFSET="7" Y="400" Y_OFFSET="2" ZORDR="5"/>
+					<Button FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="HouseBot Dark\HBD_ButtonLarge_SemiTrans.png" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Transparent" TEXT="Transparent Button" TP_CLR="000000ff" TYPE="PC" X="340" X_OFFSET="4" Y="232" Y_OFFSET="4" ZORDR="4"/>
+					<Button FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="HouseBot Dark\HBD_ButtonLarge_SemiTrans.png" L_POS="" L_TYPE="Rectangular Button" NEW_PANEL="Transparent" TEXT="Transparent Button" TP_CLR="000000ff" TYPE="PC" X="472" X_OFFSET="4" Y="232" Y_OFFSET="4" ZORDR="3"/>
+				</Buttons>
+				<Indicators NAME="Indicators"/>
+				<Images NAME="Images">
+					<Image BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" H_TXT="0" I_FILE="HouseBot Dark\HBD_GroupMedium_SemiTrans.png" I_TYPE="0" L_TYPE="Group Box" P_ID="0" TEXT="Image Below" TP_CLR="00ff00ff" W_TXT="0" X="296" X_TXT="76" Y="180" Y_TXT="7" ZORDR="1"/>
+					<Image BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="700" H_TXT="0" I_FILE="HouseBot Dark\HBD_GroupMedium_SemiTrans.png" I_TYPE="0" L_TYPE="Group Box" P_ID="0" TEXT="Image Above" TP_CLR="00ff00ff" W_TXT="0" X="388" X_TXT="76" Y="144" Y_TXT="7" ZORDR="2"/>
+				</Images>
+				<EditControls NAME="EditControls"/>
+			</Skin>
+		</Skins>
+	</Theme>
+	<Dependencies NAME="Dependencies">
+		<File PATH="HouseBot Dark\HBD_Background640.bmp"/>
+		<File PATH="HouseBot Dark\HBD_ButtonLarge.bmp"/>
+		<File PATH="HouseBot Dark\HBD_Button.bmp"/>
+		<File PATH="HouseBot Dark\HBD_BackgroundPopup.bmp"/>
+		<File PATH="HouseBot Dark\HBD_ButtonOn.bmp"/>
+		<File PATH="HouseBot Dark\HBD_ButtonOff.bmp"/>
+		<File PATH="HouseBot Dark\HBD_ButtonSmall.bmp"/>
+		<File PATH="Common\LEDs.bmp"/>
+		<File PATH="HouseBot Dark\HBD_ButtonCheck.bmp"/>
+		<File PATH="HouseBot Dark\HBD_ButtonUnCheck.bmp"/>
+		<File PATH="HouseBot Dark\HBD_ButtonRadioNo.bmp"/>
+		<File PATH="HouseBot Dark\HBD_ButtonRadioYes.bmp"/>
+		<File PATH="Common\TransparentButton.bmp"/>
+		<File PATH="Common\HouseBotLogo.png"/>
+		<File PATH="HouseBot Dark\HBD_VGaugeBackground.bmp"/>
+		<File PATH="HouseBot Dark\HBD_VGaugeValue.bmp"/>
+		<File PATH="HouseBot Dark\HBD_HSliderValue.bmp"/>
+		<File PATH="HouseBot Dark\HBD_HSliderBackground.bmp"/>
+		<File PATH="Common\Panel Transparent.bmp"/>
+		<File PATH="HouseBot Dark\HBD_BackgroundPPC.bmp"/>
+		<File PATH="HouseBot Dark\HBD_ButtonLarge_SemiTrans.png"/>
+		<File PATH="HouseBot Dark\HBD_GroupMedium_SemiTrans.png"/>
+	</Dependencies>
+</ROOT>

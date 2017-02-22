@@ -1,0 +1,1020 @@
+<ROOT TIMESTAMP="1435933447" VER="1.00">
+	<Theme KEY_CLICK="" NAME="Theme" STARTUP_TYPE="1" START_SKIN="Main">
+		<Skins NAME="Skins">
+			<Skin ADJ_CLR="ffffffff" BKGND="THC\home_bg.jpg" B_TRANS="0" KEYPT="0" NAME="Main" POP_LFT="0" POP_TOP="0" TP_CLR="ffffffff">
+				<TextControls NAME="TextControls"/>
+				<Buttons NAME="Buttons">
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\down_nav_button.jpg" P_ID="364" P_VALUE="" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2326" X_OFFSET="0" Y="1392" Y_OFFSET="0" ZORDR="1"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\home_nav_button.jpg" P_ID="364" P_VALUE="Select Home Panel" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2320" X_OFFSET="0" Y="100" Y_OFFSET="0" ZORDR="2"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\light_nav_button.jpg" P_ID="364" P_VALUE="Select Lights Panel" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2320" X_OFFSET="0" Y="300" Y_OFFSET="0" ZORDR="3"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\music_nav_button.jpg" P_ID="364" P_VALUE="Select Music Panel" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2320" X_OFFSET="0" Y="512" Y_OFFSET="0" ZORDR="4"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\remote_nav_button.jpg" P_ID="364" P_VALUE="Select Music Panel" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2320" X_OFFSET="0" Y="712" Y_OFFSET="0" ZORDR="5"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\up_nav_button.jpg" P_ID="364" P_VALUE="" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2326" X_OFFSET="0" Y="1230" Y_OFFSET="0" ZORDR="6"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\down_nav_button.jpg" P_ID="364" P_VALUE="" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2326" X_OFFSET="0" Y="1066" Y_OFFSET="0" ZORDR="7"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\up_nav_button.jpg" P_ID="364" P_VALUE="" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2326" X_OFFSET="0" Y="907" Y_OFFSET="0" ZORDR="8"/>
+					<Button ADJ_CLR="" FNT="Icons" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\nav-button.png" NEW_PANEL="Nav" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="1000" X_OFFSET="0" Y="1488" Y_OFFSET="0" ZORDR="10"/>
+				</Buttons>
+				<Images NAME="Images">
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC\battery.jpg" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="76" S_CY="56" TP_CLR="ffffffff" X="2356" Y="9" ZORDR="9"/>
+				</Images>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ffffff" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="60" FNT_UL="0" FNT_WT="400" TEXT="CH" TP_BK="1" T_ALMNT="0" T_OSET="0" X="2362" Y="1007"/>
+					<Label BK_CLR="00ffffff" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="60" FNT_UL="0" FNT_WT="400" TEXT="VOL" TP_BK="1" T_ALMNT="0" T_OSET="0" X="2350" Y="1329"/>
+				</LabelControls>
+				<RemoteLabelControls NAME="RemoteLabelControls">
+					<Text BK_CLR="00000000" CX="105" CY="41" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="900" L_TYPE="BatteryLevel" TP_BK="1" T_ALMNT="0" T_OSET="0" X="2435" Y="17"/>
+				</RemoteLabelControls>
+				<ListControls NAME="ListControls"/>
+				<Indicators NAME="Indicators"/>
+			</Skin>
+			<Skin BKGND="THC\context_menu.jpg" B_TRANS="0" NAME="First Floor Menu" POP_ATT="1" POP_LFT="1706" POP_TOP="189" PTYPE="1" TYPE="POP">
+				<TextControls NAME="TextControls"/>
+				<Buttons NAME="Buttons">
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_context_button.jpg" NEW_PANEL="Hallway Lights" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TYPE="PC" X="0" X_OFFSET="0" Y="245" Y_OFFSET="0" ZORDR="1"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_context_button.jpg" NEW_PANEL="Half Bath Lights" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TYPE="PC" X="0" X_OFFSET="0" Y="110" Y_OFFSET="0" ZORDR="2"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\home_button.jpg" NEW_PANEL="First Floor" OP_STYLE="0" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="3" Y="1189" Y_OFFSET="-1" ZORDR="3"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\back_button.jpg" NEW_PANEL="Second Floor Menu" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="268" X_OFFSET="3" Y="1189" Y_OFFSET="-1" ZORDR="4"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_context_button.jpg" NEW_PANEL="Garage Lights" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TYPE="PC" X="0" X_OFFSET="0" Y="380" Y_OFFSET="0" ZORDR="5"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_context_button.jpg" NEW_PANEL="Master Bath Lights" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="-4" X_OFFSET="0" Y="515" Y_OFFSET="0" ZORDR="6"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_context_button.jpg" NEW_PANEL="Patio Lights" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="650" Y_OFFSET="0" ZORDR="7"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_context_button.jpg" NEW_PANEL="Kitchen Lights" OP_STYLE="0" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="785" Y_OFFSET="0" ZORDR="8"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_context_button.jpg" NEW_PANEL="Living Room Lights" OP_STYLE="0" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="920" Y_OFFSET="0" ZORDR="9"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_context_button.jpg" NEW_PANEL="Master Bedroom Lights" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="1055" Y_OFFSET="0" ZORDR="10"/>
+				</Buttons>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Half Bath" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="152"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Hallway" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="287"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Garage" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="422"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Master Bath" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="557"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Patio" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="692"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Kitchen" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="827"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Living Room" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="962"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Master Bedroom" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="1097"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="60" FNT_UL="0" FNT_WT="400" TEXT="First Floor" TP_BK="1" T_ALMNT="1" T_OSET="0" X="131" Y="20"/>
+				</LabelControls>
+			</Skin>
+			<Skin BKGND="THC\context_menu.jpg" B_TRANS="0" NAME="Second Floor Menu" POP_ATT="1" POP_LFT="1706" POP_TOP="189" PTYPE="1" TYPE="POP">
+				<TextControls NAME="TextControls"/>
+				<Buttons NAME="Buttons">
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="0" CTX="" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_context_button.jpg" NEW_PANEL="Main" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TYPE="PC" X="0" X_OFFSET="0" Y="245" Y_OFFSET="0" ZORDR="1"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="0" CTX="" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_context_button.jpg" NEW_PANEL="Main" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TYPE="PC" X="0" X_OFFSET="0" Y="110" Y_OFFSET="0" ZORDR="2"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\home_button.jpg" NEW_PANEL="Floor Menu" OP_STYLE="0" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="3" Y="1189" Y_OFFSET="-1" ZORDR="3"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\back_button.jpg" NEW_PANEL="Floor Menu" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="268" X_OFFSET="3" Y="1189" Y_OFFSET="-1" ZORDR="4"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="0" CTX="" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_context_button.jpg" NEW_PANEL="Main" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TYPE="PC" X="0" X_OFFSET="0" Y="380" Y_OFFSET="0" ZORDR="5"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="0" CTX="" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_context_button.jpg" NEW_PANEL="Main" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="-4" X_OFFSET="0" Y="515" Y_OFFSET="0" ZORDR="6"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="0" CTX="" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_context_button.jpg" NEW_PANEL="Main" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="-4" X_OFFSET="0" Y="650" Y_OFFSET="0" ZORDR="7"/>
+				</Buttons>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Bath" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="152"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Hallway" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="287"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Bedroom 1" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="422"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Bedroom 2" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="557"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Office" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="692"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="60" FNT_UL="0" FNT_WT="400" TEXT="Second Floor" TP_BK="1" T_ALMNT="1" T_OSET="0" X="92" Y="20"/>
+				</LabelControls>
+			</Skin>
+			<Skin BKGND="THC\context_menu.jpg" B_TRANS="0" NAME="Living Room Lights" POP_ATT="1" POP_LFT="1706" POP_TOP="189" PTYPE="1" TYPE="POP">
+				<TextControls NAME="TextControls"/>
+				<Buttons NAME="Buttons">
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="UPB-0A" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_plain_button.jpg" NEW_PANEL="Light Control" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="380" Y_OFFSET="0" ZORDR="1"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="UPB-09" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_plain_button.jpg" NEW_PANEL="Light Control" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="110" Y_OFFSET="0" ZORDR="2"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\home_button.jpg" NEW_PANEL="Floor Menu" OP_STYLE="0" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="3" Y="1189" Y_OFFSET="-1" ZORDR="3"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\back_button.jpg" NEW_PANEL="Living Room" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="268" X_OFFSET="3" Y="1189" Y_OFFSET="-1" ZORDR="4"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="UPB-0D" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_plain_button.jpg" NEW_PANEL="Light Control" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="650" Y_OFFSET="0" ZORDR="6"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="UPB-0B" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_plain_button.jpg" NEW_PANEL="Light Control" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="245" Y_OFFSET="0" ZORDR="10"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="UPB-0C" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_plain_button.jpg" NEW_PANEL="Light Control" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="519" Y_OFFSET="0" ZORDR="11"/>
+				</Buttons>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Wall Sconces (R)" TP_BK="1" T_ALMNT="0" T_OSET="0" X="114" Y="152"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Ceiling Lights (R)" TP_BK="1" T_ALMNT="0" T_OSET="0" X="114" Y="422"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="60" FNT_UL="0" FNT_WT="400" TEXT="Living Room" TP_BK="1" T_ALMNT="1" T_OSET="0" X="135" Y="20"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Fireplace Can" TP_BK="1" T_ALMNT="0" T_OSET="0" X="114" Y="692"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Wall Sconces (L)" TP_BK="1" T_ALMNT="0" T_OSET="0" X="114" Y="287"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Ceiling Lights (L)" TP_BK="1" T_ALMNT="0" T_OSET="0" X="114" Y="557"/>
+				</LabelControls>
+				<Images NAME="Images">
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="83" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="12" Y_TXT="-1" ZORDR="5"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_switch_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="85" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="135" Y_TXT="-1" ZORDR="7"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_switch_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="85" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="405" Y_TXT="-1" ZORDR="8"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_switch_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="85" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="675" Y_TXT="-1" ZORDR="9"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_switch_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="85" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="270" Y_TXT="-1" ZORDR="12"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_switch_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="85" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="540" Y_TXT="-1" ZORDR="13"/>
+				</Images>
+			</Skin>
+			<Skin BKGND="THC\context_menu.jpg" B_TRANS="0" NAME="Remote 1" POP_ATT="1" POP_LFT="1706" POP_TOP="189" PTYPE="1" TYPE="POP">
+				<TextControls NAME="TextControls"/>
+				<Buttons NAME="Buttons">
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="0" CTX="" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_plain_button.jpg" NEW_PANEL="Main" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="245" Y_OFFSET="0" ZORDR="1"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\home_button.jpg" NEW_PANEL="Floor Menu" OP_STYLE="0" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="3" Y="1189" Y_OFFSET="-1" ZORDR="2"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\back_button.jpg" NEW_PANEL="Living Room Media" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="268" X_OFFSET="3" Y="1189" Y_OFFSET="-1" ZORDR="3"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="0" CTX="" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_plain_button.jpg" NEW_PANEL="Main" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="1" X_OFFSET="0" Y="380" Y_OFFSET="0" ZORDR="5"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="0" CTX="" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_plain_button.jpg" NEW_PANEL="Main" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="510" Y_OFFSET="0" ZORDR="6"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="49" FNT="Guifx v2 Transports" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_button.jpg" P_ID="36" P_VALUE="on" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="q" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="0" X_OFFSET="-1" Y="111" Y_OFFSET="-1" ZORDR="7"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="49" FNT="Guifx v2 Transports" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_button.jpg" P_ID="36" P_VALUE="on" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="180" X_OFFSET="-1" Y="111" Y_OFFSET="-1" ZORDR="8"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="49" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_button.jpg" P_ID="36" P_VALUE="on" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="List" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="360" X_OFFSET="-1" Y="111" Y_OFFSET="-1" ZORDR="9"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="49" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_button.jpg" P_ID="36" P_VALUE="on" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="Menu" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="0" X_OFFSET="-1" Y="249" Y_OFFSET="-1" ZORDR="10"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="49" FNT="Guifx v2 Transports" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_button_2.jpg" P_ID="36" P_VALUE="on" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="W" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="180" X_OFFSET="-1" Y="249" Y_OFFSET="-1" ZORDR="11"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="49" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_button.jpg" P_ID="36" P_VALUE="on" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="Guide" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="360" X_OFFSET="-1" Y="249" Y_OFFSET="-1" ZORDR="12"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="49" FNT="Guifx v2 Transports" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_button_2.jpg" P_ID="36" P_VALUE="on" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="A" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="0" X_OFFSET="-1" Y="387" Y_OFFSET="-1" ZORDR="13"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="49" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_button.jpg" P_ID="36" P_VALUE="on" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="OK" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="180" X_OFFSET="-1" Y="387" Y_OFFSET="-1" ZORDR="14"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="49" FNT="Guifx v2 Transports" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_button_2.jpg" P_ID="36" P_VALUE="on" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="D" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="360" X_OFFSET="-1" Y="387" Y_OFFSET="-1" ZORDR="15"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="49" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_button.jpg" P_ID="36" P_VALUE="on" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="Info" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="0" X_OFFSET="-1" Y="525" Y_OFFSET="-1" ZORDR="16"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="49" FNT="Guifx v2 Transports" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_button_2.jpg" P_ID="36" P_VALUE="on" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="S" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="180" X_OFFSET="-1" Y="525" Y_OFFSET="-1" ZORDR="17"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="49" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_button.jpg" P_ID="36" P_VALUE="on" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="Exit" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="360" X_OFFSET="-1" Y="525" Y_OFFSET="-1" ZORDR="18"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="49" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_button.jpg" P_ID="36" P_VALUE="on" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="Rec" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="0" X_OFFSET="-1" Y="663" Y_OFFSET="-1" ZORDR="19"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="49" FNT="Guifx v2 Transports" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_button.jpg" P_ID="36" P_VALUE="on" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="1" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="180" X_OFFSET="-1" Y="663" Y_OFFSET="-1" ZORDR="20"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="49" FNT="Guifx v2 Transports" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_button.jpg" P_ID="36" P_VALUE="on" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="9" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="360" X_OFFSET="-1" Y="663" Y_OFFSET="-1" ZORDR="21"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="49" FNT="Guifx v2 Transports" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_button.jpg" P_ID="36" P_VALUE="on" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="5" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="0" X_OFFSET="-1" Y="800" Y_OFFSET="-1" ZORDR="22"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="49" FNT="Guifx v2 Transports" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_button.jpg" P_ID="36" P_VALUE="on" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="2" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="180" X_OFFSET="-1" Y="800" Y_OFFSET="-1" ZORDR="23"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="49" FNT="Guifx v2 Transports" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_button.jpg" P_ID="36" P_VALUE="on" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="6" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="360" X_OFFSET="-1" Y="800" Y_OFFSET="-1" ZORDR="24"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="49" FNT="Guifx v2 Transports" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_button.jpg" P_ID="36" P_VALUE="on" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="7" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="0" X_OFFSET="-1" Y="937" Y_OFFSET="-1" ZORDR="25"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="49" FNT="Guifx v2 Transports" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_button.jpg" P_ID="36" P_VALUE="on" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="3" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="180" X_OFFSET="-1" Y="937" Y_OFFSET="-1" ZORDR="26"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="49" FNT="Guifx v2 Transports" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_button.jpg" P_ID="36" P_VALUE="on" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="8" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="360" X_OFFSET="-1" Y="937" Y_OFFSET="-1" ZORDR="27"/>
+				</Buttons>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="60" FNT_UL="0" FNT_WT="400" TEXT="Direct TV" TP_BK="1" T_ALMNT="1" T_OSET="0" X="135" Y="20"/>
+				</LabelControls>
+				<Images NAME="Images">
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\direct_tvicon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="67" S_CY="62" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="0" Y="22" Y_TXT="-1" ZORDR="4"/>
+				</Images>
+				<Indicators NAME="Indicators"/>
+			</Skin>
+			<Skin BKGND="THC\context_menu.jpg" B_TRANS="0" NAME="Patio Lights" POP_ATT="1" POP_LFT="1706" POP_TOP="189" PTYPE="1" TYPE="POP">
+				<TextControls NAME="TextControls"/>
+				<Buttons NAME="Buttons">
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="0" CTX="" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_plain_button.jpg" NEW_PANEL="Main" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="245" Y_OFFSET="0" ZORDR="1"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="UPB-01" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_plain_button.jpg" NEW_PANEL="Light Control" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="110" Y_OFFSET="0" ZORDR="2"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\home_button.jpg" NEW_PANEL="Floor Menu" OP_STYLE="0" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="3" Y="1189" Y_OFFSET="-1" ZORDR="3"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\back_button.jpg" NEW_PANEL="Patio" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="268" X_OFFSET="3" Y="1189" Y_OFFSET="-1" ZORDR="4"/>
+				</Buttons>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Front Lights" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="152"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Rear Lights" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="287"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="60" FNT_UL="0" FNT_WT="400" TEXT="Patio Lights" TP_BK="1" T_ALMNT="1" T_OSET="0" X="135" Y="20"/>
+				</LabelControls>
+				<Images NAME="Images">
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="83" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="12" Y_TXT="-1" ZORDR="5"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_switch_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="83" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="135" Y_TXT="-1" ZORDR="6"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_switch_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="83" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="270" Y_TXT="-1" ZORDR="7"/>
+				</Images>
+				<EnterList NAME="EnterList">
+					<Item D_ID="51" P_ID="541" P_VALUE="Patio" TYPE="PropertyChange"/>
+				</EnterList>
+			</Skin>
+			<Skin BKGND="THC\context_menu.jpg" B_TRANS="0" KEYPT="0" NAME="Light Control" POP_ATT="1" POP_LFT="1706" POP_TOP="189" PTYPE="1" TYPE="POP">
+				<TextControls NAME="TextControls">
+					<Text BK_CLR="00b16c59" CX="401" CY="70" D_ID="51" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="60" FNT_UL="0" FNT_WT="400" P_ID="541" TP_BK="1" T_ALMNT="0" T_OSET="0" X="135" Y="20">
+						<Contexts>
+							<Context D_ID="51" NAME="UPB-01" P_ID="541"/>
+							<Context D_ID="51" NAME="UPB-02" P_ID="541"/>
+							<Context D_ID="51" NAME="UPB-03" P_ID="541"/>
+							<Context D_ID="51" NAME="UPB-04" P_ID="541"/>
+							<Context D_ID="51" NAME="UPB-05" P_ID="541"/>
+							<Context D_ID="51" NAME="UPB-0F" P_ID="541"/>
+						</Contexts>
+					</Text>
+					<Text BK_CLR="00b16c59" CX="395" CY="70" D_ID="57" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="60" FNT_UL="0" FNT_WT="400" P_ID="540" TP_BK="1" T_ALMNT="0" T_OSET="0" X="135" Y="143">
+						<Contexts>
+							<Context D_ID="40" NAME="UPB-01" P_ID="540"/>
+							<Context D_ID="39" NAME="UPB-02" P_ID="540"/>
+							<Context D_ID="41" NAME="UPB-03" P_ID="540"/>
+							<Context D_ID="42" NAME="UPB-04" P_ID="540"/>
+							<Context D_ID="43" NAME="UPB-05" P_ID="540"/>
+							<Context D_ID="44" NAME="UPB-06" P_ID="540"/>
+							<Context D_ID="58" NAME="UPB-0F" P_ID="540"/>
+							<Context D_ID="45" NAME="UPB-07" P_ID="540"/>
+							<Context D_ID="52" NAME="UPB-09" P_ID="540"/>
+							<Context D_ID="56" NAME="UPB-0D" P_ID="540"/>
+							<Context D_ID="55" NAME="UPB-0C" P_ID="540"/>
+							<Context D_ID="53" NAME="UPB-0A" P_ID="540"/>
+							<Context D_ID="54" NAME="UPB-0B" P_ID="540"/>
+							<Context D_ID="57" NAME="UPB-0E" P_ID="540"/>
+							<Context D_ID="59" NAME="UPB-10" P_ID="540"/>
+							<Context D_ID="70" NAME="UPB-1A" P_ID="540"/>
+							<Context D_ID="71" NAME="UPB-1B" P_ID="540"/>
+							<Context D_ID="69" NAME="UPB-19" P_ID="540"/>
+							<Context D_ID="68" NAME="UPB-18" P_ID="540"/>
+						</Contexts>
+					</Text>
+				</TextControls>
+				<Buttons NAME="Buttons">
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\home_button.jpg" NEW_PANEL="Floor Menu" OP_STYLE="0" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="3" Y="1189" Y_OFFSET="-1" ZORDR="1"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="38" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_2button.jpg" P_ID="364" P_VALUE="UPBLight.On.UPB-01" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" S_CX="0" S_CY="0" TEXT="On" TP_CLR="" TRAN_CT="0" TYPE="SPC" X="0" X_OFFSET="-1" Y="245" Y_OFFSET="-1" ZORDR="2">
+						<Contexts>
+							<Context D_ID="38" NAME="UPB-01" P_ID="364" P_VALUE="UPBLight.On.UPB-01"/>
+							<Context D_ID="38" NAME="UPB-02" P_ID="364" P_VALUE="UPBLight.On.UPB-02"/>
+							<Context D_ID="38" NAME="UPB-03" P_ID="364" P_VALUE="UPBLight.On.UPB-03"/>
+							<Context D_ID="38" NAME="UPB-04" P_ID="364" P_VALUE="UPBLight.On.UPB-04"/>
+							<Context D_ID="38" NAME="UPB-05" P_ID="364" P_VALUE="UPBLight.On.UPB-05"/>
+							<Context D_ID="38" NAME="UPB-06" P_ID="364" P_VALUE="UPBLight.On.UPB-06"/>
+							<Context D_ID="38" NAME="UPB-0E" P_ID="364" P_VALUE="UPBLight.On.UPB-0E"/>
+							<Context D_ID="38" NAME="UPB-0F" P_ID="364" P_VALUE="UPBLight.On.UPB-0F"/>
+							<Context D_ID="38" NAME="UPB-07" P_ID="364" P_VALUE="UPBLight.On.UPB-07"/>
+							<Context D_ID="38" NAME="UPB-09" P_ID="364" P_VALUE="UPBLight.On.UPB-09"/>
+							<Context D_ID="38" NAME="UPB-0D" P_ID="364" P_VALUE="UPBLight.On.UPB-0D"/>
+							<Context D_ID="38" NAME="UPB-0C" P_ID="364" P_VALUE="UPBLight.On.UPB-0C"/>
+							<Context D_ID="38" NAME="UPB-0B" P_ID="364" P_VALUE="UPBLight.On.UPB-0B"/>
+							<Context D_ID="38" NAME="UPB-0A" P_ID="364" P_VALUE="UPBLight.On.UPB-0A"/>
+							<Context D_ID="38" NAME="UPB-10" P_ID="364" P_VALUE="UPBLight.On.UPB-10"/>
+							<Context D_ID="38" NAME="UPB-1A" P_ID="364" P_VALUE="UPBLight.On.UPB-1A"/>
+							<Context D_ID="38" NAME="UPB-1B" P_ID="364" P_VALUE="UPBLight.On.UPB-1B"/>
+							<Context D_ID="38" NAME="UPB-18" P_ID="364" P_VALUE="UPBLight.On.UPB-18"/>
+							<Context D_ID="38" NAME="UPB-19" P_ID="364" P_VALUE="UPBLight.On.UPB-19"/>
+						</Contexts>
+					</Button>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="38" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_2button.jpg" P_ID="364" P_VALUE="UPBLight.Off.UPB-1" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" S_CX="0" S_CY="0" TEXT="Off" TP_CLR="" TRAN_CT="0" TYPE="SPC" X="268" X_OFFSET="-1" Y="245" Y_OFFSET="-1" ZORDR="3">
+						<Contexts>
+							<Context D_ID="38" NAME="UPB-01" P_ID="364" P_VALUE="UPBLight.Off.UPB-01"/>
+							<Context D_ID="38" NAME="UPB-02" P_ID="364" P_VALUE="UPBLight.Off.UPB-02"/>
+							<Context D_ID="38" NAME="UPB-03" P_ID="364" P_VALUE="UPBLight.Off.UPB-03"/>
+							<Context D_ID="38" NAME="UPB-04" P_ID="364" P_VALUE="UPBLight.Off.UPB-04"/>
+							<Context D_ID="38" NAME="UPB-05" P_ID="364" P_VALUE="UPBLight.Off.UPB-05"/>
+							<Context D_ID="38" NAME="UPB-06" P_ID="364" P_VALUE="UPBLight.Off.UPB-06"/>
+							<Context D_ID="38" NAME="UPB-0E" P_ID="364" P_VALUE="UPBLight.Off.UPB-0E"/>
+							<Context D_ID="38" NAME="UPB-0F" P_ID="364" P_VALUE="UPBLight.Off.UPB-0F"/>
+							<Context D_ID="38" NAME="UPB-07" P_ID="364" P_VALUE="UPBLight.Off.UPB-07"/>
+							<Context D_ID="38" NAME="UPB-OF" P_ID="364" P_VALUE="UPBLight.Off.UPB-0F"/>
+							<Context D_ID="38" NAME="UPB-09" P_ID="364" P_VALUE="UPBLight.Off.UPB-09"/>
+							<Context D_ID="38" NAME="UPB-0D" P_ID="364" P_VALUE="UPBLight.Off.UPB-0D"/>
+							<Context D_ID="38" NAME="UPB-0C" P_ID="364" P_VALUE="UPBLight.Off.UPB-0C"/>
+							<Context D_ID="38" NAME="UPB-0B" P_ID="364" P_VALUE="UPBLight.Off.UPB-0B"/>
+							<Context D_ID="38" NAME="UPB-0A" P_ID="364" P_VALUE="UPBLight.Off.UPB-0A"/>
+							<Context D_ID="38" NAME="UPB-10" P_ID="364" P_VALUE="UPBLight.Off.UPB-10"/>
+							<Context D_ID="38" NAME="UPB-1A" P_ID="364" P_VALUE="UPBLight.Off.UPB-1A"/>
+							<Context D_ID="38" NAME="UPB-1B" P_ID="364" P_VALUE="UPBLight.Off.UPB-1B"/>
+							<Context D_ID="38" NAME="UPB-18" P_ID="364" P_VALUE="UPBLight.Off.UPB-18"/>
+							<Context D_ID="38" NAME="UPB-19" P_ID="364" P_VALUE="UPBLight.Off.UPB-19"/>
+						</Contexts>
+					</Button>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\back_button.jpg" P_ID="364" P_VALUE="CloseLightMenus" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="" TRAN_CT="0" TYPE="SPC" X="268" X_OFFSET="3" Y="1189" Y_OFFSET="0" ZORDR="5">
+						<Contexts>
+							<Context D_ID="33" NAME="UPB-02" P_ID="364" P_VALUE="CloseLightMenus"/>
+						</Contexts>
+					</Button>
+				</Buttons>
+				<LabelControls NAME="LabelControls"/>
+				<Images NAME="Images">
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\room_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="73" S_CY="73" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="16" Y_TXT="-1" ZORDR="4"/>
+				</Images>
+				<Indicators NAME="Indicators">
+					<Indicator ADJ_CLR="" D_ID="40" I_FILE="THC\light_multi_state_icon.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="37" Y="135">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+						<Contexts>
+							<Context D_ID="58" NAME="UPB-0F" P_ID="518"/>
+							<Context D_ID="44" NAME="UPB-06" P_ID="518"/>
+							<Context D_ID="40" NAME="UPB-01" P_ID="518"/>
+							<Context D_ID="39" NAME="UPB-02" P_ID="518"/>
+							<Context D_ID="41" NAME="UPB-03" P_ID="518"/>
+							<Context D_ID="42" NAME="UPB-04" P_ID="518"/>
+							<Context D_ID="43" NAME="UPB-05" P_ID="518"/>
+							<Context D_ID="45" NAME="UPB-07" P_ID="518"/>
+							<Context D_ID="57" NAME="UPB-0E" P_ID="518"/>
+							<Context D_ID="52" NAME="UPB-09" P_ID="518"/>
+							<Context D_ID="55" NAME="UPB-0C" P_ID="518"/>
+							<Context D_ID="56" NAME="UPB-0D" P_ID="518"/>
+							<Context D_ID="53" NAME="UPB-0A" P_ID="518"/>
+							<Context D_ID="70" NAME="UPB-1A" P_ID="518"/>
+							<Context D_ID="71" NAME="UPB-1B" P_ID="518"/>
+							<Context D_ID="69" NAME="UPB-10" P_ID="518"/>
+							<Context D_ID="69" NAME="UPB-19" P_ID="518"/>
+							<Context D_ID="68" NAME="UPB-18" P_ID="518"/>
+						</Contexts>
+					</Indicator>
+				</Indicators>
+				<SliderControls NAME="SliderControls">
+					<Slider ADJ_CLR="" BK_IMG="THC\slider_bg.png" CDRAG="0" D_ID="40" MAX="100" MIN="0" ORIENTATION="H" P_ID="517" TP_CLR="" T_IMG="THC\slider_button.png" VALUE_X_OFFSET="75" VALUE_Y_OFFSET="10" X="0" Y="382">
+						<Contexts>
+							<Context D_ID="40" NAME="UPB-01" P_ID="517"/>
+							<Context D_ID="39" NAME="UPB-02" P_ID="517"/>
+							<Context D_ID="41" NAME="UPB-03" P_ID="517"/>
+							<Context D_ID="42" NAME="UPB-04" P_ID="517"/>
+							<Context D_ID="43" NAME="UPB-05" P_ID="517"/>
+							<Context D_ID="44" NAME="UPB-06" P_ID="517"/>
+							<Context D_ID="57" NAME="UPB-0E" P_ID="517"/>
+							<Context D_ID="58" NAME="UPB-0F" P_ID="517"/>
+							<Context D_ID="45" NAME="UPB-07" P_ID="517"/>
+							<Context D_ID="58" NAME="UPB-OF" P_ID="517"/>
+							<Context D_ID="52" NAME="UPB-09" P_ID="517"/>
+							<Context D_ID="56" NAME="UPB-0D" P_ID="517"/>
+							<Context D_ID="55" NAME="UPB-0C" P_ID="517"/>
+							<Context D_ID="54" NAME="UPB-0B" P_ID="517"/>
+							<Context D_ID="53" NAME="UPB-0A" P_ID="517"/>
+							<Context D_ID="59" NAME="UPB-10" P_ID="517"/>
+							<Context D_ID="71" NAME="UPB-1B" P_ID="517"/>
+							<Context D_ID="69" NAME="UPB-19" P_ID="517"/>
+							<Context D_ID="68" NAME="UPB-18" P_ID="517"/>
+							<Context D_ID="70" NAME="UPB-1A" P_ID="517"/>
+						</Contexts>
+					</Slider>
+				</SliderControls>
+			</Skin>
+			<Skin BKGND="THC\context_menu.jpg" B_TRANS="0" NAME="Half Bath Lights" POP_ATT="1" POP_LFT="1706" POP_TOP="189" PTYPE="1" TYPE="POP">
+				<TextControls NAME="TextControls"/>
+				<Buttons NAME="Buttons">
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="UPB-02" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_plain_button.jpg" NEW_PANEL="Light Control" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="110" Y_OFFSET="0" ZORDR="1"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\home_button.jpg" NEW_PANEL="Floor Menu" OP_STYLE="0" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="3" Y="1189" Y_OFFSET="-1" ZORDR="2"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\back_button.jpg" NEW_PANEL="Half Bath" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="268" X_OFFSET="3" Y="1189" Y_OFFSET="-1" ZORDR="3"/>
+				</Buttons>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Ceiling Light" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="152"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="60" FNT_UL="0" FNT_WT="400" TEXT="Half Bath" TP_BK="1" T_ALMNT="1" T_OSET="0" X="135" Y="20"/>
+				</LabelControls>
+				<Images NAME="Images">
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="83" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="12" Y_TXT="-1" ZORDR="4"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_switch_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="83" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="135" Y_TXT="-1" ZORDR="5"/>
+				</Images>
+			</Skin>
+			<Skin BKGND="THC\context_menu.jpg" B_TRANS="0" NAME="Garage Lights" POP_ATT="1" POP_LFT="1706" POP_TOP="189" PTYPE="1" TYPE="POP">
+				<TextControls NAME="TextControls"/>
+				<Buttons NAME="Buttons">
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="UPB-03" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_plain_button.jpg" NEW_PANEL="Light Control" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="110" Y_OFFSET="0" ZORDR="1"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\home_button.jpg" NEW_PANEL="Floor Menu" OP_STYLE="0" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="3" Y="1189" Y_OFFSET="-1" ZORDR="2"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\back_button.jpg" NEW_PANEL="Garage" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="268" X_OFFSET="3" Y="1189" Y_OFFSET="-1" ZORDR="3"/>
+				</Buttons>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Ceiling Light" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="152"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="60" FNT_UL="0" FNT_WT="400" TEXT="Garage" TP_BK="1" T_ALMNT="1" T_OSET="0" X="135" Y="20"/>
+				</LabelControls>
+				<Images NAME="Images">
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="83" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="12" Y_TXT="-1" ZORDR="4"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_switch_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="83" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="135" Y_TXT="-1" ZORDR="5"/>
+				</Images>
+			</Skin>
+			<Skin BKGND="THC\context_menu.jpg" B_TRANS="0" NAME="Kitchen Lights" POP_ATT="1" POP_LFT="1706" POP_TOP="189" PTYPE="1" TYPE="POP">
+				<TextControls NAME="TextControls"/>
+				<Buttons NAME="Buttons">
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="UPB-04" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_plain_button.jpg" NEW_PANEL="Light Control" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="110" Y_OFFSET="0" ZORDR="5"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\home_button.jpg" NEW_PANEL="Floor Menu" OP_STYLE="0" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="3" Y="1189" Y_OFFSET="-1" ZORDR="6"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\back_button.jpg" NEW_PANEL="Kitchen" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="268" X_OFFSET="3" Y="1189" Y_OFFSET="-1" ZORDR="7"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="UPB-05" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_plain_button.jpg" NEW_PANEL="Light Control" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="245" Y_OFFSET="0" ZORDR="4"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="UPB-06" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_plain_button.jpg" NEW_PANEL="Light Control" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="380" Y_OFFSET="0" ZORDR="3"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="UPB-0E" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_plain_button.jpg" NEW_PANEL="Light Control" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="515" Y_OFFSET="0" ZORDR="2"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="UPB-0F" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_plain_button.jpg" NEW_PANEL="Light Control" OP_STYLE="0" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="650" Y_OFFSET="0" ZORDR="1"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="UPB-07" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_plain_button.jpg" NEW_PANEL="Light Control" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="785" Y_OFFSET="0" ZORDR="9"/>
+				</Buttons>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Pantry" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="152"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Chandelier" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="287"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Ceiling Cans" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="422"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Sink Can" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="557"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Bar Cans" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="692"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Cabinet" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="827"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="60" FNT_UL="0" FNT_WT="400" TEXT="Kitchen" TP_BK="1" T_ALMNT="1" T_OSET="0" X="135" Y="20"/>
+				</LabelControls>
+				<Images NAME="Images">
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="83" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="12" Y_TXT="-1" ZORDR="8"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_switch_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="85" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="135" Y_TXT="-1" ZORDR="10"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_switch_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="85" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="270" Y_TXT="-1" ZORDR="11"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_switch_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="85" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="405" Y_TXT="-1" ZORDR="12"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_switch_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="85" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="540" Y_TXT="-1" ZORDR="13"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_switch_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="85" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="675" Y_TXT="-1" ZORDR="14"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_switch_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="85" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="810" Y_TXT="-1" ZORDR="15"/>
+				</Images>
+			</Skin>
+			<Skin BKGND="THC\secondfloor.jpg" B_TRANS="0" NAME="Second Floor" POP_ATT="1" POP_LFT="0" POP_TOP="295" PTYPE="1" TYPE="POP">
+				<Buttons NAME="Buttons">
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\floor_button.png" NEW_PANEL="First Floor" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="841" X_OFFSET="3" Y="-1" Y_OFFSET="-1" ZORDR="1"/>
+				</Buttons>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="30" FNT_UL="0" FNT_WT="400" TEXT="First Floor" TP_BK="1" T_ALMNT="1" T_OSET="0" X="898" Y="26"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="30" FNT_UL="0" FNT_WT="400" TEXT="Second Floor" TP_BK="1" T_ALMNT="1" T_OSET="0" X="1330" Y="26"/>
+				</LabelControls>
+				<Images NAME="Images">
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\Compass2.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="124" S_CY="67" TP_CLR="000000ff" W_TXT="0" X="1536" X_TXT="0" Y="1092" Y_TXT="0" ZORDR="2"/>
+				</Images>
+				<TextControls NAME="TextControls">
+					<Text BK_CLR="00b16c59" CX="240" CY="150" D_ID="33" FNT="Franklin Gothic Medium" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="150" FNT_UL="0" FNT_WT="700" P_ID="546" TP_BK="1" T_ALMNT="2" T_OSET="0" X="556" Y="211"/>
+					<Text BK_CLR="00b16c59" CX="798" CY="300" D_ID="2" FNT="Franklin Gothic Medium" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="300" FNT_UL="0" FNT_WT="700" P_ID="97" TP_BK="1" T_ALMNT="2" T_OSET="0" X="0" Y="-52"/>
+				</TextControls>
+				<Indicators NAME="Indicators">
+					<Indicator ADJ_CLR="" D_ID="64" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1360" Y="810">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="63" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1362" Y="1013">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="67" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="963" Y="969">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="61" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1114" Y="765">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="61" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1177" Y="765">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="61" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1182" Y="1047">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="60" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1113" Y="1047">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="65" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1007" Y="731">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="65" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1060" Y="731">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="66" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="915" Y="726">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+				</Indicators>
+			</Skin>
+			<Skin BKGND="THC\firstfloor.jpg" B_TRANS="0" KEYPT="0" MOUSE_TRK="0" MT_SC_MULT="1.200000" NAME="First Floor" POP_ATT="1" POP_LFT="0" POP_TOP="295" PTYPE="1" TYPE="POP">
+				<Indicators NAME="Indicators">
+					<Indicator ADJ_CLR="" D_ID="40" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="940" Y="676">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="40" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="856" Y="676">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="40" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="464" Y="676">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="40" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="160" Y="720">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="40" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="160" Y="1074">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="52" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="977" Y="604">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="52" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1041" Y="505">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="54" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="0" S_CX="15" S_CY="23" TP_CLR="" X="1263" Y="505">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="54" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1471" Y="604">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="55" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1335" Y="590">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="53" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1102" Y="590">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="56" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1354" Y="518">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="43" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1240" Y="962">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="45" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1258" Y="1075">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="45" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1415" Y="1075">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="57" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1468" Y="994">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="59" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="942" Y="765">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="59" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1172" Y="768">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="59" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1380" Y="769">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="58" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1355" Y="850">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="58" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1422" Y="849">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="44" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1374" Y="950">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="44" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1422" Y="950">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="44" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1374" Y="1020">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="44" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1422" Y="1020">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="42" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1107" Y="1027">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="39" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="909" Y="863">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="46" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1508" Y="704">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="46" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1508" Y="863">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="41" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="380" Y="900">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="54" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1442" Y="505">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="69" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="0" S_CX="15" S_CY="23" TP_CLR="" X="665" Y="1006">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="70" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="898" Y="953">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+						<Contexts>
+							<Context D_ID="70" NAME="UPB-1A" P_ID="518"/>
+						</Contexts>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="70" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="972" Y="953">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="71" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="902" Y="1076">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="71" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="972" Y="1076">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="71" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="1043" Y="1076">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="68" I_FILE="THC\light_multi_state_icon_small.png" NUM_IMAGES="2" P_ID="518" SCALE="" S_CX="" S_CY="" TP_CLR="" X="719" Y="849">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+				</Indicators>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="700" TEXT="" TP_BK="1" X="0" Y="0"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="30" FNT_UL="0" FNT_WT="400" TEXT="Kitchen" TP_BK="1" T_ALMNT="1" T_OSET="0" X="1248" Y="892"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="30" FNT_UL="0" FNT_WT="400" TEXT="Hallway" TP_BK="1" T_ALMNT="1" T_OSET="0" X="1000" Y="752"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="30" FNT_UL="0" FNT_WT="400" TEXT="Master Bath" TP_BK="1" T_ALMNT="1" T_OSET="0" X="889" Y="1040"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="30" FNT_UL="0" FNT_WT="400" TEXT="Master BR" TP_BK="1" T_ALMNT="1" T_OSET="0" X="632" Y="780"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="30" FNT_UL="0" FNT_WT="400" TEXT="Bath" TP_BK="1" T_ALMNT="1" T_OSET="0" X="884" Y="888"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="30" FNT_UL="0" FNT_WT="400" TEXT="Patio" TP_BK="1" T_ALMNT="1" T_OSET="0" X="504" Y="604"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="30" FNT_UL="0" FNT_WT="400" TEXT="Garage" TP_BK="1" T_ALMNT="1" T_OSET="0" X="328" Y="944"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="30" FNT_UL="0" FNT_WT="400" TEXT="Patio" TP_BK="1" T_ALMNT="1" T_OSET="0" X="1532" Y="780"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="30" FNT_UL="0" FNT_WT="400" TEXT="Living Room" TP_BK="1" T_ALMNT="1" T_OSET="0" X="1160" Y="616"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="30" FNT_UL="0" FNT_WT="400" TEXT="Second Floor" TP_BK="1" T_ALMNT="1" T_OSET="0" X="1330" Y="26"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="30" FNT_UL="0" FNT_WT="400" TEXT="First Floor" TP_BK="1" T_ALMNT="1" T_OSET="0" X="898" Y="26"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="30" FNT_UL="0" FNT_WT="400" TEXT="MBR Closet" TP_BK="1" T_ALMNT="1" T_OSET="0" X="596" Y="1055"/>
+				</LabelControls>
+				<Buttons NAME="Buttons">
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="33" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\living_room_button.png" P_ID="364" P_VALUE="Menu.First.Living Room.Open" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="964" X_OFFSET="3" Y="504" Y_OFFSET="-1" ZORDR="1"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="33" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\transparent_button_lg.png" P_ID="364" P_VALUE="Menu.First.Hallway.Open" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="932" X_OFFSET="3" Y="744" Y_OFFSET="-1" ZORDR="2"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="33" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\transparent_button_lg.png" P_ID="364" P_VALUE="Menu.First.Patio.Open" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="420" X_OFFSET="3" Y="594" Y_OFFSET="-1" ZORDR="3"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="33" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\kitchen_button.png" P_ID="364" P_VALUE="Menu.First.Kitchen.Open" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="1088" X_OFFSET="3" Y="810" Y_OFFSET="-1" ZORDR="4"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="33" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\transparent_button_sm.png" P_ID="364" P_VALUE="Menu.First.Half Bath.Open" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="847" X_OFFSET="3" Y="877" Y_OFFSET="-1" ZORDR="5"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="33" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\transparent_button_lg.png" P_ID="364" P_VALUE="Menu.First.Master Bath.Open" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="837" X_OFFSET="3" Y="1031" Y_OFFSET="-1" ZORDR="6"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="33" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\transparent_button_lg.png" P_ID="364" P_VALUE="Menu.First.Garage.Open" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="261" X_OFFSET="3" Y="938" Y_OFFSET="-1" ZORDR="7"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="33" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\transparent_button_lg.png" P_ID="364" P_VALUE="Menu.First.Patio.Open" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="1445" X_OFFSET="3" Y="770" Y_OFFSET="-1" ZORDR="8"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="33" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\transparent_button_lg.png" P_ID="364" P_VALUE="Menu.First.Master Bedroom.Open" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="597" X_OFFSET="3" Y="769" Y_OFFSET="-1" ZORDR="9"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\floor_button.png" NEW_PANEL="Second Floor" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="1288" X_OFFSET="3" Y="0" Y_OFFSET="-1" ZORDR="10"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="33" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\transparent_button_lg.png" P_ID="364" P_VALUE="Menu.First.Master Bedroom.Open" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="545" X_OFFSET="3" Y="1044" Y_OFFSET="-1" ZORDR="12"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="33" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\transparent_button_lg.png" P_ID="364" P_VALUE="Menu.First.Master Bedroom.Open" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="849" X_OFFSET="3" Y="1036" Y_OFFSET="-1" ZORDR="13"/>
+				</Buttons>
+				<Images NAME="Images">
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC\Compass2.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="226" S_CY="138" TP_CLR="000000ff" X="1536" Y="1092" ZORDR="11"/>
+				</Images>
+				<TextControls NAME="TextControls">
+					<Text BK_CLR="00b16c59" CX="798" CY="300" D_ID="2" FNT="Franklin Gothic Medium" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="300" FNT_UL="0" FNT_WT="700" P_ID="97" TP_BK="1" T_ALMNT="2" T_OSET="0" X="0" Y="-52"/>
+					<Text BK_CLR="00b16c59" CX="240" CY="150" D_ID="33" FNT="Franklin Gothic Medium" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="150" FNT_UL="0" FNT_WT="700" P_ID="546" TP_BK="1" T_ALMNT="2" T_OSET="0" X="556" Y="211"/>
+				</TextControls>
+			</Skin>
+			<Skin BKGND="THC\context_menu.jpg" B_TRANS="0" NAME="Master Bath Lights" POP_ATT="1" POP_LFT="1706" POP_TOP="189" PTYPE="1" TYPE="POP">
+				<TextControls NAME="TextControls"/>
+				<Buttons NAME="Buttons">
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="UPB-1A" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_plain_button.jpg" NEW_PANEL="Light Control" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="110" Y_OFFSET="0" ZORDR="1"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\home_button.jpg" NEW_PANEL="Floor Menu" OP_STYLE="0" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="3" Y="1189" Y_OFFSET="-1" ZORDR="2"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\back_button.jpg" NEW_PANEL="Master Bath" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="268" X_OFFSET="3" Y="1189" Y_OFFSET="-1" ZORDR="3"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="UPB-1B" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_plain_button.jpg" NEW_PANEL="Light Control" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="250" Y_OFFSET="0" ZORDR="5"/>
+				</Buttons>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Vanity Lights" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="152"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Shower Lights" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="292"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="60" FNT_UL="0" FNT_WT="400" TEXT="Master Bath" TP_BK="1" T_ALMNT="1" T_OSET="0" X="135" Y="20"/>
+				</LabelControls>
+				<Images NAME="Images">
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="83" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="12" Y_TXT="-1" ZORDR="4"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_switch_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="83" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="135" Y_TXT="-1" ZORDR="6"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_switch_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="83" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="275" Y_TXT="-1" ZORDR="7"/>
+				</Images>
+			</Skin>
+			<Skin BKGND="THC\context_menu.jpg" B_TRANS="0" NAME="Hallway Lights" POP_ATT="1" POP_LFT="1706" POP_TOP="189" PTYPE="1" TYPE="POP">
+				<TextControls NAME="TextControls"/>
+				<Buttons NAME="Buttons">
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="UPB-10" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_plain_button.jpg" NEW_PANEL="Light Control" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="110" Y_OFFSET="0" ZORDR="1"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\home_button.jpg" NEW_PANEL="Floor Menu" OP_STYLE="0" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="3" Y="1189" Y_OFFSET="-1" ZORDR="2"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\back_button.jpg" NEW_PANEL="Hallway" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="268" X_OFFSET="3" Y="1189" Y_OFFSET="-1" ZORDR="3"/>
+				</Buttons>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Hallway Cans" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="152"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="60" FNT_UL="0" FNT_WT="400" TEXT="Hallway" TP_BK="1" T_ALMNT="1" T_OSET="0" X="135" Y="20"/>
+				</LabelControls>
+				<Images NAME="Images">
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="83" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="12" Y_TXT="-1" ZORDR="4"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_switch_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="83" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="135" Y_TXT="-1" ZORDR="5"/>
+				</Images>
+			</Skin>
+			<Skin BKGND="THC\context_menu.jpg" B_TRANS="0" KEYPT="0" NAME="Master Bedroom Lights" POP_ATT="1" POP_LFT="1706" POP_TOP="189" PTYPE="1" TYPE="POP">
+				<TextControls NAME="TextControls"/>
+				<Buttons NAME="Buttons">
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="UPB-18" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_plain_button.jpg" NEW_PANEL="Light Control" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="110" Y_OFFSET="0" ZORDR="1"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\home_button.jpg" NEW_PANEL="Floor Menu" OP_STYLE="0" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="3" Y="1189" Y_OFFSET="-1" ZORDR="2"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\back_button.jpg" NEW_PANEL="Master Bedroom" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="PC" X="268" X_OFFSET="3" Y="1189" Y_OFFSET="-1" ZORDR="3"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="UPB-19" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\menu_plain_button.jpg" NEW_PANEL="Light Control" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="PC" X="0" X_OFFSET="0" Y="250" Y_OFFSET="0" ZORDR="5"/>
+				</Buttons>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Ceiling Light" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="152"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="50" FNT_UL="0" FNT_WT="400" TEXT="Closet Lights" TP_BK="1" T_ALMNT="0" T_OSET="0" X="118" Y="292"/>
+					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="60" FNT_UL="0" FNT_WT="400" TEXT="Master BRM" TP_BK="1" T_ALMNT="1" T_OSET="0" X="135" Y="20"/>
+				</LabelControls>
+				<Images NAME="Images">
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="83" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="12" Y_TXT="-1" ZORDR="4"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_switch_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="83" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="135" Y_TXT="-1" ZORDR="6"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\light_switch_icon.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="55" S_CY="83" TEXT="" TP_CLR="000000ff" W_TXT="0" X="28" X_TXT="-1" Y="275" Y_TXT="-1" ZORDR="7"/>
+				</Images>
+			</Skin>
+			<Skin BKGND="THC\jukebox_bg.jpg" B_TRANS="0" KEYPT="0" NAME="Jukebox" POP_ATT="1" POP_LFT="0" POP_TOP="0" PTYPE="1" TYPE="PRI">
+				<ListControls NAME="ListControls">
+					<List ADJ_CLR="" BAR_IMG="THC\list_bar.png" BK_CLR="00b16c59" BK_IMG="THC\song_queue_bk.jpg" CX="529" CY="1184" D_ID="74" D_ID_CHANGE_DBCLK="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" LISTING_TITLE="Title" L_SCRL="0" NAME="" NOHDR="1" NO_HSCROLL="1" OD="1" P_ID="579" P_ID_CHANGE_DBCLK="0" X="1709" Y="300"/>
+				</ListControls>
+				<Images NAME="Images">
+					<Image ADJ_CLR="" BK_CLR="" D_ID="79" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC\list_bar_unslected.png" I_TYPE="1" KASP="0" P_ID="608" SCALE="0" S_CX="475" S_CY="78" TEXT="" TP_CLR="000000ff" X="1212" Y="401" ZORDR="2"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="79" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC\list_bar_unslected.png" I_TYPE="1" KASP="0" P_ID="609" SCALE="0" S_CX="475" S_CY="78" TEXT="" TP_CLR="000000ff" X="1212" Y="491" ZORDR="4"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="79" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC\list_bar_unslected.png" I_TYPE="1" KASP="0" P_ID="610" SCALE="0" S_CX="475" S_CY="78" TEXT="" TP_CLR="000000ff" X="1212" Y="581" ZORDR="6"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="79" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC\list_bar_unslected.png" I_TYPE="1" KASP="0" P_ID="611" SCALE="0" S_CX="475" S_CY="78" TEXT="" TP_CLR="000000ff" X="1212" Y="671" ZORDR="8"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="79" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\list_bar_unslected.png" I_TYPE="1" KASP="0" P_ID="612" SCALE="0" S_CX="475" S_CY="78" TEXT="" TP_CLR="000000ff" W_TXT="0" X="1212" X_TXT="0" Y="761" Y_TXT="0" ZORDR="10"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="79" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC\list_bar_unslected.png" I_TYPE="1" KASP="0" P_ID="613" SCALE="0" S_CX="475" S_CY="78" TEXT="" TP_CLR="000000ff" X="1212" Y="851" ZORDR="12"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="79" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC\list_bar_unslected.png" I_TYPE="1" KASP="0" P_ID="614" SCALE="0" S_CX="475" S_CY="78" TEXT="" TP_CLR="000000ff" X="1212" Y="941" ZORDR="14"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="79" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC\list_bar_unslected.png" I_TYPE="1" KASP="0" P_ID="615" SCALE="0" S_CX="475" S_CY="78" TEXT="" TP_CLR="000000ff" X="1212" Y="1031" ZORDR="16"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="79" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC\list_bar_unslected.png" I_TYPE="1" KASP="0" P_ID="616" SCALE="0" S_CX="475" S_CY="78" TEXT="" TP_CLR="000000ff" X="1212" Y="1121" ZORDR="18"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="79" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC\list_bar_unslected.png" I_TYPE="1" KASP="0" P_ID="617" SCALE="0" S_CX="475" S_CY="78" TEXT="" TP_CLR="000000ff" X="1212" Y="1215" ZORDR="20"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\cdi.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="1" S_CX="529" S_CY="527" TEXT="" TP_CLR="000000ff" W_TXT="0" X="0" X_TXT="0" Y="295" Y_TXT="0" ZORDR="21"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC\battery.jpg" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="76" S_CY="56" TP_CLR="ffffffff" X="2356" Y="9" ZORDR="28"/>
+				</Images>
+				<Buttons NAME="Buttons">
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="80" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\list_bar_trans.png" P_ID="364" P_VALUE="SongQueue1.SelectItem.1" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="1212" X_OFFSET="3" Y="401" Y_OFFSET="-1" ZORDR="1"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="80" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\list_bar_trans.png" P_ID="364" P_VALUE="SongQueue1.SelectItem.2" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="1212" X_OFFSET="3" Y="491" Y_OFFSET="-1" ZORDR="3"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="80" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\list_bar_trans.png" P_ID="364" P_VALUE="SongQueue1.SelectItem.3" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="1212" X_OFFSET="3" Y="581" Y_OFFSET="-1" ZORDR="5"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="80" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\list_bar_trans.png" P_ID="364" P_VALUE="SongQueue1.SelectItem.4" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="1212" X_OFFSET="3" Y="671" Y_OFFSET="-1" ZORDR="7"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="80" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\list_bar_trans.png" P_ID="364" P_VALUE="SongQueue1.SelectItem.5" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="1212" X_OFFSET="3" Y="761" Y_OFFSET="-1" ZORDR="9"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="80" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\list_bar_trans.png" P_ID="364" P_VALUE="SongQueue1.SelectItem.6" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="1212" X_OFFSET="3" Y="851" Y_OFFSET="-1" ZORDR="11"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="80" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\list_bar_trans.png" P_ID="364" P_VALUE="SongQueue1.SelectItem.7" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="1212" X_OFFSET="3" Y="941" Y_OFFSET="-1" ZORDR="13"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="80" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\list_bar_trans.png" P_ID="364" P_VALUE="SongQueue1.SelectItem.8" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="1212" X_OFFSET="3" Y="1031" Y_OFFSET="-1" ZORDR="15"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="80" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\list_bar_trans.png" P_ID="364" P_VALUE="SongQueue1.SelectItem.9" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="1212" X_OFFSET="3" Y="1121" Y_OFFSET="-1" ZORDR="17"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="80" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\list_bar_trans.png" P_ID="364" P_VALUE="SongQueue1.SelectItem.10" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" SC_FLAGS="0" SC_KEY="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="1212" X_OFFSET="3" Y="1215" Y_OFFSET="-1" ZORDR="19"/>
+					<Button ADJ_CLR="" D_ID="80" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\menu_page_begin.png" P_ID="364" P_VALUE="Idle" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="1204" X_OFFSET="3" Y="1400" Y_OFFSET="-1" ZORDR="22"/>
+					<Button ADJ_CLR="" D_ID="80" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\menu_page_previous.png" P_ID="364" P_VALUE="Idle" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="1312" X_OFFSET="3" Y="1400" Y_OFFSET="-1" ZORDR="23"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="80" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\menu_page_end.png" P_ID="364" P_VALUE="Idle" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="1596" X_OFFSET="3" Y="1400" Y_OFFSET="-1" ZORDR="24"/>
+					<Button ADJ_CLR="" D_ID="80" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\menu_page_next.png" P_ID="364" P_VALUE="Idle" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="1488" X_OFFSET="3" Y="1400" Y_OFFSET="-1" ZORDR="25"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="83" FNT="Chivo" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_button.jpg" P_ID="364" P_VALUE="OpenKeyboard" SCALE="" S_CX="" S_CY="" TEXT="Search" TP_CLR="000000ff" TYPE="SPC" X="296" X_OFFSET="-1" Y="880" Y_OFFSET="-1" ZORDR="26"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" CLOSE_SW="1" CTX="" FNT="Chivo" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\med_2button.jpg" NEW_PANEL="Keyboard" OP_STYLE="5" SCALE="0" S_CX="0" S_CY="0" TEXT="Search" TP_CLR="" TYPE="PC" X="500" X_OFFSET="-1" Y="880" Y_OFFSET="-1" ZORDR="27"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\home_nav_button.jpg" P_ID="364" P_VALUE="Select Home Panel" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2320" X_OFFSET="0" Y="100" Y_OFFSET="0" ZORDR="29"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\light_nav_button.jpg" P_ID="364" P_VALUE="Select Lights Panel" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2320" X_OFFSET="0" Y="300" Y_OFFSET="0" ZORDR="30"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\music_nav_button.jpg" P_ID="364" P_VALUE="Select Music Panel" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2320" X_OFFSET="0" Y="512" Y_OFFSET="0" ZORDR="31"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\remote_nav_button.jpg" P_ID="364" P_VALUE="Select Music Panel" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2320" X_OFFSET="0" Y="712" Y_OFFSET="0" ZORDR="32"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\up_nav_button.jpg" P_ID="364" P_VALUE="" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2318" X_OFFSET="0" Y="907" Y_OFFSET="0" ZORDR="33"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\down_nav_button.jpg" P_ID="364" P_VALUE="" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2318" X_OFFSET="0" Y="1066" Y_OFFSET="0" ZORDR="34"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\up_nav_button.jpg" P_ID="364" P_VALUE="" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2318" X_OFFSET="0" Y="1230" Y_OFFSET="0" ZORDR="35"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\down_nav_button.jpg" P_ID="364" P_VALUE="" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2318" X_OFFSET="0" Y="1392" Y_OFFSET="0" ZORDR="36"/>
+				</Buttons>
+				<TextControls NAME="TextControls">
+					<Text BK_CLR="00b16c59" CX="450" CY="52" D_ID="79" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" P_ID="598" TP_BK="1" T_ALMNT="0" T_OSET="0" X="1236" Y="412"/>
+					<Text BK_CLR="00b16c59" CX="450" CY="52" D_ID="79" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" P_ID="599" TP_BK="1" T_ALMNT="0" T_OSET="0" X="1236" Y="502"/>
+					<Text BK_CLR="00b16c59" CX="450" CY="52" D_ID="79" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" P_ID="600" TP_BK="1" T_ALMNT="0" T_OSET="0" X="1236" Y="592"/>
+					<Text BK_CLR="00b16c59" CX="450" CY="52" D_ID="79" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" P_ID="601" TP_BK="1" T_ALMNT="0" T_OSET="0" X="1236" Y="682"/>
+					<Text BK_CLR="00b16c59" CX="450" CY="52" D_ID="79" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" P_ID="602" TP_BK="1" T_ALMNT="0" T_OSET="0" X="1236" Y="772"/>
+					<Text BK_CLR="00b16c59" CX="450" CY="52" D_ID="79" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" P_ID="603" TP_BK="1" T_ALMNT="0" T_OSET="0" X="1236" Y="862"/>
+					<Text BK_CLR="00b16c59" CX="450" CY="52" D_ID="79" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" P_ID="604" TP_BK="1" T_ALMNT="0" T_OSET="0" X="1236" Y="952"/>
+					<Text BK_CLR="00b16c59" CX="450" CY="50" D_ID="79" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" P_ID="605" TP_BK="1" T_ALMNT="0" T_OSET="0" X="1236" Y="1042"/>
+					<Text BK_CLR="00b16c59" CX="450" CY="52" D_ID="79" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" P_ID="606" TP_BK="1" T_ALMNT="0" T_OSET="0" X="1236" Y="1132"/>
+					<Text BK_CLR="00b16c59" CX="450" CY="52" D_ID="79" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" P_ID="607" TP_BK="1" T_ALMNT="0" T_OSET="0" X="1236" Y="1226"/>
+					<Text BK_CLR="00b16c59" CX="605" CY="50" D_ID="74" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" P_ID="570" TP_BK="1" T_ALMNT="1" T_OSET="0" X="564" Y="340"/>
+					<Text BK_CLR="00b16c59" CX="450" CY="40" D_ID="74" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="400" P_ID="581" TP_BK="1" T_ALMNT="0" T_OSET="0" X="705" Y="426"/>
+					<Text BK_CLR="00b16c59" CX="450" CY="40" D_ID="74" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="400" P_ID="580" TP_BK="1" T_ALMNT="0" T_OSET="0" X="705" Y="476"/>
+					<Text BK_CLR="00b16c59" CX="450" CY="40" D_ID="74" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="400" P_ID="582" TP_BK="1" T_ALMNT="0" T_OSET="0" X="705" Y="526"/>
+					<Text BK_CLR="00b16c59" CX="450" CY="40" D_ID="74" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="400" P_ID="586" TP_BK="1" T_ALMNT="0" T_OSET="0" X="705" Y="576"/>
+					<Text BK_CLR="00b16c59" CX="450" CY="40" D_ID="72" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="400" P_ID="117" TP_BK="1" T_ALMNT="0" T_OSET="0" X="705" Y="626"/>
+					<Text BK_CLR="00b16c59" CX="450" CY="40" D_ID="72" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="400" P_ID="118" TP_BK="1" T_ALMNT="0" T_OSET="0" X="705" Y="676"/>
+					<Text BK_CLR="00b16c59" CX="450" CY="40" D_ID="74" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="400" P_ID="587" TP_BK="1" T_ALMNT="0" T_OSET="0" X="705" Y="731"/>
+				</TextControls>
+				<SliderControls NAME="SliderControls">
+					<Slider ADJ_CLR="" BK_IMG="THC\slider_trans_bk.png" CDRAG="1" D_ID="72" MAX="12" MIN="-12" ORIENTATION="V" P_ID="627" TP_CLR="" T_IMG="THC\slider_pill.png" VALUE_X_OFFSET="0" VALUE_Y_OFFSET="55" X="32" Y="1095"/>
+					<Slider ADJ_CLR="" BK_IMG="THC\slider_trans_bk.png" CDRAG="1" D_ID="72" MAX="100" MIN="0" ORIENTATION="V" P_ID="624" TP_CLR="" T_IMG="THC\slider_pill.png" VALUE_X_OFFSET="0" VALUE_Y_OFFSET="55" X="143" Y="1095"/>
+					<Slider ADJ_CLR="" BK_IMG="THC\slider_trans_bk.png" CDRAG="1" D_ID="72" MAX="100" MIN="0" ORIENTATION="V" P_ID="626" TP_CLR="" T_IMG="THC\slider_pill.png" VALUE_X_OFFSET="0" VALUE_Y_OFFSET="55" X="255" Y="1095"/>
+					<Slider ADJ_CLR="" BK_IMG="THC\slider_trans_bk.png" CDRAG="1" D_ID="72" MAX="100" MIN="0" ORIENTATION="V" P_ID="628" TP_CLR="" T_IMG="THC\slider_pill.png" VALUE_X_OFFSET="0" VALUE_Y_OFFSET="55" X="367" Y="1095"/>
+					<Slider ADJ_CLR="" BK_IMG="THC\slider_trans_bk.png" CDRAG="1" D_ID="72" MAX="100" MIN="0" ORIENTATION="V" P_ID="620" TP_CLR="" T_IMG="THC\slider_pill.png" VALUE_X_OFFSET="0" VALUE_Y_OFFSET="55" X="479" Y="1095"/>
+					<Slider ADJ_CLR="" BK_IMG="THC\slider_trans_bk.png" CDRAG="1" D_ID="72" MAX="100" MIN="0" ORIENTATION="V" P_ID="625" TP_CLR="" T_IMG="THC\slider_pill.png" VALUE_X_OFFSET="0" VALUE_Y_OFFSET="55" X="589" Y="1095"/>
+					<Slider ADJ_CLR="" BK_IMG="THC\slider_trans_bk.png" CDRAG="1" D_ID="72" MAX="100" MIN="0" ORIENTATION="V" P_ID="629" TP_CLR="" T_IMG="THC\slider_pill.png" VALUE_X_OFFSET="0" VALUE_Y_OFFSET="55" X="699" Y="1095"/>
+					<Slider ADJ_CLR="" BK_IMG="THC\slider_trans_bk.png" CDRAG="1" D_ID="72" MAX="100" MIN="0" ORIENTATION="V" P_ID="621" TP_CLR="" T_IMG="THC\slider_pill.png" VALUE_X_OFFSET="0" VALUE_Y_OFFSET="55" X="811" Y="1095"/>
+					<Slider ADJ_CLR="" BK_IMG="THC\slider_trans_bk.png" CDRAG="1" D_ID="72" MAX="100" MIN="0" ORIENTATION="V" P_ID="622" TP_CLR="" T_IMG="THC\slider_pill.png" VALUE_X_OFFSET="0" VALUE_Y_OFFSET="55" X="919" Y="1095"/>
+					<Slider ADJ_CLR="" BK_IMG="THC\slider_trans_bk.png" CDRAG="1" D_ID="72" MAX="100" MIN="0" ORIENTATION="V" P_ID="623" TP_CLR="" T_IMG="THC\slider_pill.png" VALUE_X_OFFSET="0" VALUE_Y_OFFSET="55" X="1035" Y="1095"/>
+				</SliderControls>
+				<RemoteLabelControls NAME="RemoteLabelControls">
+					<Text BK_CLR="00000000" CX="105" CY="41" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="900" L_TYPE="BatteryLevel" TP_BK="1" T_ALMNT="0" T_OSET="0" X="2435" Y="17"/>
+				</RemoteLabelControls>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ffffff" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="60" FNT_UL="0" FNT_WT="400" TEXT="CH" TP_BK="1" T_ALMNT="0" T_OSET="0" X="2355" Y="1007"/>
+					<Label BK_CLR="00ffffff" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="60" FNT_UL="0" FNT_WT="400" TEXT="VOL" TP_BK="1" T_ALMNT="0" T_OSET="0" X="2341" Y="1329"/>
+				</LabelControls>
+			</Skin>
+			<Skin BKGND="THC\keyboard-bk.png" B_TRANS="0" KEYPT="0" MOUSE_TRK="0" MT_SC_MULT="1.000000" NAME="Keyboard" POP_ATT="1" POP_LFT="0" POP_TOP="784" PTYPE="1" TP_CLR="00ffb300" TYPE="POP">
+				<Buttons NAME="Buttons">
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-spacebar-key.png" P_ID="364" P_VALUE="Keyboard.Spacebar" REP_DELAY="500" REP_INT="100" REP_P_VALUE="" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="591" X_OFFSET="-1" Y="645" Y_OFFSET="-1" ZORDR="1"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.Z" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="Z" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="331" X_OFFSET="-1" Y="484" Y_OFFSET="-1" ZORDR="2"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.X" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="X" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="497" X_OFFSET="-1" Y="484" Y_OFFSET="-1" ZORDR="3"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="75" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="55" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-two-thirds--key.png" P_ID="595" P_VALUE="Shift" SCALE="0" S_CX="0" S_CY="0" TEXT=".?123" TP_CLR="00000001" TYPE="SPC" X="367" X_OFFSET="-1" Y="645" Y_OFFSET="-1" ZORDR="4"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.C" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="C" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="663" X_OFFSET="-1" Y="484" Y_OFFSET="-1" ZORDR="5"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.V" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="V" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="829" X_OFFSET="-1" Y="484" Y_OFFSET="-1" ZORDR="6"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.B" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="B" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="995" X_OFFSET="-1" Y="484" Y_OFFSET="-1" ZORDR="7"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.N" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="N" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="1161" X_OFFSET="-1" Y="484" Y_OFFSET="-1" ZORDR="8"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.M" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="M" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="1327" X_OFFSET="-1" Y="484" Y_OFFSET="-1" ZORDR="9"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Comma" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="," TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="1493" X_OFFSET="-1" Y="484" Y_OFFSET="-1" ZORDR="10"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="75" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="595" P_VALUE="Keyboard.Period" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="." TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="1660" X_OFFSET="-1" Y="484" Y_OFFSET="-1" ZORDR="11"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="55" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-two-thirds--key.png" P_ID="364" P_VALUE="Keyboard.Shift" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="143" X_OFFSET="-1" Y="645" Y_OFFSET="-1" ZORDR="12"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="55" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-two-thirds--key.png" P_ID="364" P_VALUE="Keyboard.Backspace" REP_DELAY="500" REP_INT="100" REP_P_VALUE="" SCALE="0" S_CX="0" S_CY="0" TEXT="Back" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="1660" X_OFFSET="-1" Y="645" Y_OFFSET="-1" ZORDR="13"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.L" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="L" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="1573" X_OFFSET="-1" Y="325" Y_OFFSET="-1" ZORDR="14"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.K" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="K" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="1407" X_OFFSET="-1" Y="325" Y_OFFSET="-1" ZORDR="15"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.J" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="J" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="1241" X_OFFSET="-1" Y="325" Y_OFFSET="-1" ZORDR="16"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.H" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="H" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="1075" X_OFFSET="-1" Y="325" Y_OFFSET="-1" ZORDR="17"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.G" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="G" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="909" X_OFFSET="-1" Y="325" Y_OFFSET="-1" ZORDR="18"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.F" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="F" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="743" X_OFFSET="-1" Y="325" Y_OFFSET="-1" ZORDR="19"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.D" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="D" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="577" X_OFFSET="-1" Y="325" Y_OFFSET="-1" ZORDR="20"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.S" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="S" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="411" X_OFFSET="-1" Y="325" Y_OFFSET="-1" ZORDR="21"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.A" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="A" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="245" X_OFFSET="-1" Y="325" Y_OFFSET="-1" ZORDR="22"/>
+					<Button ACT_PRESS="0" ADJ_CLR="ffffffff" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard..Semicolon" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT=";" TP_CLR="ffffffff" TRAN_CT="0" TRAN_LEV="0" TYPE="SPC" X="1740" X_OFFSET="-1" Y="325" Y_OFFSET="-1" ZORDR="23"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.I" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="I" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="1327" X_OFFSET="-1" Y="167" Y_OFFSET="-1" ZORDR="24"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.U" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="U" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="1161" X_OFFSET="-1" Y="167" Y_OFFSET="-1" ZORDR="25"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.Y" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="Y" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="995" X_OFFSET="-1" Y="167" Y_OFFSET="-1" ZORDR="26"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.T" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="T" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="829" X_OFFSET="-1" Y="167" Y_OFFSET="-1" ZORDR="27"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.R" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="R" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="663" X_OFFSET="-1" Y="167" Y_OFFSET="-1" ZORDR="28"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.E" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="E" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="497" X_OFFSET="-1" Y="167" Y_OFFSET="-1" ZORDR="29"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.W" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="W" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="331" X_OFFSET="-1" Y="167" Y_OFFSET="-1" ZORDR="30"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.Q" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="Q" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="165" X_OFFSET="-1" Y="167" Y_OFFSET="-1" ZORDR="31"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.O" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="O" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="1493" X_OFFSET="-1" Y="167" Y_OFFSET="-1" ZORDR="32"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Sendkey.P" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="P" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="1660" X_OFFSET="-1" Y="167" Y_OFFSET="-1" ZORDR="33"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="55" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-key.png" P_ID="364" P_VALUE="Keyboard.Esc" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="Esc" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="1827" X_OFFSET="-1" Y="167" Y_OFFSET="-1" ZORDR="34"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="55" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-double-key.png" P_ID="364" P_VALUE="Keyboard.Enter" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" S_CX="0" S_CY="0" TEXT="Enter" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="1827" X_OFFSET="-1" Y="484" Y_OFFSET="-1" ZORDR="35"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="76" FNT="Chivo" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="55" FNT_UL="0" FNT_WT="400" I_FILE="THC\keyboard-two-thirds--key.png" P_ID="364" P_VALUE="Keyboard.Shift" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="1888" X_OFFSET="-1" Y="644" Y_OFFSET="-1" ZORDR="36"/>
+				</Buttons>
+				<TextControls NAME="TextControls">
+					<Text BK_CLR="00b16c59" CX="2240" CY="85" D_ID="75" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="72" FNT_UL="0" FNT_WT="400" P_ID="593" TP_BK="1" T_ALMNT="1" T_OSET="0" X="1" Y="76"/>
+				</TextControls>
+				<Indicators NAME="Indicators">
+					<Indicator ADJ_CLR="" D_ID="75" I_FILE="THC\Shift.png" NUM_IMAGES="2" P_ID="597" SCALE="0" S_CX="76" S_CY="70" TP_CLR="" X="208" Y="680">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+					<Indicator ADJ_CLR="" D_ID="75" I_FILE="THC\Shift.png" NUM_IMAGES="2" P_ID="597" SCALE="0" S_CX="76" S_CY="70" TP_CLR="" X="1953" Y="679">
+						<States NAME="States">
+							<State COND="0" IMAGE="2" VALUE="On"/>
+							<State COND="0" IMAGE="1" VALUE="Off"/>
+						</States>
+					</Indicator>
+				</Indicators>
+			</Skin>
+			<Skin ADJ_CLR="ffffffff" BKGND="THC\lights_bg.jpg" B_TRANS="0" KEYPT="0" NAME="Lights" POP_LFT="0" POP_TOP="0" TP_CLR="ffffffff">
+				<TextControls NAME="TextControls"/>
+				<Buttons NAME="Buttons">
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\down_nav_button.jpg" P_ID="364" P_VALUE="" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2326" X_OFFSET="0" Y="1392" Y_OFFSET="0" ZORDR="1"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\home_nav_button.jpg" P_ID="364" P_VALUE="Select Home Panel" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2320" X_OFFSET="0" Y="100" Y_OFFSET="0" ZORDR="2"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\light_nav_button.jpg" P_ID="364" P_VALUE="Select Lights Panel" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2320" X_OFFSET="0" Y="300" Y_OFFSET="0" ZORDR="3"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\music_nav_button.jpg" P_ID="364" P_VALUE="Select Music Panel" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2320" X_OFFSET="0" Y="512" Y_OFFSET="0" ZORDR="4"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\remote_nav_button.jpg" P_ID="364" P_VALUE="Select Music Panel" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2320" X_OFFSET="0" Y="712" Y_OFFSET="0" ZORDR="5"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\up_nav_button.jpg" P_ID="364" P_VALUE="" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2326" X_OFFSET="0" Y="1230" Y_OFFSET="0" ZORDR="6"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\down_nav_button.jpg" P_ID="364" P_VALUE="" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2326" X_OFFSET="0" Y="1066" Y_OFFSET="0" ZORDR="7"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\up_nav_button.jpg" P_ID="364" P_VALUE="" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2326" X_OFFSET="0" Y="907" Y_OFFSET="0" ZORDR="8"/>
+				</Buttons>
+				<Images NAME="Images">
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC\battery.jpg" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="76" S_CY="56" TP_CLR="ffffffff" X="2356" Y="9" ZORDR="9"/>
+				</Images>
+				<LabelControls NAME="LabelControls">
+					<Label BK_CLR="00ffffff" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="60" FNT_UL="0" FNT_WT="400" TEXT="CH" TP_BK="1" T_ALMNT="0" T_OSET="0" X="2362" Y="1007"/>
+					<Label BK_CLR="00ffffff" CX="0" CY="0" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="60" FNT_UL="0" FNT_WT="400" TEXT="VOL" TP_BK="1" T_ALMNT="0" T_OSET="0" X="2350" Y="1329"/>
+				</LabelControls>
+				<RemoteLabelControls NAME="RemoteLabelControls">
+					<Text BK_CLR="00000000" CX="105" CY="41" FNT="Chivo" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="900" L_TYPE="BatteryLevel" TP_BK="1" T_ALMNT="0" T_OSET="0" X="2435" Y="17"/>
+				</RemoteLabelControls>
+				<EnterList NAME="EnterList">
+					<Item TYPE="Task" T_ID="9"/>
+				</EnterList>
+			</Skin>
+			<Skin ADJ_CLR="" BKGND="THC\dial-bk.png" B_TRANS="0" KEYPT="0" MOUSE_TRK="0" MT_SC_MULT="1.000000" NAME="Nav" POP_LFT="426" POP_TOP="723" PTYPE="1" TP_CLR="ffffffff" TYPE="POP">
+				<Buttons NAME="Buttons">
+					<Button ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\Button-R1-1.png" P_ID="364" P_VALUE="Idle" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="ffffffff" TRAN_CT="0" TYPE="SPC" X="2" X_OFFSET="0" Y="383" Y_OFFSET="0" ZORDR="1"/>
+					<Button ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\Button-R1-2.png" P_ID="364" P_VALUE="Idle" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="ffffffff" TRAN_CT="0" TYPE="SPC" X="105" X_OFFSET="0" Y="104" Y_OFFSET="0" ZORDR="2"/>
+					<Button ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\Button-R1-3.png" P_ID="364" P_VALUE="Idle" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="ffffffff" TRAN_CT="0" TYPE="SPC" X="383" X_OFFSET="0" Y="1" Y_OFFSET="0" ZORDR="3"/>
+					<Button ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\Button-R1-4.png" P_ID="364" P_VALUE="Idle" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="ffffffff" TRAN_CT="0" TYPE="SPC" X="764" X_OFFSET="0" Y="1" Y_OFFSET="0" ZORDR="4"/>
+					<Button ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\Button-R1-5.png" P_ID="364" P_VALUE="Idle" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="1049" X_OFFSET="0" Y="103" Y_OFFSET="0" ZORDR="5"/>
+					<Button ADJ_CLR="" D_ID="33" FNT="Icons" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC\Button-R1-6.png" P_ID="364" P_VALUE="Idle" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="1257" X_OFFSET="0" Y="381" Y_OFFSET="0" ZORDR="6"/>
+				</Buttons>
+			</Skin>
+		</Skins>
+	</Theme>
+	<Dependencies NAME="Dependencies">
+		<File PATH="THC\home_bg.jpg"/>
+		<File PATH="THC\down_nav_button.jpg"/>
+		<File PATH="THC\home_nav_button.jpg"/>
+		<File PATH="THC\light_nav_button.jpg"/>
+		<File PATH="THC\music_nav_button.jpg"/>
+		<File PATH="THC\remote_nav_button.jpg"/>
+		<File PATH="THC\up_nav_button.jpg"/>
+		<File PATH="THC\nav-button.png"/>
+		<File PATH="THC\battery.jpg"/>
+		<File PATH="THC\context_menu.jpg"/>
+		<File PATH="THC\menu_context_button.jpg"/>
+		<File PATH="THC\home_button.jpg"/>
+		<File PATH="THC\back_button.jpg"/>
+		<File PATH="THC\menu_plain_button.jpg"/>
+		<File PATH="THC\light_icon.png"/>
+		<File PATH="THC\light_switch_icon.png"/>
+		<File PATH="THC\med_button.jpg"/>
+		<File PATH="THC\med_button_2.jpg"/>
+		<File PATH="THC\direct_tvicon.png"/>
+		<File PATH="THC\med_2button.jpg"/>
+		<File PATH="THC\light_multi_state_icon.png"/>
+		<File PATH="THC\slider_button.png"/>
+		<File PATH="THC\slider_bg.png"/>
+		<File PATH="THC\room_icon.png"/>
+		<File PATH="THC\secondfloor.jpg"/>
+		<File PATH="THC\floor_button.png"/>
+		<File PATH="THC\light_multi_state_icon_small.png"/>
+		<File PATH="THC\Compass2.png"/>
+		<File PATH="THC\firstfloor.jpg"/>
+		<File PATH="THC\living_room_button.png"/>
+		<File PATH="THC\transparent_button_lg.png"/>
+		<File PATH="THC\kitchen_button.png"/>
+		<File PATH="THC\transparent_button_sm.png"/>
+		<File PATH="THC\jukebox_bg.jpg"/>
+		<File PATH="THC\list_bar_trans.png"/>
+		<File PATH="THC\menu_page_begin.png"/>
+		<File PATH="THC\menu_page_previous.png"/>
+		<File PATH="THC\menu_page_end.png"/>
+		<File PATH="THC\menu_page_next.png"/>
+		<File PATH="THC\slider_pill.png"/>
+		<File PATH="THC\slider_trans_bk.png"/>
+		<File PATH="THC\list_bar_unslected.png"/>
+		<File PATH="THC\cdi.png"/>
+		<File PATH="THC\list_bar.png"/>
+		<File PATH="THC\song_queue_bk.jpg"/>
+		<File PATH="THC\keyboard-bk.png"/>
+		<File PATH="THC\keyboard-spacebar-key.png"/>
+		<File PATH="THC\keyboard-key.png"/>
+		<File PATH="THC\keyboard-two-thirds--key.png"/>
+		<File PATH="THC\keyboard-double-key.png"/>
+		<File PATH="THC\Shift.png"/>
+		<File PATH="THC\lights_bg.jpg"/>
+		<File PATH="THC\dial-bk.png"/>
+		<File PATH="THC\Button-R1-1.png"/>
+		<File PATH="THC\Button-R1-2.png"/>
+		<File PATH="THC\Button-R1-3.png"/>
+		<File PATH="THC\Button-R1-4.png"/>
+		<File PATH="THC\Button-R1-5.png"/>
+		<File PATH="THC\Button-R1-6.png"/>
+	</Dependencies>
+</ROOT>

@@ -1,0 +1,15 @@
+<ROOT TIMESTAMP="1430883213" VER="1.00">
+	<Theme NAME="Theme">
+		<Skins NAME="Skins">
+			<Skin BKGND="THC 1920 x 1080\Android Interface.jpg" B_TRANS="0" KEYPT="0" NAME="- First Panel -" POP_LFT="0" POP_TOP="0">
+				<TextControls NAME="TextControls">
+					<Text BK_CLR="00ffffff" CX="151" CY="172" D_ID="17" FNT="Climacons-Font" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="172" FNT_UL="0" FNT_WT="400" P_ID="470" TP_BK="1" T_ALMNT="0" T_OSET="0" X="1067" Y="365"/>
+				</TextControls>
+				<Buttons NAME="Buttons"/>
+			</Skin>
+		</Skins>
+	</Theme>
+	<Dependencies NAME="Dependencies">
+		<File PATH="THC 1920 x 1080\Android Interface.jpg"/>
+	</Dependencies>
+</ROOT>

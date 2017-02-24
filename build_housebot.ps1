@@ -7,7 +7,7 @@
 $hb_destination= "\\home-pc\Config\"
 $git_source  = "Scripts\"
 $logfile = $git_source + "robocopyLogFile.txt"
-$switches = ("/E", "/S", "/R:0", "/LOG:$logfile")
+$switches = ("/E", "/S", "/R:0")
 $roboCopyString = "*.vbs"
 robocopy $git_source $hb_destination"bak" $roboCopyString $switches
 

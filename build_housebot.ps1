@@ -5,7 +5,7 @@
 ###################################################################### 
 
 $hb_destination= "\\home-pc\Config\"
-$git_source  = [Environment]::GetFolderPath("mydocuments") + '\git\test\'
+$git_source  = "Scripts\"
 $logfile = $git_source + "robocopyLogFile.txt"
 $switches = ("/E", "/S", "/R:0", "/LOG:$logfile")
 $roboCopyString = "*.vbs"

@@ -1,5 +1,13 @@
-$Bill = 57
-$Tax = 7
-$Total = $Bill + $Tax
+######################################################################
+### File:           build_housebot.ps1
+### Author:         Mike Larson
+### Description:    Primary Build Script for Housebot
+###################################################################### 
 
-"My total is $Total"
+$hb_destination= "\\home-pc\Config\"
+$git_source  = [Environment]::GetFolderPath("mydocuments") + '\git\test\'
+$logfile = $git_source + "robocopyLogFile.txt"
+$switches = ("/E", "/S", "/R:0", "/LOG:$logfile")
+$roboCopyString = "*.vbs"
+robocopy $git_source $hb_destination"bak" $roboCopyString $switches
+

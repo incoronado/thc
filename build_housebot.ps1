@@ -3,6 +3,10 @@
 ### Author:         Mike Larson
 ### Description:    Primary Build Script for Housebot
 ###################################################################### 
+$username = "mike"
+$password = "KKy68a?*"
+
+net use \\home-pc $password /USER:$username 
 
 $hb_destination= "\\home-pc\Config\"
 $git_source  = "Scripts\"

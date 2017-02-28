@@ -52,7 +52,7 @@ Sub SystemCommand(Action)
     'SetpropertyValue "UPB Script.Debug", UPBLightID
     'MsgBox "Ready Command"
 	a=split(Action,".")
-	sUrl = "http://192.168.1.204:8080/jsonrpc"
+	sUrl = "http://192.168.1.4:8080/jsonrpc"
 	Select Case a(0)
 		' System Class Message Received
 		Case "System"

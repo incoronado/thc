@@ -7,7 +7,7 @@ Stop-Process -processname HousebotServer.exe
 
 # Copy HB Scripts
 $source="Scripts"
-$dest="c:\Program Files (x86)\Housebot\Config\Scripts
+$dest="c:\Program Files (x86)\Housebot\Config\Scripts"
 
 $what = @("/COPYALL","/B","/MIR")
 $options = @("/R:0","/W:0","/NFL","/NDL")

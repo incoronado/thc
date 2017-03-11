@@ -36,5 +36,4 @@ $filename="HBData.mdb"
 $cmdArgs = @("$source","$dest",$filename,$options)
 robocopy @cmdArgs
 If($?){exit 0}
-
-& "C:\Program Files (x86)\Housebot\HouseBotServer.exe"
+#"C:\Program Files (x86)\Housebot\HouseBotServer.exe"

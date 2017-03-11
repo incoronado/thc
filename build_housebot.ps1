@@ -16,7 +16,7 @@ $cmdArgs = @("$source","$dest",$what,$options)
 robocopy @cmdArgs
 
 $source="HBData"
-$dest="c:\Program Files (x86)\Housebot\Config\temp"
+$dest="c:\Program Files (x86)\Housebot\Config"
 $filename="HBData.mdb"
 
 $cmdArgs = @("$source","$dest",$filename,$what,$options)

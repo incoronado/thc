@@ -60,6 +60,8 @@ if (!$Running) {
     Start-Process `C:\Program Files (x86)\Housebot\HouseBotServer.exe`
 }
 
+& "C:\Program Files (x86)\Housebot\HouseBotServer.exe"
+
 #$LASTEXITCODE = 0
 
 

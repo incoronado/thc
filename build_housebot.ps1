@@ -11,7 +11,7 @@ if ($hb) {
   # try gracefully first
   $hb.CloseMainWindow()
   # kill after five seconds
-  Sleep 5
+  Start-Sleep -s 5
   if (!$hb.HasExited) {
     $hb | Stop-Process -Force
   }
@@ -51,6 +51,7 @@ $filename="HBData.mdb"
 $cmdArgs = @("$source","$dest",$filename,$options)
 robocopy @cmdArgs
 
+Start-Sleep -s 5 
 
 $Running = Get-Process HouseBotServer -ErrorAction SilentlyContinue
 if (!$Running) { Start-Process "C:\Program Files (x86)\Housebot\HouseBotServer.exe" }

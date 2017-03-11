@@ -59,7 +59,7 @@ Start-Sleep -s 5
 Start-Process "C:\Program Files (x86)\Housebot\HouseBotServer.exe"
 
 
-$LASTEXITCODE = 0
+#$LASTEXITCODE = 0
 
 
 exit $LastExitCode

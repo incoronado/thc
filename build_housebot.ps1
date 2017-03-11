@@ -32,6 +32,7 @@ $options = @("/R:0","/W:0","/NFL","/NDL")
 
 $cmdArgs = @("$source","$dest",$what,$options)
 robocopy @cmdArgs
+$?
 
 $source="Themes"
 $dest="c:\Program Files (x86)\Housebot\Config\Themes"
@@ -41,6 +42,7 @@ $options = @("/R:0","/W:0","/NFL","/NDL")
 
 $cmdArgs = @("$source","$dest",$what,$options)
 robocopy @cmdArgs
+$?
 
 
 

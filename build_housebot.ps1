@@ -3,7 +3,7 @@
 ### Author:         Mike Larson
 ### Description:    Primary Build Script for Housebot
 ###################################################################### 
-Stop-Process -processname "HouseBotServer"
+Stop-Process -processname "HouseBotServer" -Force
 
 # Copy HB Scripts
 $source="Scripts"

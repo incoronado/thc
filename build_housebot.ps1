@@ -14,7 +14,6 @@ $options = @("/R:0","/W:0","/NFL","/NDL")
 
 $cmdArgs = @("$source","$dest",$what,$options)
 robocopy @cmdArgs
-If($?){exit 0}
 
 $source="HBData"
 $dest="c:\Program Files (x86)\Housebot\Config\temp"

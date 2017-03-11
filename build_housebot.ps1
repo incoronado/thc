@@ -4,4 +4,4 @@
 ### Description:    Primary Build Script for Housebot
 ###################################################################### 
 # Copy HB Scripts a
-copy Scripts\*.vbs "c:\Program Files (x86)\Housebot\Config\Temp"
+robocopy Scripts\*.vbs "c:\Program Files (x86)\Housebot\Config\Temp"

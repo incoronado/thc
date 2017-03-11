@@ -56,7 +56,9 @@ robocopy @cmdArgs
 Start-Sleep -s 5 
 
 $Running = Get-Process HouseBotServer -ErrorAction SilentlyContinue
-if (!$Running) { Start-Process "C:\Program Files (x86)\Housebot\HouseBotServer.exe" }
+if (!$Running) { 
+    Start-Process "C:\Program Files (x86)\Housebot\HouseBotServer.exe"
+}
 
 $LASTEXITCODE = 0
 

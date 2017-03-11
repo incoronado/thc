@@ -52,17 +52,9 @@ $filename="HBData.mdb"
 
 $cmdArgs = @("$source","$dest",$filename,$options)
 robocopy @cmdArgs
-$?
-Start-Sleep -s 5 
 
-$Running = Get-Process HouseBotServer -ErrorAction SilentlyContinue
-if (!$Running) { 
-    Start-Process `C:\Program Files (x86)\Housebot\HouseBotServer.exe`
-}
-
-& "C:\Program Files (x86)\Housebot\HouseBotServer.exe"
 
 #$LASTEXITCODE = 0
 
 
-#exit $LastExitCode
+exit $LastExitCode

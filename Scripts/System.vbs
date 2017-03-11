@@ -145,6 +145,9 @@ Sub SystemCommand(Action)
 				Case "SelectMusicPanel"
 					'System.GalaxyTabA1.10.SelectMusicPanel
 					SelectMusicPanel(GetRemoteNumber(a(1)))
+				Case "ToggleNavigatorPanel"
+					'System.Desktop.10.ToggleNavigatorPanel
+					ToggleNavigatorPanel(GetRemoteNumber(a(1)))
 				Case "SelectPanel" 
 					'System.GalaxyTabA1.10.SelectPanel:Jukebox:Jukebox1:5
 					SelectPanel a(1), b(1), b(2), b(3)	
@@ -648,6 +651,19 @@ Sub SelectMusicPanel(Remote)
 	End if
 	SetWhichRemotesToControl("")
 End Sub
+
+
+Sub ToggleNavigatorPanel(Remote)
+
+	If GetPropertyValue(Remote & ".Nav Menu Status") = "Inactive" Then
+    	SetPropertyValue Remote & ".Nav Menu Status", "Active"
+    	SelectPanel GetPropertyValue(Remote & ".Remote Name"), "Navigator","", 0
+    Else
+    	SetPropertyValue Remote & ".Nav Menu Status", "Inactive"
+    	ClosePanel Remote, "Navigator"
+    End If
+End Sub
+
 
 Sub SelectPanel(Remote, Panel, Context, TimerInSeconds)
 	 Dim hours, minutes, seconds, IntSeconds

@@ -32,7 +32,7 @@ $options = @("/R:0","/W:0","/NFL","/NDL")
 
 $cmdArgs = @("$source","$dest",$what,$options)
 robocopy @cmdArgs
-$?
+#$LastExitCode
 
 $source="Themes"
 $dest="c:\Program Files (x86)\Housebot\Config\Themes"
@@ -42,7 +42,7 @@ $options = @("/R:0","/W:0","/NFL","/NDL")
 
 $cmdArgs = @("$source","$dest",$what,$options)
 robocopy @cmdArgs
-$?
+#$?
 
 
 
@@ -53,5 +53,7 @@ $filename="HBData.mdb"
 
 $cmdArgs = @("$source","$dest",$filename,$options)
 robocopy @cmdArgs
-If($?){exit 0}
+#If($?){exit 0}
 #"C:\Program Files (x86)\Housebot\HouseBotServer.exe"
+
+exit $LastExitCode

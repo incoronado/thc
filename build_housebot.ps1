@@ -12,3 +12,4 @@ $options = @("/R:0","/W:0","/NFL","/NDL")
 
 $cmdArgs = @("$source","$dest",$what,$options)
 robocopy @cmdArgs
+If($?){exit 0}

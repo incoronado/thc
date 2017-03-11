@@ -4,7 +4,8 @@
 ### Description:    Primary Build Script for Housebot
 ###################################################################### 
 Stop-Process -processname "HouseBotServer" -Force
-Remove-Item "C:\Program Files (x86)\Housebot\Config\HBData.ldb"
+
+Remove-Item "C:\Program Files (x86)\Housebot\Config\HBData.ldb" -Force
 
 # Copy HB Scripts
 $source="Scripts"

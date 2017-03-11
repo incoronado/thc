@@ -17,7 +17,7 @@ if ($hb) {
   }
 }
 Remove-Variable hb
-
+$LASTEXITCODE = 0
 
 
 

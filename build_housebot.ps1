@@ -3,7 +3,23 @@
 ### Author:         Mike Larson
 ### Description:    Primary Build Script for Housebot
 ###################################################################### 
-Stop-Process -processname "HouseBotServer" -Force
+#Stop-Process -processname "HouseBotServer" -Force
+
+# get HouseBotServer process
+$hb = Get-Process HouseBotServer -ErrorAction SilentlyContinue
+if ($hb) {
+  # try gracefully first
+  $hb.CloseMainWindow()
+  # kill after five seconds
+  Sleep 5
+  if (!$hb.HasExited) {
+    $hb | Stop-Process -Force
+  }
+}
+Remove-Variable hb
+
+
+
 
 #Remove-Item "C:\Program Files (x86)\Housebot\Config\HBData.ldb" -Force
 

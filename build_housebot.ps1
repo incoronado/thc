@@ -16,10 +16,10 @@ $cmdArgs = @("$source","$dest",$what,$options)
 robocopy @cmdArgs
 If($?){exit 0}
 
-$source="HBData\HBData.mdb"
-$dest="c:\Program Files (x86)\Housebot\Config\temp\HBData.mdb"
+$source="HBData"
+$dest="c:\Program Files (x86)\Housebot\Config\temp"
+$filename="HBData.mdb"
 
-
-$cmdArgs = @("$source","$dest",$what,$options)
+$cmdArgs = @("$source","$dest",$filename,$what,$options)
 robocopy @cmdArgs
 If($?){exit 0}

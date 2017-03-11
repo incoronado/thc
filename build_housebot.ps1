@@ -18,9 +18,11 @@ if ($hb) {
 }
 Remove-Variable hb
 
+$lockfile= "C:\Program Files (x86)\Housebot\Config\HBData.ldb"
+if (Test-Path $lockfile) {
+  Remove-Item $lockfile
+}
 
-
-Remove-Item "C:\Program Files (x86)\Housebot\Config\HBData.ldb" -Force
 
 # Copy HB Scripts
 $source="Scripts"
@@ -55,6 +57,7 @@ Start-Sleep -s 5
 
 $Running = Get-Process HouseBotServer -ErrorAction SilentlyContinue
 if (!$Running) { Start-Process "C:\Program Files (x86)\Housebot\HouseBotServer.exe" }
+
 $LASTEXITCODE = 0
 
 

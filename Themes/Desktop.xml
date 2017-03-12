@@ -953,7 +953,7 @@
 					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="95" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC\exit-icon.png" P_ID="364" P_VALUE="CloseGenrePanel" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="1152" X_OFFSET="3" Y="1091" Y_OFFSET="-1" ZORDR="1"/>
 				</Buttons>
 			</Skin>
-			<Skin ADJ_CLR="ffffffff" BKGND="THC 2560 x 1440\main-bg.png" B_TRANS="0" KEYPT="0" NAME="Main" POP_LFT="0" POP_TOP="0" TP_CLR="ffffffff">
+			<Skin ADJ_CLR="ffffffff" BKGND="THC 2560x1440\main-bg.png" B_TRANS="0" KEYPT="0" NAME="Main" POP_LFT="0" POP_TOP="0" TP_CLR="ffffffff">
 				<TextControls NAME="TextControls">
 					<Text BK_CLR="00b16c59" CX="800" CY="46" D_ID="130" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="44" FNT_UL="0" FNT_WT="400" P_ID="720" TP_BK="1" T_ALMNT="0" T_OSET="0" X="128" Y="89"/>
 					<Text BK_CLR="00b16c59" CX="800" CY="46" D_ID="130" FNT="Arial" FNT_CLR="00000000" FNT_CSET="0" FNT_IT="0" FNT_SZ="44" FNT_UL="0" FNT_WT="400" P_ID="721" TP_BK="1" T_ALMNT="0" T_OSET="0" X="128" Y="135"/>
@@ -980,32 +980,32 @@
 					</Button>
 					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="33" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC 1366x768\power-button-trans.png" P_ID="364" P_VALUE="Audio.GalaxyProTab1.ToggleZonePower" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="1217" X_OFFSET="3" Y="678" Y_OFFSET="-1" ZORDR="11"/>
 					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="133" FNT="Arial" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="20" FNT_UL="0" FNT_WT="700" I_FILE="THC 1024x768\remote-button-2f.png" P_ID="837" P_VALUE="System.GalaxyTabA1.10.SelectRemotePanel" SCALE="" S_CX="" S_CY="" TEXT="" TP_CLR="000000ff" TRAN_CT="0" TYPE="SPC" X="764" X_OFFSET="3" Y="1331" Y_OFFSET="-1" ZORDR="14"/>
-					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="133" FNT="Icons" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560 x 1440\hamburger-menu.png" P_ID="837" P_VALUE="System.Desktop.10.ToggleNavigatorPanel" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="" TRAN_CT="0" TYPE="SPC" X="2366" X_OFFSET="0" Y="1353" Y_OFFSET="0" ZORDR="15"/>
-					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="133" FNT="Icons" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560 x 1440\hamburger-menu.png" P_ID="837" P_VALUE="System.Desktop.10.SelectPanel:Zone Menu::15" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="" TRAN_CT="0" TYPE="SPC" X="80" X_OFFSET="0" Y="1350" Y_OFFSET="0" ZORDR="23"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="133" FNT="Icons" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560x1440\hamburger-menu.png" P_ID="837" P_VALUE="System.Desktop.10.ToggleNavigatorPanel" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="" TRAN_CT="0" TYPE="SPC" X="2366" X_OFFSET="0" Y="1353" Y_OFFSET="0" ZORDR="15"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="133" FNT="Icons" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560x1440\hamburger-menu.png" P_ID="837" P_VALUE="System.Desktop.10.SelectPanel:Zone Menu::15" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="" TRAN_CT="0" TYPE="SPC" X="80" X_OFFSET="0" Y="1350" Y_OFFSET="0" ZORDR="23"/>
 					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="159" FNT="Icons" FNT_CLR="00ffffff" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC 1024x768\Button-Large-Trans.png" P_ID="837" P_VALUE="System.Desktop.10.ToggleZonePower" SCALE="0" S_CX="0" S_CY="0" TEXT="" TP_CLR="" TYPE="SPC" X="196" X_OFFSET="0" Y="1310" Y_OFFSET="0" ZORDR="24"/>
 				</Buttons>
 				<Images NAME="Images">
-					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC 2560 x 1440\battery.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="54" S_CY="37" TEXT="" TP_CLR="ffffffff" W_TXT="0" X="2370" X_TXT="0" Y="18" Y_TXT="0" ZORDR="1"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC 2560x1440\battery.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="54" S_CY="37" TEXT="" TP_CLR="ffffffff" W_TXT="0" X="2370" X_TXT="0" Y="18" Y_TXT="0" ZORDR="1"/>
 					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\separator.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="1" S_CY="64" TEXT="" TP_CLR="000000ff" W_TXT="0" X="-72" X_TXT="0" Y="523" Y_TXT="0" ZORDR="2"/>
 					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC 1366x768\separator.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="1" S_CY="64" TEXT="" TP_CLR="000000ff" W_TXT="0" X="844" X_TXT="0" Y="1342" Y_TXT="0" ZORDR="5"/>
-					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC 2560 x 1440\calendar-icon.png" I_TYPE="0" KASP="1" P_ID="0" SCALE="1" S_CX="55" S_CY="64" TEXT="" TP_CLR="" W_TXT="0" X="2115" X_TXT="0" Y="5" Y_TXT="0" ZORDR="6"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC 2560x1440\calendar-icon.png" I_TYPE="0" KASP="1" P_ID="0" SCALE="1" S_CX="55" S_CY="64" TEXT="" TP_CLR="" W_TXT="0" X="2115" X_TXT="0" Y="5" Y_TXT="0" ZORDR="6"/>
 					<Image ADJ_CLR="" BK_CLR="" D_ID="130" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC\cdi-sm.png" I_TYPE="1" KASP="0" P_ID="588" SCALE="1" S_CX="110" S_CY="110" TEXT="" TP_CLR="" W_TXT="0" X="0" X_TXT="0" Y="80" Y_TXT="0" ZORDR="8">
 						<Contexts>
 							<Context D_ID="74" NAME="Jukebox 1" P_ID="588"/>
 							<Context D_ID="77" NAME="Jukebox 2" P_ID="588"/>
 						</Contexts>
 					</Image>
-					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC 2560 x 1440\volume-up.png" I_TYPE="0" KASP="1" P_ID="0" SCALE="0" S_CX="93" S_CY="90" TEXT="" TP_CLR="ffffffff" W_TXT="0" X="2333" X_TXT="0" Y="88" Y_TXT="0" ZORDR="9"/>
-					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC 2560 x 1440\volume-down.png" I_TYPE="0" KASP="1" P_ID="0" SCALE="0" S_CX="62" S_CY="58" TEXT="" TP_CLR="000000ff" W_TXT="0" X="1530" X_TXT="0" Y="104" Y_TXT="0" ZORDR="10"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC 2560x1440\volume-up.png" I_TYPE="0" KASP="1" P_ID="0" SCALE="0" S_CX="93" S_CY="90" TEXT="" TP_CLR="ffffffff" W_TXT="0" X="2333" X_TXT="0" Y="88" Y_TXT="0" ZORDR="9"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC 2560x1440\volume-down.png" I_TYPE="0" KASP="1" P_ID="0" SCALE="0" S_CX="62" S_CY="58" TEXT="" TP_CLR="000000ff" W_TXT="0" X="1530" X_TXT="0" Y="104" Y_TXT="0" ZORDR="10"/>
 					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC 1366x768\separator.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="1" S_CY="31" TEXT="" TP_CLR="000000ff" W_TXT="0" X="769" X_TXT="0" Y="1342" Y_TXT="0" ZORDR="12"/>
 					<Image ADJ_CLR="" BK_CLR="" D_ID="0" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC 1366x768\separator.png" I_TYPE="0" KASP="0" P_ID="0" SCALE="0" S_CX="1" S_CY="31" TEXT="" TP_CLR="000000ff" W_TXT="0" X="803" X_TXT="0" Y="1342" Y_TXT="0" ZORDR="13"/>
-					<Image ADJ_CLR="" BK_CLR="" D_ID="84" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560 x 1440\ipod-off.png" I_TYPE="1" KASP="0" P_ID="913" SCALE="0" S_CX="82" S_CY="104" TEXT="" TP_CLR="000000ff" X="1204" Y="1317" ZORDR="16"/>
-					<Image ADJ_CLR="" BK_CLR="" D_ID="84" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560 x 1440\ipod-off.png" I_TYPE="1" KASP="0" P_ID="917" SCALE="0" S_CX="82" S_CY="104" TEXT="" TP_CLR="000000ff" X="1394" Y="1317" ZORDR="17"/>
-					<Image ADJ_CLR="" BK_CLR="" D_ID="84" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC 2560 x 1440\radio-off.png" I_TYPE="1" KASP="0" P_ID="914" SCALE="0" S_CX="82" S_CY="104" TEXT="" TP_CLR="000000ff" W_TXT="0" X="1584" X_TXT="0" Y="1320" Y_TXT="0" ZORDR="18"/>
-					<Image ADJ_CLR="" BK_CLR="" D_ID="84" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC 2560 x 1440\kodi-off.png" I_TYPE="1" KASP="0" P_ID="916" SCALE="0" S_CX="100" S_CY="99" TEXT="" TP_CLR="000000ff" W_TXT="0" X="1774" X_TXT="0" Y="1320" Y_TXT="0" ZORDR="19"/>
-					<Image ADJ_CLR="" BK_CLR="" D_ID="84" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC 2560 x 1440\apple-off.png" I_TYPE="1" KASP="0" P_ID="918" SCALE="0" S_CX="91" S_CY="113" TEXT="" TP_CLR="000000ff" W_TXT="0" X="1964" X_TXT="0" Y="1313" Y_TXT="0" ZORDR="20"/>
-					<Image ADJ_CLR="" BK_CLR="" D_ID="84" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC 2560 x 1440\tv-off.png" I_TYPE="1" KASP="0" P_ID="915" SCALE="0" S_CX="91" S_CY="113" TEXT="" TP_CLR="000000ff" W_TXT="0" X="2154" X_TXT="0" Y="1317" Y_TXT="0" ZORDR="21"/>
-					<Image ADJ_CLR="" BK_CLR="" D_ID="185" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560 x 1440\zone-trans.png" I_TYPE="1" KASP="0" P_ID="919" SCALE="0" S_CX="115" S_CY="115" TEXT="" TP_CLR="000000ff" X="200" Y="1315" ZORDR="22"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="84" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560x1440\ipod-off.png" I_TYPE="1" KASP="0" P_ID="913" SCALE="0" S_CX="82" S_CY="104" TEXT="" TP_CLR="000000ff" X="1204" Y="1317" ZORDR="16"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="84" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560x1440\ipod-off.png" I_TYPE="1" KASP="0" P_ID="917" SCALE="0" S_CX="82" S_CY="104" TEXT="" TP_CLR="000000ff" X="1394" Y="1317" ZORDR="17"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="84" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC 2560x1440\radio-off.png" I_TYPE="1" KASP="0" P_ID="914" SCALE="0" S_CX="82" S_CY="104" TEXT="" TP_CLR="000000ff" W_TXT="0" X="1584" X_TXT="0" Y="1320" Y_TXT="0" ZORDR="18"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="84" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC 2560x1440\kodi-off.png" I_TYPE="1" KASP="0" P_ID="916" SCALE="0" S_CX="100" S_CY="99" TEXT="" TP_CLR="000000ff" W_TXT="0" X="1774" X_TXT="0" Y="1320" Y_TXT="0" ZORDR="19"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="84" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC 2560x1440\apple-off.png" I_TYPE="1" KASP="0" P_ID="918" SCALE="0" S_CX="91" S_CY="113" TEXT="" TP_CLR="000000ff" W_TXT="0" X="1964" X_TXT="0" Y="1313" Y_TXT="0" ZORDR="20"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="84" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" H_TXT="0" I_FILE="THC 2560x1440\tv-off.png" I_TYPE="1" KASP="0" P_ID="915" SCALE="0" S_CX="91" S_CY="113" TEXT="" TP_CLR="000000ff" W_TXT="0" X="2154" X_TXT="0" Y="1317" Y_TXT="0" ZORDR="21"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="185" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560x1440\zone-trans.png" I_TYPE="1" KASP="0" P_ID="919" SCALE="0" S_CX="115" S_CY="115" TEXT="" TP_CLR="000000ff" X="200" Y="1315" ZORDR="22"/>
 				</Images>
 				<LabelControls NAME="LabelControls"/>
 				<RemoteLabelControls NAME="RemoteLabelControls">
@@ -1035,7 +1035,7 @@
 					</Indicator>
 				</Indicators>
 				<GaugeControls NAME="GaugeControls">
-					<Gauge ADJ_CLR="" BK_IMG="THC 2560 x 1440\volume-bar-trans.png" CDRAG="0" D_ID="130" MAX="38" MIN="0" ORIENTATION="H" P_ID="718" TP_CLR="" TRAN_LEV="0" VALUE_IMAGE="THC 2560 x 1440\volume-bar.png" VALUE_X_OFFSET="5" VALUE_Y_OFFSET="5" X="1613" Y="80"/>
+					<Gauge ADJ_CLR="" BK_IMG="THC 2560x1440\volume-bar-trans.png" CDRAG="0" D_ID="130" MAX="38" MIN="0" ORIENTATION="H" P_ID="718" TP_CLR="" TRAN_LEV="0" VALUE_IMAGE="THC 2560x1440\volume-bar.png" VALUE_X_OFFSET="5" VALUE_Y_OFFSET="5" X="1613" Y="80"/>
 				</GaugeControls>
 			</Skin>
 			<Skin BKGND="THC 1366x768\\playlist-bg.png" B_TRANS="0" KEYPT="0" NAME="Playlist" POP_ATT="1" POP_LFT="0" POP_TOP="90" PTYPE="1" TYPE="POP">
@@ -2290,20 +2290,20 @@
 					<Text BK_CLR="00b16c59" CX="124" CY="100" D_ID="149" FNT="Roboto" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="100" FNT_UL="0" FNT_WT="500" P_ID="872" TP_BK="1" T_ALMNT="2" T_OSET="0" X="7" Y="61"/>
 				</TextControls>
 			</Skin>
-			<Skin BKGND="THC 2560 x 1440\main-nav-bg.png" B_TRANS="1" KEYPT="0" MOUSE_TRK="0" MT_SC_MULT="1.000000" NAME="Navigator" POP_ATT="1" POP_LFT="0" POP_TOP="0" PTYPE="1" TP_CLR="000000ff" TYPE="POP">
+			<Skin BKGND="THC 2560x1440\main-nav-bg.png" B_TRANS="1" KEYPT="0" MOUSE_TRK="0" MT_SC_MULT="1.000000" NAME="Navigator" POP_ATT="1" POP_LFT="0" POP_TOP="0" PTYPE="1" TP_CLR="000000ff" TYPE="POP">
 				<Buttons NAME="Buttons">
-					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="133" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560 x 1440\nav-down-icon.png" P_ID="837" P_VALUE="System.GalaxyTabA1.10.VolumeDown" REP_DELAY="500" REP_INT="350" REP_P_VALUE="Audio.GalaxyProTab1.VolumeDown" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2342" X_OFFSET="0" Y="1206" Y_OFFSET="0" ZORDR="1"/>
-					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="133" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560 x 1440\home-icon.png" P_ID="837" P_VALUE="System.Desktop.10.SelectPanel:Home::0" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2341" X_OFFSET="0" Y="337" Y_OFFSET="0" ZORDR="2"/>
-					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="133" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560 x 1440\light-icon.png" P_ID="837" P_VALUE="System.Desktop.10.SelectPanel:Lights::0" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2341" X_OFFSET="0" Y="468" Y_OFFSET="0" ZORDR="3"/>
-					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="133" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560 x 1440\music-note-icon.png" P_ID="837" P_VALUE="System.GalaxyTabA1.10.SelectPanel:Jukebox:Jukebox1:0" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2341" X_OFFSET="0" Y="602" Y_OFFSET="0" ZORDR="4">
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="133" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560x1440\nav-down-icon.png" P_ID="837" P_VALUE="System.GalaxyTabA1.10.VolumeDown" REP_DELAY="500" REP_INT="350" REP_P_VALUE="Audio.GalaxyProTab1.VolumeDown" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2342" X_OFFSET="0" Y="1206" Y_OFFSET="0" ZORDR="1"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="133" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560x1440\home-icon.png" P_ID="837" P_VALUE="System.Desktop.10.SelectPanel:Home::0" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2341" X_OFFSET="0" Y="337" Y_OFFSET="0" ZORDR="2"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="133" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560x1440\light-icon.png" P_ID="837" P_VALUE="System.Desktop.10.SelectPanel:Lights::0" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2341" X_OFFSET="0" Y="468" Y_OFFSET="0" ZORDR="3"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="133" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560x1440\music-note-icon.png" P_ID="837" P_VALUE="System.GalaxyTabA1.10.SelectPanel:Jukebox:Jukebox1:0" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2341" X_OFFSET="0" Y="602" Y_OFFSET="0" ZORDR="4">
 						<Contexts>
 							<Context D_ID="33" NAME="Jukebox 1" P_ID="364" P_VALUE="Select Music Panel"/>
 						</Contexts>
 					</Button>
-					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="133" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560 x 1440\nav-up-icon.png" P_ID="837" P_VALUE="System.GalaxyTabA1.10.VolumeUp" REP_DELAY="500" REP_INT="400" REP_P_VALUE="Audio.GalaxyProTab1.VolumeUp" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2342" X_OFFSET="0" Y="1095" Y_OFFSET="0" ZORDR="5"/>
-					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="133" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560 x 1440\nav-down-icon.png" P_ID="837" P_VALUE="System.GalaxyTabA1.10.ChannelDown" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2342" X_OFFSET="0" Y="987" Y_OFFSET="0" ZORDR="6"/>
-					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="133" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560 x 1440\nav-up-icon.png" P_ID="837" P_VALUE="System.GalaxyTabA1.10.ChannelUp" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2342" X_OFFSET="0" Y="874" Y_OFFSET="0" ZORDR="7"/>
-					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="133" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560 x 1440\movie-clapper-icon.png" P_ID="837" P_VALUE="System.GalaxyTabA1.10.SelectPanel:Movies::0" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2341" X_OFFSET="0" Y="735" Y_OFFSET="0" ZORDR="8">
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="133" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560x1440\nav-up-icon.png" P_ID="837" P_VALUE="System.GalaxyTabA1.10.VolumeUp" REP_DELAY="500" REP_INT="400" REP_P_VALUE="Audio.GalaxyProTab1.VolumeUp" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2342" X_OFFSET="0" Y="1095" Y_OFFSET="0" ZORDR="5"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="133" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560x1440\nav-down-icon.png" P_ID="837" P_VALUE="System.GalaxyTabA1.10.ChannelDown" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2342" X_OFFSET="0" Y="987" Y_OFFSET="0" ZORDR="6"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="133" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560x1440\nav-up-icon.png" P_ID="837" P_VALUE="System.GalaxyTabA1.10.ChannelUp" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2342" X_OFFSET="0" Y="874" Y_OFFSET="0" ZORDR="7"/>
+					<Button ACT_PRESS="1" ADJ_CLR="" D_ID="133" FNT="Icons" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="26" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560x1440\movie-clapper-icon.png" P_ID="837" P_VALUE="System.GalaxyTabA1.10.SelectPanel:Movies::0" REP_DELAY="0" REP_INT="0" REP_P_VALUE="" SCALE="0" SC_FLAGS="0" SC_KEY="" S_CX="0" S_CY="0" TEXT="" TP_CLR="00000001" TRAN_CT="0" TYPE="SPC" X="2341" X_OFFSET="0" Y="735" Y_OFFSET="0" ZORDR="8">
 						<Contexts>
 							<Context D_ID="33" NAME="Jukebox 1" P_ID="364" P_VALUE="Select Music Panel"/>
 						</Contexts>
@@ -2326,18 +2326,18 @@
 					<Label BK_CLR="00ff0000" CX="0" CY="0" FNT="Arial" FNT_CLR="00ffffff" FNT_CSET="0" FNT_IT="0" FNT_SZ="36" FNT_UL="0" FNT_WT="400" TEXT="Caller ID" TP_BK="1" T_ALMNT="2" T_OSET="0" X="57" Y="7"/>
 				</LabelControls>
 			</Skin>
-			<Skin BKGND="THC 2560 x 1440\zone-menu-bg.png" B_TRANS="1" NAME="Zone Menu" POP_ATT="1" POP_LFT="0" POP_TOP="0" PTYPE="1" TP_CLR="000000ff" TYPE="POP">
+			<Skin BKGND="THC 2560x1440\zone-menu-bg.png" B_TRANS="1" NAME="Zone Menu" POP_ATT="1" POP_LFT="0" POP_TOP="0" PTYPE="1" TP_CLR="000000ff" TYPE="POP">
 				<Buttons NAME="Buttons">
-					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="133" FNT="Arial" FNT_CLR="00939393" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560 x 1440\menu-item.png" P_ID="837" P_VALUE="Menu.Desktop.10.SelectZone:4" SCALE="0" S_CX="0" S_CY="0" TEXT="Office" TP_CLR="" TRAN_CT="0" TYPE="SPC" X="0" X_OFFSET="175" Y="1034" Y_OFFSET="-1" ZORDR="1"/>
-					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="133" FNT="Arial" FNT_CLR="00939393" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560 x 1440\menu-item.png" P_ID="837" P_VALUE="Menu.Desktop.10.SelectZone:6" SCALE="0" S_CX="0" S_CY="0" TEXT="Patio" TP_CLR="" TRAN_CT="0" TYPE="SPC" X="0" X_OFFSET="175" Y="1170" Y_OFFSET="-1" ZORDR="2"/>
-					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="133" FNT="Arial" FNT_CLR="00939393" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560 x 1440\menu-item.png" P_ID="837" P_VALUE="Menu.Desktop.10.SelectZone:5" SCALE="0" S_CX="0" S_CY="0" TEXT="Master Bedroom" TP_CLR="" TRAN_CT="0" TYPE="SPC" X="0" X_OFFSET="175" Y="898" Y_OFFSET="-1" ZORDR="3"/>
-					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="133" FNT="Arial" FNT_CLR="00939393" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560 x 1440\menu-item.png" P_ID="837" P_VALUE="Menu.Desktop.10.SelectZone:1" SCALE="0" S_CX="0" S_CY="0" TEXT="Living Room" TP_CLR="" TRAN_CT="0" TYPE="SPC" X="0" X_OFFSET="175" Y="762" Y_OFFSET="-1" ZORDR="4"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="133" FNT="Arial" FNT_CLR="00939393" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560x1440\menu-item.png" P_ID="837" P_VALUE="Menu.Desktop.10.SelectZone:4" SCALE="0" S_CX="0" S_CY="0" TEXT="Office" TP_CLR="" TRAN_CT="0" TYPE="SPC" X="0" X_OFFSET="175" Y="1034" Y_OFFSET="-1" ZORDR="1"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="133" FNT="Arial" FNT_CLR="00939393" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560x1440\menu-item.png" P_ID="837" P_VALUE="Menu.Desktop.10.SelectZone:6" SCALE="0" S_CX="0" S_CY="0" TEXT="Patio" TP_CLR="" TRAN_CT="0" TYPE="SPC" X="0" X_OFFSET="175" Y="1170" Y_OFFSET="-1" ZORDR="2"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="133" FNT="Arial" FNT_CLR="00939393" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560x1440\menu-item.png" P_ID="837" P_VALUE="Menu.Desktop.10.SelectZone:5" SCALE="0" S_CX="0" S_CY="0" TEXT="Master Bedroom" TP_CLR="" TRAN_CT="0" TYPE="SPC" X="0" X_OFFSET="175" Y="898" Y_OFFSET="-1" ZORDR="3"/>
+					<Button ACT_PRESS="0" ADJ_CLR="" D_ID="133" FNT="Arial" FNT_CLR="00939393" FNT_CSET="0" FNT_IT="0" FNT_SZ="48" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560x1440\menu-item.png" P_ID="837" P_VALUE="Menu.Desktop.10.SelectZone:1" SCALE="0" S_CX="0" S_CY="0" TEXT="Living Room" TP_CLR="" TRAN_CT="0" TYPE="SPC" X="0" X_OFFSET="175" Y="762" Y_OFFSET="-1" ZORDR="4"/>
 				</Buttons>
 				<Images NAME="Images">
-					<Image ADJ_CLR="" BK_CLR="" D_ID="185" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560 x 1440\zone-trans.png" I_TYPE="1" KASP="0" P_ID="639" SCALE="0" S_CX="115" S_CY="115" TEXT="" TP_CLR="000000ff" X="19" Y="772" ZORDR="5"/>
-					<Image ADJ_CLR="" BK_CLR="" D_ID="185" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560 x 1440\zone-trans.png" I_TYPE="1" KASP="0" P_ID="643" SCALE="0" S_CX="115" S_CY="115" TP_CLR="000000ff" X="19" Y="908" ZORDR="6"/>
-					<Image ADJ_CLR="" BK_CLR="" D_ID="185" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560 x 1440\zone-trans.png" I_TYPE="1" KASP="0" P_ID="642" SCALE="0" S_CX="115" S_CY="115" TP_CLR="000000ff" X="19" Y="1044" ZORDR="7"/>
-					<Image ADJ_CLR="" BK_CLR="" D_ID="185" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560 x 1440\zone-trans.png" I_TYPE="1" KASP="0" P_ID="644" SCALE="0" S_CX="648" S_CY="14" TP_CLR="000000ff" X="19" Y="1180" ZORDR="8"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="185" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560x1440\zone-trans.png" I_TYPE="1" KASP="0" P_ID="639" SCALE="0" S_CX="115" S_CY="115" TEXT="" TP_CLR="000000ff" X="19" Y="772" ZORDR="5"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="185" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560x1440\zone-trans.png" I_TYPE="1" KASP="0" P_ID="643" SCALE="0" S_CX="115" S_CY="115" TP_CLR="000000ff" X="19" Y="908" ZORDR="6"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="185" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560x1440\zone-trans.png" I_TYPE="1" KASP="0" P_ID="642" SCALE="0" S_CX="115" S_CY="115" TP_CLR="000000ff" X="19" Y="1044" ZORDR="7"/>
+					<Image ADJ_CLR="" BK_CLR="" D_ID="185" FNT="Arial" FNT_CLR="00000000" FNT_IT="0" FNT_SZ="16" FNT_UL="0" FNT_WT="400" I_FILE="THC 2560x1440\zone-trans.png" I_TYPE="1" KASP="0" P_ID="644" SCALE="0" S_CX="648" S_CY="14" TP_CLR="000000ff" X="19" Y="1180" ZORDR="8"/>
 				</Images>
 			</Skin>
 		</Skins>
@@ -2439,27 +2439,27 @@
 		<File PATH="THC 1366x768\list-bar-sm-2.png"/>
 		<File PATH="THC 1366x768\dialog-box-2.png"/>
 		<File PATH="THC\list-selection.png"/>
-		<File PATH="THC 2560 x 1440\main-bg.png"/>
+		<File PATH="THC 2560x1440\main-bg.png"/>
 		<File PATH="THC 1366x768\power-button-trans.png"/>
 		<File PATH="THC 1024x768\remote-button-2f.png"/>
-		<File PATH="THC 2560 x 1440\hamburger-menu.png"/>
+		<File PATH="THC 2560x1440\hamburger-menu.png"/>
 		<File PATH="THC\weather-icons-sm-2.png"/>
 		<File PATH="THC 1366x768\linked-unlinked-icon.png"/>
-		<File PATH="THC 2560 x 1440\volume-bar-trans.png"/>
-		<File PATH="THC 2560 x 1440\volume-bar.png"/>
-		<File PATH="THC 2560 x 1440\battery.png"/>
+		<File PATH="THC 2560x1440\volume-bar-trans.png"/>
+		<File PATH="THC 2560x1440\volume-bar.png"/>
+		<File PATH="THC 2560x1440\battery.png"/>
 		<File PATH="THC\separator.png"/>
 		<File PATH="THC 1366x768\separator.png"/>
-		<File PATH="THC 2560 x 1440\calendar-icon.png"/>
+		<File PATH="THC 2560x1440\calendar-icon.png"/>
 		<File PATH="THC\cdi-sm.png"/>
-		<File PATH="THC 2560 x 1440\volume-up.png"/>
-		<File PATH="THC 2560 x 1440\volume-down.png"/>
-		<File PATH="THC 2560 x 1440\ipod-off.png"/>
-		<File PATH="THC 2560 x 1440\radio-off.png"/>
-		<File PATH="THC 2560 x 1440\kodi-off.png"/>
-		<File PATH="THC 2560 x 1440\apple-off.png"/>
-		<File PATH="THC 2560 x 1440\tv-off.png"/>
-		<File PATH="THC 2560 x 1440\zone-trans.png"/>
+		<File PATH="THC 2560x1440\volume-up.png"/>
+		<File PATH="THC 2560x1440\volume-down.png"/>
+		<File PATH="THC 2560x1440\ipod-off.png"/>
+		<File PATH="THC 2560x1440\radio-off.png"/>
+		<File PATH="THC 2560x1440\kodi-off.png"/>
+		<File PATH="THC 2560x1440\apple-off.png"/>
+		<File PATH="THC 2560x1440\tv-off.png"/>
+		<File PATH="THC 2560x1440\zone-trans.png"/>
 		<File PATH="THC 1366x768\\playlist-bg.png"/>
 		<File PATH="THC 1366x768\close-icon.png"/>
 		<File PATH="THC 1024x768\Remote Button.png"/>
@@ -2483,14 +2483,14 @@
 		<File PATH="THC 1024x768\ic_up_arrow_24dp.png"/>
 		<File PATH="THC 1024x768\ic_down_arrow_24dp.png"/>
 		<File PATH="THC 1024x768\ic_watercan_black_24dp.png"/>
-		<File PATH="THC 2560 x 1440\main-nav-bg.png"/>
-		<File PATH="THC 2560 x 1440\nav-down-icon.png"/>
-		<File PATH="THC 2560 x 1440\home-icon.png"/>
-		<File PATH="THC 2560 x 1440\light-icon.png"/>
-		<File PATH="THC 2560 x 1440\music-note-icon.png"/>
-		<File PATH="THC 2560 x 1440\nav-up-icon.png"/>
-		<File PATH="THC 2560 x 1440\movie-clapper-icon.png"/>
-		<File PATH="THC 2560 x 1440\zone-menu-bg.png"/>
-		<File PATH="THC 2560 x 1440\menu-item.png"/>
+		<File PATH="THC 2560x1440\main-nav-bg.png"/>
+		<File PATH="THC 2560x1440\nav-down-icon.png"/>
+		<File PATH="THC 2560x1440\home-icon.png"/>
+		<File PATH="THC 2560x1440\light-icon.png"/>
+		<File PATH="THC 2560x1440\music-note-icon.png"/>
+		<File PATH="THC 2560x1440\nav-up-icon.png"/>
+		<File PATH="THC 2560x1440\movie-clapper-icon.png"/>
+		<File PATH="THC 2560x1440\zone-menu-bg.png"/>
+		<File PATH="THC 2560x1440\menu-item.png"/>
 	</Dependencies>
 </ROOT>

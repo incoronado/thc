@@ -46,7 +46,7 @@ $cmdArgs = @("$source","$dest",$what,$options)
 robocopy @cmdArgs
 
 
-If ($JOB_NAME -eq "Development2") {
+If ($JOB_NAME -eq "Development") {
     $source="HBData"
     $dest="c:\Program Files (x86)\Housebot\Config"
     $filename="HBData.mdb"

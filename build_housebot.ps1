@@ -4,6 +4,7 @@
 ### Description:    Primary Build Script for Housebot
 ###################################################################### 
 #Stop-Process -processname "HouseBotServer" -Force
+$JOB_NAME= $env:JOB_NAME
 
 # get HouseBotServer process
 $hb = Get-Process HouseBotServer -ErrorAction SilentlyContinue
@@ -45,14 +46,13 @@ $cmdArgs = @("$source","$dest",$what,$options)
 robocopy @cmdArgs
 
 
-
-$source="HBData"
-$dest="c:\Program Files (x86)\Housebot\Config"
-$filename="HBData.mdb"
-
-$cmdArgs = @("$source","$dest",$filename,$options)
-robocopy @cmdArgs
-
+If ($JOB_NAME -eq "Development2") {
+    $source="HBData"
+    $dest="c:\Program Files (x86)\Housebot\Config"
+    $filename="HBData.mdb"
+    $cmdArgs = @("$source","$dest",$filename,$options)
+    robocopy @cmdArgs
+}
 
 $LASTEXITCODE = 0
 

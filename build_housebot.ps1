@@ -54,7 +54,7 @@ $cmdArgs = @("$source","$dest",$filename,$options)
 robocopy @cmdArgs
 
 
-#$LASTEXITCODE = 0
+$LASTEXITCODE = 0
 
 
 exit $LastExitCode

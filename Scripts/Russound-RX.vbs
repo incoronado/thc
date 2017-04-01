@@ -21,10 +21,26 @@ Sleep SleepVar
 
 
 Sub ReadSerialData(Data)
+	
+
+	Class RNETMessage
+		Public TargetControllerID
+		Public TargetZoneID
+		Public TargetKeypadID
+		Public SourceControllerID
+		Public SourceZoneID
+		Public SourceKeypadID
+		Public MessageType
+
+
+	End Class
+
+
 	Dim RptStatusNbr, RptCmdTyp, RptCmdNbr, RptItem, DataItem, DataBuffer, msglength
 	'SetPropertyValue "Yamaha V2600 Settings.AV Debug", data
 	DataItem = Data
 	SetPropertyValue "Multiroom Audio Settings.Debug", Data 
+	SetPropertyValue "Multiroom Audio Settings.Debug2", RNETChecksum Data 
    	
    	Select Case Left(DataItem, 1)
 	
@@ -34,3 +50,22 @@ Sub ReadSerialData(Data)
 
 		End Select
 End Sub
+
+
+Function RNETChecksum(hexstr)
+	Dim HexBytes, ComputedChecksum, i
+	HexBytes=split(hexstr," ")
+	
+	'F0 7D 00 7F 00 00 7F 05 02 01 00 02 01 00 66 01 00 00 80 02 01 75'
+	
+	For i = 0 To ubound(HexBytes) - 2
+		'Add the HEX value of every byte in the message that precedes the Checksum in decimal'
+		ComputedChecksum = ComputedChecksum + CLng("&h" & i)
+	Next
+	'Count the number of bytes which precede the Checksum still maintaining decimal
+	ComputedChecksum = ComputedChecksum + ubound(HexBytes) - 1
+	' This value is then AND-ed with the HEX value 0x007F or 127 Dec
+	ComputedChecksum = ComputedChecksum And 127
+
+	RNETChecksum=right(cStr(hex(ComputedChecksum)),2)
+End Function

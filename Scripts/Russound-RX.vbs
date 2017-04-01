@@ -22,25 +22,11 @@ Sleep SleepVar
 
 Sub ReadSerialData(Data)
 	
-
-	Class RNETMessage
-		Public TargetControllerID
-		Public TargetZoneID
-		Public TargetKeypadID
-		Public SourceControllerID
-		Public SourceZoneID
-		Public SourceKeypadID
-		Public MessageType
-
-
-	End Class
-
-
 	Dim RptStatusNbr, RptCmdTyp, RptCmdNbr, RptItem, DataItem, DataBuffer, msglength
 	'SetPropertyValue "Yamaha V2600 Settings.AV Debug", data
 	DataItem = Data
 	SetPropertyValue "Multiroom Audio Settings.Debug", Data 
-	SetPropertyValue "Multiroom Audio Settings.Debug 2", RNETChecksum Data 
+	SetPropertyValue "Multiroom Audio Settings.Debug 2", RNETChecksum(Data)
    	
    	Select Case Left(DataItem, 1)
 	

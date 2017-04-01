@@ -49,7 +49,7 @@ Function RNETChecksum(hexstr)
 		ComputedChecksum = ComputedChecksum + CLng("&h" & HexBytes(i))
 	Next
 	'Count the number of bytes which precede the Checksum still maintaining decimal
-	ComputedChecksum = ComputedChecksum + ubound(HexBytes) - 1
+	ComputedChecksum = ComputedChecksum + ubound(HexBytes) 
 	' This value is then AND-ed with the HEX value 0x007F or 127 Dec
 	ComputedChecksum = ComputedChecksum And 127
 

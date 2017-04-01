@@ -7,29 +7,29 @@
 $JOB_NAME= $env:JOB_NAME
 
 # get HouseBotServer process
-$hb = Get-Process HouseBotServer -ErrorAction SilentlyContinue
-if ($hb) {
+#$hb = Get-Process HouseBotServer -ErrorAction SilentlyContinue
+#if ($hb) {
   # try gracefully first
-  $hb.CloseMainWindow()
+#  $hb.CloseMainWindow()
   # kill after five seconds
-  Start-Sleep -s 5
-  if (!$hb.HasExited) {
-    $hb | Stop-Process -Force
-  }
-}
+#  Start-Sleep -s 5
+#  if (!$hb.HasExited) {
+#    $hb | Stop-Process -Force
+#  }
+#}
 Remove-Variable hb
 
-$lockfile= "C:\Program Files (x86)\Housebot\Config\HBData.ldb"
-if (Test-Path $lockfile) {
-  Remove-Item $lockfile
-}
+#$lockfile= "C:\Program Files (x86)\Housebot\Config\HBData.ldb"
+#if (Test-Path $lockfile) {
+#  Remove-Item $lockfile
+#}
 
 
 # Copy HB Scripts
 $source="Scripts"
 $dest="c:\Program Files (x86)\Housebot\Config\Scripts"
 
-$what = @("/COPYALL","/B","/MIR")
+$what = @("/COPYALL","/B","/MIR", "/SEC")
 $options = @("/R:0","/W:0","/NFL","/NDL")
 
 $cmdArgs = @("$source","$dest",$what,$options)

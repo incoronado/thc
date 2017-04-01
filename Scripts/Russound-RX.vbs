@@ -14,7 +14,7 @@ Option Explicit
 
 Dim Data, SleepVar
 SleepVar = CInt(GetPropertyValue("System.Script Sleep Time"))
-ReadSerialData GetPropertyValue("Multiroom Audio Amplifier.Received Data")
+ReadSerialData GetPropertyValue("Multiroom Audio Amplifier.Received Hex Data")
 Sleep SleepVar
 
 

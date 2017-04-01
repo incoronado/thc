@@ -40,7 +40,7 @@ Sub ReadSerialData(Data)
 	'SetPropertyValue "Yamaha V2600 Settings.AV Debug", data
 	DataItem = Data
 	SetPropertyValue "Multiroom Audio Settings.Debug", Data 
-	SetPropertyValue "Multiroom Audio Settings.Debug2", RNETChecksum Data 
+	SetPropertyValue "Multiroom Audio Settings.Debug 2", RNETChecksum Data 
    	
    	Select Case Left(DataItem, 1)
 	

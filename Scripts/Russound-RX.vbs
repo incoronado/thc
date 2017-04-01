@@ -27,9 +27,9 @@ Sub ReadSerialData(Data)
 	DataItem = Data
 	SetPropertyValue "Multiroom Audio Settings.Debug", Data 
 	If ValidateRNETChecksum(Data) = True Then
-		SetPropertyValue "Multiroom Audio Settings.Debug 2", "Good"
+		'SetPropertyValue "Multiroom Audio Settings.Debug 2", "Good"
    	Else
-   		SetPropertyValue "Multiroom Audio Settings.Debug 2", "Bad"
+   		'SetPropertyValue "Multiroom Audio Settings.Debug 2", "Bad"
    	End If
 
    	Select Case Left(DataItem, 1)

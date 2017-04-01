@@ -60,6 +60,7 @@ Function ValidateRNETChecksum(hexstr)
 	Dim HexBytes, MsgChecksum
 	HexBytes=split(hexstr," ")
 	MsgChecksum = ubound(HexBytes)
+	SetPropertyValue "Multiroom Audio Settings.Debug 2", MsgChecksum 
 	If ComputeRNETChecksum(hexstr) = MsgChecksum then
 		ValidateRNETChecksum = True
 	Else

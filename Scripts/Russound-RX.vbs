@@ -27,9 +27,9 @@ Sub ReadSerialData(Data)
 	DataItem = Data
 	SetPropertyValue "Multiroom Audio Settings.Debug", Data 
 	If ValidateRNETChecksum(Data) = True Then
-		'SetPropertyValue "Multiroom Audio Settings.Debug 2", "Good"
+		SetPropertyValue "Multiroom Audio Settings.Debug 2", "Good"
    	Else
-   		'SetPropertyValue "Multiroom Audio Settings.Debug 2", "Bad"
+   		SetPropertyValue "Multiroom Audio Settings.Debug 2", "Bad"
    	End If
 
    	Select Case Left(DataItem, 1)
@@ -60,7 +60,7 @@ Function ValidateRNETChecksum(hexstr)
 	Dim HexBytes, MsgChecksum
 	HexBytes=split(hexstr," ")
 	MsgChecksum = HexBytes(ubound(HexBytes))
-	SetPropertyValue "Multiroom Audio Settings.Debug 2", MsgChecksum 
+	'SetPropertyValue "Multiroom Audio Settings.Debug 2", MsgChecksum 
 	If ComputeRNETChecksum(hexstr) = MsgChecksum then
 		ValidateRNETChecksum = True
 	Else

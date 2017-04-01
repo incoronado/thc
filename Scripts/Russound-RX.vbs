@@ -26,11 +26,12 @@ Sub ReadSerialData(Data)
 	'SetPropertyValue "Yamaha V2600 Settings.AV Debug", data
 	DataItem = Data
 	SetPropertyValue "Multiroom Audio Settings.Debug", Data 
-	If ValidateRNETChecksum = True
+	If ValidateRNETChecksum = True Then
 		SetPropertyValue "Multiroom Audio Settings.Debug 2", "Good"
    	Else
    		SetPropertyValue "Multiroom Audio Settings.Debug 2", "Bad"
    	End If
+   	
    	Select Case Left(DataItem, 1)
 	
 		    ' Configuration Command DC2

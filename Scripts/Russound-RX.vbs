@@ -44,9 +44,9 @@ Function RNETChecksum(hexstr)
 	
 	'F0 7D 00 7F 00 00 7F 05 02 01 00 02 01 00 66 01 00 00 80 02 01 75'
 	
-	For i = 0 To ubound(HexBytes) - 2
+	For i = 0 To ubound(HexBytes) - 1
 		'Add the HEX value of every byte in the message that precedes the Checksum in decimal'
-		ComputedChecksum = ComputedChecksum + CLng("&h" & i)
+		ComputedChecksum = ComputedChecksum + CLng("&h" & HexBytes(i))
 	Next
 	'Count the number of bytes which precede the Checksum still maintaining decimal
 	ComputedChecksum = ComputedChecksum + ubound(HexBytes) - 1

@@ -26,8 +26,11 @@ Sub ReadSerialData(Data)
 	'SetPropertyValue "Yamaha V2600 Settings.AV Debug", data
 	DataItem = Data
 	SetPropertyValue "Multiroom Audio Settings.Debug", Data 
-	SetPropertyValue "Multiroom Audio Settings.Debug 2", RNETChecksum(Data)
-   	
+	If ValidateRNETChecksum = True
+		SetPropertyValue "Multiroom Audio Settings.Debug 2", "Good"
+   	Else
+   		SetPropertyValue "Multiroom Audio Settings.Debug 2", "Bad"
+   	End If
    	Select Case Left(DataItem, 1)
 	
 		    ' Configuration Command DC2
@@ -38,20 +41,27 @@ Sub ReadSerialData(Data)
 End Sub
 
 
-Function RNETChecksum(hexstr)
+Function ComputeRNETChecksum(hexstr)
 	Dim HexBytes, ComputedChecksum, i
 	HexBytes=split(hexstr," ")
-	
-	'F0 7D 00 7F 00 00 7F 05 02 01 00 02 01 00 66 01 00 00 80 02 01 75'
-	
 	For i = 0 To ubound(HexBytes) - 1
-		'Add the HEX value of every byte in the message that precedes the Checksum in decimal'
+		'Add the HEX value of every byte in the message that precedes the Checksum in decimal
 		ComputedChecksum = ComputedChecksum + CLng("&h" & HexBytes(i))
 	Next
 	'Count the number of bytes which precede the Checksum still maintaining decimal
 	ComputedChecksum = ComputedChecksum + ubound(HexBytes) 
 	' This value is then AND-ed with the HEX value 0x007F or 127 Dec
 	ComputedChecksum = ComputedChecksum And 127
-
 	RNETChecksum=cStr(hex(ComputedChecksum))
+End Function
+
+Function ValidateRNETChecksum(hexstr)
+	Dim HexBytes, MsgChecksum
+	HexBytes=split(hexstr," ")
+	MsgChecksum = ubound(HexBytes)
+	If ComputeRNETChecksum(hexstr) = MsgChecksum then
+		ValidateRNETChecksum = True
+	Else
+		ValidateRNETChecksum = False
+	End If	
 End Function

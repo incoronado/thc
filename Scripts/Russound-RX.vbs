@@ -24,7 +24,7 @@ Sub ReadSerialData(Data)
 	Dim RptStatusNbr, RptCmdTyp, RptCmdNbr, RptItem, DataItem, DataBuffer, msglength
 	'SetPropertyValue "Yamaha V2600 Settings.AV Debug", data
 	DataItem = Data
-	SetPropertyValue "Multiroom Audio Settings.debug", Data 
+	SetPropertyValue "Multiroom Audio Settings.Debug", Data 
    	
    	Select Case Left(DataItem, 1)
 	

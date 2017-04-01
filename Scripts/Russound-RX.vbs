@@ -53,5 +53,5 @@ Function RNETChecksum(hexstr)
 	' This value is then AND-ed with the HEX value 0x007F or 127 Dec
 	ComputedChecksum = ComputedChecksum And 127
 
-	RNETChecksum=right(cStr(hex(ComputedChecksum)),2)
+	RNETChecksum=cStr(hex(ComputedChecksum))
 End Function

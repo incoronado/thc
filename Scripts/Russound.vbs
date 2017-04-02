@@ -40,7 +40,7 @@ Sub MessageHandler(Action)
 				Case "zonepower"
 					Select Case lcase(b(2))
 						Case "on"
-							SerialCommand "F000007F0001700502020000F123000100010001"
+							SerialCommand "F0 00 00 7F 00 01 70 05 02 02 00 00 F1 23 00 01 00 01 00 01"
 						Case "off"
 
 						Case "toggle"

@@ -35,10 +35,10 @@ Sub MessageHandler(Action)
     Select Case lcase(a(0))
 		Case "russound"
 			b=split(a(3),":")
-			'Russound.GalaxyTabA1.10.SelectZone:1
+			'Russound.GalaxyTabA1.10.ZonePower:1:on
 			Select Case lcase(b(0))
 				Case "zonepower"
-					Select Case lcase(b(1))
+					Select Case lcase(b(2))
 						Case "on"
 							SerialCommand "F000007F0001700502020000F123000100010001"
 						Case "off"

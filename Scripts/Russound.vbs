@@ -48,10 +48,12 @@ Sub MessageHandler(Action)
 						Case "toggle"
 
 					End Select		
-
+				Case "frequencyup"
+					SerialCommand "F0 00 7D 00 00 00 60 05 02 01 00 02 01 00 2F 00 70 00 00 00 00"
+				Case "frequencydown"
+					SerialCommand "F0 00 7D 00 00 00 60 05 02 01 00 02 01 00 30 00 70 00 00 00 00"					
 			End Select	
 	End Select
-	
 End Sub		
 
 

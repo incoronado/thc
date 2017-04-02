@@ -47,11 +47,15 @@ Sub MessageHandler(Action)
 							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 F1 23 00 00 00 " & zerobasedzone & " 00 01"
 						Case "toggle"
 
-					End Select		
-				Case "frequencyup"
-					SerialCommand "F0 00 7D 00 00 00 60 05 02 01 00 02 01 00 2F 00 70 00 00 00 00"
-				Case "frequencydown"
-					SerialCommand "F0 00 7D 00 00 00 60 05 02 01 00 02 01 00 30 00 70 00 00 00 00"					
+					End Select	
+				'Russound.GalaxyTabA1.10.FrequencyUp		
+				Case "tune"
+					Select Case lcase(b(1))
+						Case "up"
+							SerialCommand "F0 00 7D 00 00 00 60 05 02 01 00 02 01 00 2F 00 70 00 00 00 00"
+						Case "down"
+							SerialCommand "F0 00 7D 00 00 00 60 05 02 01 00 02 01 00 30 00 70 00 00 00 00"					
+					End Select			
 			End Select	
 	End Select
 End Sub		

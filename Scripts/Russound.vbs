@@ -26,7 +26,7 @@ Do
 Loop
 
 Sub MessageHandler(Action)
-	Dim a, b
+	Dim a, b, zerobasedzone
 	'Class.Source.Priority.Command:Parameters
     'Example:  Russound.Desktop.10.ZonePower:1:on
 	a=split(Action,".")
@@ -40,9 +40,11 @@ Sub MessageHandler(Action)
 				Case "zonepower"
 					Select Case lcase(b(2))
 						Case "on"
-							SerialCommand "F0 00 00 7F 00 01 70 05 02 02 00 00 F1 23 00 01 00 01 00 01"
+							zerobasedzone = Right("0" & cStr(cInt(b(1)) - 1),2)
+							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 F1 23 00 01 00 " & zerobasedzone & " 00 01"
 						Case "off"
-
+							zerobasedzone = Right("0" & cStr(cInt(b(1)) - 1),2)
+							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 F1 23 00 00 00 " & zerobasedzone & " 00 01"
 						Case "toggle"
 
 					End Select		

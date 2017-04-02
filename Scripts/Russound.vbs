@@ -71,6 +71,6 @@ End Function
 Sub SerialCommand(hexstr)
 
 	SetPropertyValue "Multiroom Audio Settings.Debug 2", hexstr & ComputeRNETChecksum(hexstr) & "F7"
-	SetPropertyValue "Multiroom Audio Amplifier.MRA Command", hexstr & ComputeRNETChecksum(hexstr) & "F7"
+	SetPropertyValue "Multiroom Audio Amplifier.MRA Command", Replace(hexstr," ","",1,-1) & ComputeRNETChecksum(hexstr) & "F7"
 
 End Sub

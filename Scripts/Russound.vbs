@@ -75,7 +75,7 @@ Sub MessageHandler(Action)
 					'Russound.GalaxyTabA1.10.ZoneSource:1:1
 					zerobasedzone = Right("0" & cStr(cInt(b(1)) - 1),2)
 					zerobasedsource = Right("0" & cStr(cInt(b(2)) - 1),2)
-					SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 00 00 00 F1 3E 00 00 00 " & zerobasesource & " 00 01"
+					SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 00 00 00 F1 3E 00 00 00 " & zerobasedsource & " 00 01"
 				Case "volume"
 					Select Case lcase(b(2))
 						Case "up"

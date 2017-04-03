@@ -48,13 +48,15 @@ Sub MessageHandler(Action)
 						Case "toggle"
 
 					End Select	
-				'Russound.GalaxyTabA1.10.Tune:Up		
-				Case "tune"
-					Select Case lcase(b(1))
-						Case "up"
-							SerialCommand "F0 00 00 7F 00 01 70 05 02 02 00 00 69 00 00 00 00 00 01"
-						Case "down"
-							SerialCommand "F0 00 00 7F 00 01 70 05 02 02 00 00 6A 00 00 00 00 00 01"
+				'Russound.GalaxyTabA1.10.Keypad:1:Previous		
+				Case "keypad"
+					Select Case lcase(b(2))
+						Case "previous"
+						    zerobasedzone = Right("0" & cStr(cInt(b(1)) - 1),2)
+							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 67 00 00 00 00 00 01"
+						Case "next"
+							zerobasedzone = Right("0" & cStr(cInt(b(1)) - 1),2)
+							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 68 00 00 00 00 00 01"
 					End Select			
 			End Select	
 	End Select

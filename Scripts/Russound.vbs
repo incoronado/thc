@@ -35,6 +35,7 @@ Sub MessageHandler(Action)
     Select Case lcase(a(0))
 		Case "russound"
 			b=split(a(3),":")
+
 			'Russound.GalaxyTabA1.10.ZonePower:1:on
 			Select Case lcase(b(0))
 				Case "zonepower"
@@ -68,8 +69,6 @@ Sub MessageHandler(Action)
 							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 6F 00 00 00 00 00 01"
 						Case "F2"
 							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 70 00 00 00 00 00 01"
-						Case "stop"
-							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 68 00 00 00 00 00 01"		
 					End Select
 				Case "zonesource"
 					'Russound.GalaxyTabA1.10.ZoneSource:1:1
@@ -77,12 +76,11 @@ Sub MessageHandler(Action)
 					zerobasedsource = Right("0" & cStr(cInt(b(2)) - 1),2)
 					SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 00 00 00 F1 3E 00 00 00 " & zerobasedsource & " 00 01"
 				Case "volume"
+					zerobasedzone = Right("0" & cStr(cInt(b(1)) - 1),2)
 					Select Case lcase(b(2))
 						Case "up"
-						    zerobasedzone = Right("0" & cStr(cInt(b(1)) - 1),2)
 							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 7F 00 00 00 00 00 01"
 						Case "down"
-							zerobasedzone = Right("0" & cStr(cInt(b(1)) - 1),2)
 							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 F1 7F 00 00 00 00 00 01"
 					End Select
 

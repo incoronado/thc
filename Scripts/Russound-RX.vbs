@@ -28,7 +28,7 @@ Sub ReadSerialData(Data)
 		
    	Else
    		HexBytes=split(Data," ")
-   		Select Case Left(HexBytes, 4)
+   		Select Case HexBytes(4)
 		    ' Read Source Broadcast Display Feedback
 			Case "79"
 				'Overall Payload Size

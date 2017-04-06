@@ -17,28 +17,29 @@ SleepVar = CInt(GetPropertyValue("System.Script Sleep Time"))
 ReadSerialData GetPropertyValue("Multiroom Audio Amplifier.Received Hex Data")
 Sleep SleepVar
 
-
-
-
 Sub ReadSerialData(Data)
-	
-	Dim RptStatusNbr, RptCmdTyp, RptCmdNbr, RptItem, DataItem, DataBuffer, msglength
+	Dim DataItem, HexBytes, ComputedChecksum, i, MessageLength, SourceNo, MessageStr
 	'SetPropertyValue "Yamaha V2600 Settings.AV Debug", data
-	DataItem = Data
-	SetPropertyValue "Multiroom Audio Settings.Debug", Data 
-	If ValidateRNETChecksum(Data) = True Then
-		SetPropertyValue "Multiroom Audio Settings.Debug 2", "Good"
-   	Else
-   		SetPropertyValue "Multiroom Audio Settings.Debug 2", "Bad"
-   	End If
-
-   	Select Case Left(DataItem, 1)
+	MessageStr = ""
 	
-		    ' Configuration Command DC2
-		Case Chr(18)
 
-
+	
+	If ValidateRNETChecksum(Data) = False Then
+		
+   	Else
+   		HexBytes=split(Data," ")
+   		Select Case Left(HexBytes, 4)
+		    ' Read Source Broadcast Display Feedback
+			Case "79"
+				'Overall Payload Size
+				MessageLength = CLng("&h" & HexBytes(19))
+				SourceNo = CLng(Right(HexBytes(21),1)) + 1
+				For i = 24 To MessageLength - 3
+					MessageStr = MessageStr + HexBytes[i]  
+				Next	
+				SetPropertyValue "Multiroom Audio Settings.Debug", MessageStr
 		End Select
+   	End If
 End Sub
 
 

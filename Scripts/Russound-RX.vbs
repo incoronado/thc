@@ -22,8 +22,6 @@ Sub ReadSerialData(Data)
 	'SetPropertyValue "Yamaha V2600 Settings.AV Debug", data
 	MessageStr = ""
 	
-
-	
 	If ValidateRNETChecksum(Data) = False Then
 		 
    	Else
@@ -36,7 +34,9 @@ Sub ReadSerialData(Data)
 				'SetPropertyValue "Multiroom Audio Settings.Debug", MessageLength
 				SourceNo = CLng(Right(HexBytes(20),1)) + 1
 				For i = 23 To MessageLength + 20
-					MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
+					If chr(CLng("&h" & HexBytes(i))) <= 127
+						MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
+					End If	
 				Next
 				SetPropertyValue "Multiroom Audio Settings.Debug", MessageStr
 		End Select

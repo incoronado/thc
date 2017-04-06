@@ -32,10 +32,10 @@ Sub ReadSerialData(Data)
 		    ' Read Source Broadcast Display Feedback
 			Case "79"
 				'Overall Payload Size
-				MessageLength = CLng("&h" & HexBytes(19))
+				MessageLength = CLng("&h" & HexBytes(18))
 				SourceNo = CLng(Right(HexBytes(20),1)) + 1
-				For i = 24 To MessageLength - 3
-					MessageStr = MessageStr & chr(HexBytes(i-1))
+				For i = 23 To MessageLength - 4
+					MessageStr = MessageStr & chr(HexBytes(i))
 				Next
 				SetPropertyValue "Multiroom Audio Settings.Debug", MessageStr
 		End Select

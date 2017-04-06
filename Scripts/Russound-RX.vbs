@@ -35,7 +35,7 @@ Sub ReadSerialData(Data)
 				MessageLength = CLng("&h" & HexBytes(19))
 				SourceNo = CLng(Right(HexBytes(21),1)) + 1
 				For i = 24 To MessageLength - 3
-					MessageStr = MessageStr & HexBytes[i]
+					MessageStr = MessageStr & HexBytes(i)
 				Next
 				SetPropertyValue "Multiroom Audio Settings.Debug", MessageStr
 		End Select

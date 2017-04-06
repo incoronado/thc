@@ -33,7 +33,9 @@ Sub ReadSerialData(Data)
 			Case "79"
 				'Overall Payload Size
 				MessageLength = CLng("&h" & HexBytes(18))
+				SetPropertyValue "Multiroom Audio Settings.Debug", MessageLength
 				SourceNo = CLng(Right(HexBytes(20),1)) + 1
+				
 				For i = 23 To MessageLength - 4
 					MessageStr = MessageStr & chr(HexBytes(i))
 				Next

@@ -35,13 +35,14 @@ Sub ReadSerialData(Data)
 				SourceNo = CLng(Right(HexBytes(20),1)) + 1
 
 				
-				For i = 23 To MessageLength + 20
+				For i = 23 To MessageLength + 19
 					If CLng("&h" & HexBytes(i)) > 31 And CLng("&h" & HexBytes(i)) < 127 Then
 						MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
 					End If	
 				Next
 				If HexBytes(20) = "23" Then
 					SetPropertyValue "Multiroom Audio Settings.Debug", MessageStr
+				Else If HexBytes(20) = "23" Then	
 				End if	
 		End Select
    	End If

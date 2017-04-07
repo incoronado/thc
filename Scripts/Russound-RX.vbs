@@ -44,13 +44,14 @@ Sub ReadSerialData(Data)
 							For i = 29 To CLng("&h" & HexBytes(28)) + 28
 								MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
 							Next	
+							SetPropertyValue "Russound.XM Format", MessageStr
 						Case "02"	
 							For i = 32 To CLng("&h" & HexBytes(31)) + 31
 								MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
 							Next	
-
+							SetPropertyValue "Russound.XM Artist", MessageStr
 					End Select
-					SetPropertyValue "Multiroom Audio Settings.Debug 2", MessageStr		
+							
 
 
 				End if	

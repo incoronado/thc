@@ -42,7 +42,7 @@ Sub ReadSerialData(Data)
 				Next
 				If HexBytes(20) = "23" Then
 					SetPropertyValue "Multiroom Audio Settings.Debug", MessageStr
-				Else If HexBytes(20) = "23" Then	
+				ElseIf HexBytes(20) = "23" Then	
 				End if	
 		End Select
    	End If

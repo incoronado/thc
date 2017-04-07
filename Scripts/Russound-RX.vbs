@@ -23,7 +23,7 @@ Sub ReadSerialData(Data)
 	MessageStr = ""
 	
 	If ValidateRNETChecksum(Data) = False Then
-		 
+		  
    	Else
    		HexBytes=split(Data," ")
    		Select Case HexBytes(3)

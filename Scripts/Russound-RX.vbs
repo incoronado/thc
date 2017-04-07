@@ -55,6 +55,11 @@ Sub ReadSerialData(Data)
 								MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
 							Next	
 							SetPropertyValue "Russound.XM Song", MessageStr	
+						Case "04"	
+							For i = 32 To CLng("&h" & HexBytes(31)) + 31
+								MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
+							Next	
+							SetPropertyValue "Russound.XM Album", MessageStr		
 					End Select
 							
 

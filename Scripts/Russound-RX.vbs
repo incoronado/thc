@@ -31,19 +31,24 @@ Sub ReadSerialData(Data)
 			Case "79"
 				'Overall Payload Size
 				MessageLength = CLng("&h" & HexBytes(18))
-				'SetPropertyValue "Multiroom Audio Settings.Debug", MessageLength
 				SourceNo = CLng(Right(HexBytes(20),1)) + 1
 
-				
-				For i = 23 To MessageLength + 19
-					If CLng("&h" & HexBytes(i)) > 31 And CLng("&h" & HexBytes(i)) < 127 Then
-						MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
-					End If	
-				Next
 				If HexBytes(20) = "23" Then
-					SetPropertyValue "Multiroom Audio Settings.Debug", MessageStr
-				ElseIf HexBytes(20) = "23" Then	
+					For i = 23 To MessageLength + 19
+						MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
+					Next
+					SetPropertyValue "Multiroom Audio Settings.Debug", MessageStr		
+				ElseIf HexBytes(20) = "66" Then	
+					For i = 32 To MessageLength + 10
+						MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
+					Next
+					SetPropertyValue "Multiroom Audio Settings.Debug 2", MessageStr		
+
+
 				End if	
+				
+
+				
 		End Select
    	End If
 End Sub

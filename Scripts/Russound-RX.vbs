@@ -39,7 +39,7 @@ Sub ReadSerialData(Data)
 					Next
 					SetPropertyValue "Multiroom Audio Settings.Debug", MessageStr		
 				ElseIf HexBytes(20) = "66" Then	
-					For i = 32 To MessageLength + 10
+					For i = 31 To CLng("&h" & HexBytes(30)))
 						MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
 					Next
 					SetPropertyValue "Multiroom Audio Settings.Debug 2", MessageStr		

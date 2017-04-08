@@ -22,7 +22,7 @@ Sub ReadSerialData(Data)
 	'SetPropertyValue "Yamaha V2600 Settings.AV Debug", data
 	MessageStr = ""
 	
-	SetPropertyValue "Multiroom Audio Settings.Debug", RNETMessage(Data)
+	
 
 	If ValidateRNETChecksum(Data) = False Then
 		  
@@ -34,13 +34,13 @@ Sub ReadSerialData(Data)
 				'Overall Payload Size
 				MessageLength = CLng("&h" & HexBytes(18))
 				SourceNo = CLng(Right(HexBytes(20),1)) + 1
-
-				If HexBytes(20) = "23" Then
+				SetPropertyValue "Multiroom Audio Settings.Debug", RNETMessage(Data)
+				If HexBytes(20) = "234" Then
 					For i = 23 To MessageLength + 19
 						'MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
 					Next
 					SetPropertyValue "Multiroom Audio Settings.Debug", MessageStr		
-				ElseIf HexBytes(20) = "60" Then	
+				ElseIf HexBytes(20) = "604" Then	
 					Select Case Hexbytes(24)
 						Case "06"
 							For i = 29 To CLng("&h" & HexBytes(28)) + 28

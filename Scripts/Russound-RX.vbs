@@ -22,6 +22,8 @@ Sub ReadSerialData(Data)
 	'SetPropertyValue "Yamaha V2600 Settings.AV Debug", data
 	MessageStr = ""
 	
+	SetPropertyValue "Multiroom Audio Settings.Debug", RNETMessage(Data)
+
 	If ValidateRNETChecksum(Data) = False Then
 		  
    	Else
@@ -35,7 +37,7 @@ Sub ReadSerialData(Data)
 
 				If HexBytes(20) = "23" Then
 					For i = 23 To MessageLength + 19
-						MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
+						'MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
 					Next
 					SetPropertyValue "Multiroom Audio Settings.Debug", MessageStr		
 				ElseIf HexBytes(20) = "60" Then	
@@ -112,4 +114,14 @@ Function ValidateRNETChecksum(hexstr)
 	Else
 		ValidateRNETChecksum = False
 	End If	
+End Function
+
+Function RNETMessage(Data)
+	Dim MessageLength, MessageStr
+	'Overall Payload Size
+	MessageLength = CLng("&h" & HexBytes(18))
+		For i = 22 To MessageLength 
+			MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i))) + " "
+		Next
+	RNETMessage =  Trim(MessageStr)
 End Function

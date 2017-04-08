@@ -118,6 +118,7 @@ End Function
 
 Function RNETMessage(Data)
 	Dim MessageLength, MessageStr, HexBytes, i
+	HexBytes=split(Data," ")
 	'Overall Payload Size
 	MessageLength = CLng("&h" & HexBytes(18))
 		For i = 22 To MessageLength 

@@ -122,7 +122,7 @@ Function RNETMessage(Data)
 	'Overall Payload Size
 	MessageLength = CLng("&h" & HexBytes(18))
 		For i = 22 To MessageLength 
-			MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i))) + " "
+			MessageStr = MessageStr & HexBytes(i) + " "
 		Next
 	RNETMessage =  Trim(MessageStr)
 End Function

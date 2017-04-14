@@ -118,10 +118,9 @@ Function ValidateRNETChecksum(hexstr)
 End Function
 
 Function RNETMessage(Data)
-	Dim objLogFile
+	Dim MessageLength, MessageStr, HexBytes, i, objLogFile, HousebotLocation
 	HousebotLocation = "C:\Program Files (x86)\housebot\"
-
-	Dim MessageLength, MessageStr, HexBytes, i
+	
 	HexBytes=split(Data," ")
 	'Overall Payload Size
 	MessageLength = CLng("&h" & HexBytes(18))

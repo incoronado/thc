@@ -128,7 +128,7 @@ Function RNETMessage(Data)
 		For i = 20 To ubound(HexBytes) - 1
 			MessageStr = MessageStr & HexBytes(i) + " "
 		Next
-	Set objLogFile = objFSO.OpenTextFile(HousebotLocation & "config\scripts\RNETMessag.log", 1)
+	Set objLogFile = objFSO.OpenTextFile(HousebotLocation & "config\scripts\RNETMessag.log", 8)
 	objLogFile.Write Trim(MessageStr) & vbCrLf
 	objLogFile.Close
 

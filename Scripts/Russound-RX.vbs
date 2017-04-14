@@ -40,7 +40,8 @@ Sub ReadSerialData(Data)
 						'MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
 					Next
 					SetPropertyValue "Multiroom Audio Settings.Debug", MessageStr		
-				ElseIf HexBytes(20) = "604" Then	
+				ElseIf HexBytes(20) = "604" Then
+
 					Select Case Hexbytes(24)
 						Case "06"
 							For i = 29 To CLng("&h" & HexBytes(28)) + 28
@@ -117,6 +118,9 @@ Function ValidateRNETChecksum(hexstr)
 End Function
 
 Function RNETMessage(Data)
+	Dim objLogFile
+	HousebotLocation = "C:\Program Files (x86)\housebot\"
+
 	Dim MessageLength, MessageStr, HexBytes, i
 	HexBytes=split(Data," ")
 	'Overall Payload Size
@@ -124,5 +128,9 @@ Function RNETMessage(Data)
 		For i = 20 To ubound(HexBytes) - 1
 			MessageStr = MessageStr & HexBytes(i) + " "
 		Next
+	Set objLogFile = objFSO.OpenTextFile(HousebotLocation & "config\scripts\RNETMessag.log", 1)
+	objLogFile.Write Trim(MessageStr) & vbCrLf
+	objLogFile.Close
+
 	RNETMessage =  Trim(MessageStr)
 End Function

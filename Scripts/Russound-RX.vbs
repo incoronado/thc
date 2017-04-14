@@ -118,7 +118,7 @@ Function ValidateRNETChecksum(hexstr)
 End Function
 
 Function RNETMessage(Data)
-	Dim MessageLength, MessageStr, HexBytes, i, objLogFile, HousebotLocation. ObjFSO
+	Dim MessageLength, MessageStr, HexBytes, i, objLogFile, HousebotLocation, ObjFSO
 	HousebotLocation = "C:\Program Files (x86)\housebot\"
 
 	HexBytes=split(Data," ")

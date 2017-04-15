@@ -47,9 +47,8 @@ Sub ReadSerialData(Data)
 				ElseIf  RNETHexBytes(0) = "60" Then
 				    RNETPayloadHeader = ""
 				    For i = 0 To ubound(RNETHexBytes)
-
 						If RNETHexBytes(i) = "1C" Then
-						    for x = CLng("&h" & RNETHexBytes(i+1)) To ubound(RNETHexBytes)
+						    for x = i+1 To ubound(RNETHexBytes)
 								MessageStr = MessageStr & chr(CLng("&h" & RNETHexBytes(x)))
 							Next	
 							Exit For

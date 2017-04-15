@@ -18,7 +18,7 @@ ReadSerialData GetPropertyValue("Multiroom Audio Amplifier.Received Hex Data")
 Sleep SleepVar
 
 Sub ReadSerialData(Data)
-	Dim DataItem, HexBytes, ComputedChecksum, i, MessageLength, SourceNo, MessageStr
+	Dim DataItem, HexBytes, ComputedChecksum, i, MessageLength, SourceNo, MessageStr, RNETHexBytes, x, RNETPayloadHeader
 	'SetPropertyValue "Yamaha V2600 Settings.AV Debug", data
 	MessageStr = ""
 	
@@ -27,56 +27,48 @@ Sub ReadSerialData(Data)
 	If ValidateRNETChecksum(Data) = False Then
 		  
    	Else
+
    		HexBytes=split(Data," ")
+
    		Select Case HexBytes(3)
-		    ' Read Source Broadcast Display Feedback
+		    ' Read Source Broadcast Display Feedback		    
 			Case "79"
+
+				RNETHexBytes=split(RNETMessage(Data)," ")
 				'Overall Payload Size
 				MessageLength = CLng("&h" & HexBytes(18))
-				SourceNo = CLng(Right(HexBytes(20),1)) + 1
+				SourceNo = CLng(Right(RNETHexBytes(1),1)) + 1
 				SetPropertyValue "Multiroom Audio Settings.Debug", RNETMessage(Data)
-				If HexBytes(20) = "234" Then
+				If RNETHexBytes(0) = "23" Then
 					For i = 23 To MessageLength + 19
 						'MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
 					Next
 					SetPropertyValue "Multiroom Audio Settings.Debug", MessageStr		
-				ElseIf HexBytes(20) = "604" Then
+				ElseIf  RNETHexBytes(0) = "60" Then
+				    RNETPayloadHeader = ""
+				    For i = 0 To ubound(RNETHexBytes)
 
-					Select Case Hexbytes(24)
-						Case "06"
-							For i = 29 To CLng("&h" & HexBytes(28)) + 28
-								MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
+						If RNETHexBytes(i) = "1C" Then
+						    for x = CLng("&h" & HexBytes(i+1)) To ubound(RNETHexBytes)
+								MessageStr= RNETHexBytes(x)
 							Next	
+						Exit For
+					Next	
+
+					Select Case RNETHexbytes(4)
+						Case "06"
 							SetPropertyValue "Russound.XM Format", MessageStr
 						Case "02"	
-							For i = 32 To CLng("&h" & HexBytes(31)) + 31
-								MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
-							Next	
 							SetPropertyValue "Russound.XM Artist", MessageStr
 						Case "01"	
-							For i = 32 To CLng("&h" & HexBytes(31)) + 31
-								MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
-							Next	
 							SetPropertyValue "Russound.XM Song", MessageStr	
 						Case "04"	
-							For i = 32 To CLng("&h" & HexBytes(31)) + 31
-								MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
-							Next	
 							SetPropertyValue "Russound.XM Album", MessageStr
 						Case "15"	
-							For i = 32 To CLng("&h" & HexBytes(31)) + 31
-								MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
-							Next	
 							SetPropertyValue "Russound.XM URL", MessageStr
 						Case "0F"	
-							For i = 32 To CLng("&h" & HexBytes(31)) + 31
-								MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
-							Next	
 							SetPropertyValue "Russound.Streamer Source", MessageStr	
 						Case "07"
-							For i = 29 To CLng("&h" & HexBytes(28)) + 28
-								MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
-							Next	
 							SetPropertyValue "Russound.XM Station", MessageStr				
 					End Select
 							

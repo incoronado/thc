@@ -76,6 +76,7 @@ Sub MessageHandler(Action)
 					zerobasedsource = Right("0" & cStr(cInt(b(2)) - 1),2)
 					SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 00 00 00 F1 3E 00 00 00 " & zerobasedsource & " 00 01"
 				Case "volume"
+					'Russound.GalaxyTabA1.10.Volume:1:up
 					zerobasedzone = Right("0" & cStr(cInt(b(1)) - 1),2)
 					Select Case lcase(b(2))
 						Case "up"

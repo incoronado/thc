@@ -891,6 +891,31 @@ Sub VolumeDown(Remote)
 	End If
 End Sub
 
+Function GetZoneNumber(ZoneName)
+
+	Dim NoMoreZones, ZoneCount, ZoneNumber
+	ZoneCount = 0
+	NoMoreZones = 0
+	ZoneNumber = ""
+	Do Until NoMoreZones = 1
+		If GetPropertyValue ("Multiroom Audio Settings.Zone " + CStr(RemoteCount+1) + " TV") <> "* error *" Then
+		   RemoteCount=RemoteCount + 1
+			If GetPropertyValue ("Remote-" + CStr(RemoteCount) + ".Remote Name") = RemoteName Then
+				RemoteNumber = "Remote-" + CStr(RemoteCount)	
+			End if
+		Else
+			NoMoreRemotes = 1
+		End if
+	Loop
+	GetRemoteNumber = RemoteNumber
+End Function
+
+Function GetSourceNumber(SourceName)
+
+End Function
+
+
+
 Sub VolumeUp(Remote)
 	Dim CurrentVolume
 	SetPropertyValue "MRA Ignore Receive.Running", "Yes"
@@ -916,7 +941,7 @@ Sub SetZoneSource(Remote,Source)
 			Else
 				'SetpropertyValue "Subscriber-1.DispatchMessage", "MRA.System.10.On:5"
 				'sleep 50
-				SendSubscriberMessage 1,"MRA.System.10.source:5:" & CStr(Source)
+				SendSubscriberMessage 1,"MRA.System.10.zonesource:5:" & CStr(Source)
 				'SetpropertyValue "Subscriber-1.DispatchMessage", "MRA.System.10.source:5:" & CStr(Source)
 			End if
 		ElseIf GetPropertyValue(Remote & ".Selected Zone") = 1 Then

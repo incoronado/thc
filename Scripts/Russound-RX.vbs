@@ -50,7 +50,7 @@ Sub ReadSerialData(Data)
 
 						If RNETHexBytes(i) = "1C" Then
 						    for x = CLng("&h" & HexBytes(i+1)) To ubound(RNETHexBytes)
-								MessageStr= RNETHexBytes(x)
+								MessageStr = MessageStr + RNETHexBytes(x)
 							Next	
 							Exit For
 						End If	

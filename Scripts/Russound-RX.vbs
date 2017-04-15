@@ -52,7 +52,9 @@ Sub ReadSerialData(Data)
 						    for x = CLng("&h" & HexBytes(i+1)) To ubound(RNETHexBytes)
 								MessageStr= RNETHexBytes(x)
 							Next	
-						Exit For
+							Exit For
+						End If	
+
 					Next	
 
 					Select Case RNETHexbytes(4)

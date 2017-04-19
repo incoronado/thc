@@ -119,7 +119,7 @@ Function SourceName2ID(SourceName)
 	SourceCount = 0
 	Do Until NoMoreEventSources = 1
 		If GetPropertyValue("Multiroom Audio Settings.Zone " + CStr(SourceCount+1) + " Name") <> "* error *" Then
-		   If GetPropertyValue("Multiroom Audio Settings.Zone " + CStr(EventHandlerCount+1) + " Name") = SourceName Then
+		   If GetPropertyValue("Multiroom Audio Settings.Zone " + CStr(SourceCount+1) + " Name") = SourceName Then
 		   		SourceNo = SourceCount
 		   End if
 		   SourceCount=SourceCount + 1  
@@ -137,7 +137,7 @@ Function ZoneName2ID(ZoneName)
 	ZoneCount = 0
 	Do Until NoMoreZones = 1
 		If GetPropertyValue("Multiroom Audio Settings.Zone " + CStr(ZoneCount+1) + " Name") <> "* error *" Then
-		   If GetPropertyValue("Multiroom Audio Settings.Zone " + CStr(EventHandlerCount+1) + " Name") = ZoneName Then
+		   If GetPropertyValue("Multiroom Audio Settings.Zone " + CStr(ZoneCount+1) + " Name") = ZoneName Then
 		   		ZoneNo = ZoneCount
 		   End if
 		   ZoneCount=ZoneCount + 1  

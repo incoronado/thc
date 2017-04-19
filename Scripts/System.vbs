@@ -1107,10 +1107,12 @@ Sub AVOn (AVFunction, VideoZone)
 			If VideoZone = "A" Then
 				SetpropertyValue "USBUIRT.Panasonic Remote", "Power On"
 			Elseif VideoZone = "B" Then
-				SendSubscriberMessage 1, "MRA.System.10.On:5"
+				SendSubscriberMessage 1, "Russound.Desktop.10.ZonePower:Master Bedroom:on"
+				'SendSubscriberMessage 1, "MRA.System.10.On:5"
 			    'SetpropertyValue "Subscriber-1.DispatchMessage", "MRA.System.10.On:5"
 				sleep 50
-				SendSubscriberMessage 1, "MRA.System.10.source:5:3"
+				SendSubscriberMessage 1, "Russound.Desktop.10.ZoneSource:Master Bedroom:Cable TV"
+				'SendSubscriberMessage 1, "MRA.System.10.source:5:3"
 				'SetpropertyValue "Subscriber-1.DispatchMessage", "MRA.System.10.source:5:3"
 				
 				'Allow 5MS to Queue Message

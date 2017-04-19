@@ -92,7 +92,7 @@ End Sub
 
 
 Function ComputeRNETChecksum(hexstr)
-	SetPropertyValue "Multiroom Audio Settings.Debug 2", hexstr
+	
 	Dim HexBytes, ComputedChecksum, i
 
 	HexBytes=split(hexstr," ")
@@ -130,6 +130,7 @@ Function SourceName2ID(SourceName)
 			NoMoreSources = 1
 		End if
 	Loop
+	SetPropertyValue "Multiroom Audio Settings.Debug 2", SourceNo
 	SourceName2ID = SourceNo
 End Function
 

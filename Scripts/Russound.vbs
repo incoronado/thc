@@ -39,7 +39,7 @@ Sub MessageHandler(Action)
 			'Russound.GalaxyTabA1.10.ZonePower:1:on
 			Select Case lcase(b(0))
 				Case "zonepower"
-					zerobasedzone = Right("0" & cStr(cInt(ZoneName2ID(b(1)) - 1),2)
+					zerobasedzone = Right("0" & cStr(cInt(ZoneName2ID(b(1))) - 1),2)
 					Select Case lcase(b(2))
 						Case "on"		
 							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 F1 23 00 01 00 " & zerobasedzone & " 00 01"

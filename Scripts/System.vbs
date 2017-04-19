@@ -1108,16 +1108,10 @@ Sub AVOn (AVFunction, VideoZone)
 				SetpropertyValue "USBUIRT.Panasonic Remote", "Power On"
 			Elseif VideoZone = "B" Then
 				SendSubscriberMessage 1, "Russound.Desktop.10.ZonePower:Master Bedroom:on"
-				'SendSubscriberMessage 1, "MRA.System.10.On:5"
-			    'SetpropertyValue "Subscriber-1.DispatchMessage", "MRA.System.10.On:5"
 				sleep 50
 				SendSubscriberMessage 1, "Russound.Desktop.10.ZoneSource:Master Bedroom:Cable TV"
-				'SendSubscriberMessage 1, "MRA.System.10.source:5:3"
-				'SetpropertyValue "Subscriber-1.DispatchMessage", "MRA.System.10.source:5:3"
-				
 				'Allow 5MS to Queue Message
 				Sleep 50
-				'SetpropertyValue "Subscriber-1.DispatchMessage", "System.System.10.ToggleBedroomTV"
 			End if
 			Sleep 50	
 			SetpropertyValue "USBUIRT.Direct TV Remote", "Power On"                               
@@ -1139,6 +1133,10 @@ Sub AVOn (AVFunction, VideoZone)
 			SetpropertyValue "System.Matrix Zone " & VideoZone & " Power State", "On"
 		    If VideoZone = "A" Then
 				SetpropertyValue "USBUIRT.Panasonic Remote", "Power On"
+				Elseif VideoZone = "B" Then
+				SendSubscriberMessage 1, "Russound.GalaxyTabA1.10.ZonePower:Master Bedroom:On"
+				sleep 50
+				SendSubscriberMessage 1, "Russound.Desktop.10.ZoneSource:Master Bedroom:Kodi"	
 			End if	
 			
 			If ((GetpropertyValue("Yamaha V2600 Settings.AV Power Master") = "Off")  And (VideoZone = "A")) Then
@@ -1159,11 +1157,9 @@ Sub AVOn (AVFunction, VideoZone)
 			If VideoZone = "A" Then
 				SetpropertyValue "USBUIRT.Panasonic Remote", "Power On"
 			Elseif VideoZone = "B" Then
-				SendSubscriberMessage 1, "MRA.System.10.On:5"
-			    'SetpropertyValue "Subscriber-1.DispatchMessage", "MRA.System.10.On:5"
+				SendSubscriberMessage 1, "Russound.GalaxyTabA1.10.ZonePower:Master Bedroom:On"
 				sleep 50
-				SendSubscriberMessage 1, "MRA.System.10.source:5:6"
-				'SetpropertyValue "Subscriber-1.DispatchMessage", "MRA.System.10.source:5:6"
+				SendSubscriberMessage 1, "Russound.Desktop.10.ZoneSource:Master Bedroom:Apple TV"
 			End if	
 			
 			If ((GetpropertyValue("Yamaha V2600 Settings.AV Power Master") = "Off") And (VideoZone = "A")) Then
@@ -1182,6 +1178,11 @@ Sub AVOn (AVFunction, VideoZone)
 			SetpropertyValue "System.Matrix Zone " & VideoZone & " Power State", "On"
 			If VideoZone = "A" Then
 				SetpropertyValue "USBUIRT.Panasonic Remote", "Power On"
+			Elseif VideoZone = "B" Then
+				SendSubscriberMessage 1, "Russound.GalaxyTabA1.10.ZonePower:Master Bedroom:On"
+				sleep 50
+				SendSubscriberMessage 1, "Russound.Desktop.10.ZoneSource:Master Bedroom:Blu-Ray"
+
 			End if
 			SetpropertyValue "USBUIRT.Sony BD", "Power On"
 			If ((GetpropertyValue("Yamaha V2600 Settings.AV Power Master") = "Off") And (VideoZone = "A")) Then

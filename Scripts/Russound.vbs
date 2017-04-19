@@ -48,9 +48,9 @@ Sub MessageHandler(Action)
 							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 F1 23 00 00 00 " & zerobasedzone & " 00 01"
 						Case "toggle"
 					End Select	
-				'Russound.GalaxyTabA1.10.Keypad:1:Previous		
+				'Russound.GalaxyTabA1.10.Keypad:Patio:Previous		
 				Case "keypad"
-					zerobasedzone = Right("0" & cStr(cInt(b(1)) - 1),2)
+					zerobasedzone = Right("0" & cStr(cInt(ZoneName2ID(b(1))) - 1),2)
 					Select Case lcase(b(2))
 						Case "previous"
 							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 67 00 00 00 00 00 01"
@@ -72,13 +72,13 @@ Sub MessageHandler(Action)
 							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 70 00 00 00 00 00 01"
 					End Select
 				Case "zonesource"
-					'Russound.GalaxyTabA1.10.ZoneSource:1:1
-					zerobasedzone = Right("0" & cStr(cInt(b(1)) - 1),2)
-					zerobasedsource = Right("0" & cStr(cInt(b(2)) - 1),2)
+					'Russound.GalaxyTabA1.10.ZoneSource:Patio:Cable TV
+					zerobasedzone = Right("0" & cStr(cInt(ZoneName2ID(b(1))) - 1),2)
+					zerobasedsource = Right("0" & cStr(cInt(SourceName2ID(b(2))) - 1),2)
 					SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 00 00 00 F1 3E 00 00 00 " & zerobasedsource & " 00 01"
 				Case "volume"
-					'Russound.GalaxyTabA1.10.Volume:1:up
-					zerobasedzone = Right("0" & cStr(cInt(b(1)) - 1),2)
+					'Russound.GalaxyTabA1.10.Volume:Master Bedroom:up
+					zerobasedzone = Right("0" & cStr(cInt(ZoneName2ID(b(1))) - 1),2)
 					Select Case lcase(b(2))
 						Case "up"
 							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 7F 00 00 00 00 00 01"

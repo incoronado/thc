@@ -28,7 +28,7 @@ Loop
 Sub MessageHandler(Action)
 	Dim a, b, zerobasedzone, zerobasedsource
 	'Class.Source.Priority.Command:Parameters
-    'Example:  Russound.Desktop.10.ZonePower:1:on
+    'Example:  Russound.Desktop.10.ZonePower:Master Bedroom:on
 	a=split(Action,".")
 	
     'MsgBox "Ready Command"
@@ -39,7 +39,7 @@ Sub MessageHandler(Action)
 			'Russound.GalaxyTabA1.10.ZonePower:1:on
 			Select Case lcase(b(0))
 				Case "zonepower"
-					zerobasedzone = Right("0" & cStr(cInt(b(1)) - 1),2)
+					zerobasedzone = Right("0" & cStr(cInt(zone2ID(b(1)) - 1),2)
 					Select Case lcase(b(2))
 						Case "on"		
 							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 F1 23 00 01 00 " & zerobasedzone & " 00 01"
@@ -111,3 +111,42 @@ Sub SerialCommand(hexstr)
 	SetPropertyValue "Multiroom Audio Amplifier.MRA Command", Replace(hexstr," ","",1,-1) & ComputeRNETChecksum(hexstr) & "F7"
 
 End Sub
+
+Function SourceName2ID(SourceName) 
+	Dim SourceCount, NoMoreSources, SourceNo
+	SourceNo=0
+	NoMoreSources = 0
+	SourceCount = 0
+	Do Until NoMoreEventSources = 1
+		If GetPropertyValue("Multiroom Audio Settings.Zone " + CStr(SourceCount+1) + " Name") <> "* error *" Then
+		   If GetPropertyValue("Multiroom Audio Settings.Zone " + CStr(EventHandlerCount+1) + " Name") = SourceName Then
+		   		SourceNo = SourceCount
+		   End if
+		   SourceCount=SourceCount + 1  
+		Else
+			NoMoreSources = 1
+		End if
+	Loop
+	SourceName2ID = SourceNo
+End Sub
+
+Function ZoneName2ID(ZoneName) 
+	Dim ZoneCount, NoMoreZones, ZoneNo
+	ZoneNo=0
+	NoMoreZones = 0
+	ZoneCount = 0
+	Do Until NoMoreZones = 1
+		If GetPropertyValue("Multiroom Audio Settings.Zone " + CStr(ZoneCount+1) + " Name") <> "* error *" Then
+		   If GetPropertyValue("Multiroom Audio Settings.Zone " + CStr(EventHandlerCount+1) + " Name") = ZoneName Then
+		   		ZoneNo = ZoneCount
+		   End if
+		   ZoneCount=ZoneCount + 1  
+		Else
+			NoMoreZones = 1
+		End if
+	Loop
+	ZoneName2ID = ZoneNo
+End Sub
+
+
+

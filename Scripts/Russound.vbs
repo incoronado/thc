@@ -128,7 +128,7 @@ Function SourceName2ID(SourceName)
 		End if
 	Loop
 	SourceName2ID = SourceNo
-End Sub
+End Function
 
 Function ZoneName2ID(ZoneName) 
 	Dim ZoneCount, NoMoreZones, ZoneNo
@@ -146,7 +146,7 @@ Function ZoneName2ID(ZoneName)
 		End if
 	Loop
 	ZoneName2ID = ZoneNo
-End Sub
+End Function
 
 
 

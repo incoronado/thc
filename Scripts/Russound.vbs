@@ -92,7 +92,9 @@ End Sub
 
 
 Function ComputeRNETChecksum(hexstr)
+	SetPropertyValue "Multiroom Audio Settings.Debug 2", hexstr
 	Dim HexBytes, ComputedChecksum, i
+
 	HexBytes=split(hexstr," ")
 	For i = 0 To ubound(HexBytes)
 		'Add the HEX value of every byte in the message that precedes the Checksum in decimal

@@ -168,7 +168,7 @@ Sub SystemCommand(Action)
 					AVOn b(1), b(2)
 				Case "AVOn2"
 					'System.GalaxyTabA1.10.AVOn:Cable TV:Master Bedroom
-					AVOn b(1), b(2)
+					AVOn2 b(1), b(2)
 				Case "ToggleBedroomTV"	
 					SetPropertyValue "USBUIRT.Westinghouse Remote", "Power"
 				Case "TogglePlayer"

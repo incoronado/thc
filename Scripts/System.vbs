@@ -1099,7 +1099,7 @@ End Sub
 Sub AVOn2 (Source, Zone)
 	'Rewrite of AVOn that takes advantage of HB propery settings.  Core of the Audio Video Logic
     'Check to see if TV is applicable
-	If (GetPropertyValue("Multiroom Audio Settings.Zone " & ZoneName2ID(Zone) & " TV" = "1") And (GetPropertyValue("Multiroom Audio Settings.Source " & SourceName2ID(Source) & " TV" = "1")  Then
+	If (GetPropertyValue("Multiroom Audio Settings.Zone " & ZoneName2ID(Zone) & " TV") = "1") And (GetPropertyValue("Multiroom Audio Settings.Source " & SourceName2ID(Source) & " TV") = "1")  Then
 		SetpropertyValue "System.Matrix Zone " & VideoZoneName2Alpha(Zone) & " Power State", "On"
 		'Turn On Video Matrix If Off
 		If GetpropertyValue("HDMI Matrix Settings.HDMI Power State") = "Off" Then
@@ -1107,7 +1107,7 @@ Sub AVOn2 (Source, Zone)
 			Sleep 50
 		End if
 		SetpropertyValue "HDMI Matrix Script.Action", "Set" & VideoZoneName2Alpha(Zone) & VideoSourceName2Number(Source) 
-		If (GetPropertyValue("Multiroom Audio Settings.Zone " & ZoneName2ID(Zone) & " TV Status" = "0") Then
+		If GetPropertyValue("Multiroom Audio Settings.Zone " & ZoneName2ID(Zone) & " TV Status") = "0" Then
 			if Trim(GetPropertyValue("Multiroom Audio Settings.Zone " & ZoneName2ID & " TV On Command")) <> "" Then
 				SetPropertyValue "Subscriber-10.DispatchMessage", GetPropertyValue("Multiroom Audio Settings.Zone " & ZoneName2ID & " TV On Command")
 			End If	

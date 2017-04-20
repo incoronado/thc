@@ -166,6 +166,9 @@ Sub SystemCommand(Action)
 				Case "AVOn"
 					'System.GalaxyTabA1.10.AVOn:CableTVOn:B
 					AVOn b(1), b(2)
+				Case "AVOn2"
+					'System.GalaxyTabA1.10.AVOn:Cable TV:Master Bedroom
+					AVOn b(1), b(2)
 				Case "ToggleBedroomTV"	
 					SetPropertyValue "USBUIRT.Westinghouse Remote", "Power"
 				Case "TogglePlayer"
@@ -186,6 +189,7 @@ Sub SystemCommand(Action)
 
 				
 				Case "PanasonicTVOff"
+
 				Case "WestinghouseTVPower" 
 					'System.GalaxyTabA1.10.WestinghouseTVPower
 					SetpropertyValue "USBUIRT.Westinghouse Remote", "Power"
@@ -939,19 +943,13 @@ Sub SetZoneSource(Remote,Source)
 			ElseIf CInt(Source) = 6 Then
 				AVOn "AppleTVOn", "B"
 			Else
-				'SetpropertyValue "Subscriber-1.DispatchMessage", "MRA.System.10.On:5"
-				'sleep 50
 				SendSubscriberMessage 1,"MRA.System.10.zonesource:5:" & CStr(Source)
-				'SetpropertyValue "Subscriber-1.DispatchMessage", "MRA.System.10.source:5:" & CStr(Source)
 			End if
 		ElseIf GetPropertyValue(Remote & ".Selected Zone") = 1 Then
 		
 		Else
 			SendSubscriberMessage 1, "MRA.System.10.source:" & GetPropertyValue(Remote & ".Selected Zone") & ":" & CStr(Source)
-			'SetpropertyValue "Subscriber-1.DispatchMessage", "MRA.System.10.source:" & GetPropertyValue(Remote & ".Selected Zone") & ":" & CStr(Source)
-							
 		End if
-	    'SetpropertyValue "Multiroom Audio Script.Action", "Source." &  GetPropertyValue(Remote & ".Selected Zone") & "." & CStr(Source)	
 	End If	
 	
 	If CInt(Source) = 1 Then
@@ -1098,9 +1096,97 @@ Sub OpenTHCRemotePanel(Panel, Remote)
 	SetWhichRemotesToControl("")
 End Sub
 
+Sub AVOn2 (Source, Zone)
+	'Rewrite of AVOn that takes advantage of HB propery settings.  Core of the Audio Video Logic
+    'Check to see if TV is applicable
+	If (GetPropertyValue("Multiroom Audio Settings.Zone " & ZoneName2ID(Zone) & " TV" = "1") And (GetPropertyValue("Multiroom Audio Settings.Source " & SourceName2ID(Source) & " TV" = "1")  Then
+		SetpropertyValue "System.Matrix Zone " & VideoZoneName2Alpha(Zone) & " Power State", "On"
+		'Turn On Video Matrix If Off
+		If GetpropertyValue("HDMI Matrix Settings.HDMI Power State") = "Off" Then
+			SetpropertyValue "HDMI Matrix Script.Action", "PowerOn"
+			Sleep 50
+		End if
+		SetpropertyValue "HDMI Matrix Script.Action", "Set" & VideoZoneName2Alpha(Zone) & VideoSourceName2Number(Source) 
+		If (GetPropertyValue("Multiroom Audio Settings.Zone " & ZoneName2ID(Zone) & " TV Status" = "0") Then
+			if Trim(GetPropertyValue("Multiroom Audio Settings.Zone " & ZoneName2ID & " TV On Command")) <> "" Then
+				SetPropertyValue "Subscriber-10.DispatchMessage", GetPropertyValue("Multiroom Audio Settings.Zone " & ZoneName2ID & " TV On Command")
+			End If	
+			SetPropertyValue "Multiroom Audio Settings.Zone " & ZoneName2ID(Zone) & " TV Status", 1
+		End if
+	End if
+
+	If ((GetpropertyValue("Yamaha V2600 Settings.AV Power Master") = "Off") And (Zone = "Living Room")) Then
+		SetpropertyValue "Yamaha V2600 Settings.Action", "MasterPowerOn"
+	Else
+		SendSubscriberMessage 1, "Russound.System.10.ZonePower:" & Zone & ":on"
+		SendSubscriberMessage 1, "Russound.System.10.ZoneSource:" & Zone & ":" & Source
+	End if
+End Sub
+
+Function VideoZoneName2Alpha(ZoneName) 
+	Dim ZoneAlpha, ReturnValue
+	ZoneAlpha=Array("A","B","C","D")
+ 	ReturnValue=""
+ 	For each item in ZoneAlpha
+    	If lcase(ZoneName) = lcase(GetPropertyValue("System.Matrix Zone " & item & " Name")) Then
+    		ReturnValue = item
+    	End if
+ 	Next
+End Function
+
+Function VideoSourceName2Number(SourceName) 
+	Dim ZoneAlpha, ReturnValue
+	ZoneAlpha=Array("1","2","3","4")
+ 	ReturnValue=""
+ 	For each item in ZoneAlpha						
+    	If lcase(SourceName) = lcase(GetPropertyValue("System.Matrix Source " & item & " Name")) Then
+    		ReturnValue = item
+    	End if
+ 	Next
+End Function
+
+
+Function SourceName2ID(SourceName) 
+	Dim SourceCount, NoMoreSources, SourceNo
+	SourceNo=0
+	NoMoreSources = 0
+	SourceCount = 0
+	Do Until NoMoreSources = 1
+		If GetPropertyValue("Multiroom Audio Settings.Source " & CStr(SourceCount+1) & " Name") <> "* error *" Then
+		   If GetPropertyValue("Multiroom Audio Settings.Source " & CStr(SourceCount+1) & " Name") = SourceName Then
+		   		SourceNo = SourceCount + 1
+		   End if
+		   SourceCount=SourceCount + 1  
+		Else
+			NoMoreSources = 1
+		End if
+	Loop
+	SetPropertyValue "Multiroom Audio Settings.Debug 2", SourceNo
+	SourceName2ID = SourceNo
+End Function
+
+Function ZoneName2ID(ZoneName) 
+	Dim ZoneCount, NoMoreZones, ZoneNo
+	ZoneNo=0
+	NoMoreZones = 0
+	ZoneCount = 0
+	Do Until NoMoreZones = 1
+		If GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneCount+1) &  " Name") <> "* error *" Then
+		   If GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneCount+1) & " Name") = ZoneName Then
+		   		ZoneNo = ZoneCount + 1
+		   End if
+		   ZoneCount=ZoneCount + 1  
+		Else
+			NoMoreZones = 1
+		End if
+	Loop
+	SetPropertyValue "Multiroom Audio Settings.Debug 2", ZoneNo
+	ZoneName2ID = ZoneNo
+End Function
+
+
 
 Sub AVOn (AVFunction, VideoZone)
-	
 	Select Case lcase(AVFunction)
 		Case "cabletvon"
 			SetpropertyValue "System.Matrix Zone " & VideoZone & " Power State", "On"
@@ -1149,8 +1235,6 @@ Sub AVOn (AVFunction, VideoZone)
 			If GetpropertyValue("System.Zone " & VideoZone & " Selected Source") <> "HA Server" Then
 				SetpropertyValue "HDMI Matrix Script.Action", "Set" & VideoZone & "1"
 			End if
-	
-			
 			
 		Case "appletvon"
 			SetpropertyValue "System.Matrix Zone " & VideoZone & " Power State", "On"

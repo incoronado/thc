@@ -17,7 +17,7 @@ Select Case DataItem
 	Case "141"
 		SendSubscriberMessage 9, "Russound.GalaxyTabA1.10.Volume:Master Bedroom:Down"
 	Case "3"
-		SendSubscriberMessage 9, "System.IRRemote.10.AVOn:CableTVOn:A"
+		SendSubscriberMessage 9, "System.IRRemote.10.AVOn2:Cable TV:Master Bedroom"
 	Case "1"	
 		SendSubscriberMessage 9, "System.IRRemote.10.AVOn:AppleTVOn:A"
 	Case "4"	

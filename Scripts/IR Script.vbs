@@ -27,8 +27,23 @@ Sub SystemCommand(Action)
  						Case "power"
  							SetPropertyValue "USBUIRT.Westinghouse Remote", "Power"
  					End Select
+ 				Case "panasonictv"
+ 					'IR.System.10.PanasonicTV:On
+ 					Select Case b(1)	
+ 						Case "on"
+ 							SetpropertyValue "USBUIRT.Panasonic Remote", "Power On"
+ 						Case "off"
+ 							SetpropertyValue "USBUIRT.Panasonic Remote", "Power Off"
+ 					End Select
+ 				Case "sonybluray"
+ 					'IR.System.10.SonyBluRay:On
+ 					Select Case b(1)	
+ 						Case "on"
+ 							SetpropertyValue "USBUIRT.Sony BD", "Power On"			
+ 						Case "off"
+ 							SetpropertyValue "USBUIRT.Sony BD", "Power Off"
+ 					End Select
  			End Select
-
 	End Select
 		
 End Sub

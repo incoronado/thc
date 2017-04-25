@@ -1103,7 +1103,7 @@ Sub AVOn2 (Source, Zone)
     'Check to see if TV is applicable
     SetPropertyValue "System.Debug", "Got Here inside AVOn2"
     SetPropertyValue "System.Debug", "Multiroom Audio Settings.Zone " & ZoneName2ID(Zone) & " TV"
-    SetPropertyValue "System.Debug", "Zone: " & GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV") & "<=>Source: " & GetPropertyValue("Multiroom Audio Settings.Source " & CStr(SourceName2ID(Zone)) & " TV")
+    SetPropertyValue "System.Debug", "Zone: " & GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV") & "<=>Source: " & GetPropertyValue("Multiroom Audio Settings.Source " & CStr(SourceName2ID(Source)) & " TV")
 	If ((CInt(GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV")) = 1) And (CInt(GetPropertyValue("Multiroom Audio Settings.Source " & CStr(SourceName2ID(Source)) & " TV")) = 1))  Then
 		
 		SetpropertyValue "System.Matrix Zone " & VideoZoneName2Alpha(Zone) & " Power State", "On"

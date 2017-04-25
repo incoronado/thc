@@ -1,5 +1,5 @@
 Option Explicit
-On Error Resume Next
+'On Error Resume Next
 ' Message Format MessageHandlerID.Class.Source.Priority.Command:Param1:Param2
 
 Dim Action

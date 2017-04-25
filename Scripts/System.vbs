@@ -1096,6 +1096,7 @@ Sub OpenTHCRemotePanel(Panel, Remote)
 	SetWhichRemotesToControl("")
 End Sub
 
+
 Sub AVOn2 (Source, Zone)
 	'Rewrite of AVOn that takes advantage of HB propery settings.  Core of the Audio Video Logic
     'Check to see if TV is applicable

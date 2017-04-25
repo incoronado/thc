@@ -1102,7 +1102,7 @@ Sub AVOn2 (Source, Zone)
 	'Rewrite of AVOn that takes advantage of HB propery settings.  Core of the Audio Video Logic
     'Check to see if TV is applicable
     SetPropertyValue "System.Debug", "Got Here inside AVOn2"
-    SetPropertyValue "System.Debug", "Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV"
+    SetPropertyValue "System.Debug", "Multiroom Audio Settings.Zone " & ZoneName2ID(Zone) & " TV"
     SetPropertyValue "System.Debug", "Zone: " & CInt(GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV")) & "<=>Source: " & CInt(GetPropertyValue("Multiroom Audio Settings.Source " & CStr(SourceName2ID(Zone)) & " TV"))
 	If ((CInt(GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV")) = 1) And (CInt(GetPropertyValue("Multiroom Audio Settings.Source " & CStr(SourceName2ID(Source)) & " TV")) = 1))  Then
 		

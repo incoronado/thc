@@ -1113,11 +1113,11 @@ Sub AVOn2 (Source, Zone)
 			Sleep 50
 		End if
 		SetpropertyValue "HDMI Matrix Script.Action", "Set" & VideoZoneName2Alpha(Zone) & VideoSourceName2Number(Source) 
-		If GetPropertyValue("Multiroom Audio Settings.Zone " & ZoneName2ID(Zone) & " TV Status") = "0" Then
-			if Trim(GetPropertyValue("Multiroom Audio Settings.Zone " & ZoneName2ID & " TV On Command")) <> "" Then
-				SetPropertyValue "Subscriber-10.DispatchMessage", GetPropertyValue("Multiroom Audio Settings.Zone " & ZoneName2ID & " TV On Command")
+		If GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Status") = "0" Then
+			if Trim(GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV On Command")) <> "" Then
+				SetPropertyValue "Subscriber-10.DispatchMessage", GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV On Command")
 			End If	
-			SetPropertyValue "Multiroom Audio Settings.Zone " & ZoneName2ID(Zone) & " TV Status", 1
+			SetPropertyValue "Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Status", 1
 		End if
 	End if
 

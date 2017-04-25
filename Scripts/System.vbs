@@ -1130,7 +1130,7 @@ Sub AVOn2 (Source, Zone)
 End Sub
 
 Function VideoZoneName2Alpha(ZoneName) 
-	Dim ZoneAlpha, ReturnValue
+	Dim ZoneAlpha, ReturnValue, item
 	ZoneAlpha=Array("A","B","C","D")
  	ReturnValue=""
  	For each item in ZoneAlpha
@@ -1141,7 +1141,7 @@ Function VideoZoneName2Alpha(ZoneName)
 End Function
 
 Function VideoSourceName2Number(SourceName) 
-	Dim ZoneAlpha, ReturnValue
+	Dim ZoneAlpha, ReturnValue, item
 	ZoneAlpha=Array("1","2","3","4")
  	ReturnValue=""
  	For each item in ZoneAlpha						

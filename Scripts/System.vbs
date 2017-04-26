@@ -1131,7 +1131,7 @@ Sub AVOn2 (Source, Zone)
 End Sub
 
 Sub AVOff2 (Zone)
-	If ((GetpropertyValue("Yamaha V2600 Settings.AV Power Master") = "Off") And (Zone = "Living Room")) Then
+	If ((GetpropertyValue("Yamaha V2600 Settings.AV Power Master") = "On") And (Zone = "Living Room")) Then
 		SetpropertyValue "Yamaha V2600 Settings.Action", "MasterPowerOff"
 	Else
 		SendSubscriberMessage 1, "Russound.System.10.ZonePower:" & Zone & ":off"

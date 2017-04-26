@@ -1101,11 +1101,8 @@ End Sub
 Sub AVOn2 (Source, Zone)
 	'Rewrite of AVOn that takes advantage of HB propery settings.  Core of the Audio Video Logic
     'Check to see if TV is applicable
-    SetPropertyValue "System.Debug", "Got Here inside AVOn2"
-    SetPropertyValue "System.Debug", "Multiroom Audio Settings.Zone " & ZoneName2ID(Zone) & " TV"
-    SetPropertyValue "System.Debug", "Zone: " & GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV") & "<=>Source: " & GetPropertyValue("Multiroom Audio Settings.Source " & CStr(SourceName2ID(Source)) & " TV")
+    
 	If ((CInt(GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV")) = 1) And (CInt(GetPropertyValue("Multiroom Audio Settings.Source " & CStr(SourceName2ID(Source)) & " TV")) = 1))  Then
-		
 		SetpropertyValue "System.Matrix Zone " & VideoZoneName2Alpha(Zone) & " Power State", "On"
 		'Turn On Video Matrix If Off
 		If GetpropertyValue("HDMI Matrix Settings.HDMI Power State") = "Off" Then
@@ -1113,6 +1110,7 @@ Sub AVOn2 (Source, Zone)
 			Sleep 50
 		End if
 		SetpropertyValue "HDMI Matrix Script.Action", "Set" & VideoZoneName2Alpha(Zone) & VideoSourceName2Number(Source) 
+		SetpropertyValue "System.Debug", "Set" & VideoZoneName2Alpha(Zone) & VideoSourceName2Number(Source) 
 		If GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Status") <> "0" Then
 			if Trim(GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV On Command")) <> "" Then
 				SetPropertyValue "Subscriber-10.DispatchMessage", GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV On Command")
@@ -1127,7 +1125,7 @@ Sub AVOn2 (Source, Zone)
 		SendSubscriberMessage 1, "Russound.System.10.ZonePower:" & Zone & ":on"
 		SendSubscriberMessage 1, "Russound.System.10.ZoneSource:" & Zone & ":" & Source
 	End if
-	
+
 End Sub
 
 Function VideoZoneName2Alpha(ZoneName) 

@@ -169,7 +169,6 @@ Sub SystemCommand(Action)
 				Case "AVOn2"
 					'System.GalaxyTabA1.10.AVOn:Cable TV:Master Bedroom
 					AVOn2 b(1), b(2)
-					SetPropertyValue "System.Debug", "Got Here"
 				Case "ToggleBedroomTV"	
 					SetPropertyValue "USBUIRT.Westinghouse Remote", "Power"
 				Case "TogglePlayer"
@@ -1137,6 +1136,7 @@ Function VideoZoneName2Alpha(ZoneName)
     		ReturnValue = item
     	End if
  	Next
+ 	VideoZoneName2Alpha = ReturnValue
 End Function
 
 Function VideoSourceName2Number(SourceName) 
@@ -1148,6 +1148,7 @@ Function VideoSourceName2Number(SourceName)
     		ReturnValue = item
     	End if
  	Next
+ 	VideoSourceName2Number = ReturnValue
 End Function
 
 

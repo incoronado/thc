@@ -33,14 +33,14 @@ Select Case DataItem
 		SendSubscriberMessage 9, "System.IRRemote.10.ToggleBedroomTV"
 		SendSubscriberMessage 9, "Russound.GalaxyTabA1.10.ZonePower:Master Bedroom:off"
 	Case "127"	
-		SendSubscriberMessage 9, "System.IRRemote.10.AVOn:CableTVOn:B"
-		SendSubscriberMessage 9, "System.GalaxyTabA1.10.WestinghouseTVPower"
-		'SendSubscriberMessage 9, "System.IRRemote.10.AVOn2:Cable TV:Master Bedroom"
+		'SendSubscriberMessage 9, "System.IRRemote.10.AVOn:CableTVOn:B"
+		'SendSubscriberMessage 9, "System.GalaxyTabA1.10.WestinghouseTVPower"
+		SendSubscriberMessage 9, "System.IRRemote.10.AVOn2:Cable TV:Master Bedroom"
 		
 	Case "143"	
-		SendSubscriberMessage 9, "System.IRRemote.10.AVOn:CableTVOn:B"
-		SendSubscriberMessage 9, "System.GalaxyTabA1.10.WestinghouseTVPower"
-		'SendSubscriberMessage 9, "System.IRRemote.10.AVOn2:Cable TV:Master Bedroom"
+		'SendSubscriberMessage 9, "System.IRRemote.10.AVOn:CableTVOn:B"
+		'SendSubscriberMessage 9, "System.GalaxyTabA1.10.WestinghouseTVPower"
+		SendSubscriberMessage 9, "System.IRRemote.10.AVOn2:Cable TV:Master Bedroom"
 
 	Case "128"	
 		'System.GalaxyTabA1.10.WestinghouseTVPower

@@ -1113,7 +1113,7 @@ Sub AVOn2 (Source, Zone)
 		End if
 		SetpropertyValue "HDMI Matrix Script.Action", "Set" & VideoZoneName2Alpha(Zone) & VideoSourceName2Number(Source) 
 		SetpropertyValue "System.Debug", "Set" & VideoZoneName2Alpha(Zone) & VideoSourceName2Number(Source) 
-		If GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Status") <> "0" Then
+		If GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Status") <> "1" Then
 			if Trim(GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV On Command")) <> "" Then
 				SetPropertyValue "Subscriber-10.DispatchMessage", GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV On Command")
 			End If	
@@ -1141,8 +1141,8 @@ Sub AVOff2 (Source, Zone)
 		if Trim(GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Off Command")) <> "" Then
 			SetPropertyValue "Subscriber-10.DispatchMessage", GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Off Command")
 		End If	
-			SetPropertyValue "Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Status", 0
-		End if
+		SetPropertyValue "Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Status", 0
+	End if
 
 End Sub
 

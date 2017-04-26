@@ -167,11 +167,11 @@ Sub SystemCommand(Action)
 					'System.GalaxyTabA1.10.AVOn:CableTVOn:B
 					AVOn b(1), b(2)
 				Case "AVOn2"
-					'System.GalaxyTabA1.10.AVOn:Cable TV:Master Bedroom
+					'System.GalaxyTabA1.10.AVOn2:Cable TV:Master Bedroom
 					AVOn2 b(1), b(2)
 				Case "AVOff2"
-					'System.GalaxyTabA1.10.AVOff:Cable TV:Master Bedroom
-					AVOff2 b(1), b(2)	
+					'System.GalaxyTabA1.10.AVOff2:Master Bedroom
+					AVOff2 b(1)	
 				Case "ToggleBedroomTV"	
 					SetPropertyValue "USBUIRT.Westinghouse Remote", "Power"
 				Case "TogglePlayer"
@@ -1130,7 +1130,7 @@ Sub AVOn2 (Source, Zone)
 
 End Sub
 
-Sub AVOff2 (Source, Zone)
+Sub AVOff2 (Zone)
 	If ((GetpropertyValue("Yamaha V2600 Settings.AV Power Master") = "Off") And (Zone = "Living Room")) Then
 		SetpropertyValue "Yamaha V2600 Settings.Action", "MasterPowerOff"
 	Else

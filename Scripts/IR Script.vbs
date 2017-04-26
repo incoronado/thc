@@ -22,7 +22,7 @@ Sub SystemCommand(Action)
 		Case "ir"
  			b=split(a(3),":")
  			Select Case b(0)
-				Case "westingHousetv"
+				Case "westinghousetv"
  					Select Case b(1)	
  						Case "power"
  							SetPropertyValue "USBUIRT.Westinghouse Remote", "Power"

@@ -17,12 +17,12 @@ Dim SleepVar
 SleepVar = CInt(GetPropertyValue("System.Script Sleep Time"))
 
 Do
+	Sleep SleepVar
 	Action = GetPropertyValue ("Multiroom Audio Settings.Action")
 	If Action <> "Idle" Then
 		MessageHandler(Action)
 		SetpropertyValue "Multiroom Audio Settings.Action", "Idle"
 	End If
-	Sleep SleepVar
 Loop
 
 Sub MessageHandler(Action)

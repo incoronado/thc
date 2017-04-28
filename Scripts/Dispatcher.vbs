@@ -26,18 +26,21 @@ DispatchSubscriberCount = CountDispatchSubscribers
 
 SleepVar = CInt(GetPropertyValue("System.Dispatch Sleep Time"))
 Do
+	Sleep SleepVar
 	For i = 1 To DispatchSubscriberCount
+		sleep 5
 		IncomingMessage = Trim(GetPropertyValue ("Subscriber-" + CStr(i) + ".DispatchMessage"))
 		If IncomingMessage <> "Idle" Then
-			SetpropertyValue "Subscriber-" + CStr(i) + ".DispatchMessage", "Idle"
-			BlockSubscriber(i)	
+			
+			'BlockSubscriber(i)	
 			DispatchMessage IncomingMessage, HandlerCount
 			'SetpropertyValue "DispatcherScript.Debug", "Idle"
-			sleep 5
-			UnBlockSubscriber(i)
+			
+			'UnBlockSubscriber(i)
+			SetpropertyValue "Subscriber-" + CStr(i) + ".DispatchMessage", "Idle"
 		End If
 	Next
-	Sleep SleepVar
+	
 Loop
 
 Sub DispatchMessage(MessageStr, HandlerCount)

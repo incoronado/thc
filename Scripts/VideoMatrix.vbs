@@ -8,7 +8,7 @@ Do
 	Sleep SleepVar	
 	Action = GetPropertyValue ("HDMI Matrix Script.Action")
 	If Action <> "Idle" Then
-		Call ProcessMessage(Action)
+		ProcessMessage(Action)
 		SetpropertyValue "HDMI Matrix Script.Action", "Idle"
 	End If
 Loop

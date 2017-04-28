@@ -42,7 +42,7 @@ Do
 		SystemCommand(Action)
 		SetpropertyValue "System.Action", "Idle"
 	End If
-	Sleep SleepVar
+	'Sleep SleepVar
 Loop
 
 

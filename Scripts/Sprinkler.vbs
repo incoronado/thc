@@ -6,12 +6,13 @@ Dim Action, Status, SleepVar
 SleepVar = CInt(GetPropertyValue("System.Script Sleep Time"))
 
 Do
+	Sleep SleepVar
 	Action = GetPropertyValue ("Sprinklers.Action")
 	If Action <> "Idle" Then
-		SetpropertyValue "Sprinklers.Action", "Idle"		
 		Message_Handler(Action)
+		SetpropertyValue "Sprinklers.Action", "Idle"		
 	End If
-	Sleep SleepVar
+
 Loop
 
 

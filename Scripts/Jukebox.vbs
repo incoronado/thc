@@ -20,13 +20,12 @@ SetpropertyValue "Jukebox.Jukebox - Import Flag", "Stopped"
 SleepVar = CInt(GetPropertyValue("System.Script Sleep Time"))
 
 Do
+	Sleep SleepVar
 	Action = GetPropertyValue ("Jukebox.Action")
 	If Action <> "Idle" Then
-		SetpropertyValue "Jukebox.Action", "Idle"
 		MessageHandler(Action)
+		SetpropertyValue "Jukebox.Action", "Idle"
 	End If
-
-    Sleep SleepVar
 Loop
 
 Set objDB = Nothing

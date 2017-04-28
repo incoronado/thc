@@ -38,11 +38,11 @@ HBRemoteList
 SleepVar = CInt(GetPropertyValue("System.Script Sleep Time"))
 Do
   	Action = GetPropertyValue ("System.Action")
-	If Action <> "Idle" Then
+	If Action <> "Idle" Then	
 		SystemCommand(Action)
 		SetpropertyValue "System.Action", "Idle"
 	End If
-	Sleep 5
+	Sleep SleepVar
 Loop
 
 

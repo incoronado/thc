@@ -14,12 +14,12 @@ TransmitReadyCommand
 SetReportTimeout
 
 Do
+	Sleep SleepVar
 	Action = GetPropertyValue ("Yamaha V2600 Settings.Action")
 	If Action <> "Idle" Then
 		MessageHandler(Action)
 		SetpropertyValue "Yamaha V2600 Settings.Action", "Idle"
 	End If
-	Sleep SleepVar
 Loop
 
 Sub MessageHandler(Action)

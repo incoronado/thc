@@ -1,11 +1,9 @@
 Option Explicit
 'On Error Resume Next
 
-Dim Action, SleepVar, ReceivedData, OldReceivedData
+Dim Action, SleepVar
 
-
-SleepVar = 5
-
+SleepVar = CInt(GetPropertyValue("System.Script Sleep Time"))
 Do
 	Sleep SleepVar	
 	Action = GetPropertyValue ("HDMI Matrix Script.Action")
@@ -41,9 +39,8 @@ Sub ProcessMessage(Action)
 		Case "PowerOff"
 		 PowerOff
 		Case "PowerOn"
-		 PowerOn
-		 
-		 End Select	   
+		 PowerOn 
+	End Select	   
 End Sub
 
 

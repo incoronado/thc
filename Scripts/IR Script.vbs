@@ -4,12 +4,13 @@ Dim SleepVar, Action
 
 SleepVar = CInt(GetPropertyValue("System.Script Sleep Time"))
 Do
+	Sleep SleepVar
   	Action = GetPropertyValue ("IR Script.Action")
 	If Action <> "Idle" Then	
-		SetpropertyValue "IR Script.Action", "Idle"
 		SystemCommand(Action)
+		SetpropertyValue "IR Script.Action", "Idle"
 	End If
-	Sleep SleepVar
+	
 Loop
 
 Sub SystemCommand(Action)

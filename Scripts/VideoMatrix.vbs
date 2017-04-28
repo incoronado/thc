@@ -7,20 +7,11 @@ Dim Action, SleepVar, ReceivedData, OldReceivedData
 SleepVar = 5
 
 Do
-	Sleep SleepVar
-	ReceivedData = GetPropertyValue ("HDMI Matrix.Received Data")
-	If OldReceivedData <> ReceivedData Then
-		OldReceivedData = ReceivedData
-		Call ReadSerialData(ReceivedData)
-	End If
-	
+	Sleep SleepVar	
 	Action = GetPropertyValue ("HDMI Matrix Script.Action")
 	If Action <> "Idle" Then
+		Call ProcessMessage(Action)
 		SetpropertyValue "HDMI Matrix Script.Action", "Idle"
-		Sleep SleepVar
-		If Action <> "" Then
-			Call ProcessMessage(Action)
-		End If
 	End If
 Loop
 
@@ -44,11 +35,7 @@ Sub ProcessMessage(Action)
 		Case "SetB3"
 	     SetB3
 		Case "SetB4"
-	     SetB4 
-		 
-		 
-		 
-		 
+	     SetB4		 
 		Case "PowerToggle" 
 		 PowerToggle
 		Case "PowerOff"
@@ -59,72 +46,6 @@ Sub ProcessMessage(Action)
 		 End Select	   
 End Sub
 
-Sub ReadSerialData(Data)
-	
-	If Mid(Data,2,1) = Chr(97) Then
-		SetpropertyValue "HDMI Matrix Settings.Debug", "New Command"
-		If  Mid(Data,12,1) = Chr(01) Then
-			SetpropertyValue "HDMI Matrix Settings.HDMI Power State", "On"
-		Else
-			SetpropertyValue "HDMI Matrix Settings.HDMI Power State", "Off"
-		End if
-		
-		Select Case Mid(Data,7,1) 
-			Case Chr(01)
-				SetpropertyValue "HDMI Matrix Settings.Matrix Zone A", "1"
-			Case Chr(02)
-				SetpropertyValue "HDMI Matrix Settings.Matrix Zone A", "2"
-			Case Chr(04) 
-				SetpropertyValue "HDMI Matrix Settings.Matrix Zone A", "3"
-			Case Chr(08) 	
-				SetpropertyValue "HDMI Matrix Settings.Matrix Zone A", "4"
-		End Select
-		Sleep SleepVar
-		SetpropertyValue "System.Zone A Selected Source", GetPropertyValue("System.Matrix Source " & GetPropertyValue("HDMI Matrix Settings.Matrix Zone A") & " Name")	
-		
-		Select Case Mid(Data,8,1) 
-			Case Chr(01)
-				SetpropertyValue "HDMI Matrix Settings.Matrix Zone B", "1"
-			Case Chr(02)
-				SetpropertyValue "HDMI Matrix Settings.Matrix Zone B", "2"
-			Case Chr(04) 
-				SetpropertyValue "HDMI Matrix Settings.Matrix Zone B", "3"
-			Case Chr(08) 	
-				SetpropertyValue "HDMI Matrix Settings.Matrix Zone B", "4"
-		End Select 
-		Sleep SleepVar
-		SetpropertyValue "System.Zone B Selected Source", GetPropertyValue("System.Matrix Source " & GetPropertyValue("HDMI Matrix Settings.Matrix Zone B") & " Name")	
-		
-		Select Case Mid(Data,9,1) 
-			Case Chr(01)
-				SetpropertyValue "HDMI Matrix Settings.Matrix Zone C", "1"
-			Case Chr(02)
-				SetpropertyValue "HDMI Matrix Settings.Matrix Zone C", "2"
-			Case Chr(04) 
-				SetpropertyValue "HDMI Matrix Settings.Matrix Zone C", "3"
-			Case Chr(08) 	
-				SetpropertyValue "HDMI Matrix Settings.Matrix Zone C", "4"
-		End Select 
-		Sleep SleepVar
-		SetpropertyValue "System.Zone C Selected Source", GetPropertyValue("System.Matrix Source " & GetPropertyValue("HDMI Matrix Settings.Matrix Zone C") & " Name")
-		
-		Select Case Mid(Data,10,1) 
-			Case Chr(01)
-				SetpropertyValue "HDMI Matrix Settings.Matrix Zone D", "1"
-			Case Chr(02)
-				SetpropertyValue "HDMI Matrix Settings.Matrix Zone D", "2"
-			Case Chr(04) 
-				SetpropertyValue "HDMI Matrix Settings.Matrix Zone D", "3"
-			Case Chr(08) 	
-				SetpropertyValue "HDMI Matrix Settings.Matrix Zone D", "4"
-		End Select 
-		Sleep SleepVar
-		SetpropertyValue "System.Zone D Selected Source", GetPropertyValue("System.Matrix Source " & GetPropertyValue("HDMI Matrix Settings.Matrix Zone D") & " Name")	
-		
-		
-		
-	End If	
-End Sub
 
 Sub PowerOff
 	If GetPropertyValue("HDMI Matrix Settings.HDMI Power State") = "On" Then
@@ -231,10 +152,3 @@ Sub SetB4
     sleep 20
 	SetpropertyValue "HDMI Matrix.Serial Command", "7B"
 End Sub
-
-
-
-
-
-
-

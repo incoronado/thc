@@ -13,7 +13,6 @@ Sub ReadSerialData(Data)
 		Else
 			SetpropertyValue "HDMI Matrix Settings.HDMI Power State", "Off"
 		End if
-		
 		Select Case Mid(Data,7,1) 
 			Case Chr(01)
 				SetpropertyValue "HDMI Matrix Settings.Matrix Zone A", "1"

@@ -37,7 +37,7 @@ Sub ReadSerialData(Data)
 				RNETHexBytes=split(RNETMessage(Data)," ")
 				'Overall Payload Size
 				MessageLength = CLng("&h" & HexBytes(18))
-				SourceNo = CLng(Right(RNETHexBytes(1),1)) + 1
+				'SourceNo = CLng(Right(RNETHexBytes(1),1)) + 1
 				SetPropertyValue "Multiroom Audio Settings.Debug", RNETMessage(Data)
 				If RNETHexBytes(0) = "23" Then
 					For i = 23 To MessageLength + 19
@@ -72,13 +72,8 @@ Sub ReadSerialData(Data)
 						Case "07"
 							SetPropertyValue "Russound.XM Station", MessageStr				
 					End Select
-							
-
-
-				End if	
-				
-
-				
+		
+				End if		
 		End Select
    	End If
 End Sub

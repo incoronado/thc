@@ -26,8 +26,9 @@ DispatchSubscriberCount = CountDispatchSubscribers
 
 SleepVar = CInt(GetPropertyValue("System.Dispatch Sleep Time"))
 Do
-	Sleep Sleepvar
+	Sleep 5
 	For i = 1 To DispatchSubscriberCount
+		Sleep 5
 		IncomingMessage = Trim(GetPropertyValue ("Subscriber-" + CStr(i) + ".DispatchMessage"))
 		If IncomingMessage <> "Idle" Then			
 			'BlockSubscriber(i)	

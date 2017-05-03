@@ -1,5 +1,5 @@
 Option Explicit
-On Error Resume Next
+'On Error Resume Next
 
 Dim Data, SleepVar
 Data = GetPropertyValue ("Multiroom Audio Amplifier.Received Data")

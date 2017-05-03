@@ -26,6 +26,7 @@ DispatchSubscriberCount = CountDispatchSubscribers
 
 SleepVar = CInt(GetPropertyValue("System.Dispatch Sleep Time"))
 Do
+	Sleep Sleepvar
 	For i = 1 To DispatchSubscriberCount
 		IncomingMessage = Trim(GetPropertyValue ("Subscriber-" + CStr(i) + ".DispatchMessage"))
 		If IncomingMessage <> "Idle" Then			

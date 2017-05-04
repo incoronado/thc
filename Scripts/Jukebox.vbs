@@ -475,7 +475,7 @@ Sub LoadSelectedPlaylistToRemote(Remote)
   SqlStr = "delete from songqueue where playlistid = 0"
   objDB.Execute(SqlStr)
 
-  SqlStr = "select * from savedplaylists where playlistid  = " & Right(GetPropertyValue ("Remote-".CStr(Remote).".Jukebox - Selected Playlist"),Len(GetPropertyValue("Remote-".CStr(Remote).".Jukebox - Selected Playlist")) - 14)
+  SqlStr = "select * from savedplaylists where playlistid  = " & Right(GetPropertyValue("Remote-" & CStr(Remote) & ".Jukebox - Selected Playlist"),Len(GetPropertyValue("Remote-" & CStr(Remote) & ".Jukebox - Selected Playlist")) - 14)
   Set r = objDB.Execute(SqlStr)
   For Row = 1 To r.Count 
      objDB.Execute su.Sprintf("INSERT INTO songqueue (playlistid, songid) VALUES (%Nq, %Nq)", 0, r(Row)("songid") )

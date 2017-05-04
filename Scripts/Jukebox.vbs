@@ -1,5 +1,5 @@
 Option Explicit
-On Error Resume Next
+'On Error Resume Next
 Dim HousebotLocation, DOSHousebotLocation, OrderStr, objDB, su, Action, SleepVar
 
 OrderStr = "title"

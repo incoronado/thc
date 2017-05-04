@@ -50,12 +50,13 @@ SleepVar = CInt(GetPropertyValue("System.Handler Sleep Time"))
 'SetPropertyValue "System.Debug", EventHandlerCount
 
 Do
+	Sleep SleepVar
 	For i = 1 To EventHandlerCount
 		' Is there a New Message
 		MessageHandlerVar = GetPropertyValue ("Handler-" & CStr(i) & ".HandlerMessage")
 		If MessageHandlerVar <> "Idle" Then
-			SetPropertyValue "Handler-" & CStr(i) & ".HandlerMessage", "Idle"
 			EnqueueMessage i, MessageHandlerVar
+			SetPropertyValue "Handler-" & CStr(i) & ".HandlerMessage", "Idle"
 		End If
 		'Process 
 		
@@ -65,7 +66,7 @@ Do
 			End if
 		End if
 	Next
-	Sleep SleepVar
+
 Loop
 
 

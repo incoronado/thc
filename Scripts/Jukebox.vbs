@@ -569,7 +569,9 @@ Sub PopulateLibrarySearchList(drilldown,ListNo,Remote)
 			OrderStr = "artist"
 			tagType = "title"
 		Else
+		    SetModeState "Block PopulateLibrarySearchList", "Inactive"
 			AddSong2LibrarySongList ListNo, Remote 
+			SetModeState "Block PopulateLibrarySearchList", "Active"
 			Exit Sub
 		End If
 	Else
@@ -865,6 +867,7 @@ Sub PopulateLibrarySongList(selectedtag,Remote)
 			'MusicList = Row & vbCR
 		Next
 	End If
+
 	SetPropertyValue Remote & ".Library - Song List", Left(PlayList,Len(PlayList)-1) 
 	Set r = Nothing
 End Sub

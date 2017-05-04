@@ -44,7 +44,7 @@ Set HandlerQueue11 = CreateObject("System.Collections.Queue")
 Set HandlerQueue12 = CreateObject("System.Collections.Queue")
 
 
-ClearEventQueues(EventHandlerCount)
+'ClearEventQueues(EventHandlerCount)
 
 SleepVar = CInt(GetPropertyValue("System.Handler Sleep Time"))
 'SetPropertyValue "System.Debug", EventHandlerCount

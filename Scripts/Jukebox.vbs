@@ -921,7 +921,7 @@ Sub PopulatePlayList(selectedtag,ListNo)
 	'If ListNo = 0 Then
 	'	SetPropertyValue "GalaxyProTab1 System.Jukebox - Playlist", Left(PlayList,Len(PlayList)-1) 
 	'Else
-		SetPropertyValue "Remote-" & CStr(ListNo) & ".Jukebox - Playlist", Left(PlayList,Len(PlayList)-1) 
+		SetPropertyValue "Remote-" & CStr(ListNo) & ".Library - Song List", Left(PlayList,Len(PlayList)-1) 
 	'End If
    Set r = Nothing
 End Sub

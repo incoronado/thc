@@ -101,6 +101,7 @@ Sub MessageHandler(message)
 				'Jukebox.GalaxyTabA1.10.ToggleEQ:1
 				ToggleEQ b(1)
 			Case "LoadSelectedPlaylistToRemote"
+				'Jukebox.Remote-1.10.LoadSelectedPlaylistToRemote
 				LoadSelectedPlaylistToRemote GetRemoteNumber(a(1))			
 		End Select
 	

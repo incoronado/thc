@@ -131,6 +131,7 @@ Sub MasterPowerOn
   'TransmitReadyCommand
   SendStr = Chr(2) & "07E7E"
   SetPropertyValue "Yamaha V2600 Receiver.Yamaha Serial Command", SendStr
+  SetPropertyValue "Yamaha V2600 Receiver.Yamaha Serial Command", SendStr
  'sleep 50
   
  

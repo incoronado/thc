@@ -475,9 +475,10 @@ Sub ToggleEQ(JukeboxNo)
 End Sub
 
 Sub LoadSelectedPlaylistToRemote(Remote)
-  Dim SqlStr, r, Row, PlayListID
+  Dim SqlStr, r, Row, PlayListID, RemoteId
   ' delete existing songs from selected savedplaylist 
-  SqlStr = "delete from librarysonglist where playlistid = 0"
+  RemoteId = split(Remote,"-") 
+  SqlStr = "delete from librarysonglist where playlistid = " & RemoteId(1)
   objDB.Execute(SqlStr)
   SetPropertyValue "Jukebox.Debug", Remote & ".Jukebox - Selected Playlist"
   
@@ -486,7 +487,7 @@ Sub LoadSelectedPlaylistToRemote(Remote)
   SetPropertyValue "Jukebox.Debug", SqlStr
   Set r = objDB.Execute(SqlStr)
   For Row = 1 To r.Count 
-     objDB.Execute su.Sprintf("INSERT INTO librarysonglist (id, songid) VALUES (%Nq, %Nq)", 0, r(Row)("songid") )
+     objDB.Execute su.Sprintf("INSERT INTO librarysonglist (playlistid, songid) VALUES (%Nq, %Nq)", CInt(RemoteId(1)), r(Row)("songid") )
   Next
   Set r = Nothing
   sleep 500

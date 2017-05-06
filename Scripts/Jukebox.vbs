@@ -478,7 +478,7 @@ Sub LoadSelectedPlaylistToRemote(Remote)
   Dim SqlStr, r, Row, PlayListID, RemoteId
   ' delete existing songs from selected savedplaylist 
   RemoteId = split(Remote,"-") 
-  SqlStr = "delete from librarysonglist where playlistid = " & RemoteId(1)
+  'SqlStr = "delete from librarysonglist where playlistid = " & RemoteId(1)
   objDB.Execute(SqlStr)
   SetPropertyValue "Jukebox.Debug", Remote & ".Jukebox - Selected Playlist"
   

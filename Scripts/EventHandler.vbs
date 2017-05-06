@@ -42,7 +42,7 @@ Set HandlerQueue9 = CreateObject("System.Collections.Queue")
 Set HandlerQueue10 = CreateObject("System.Collections.Queue")
 Set HandlerQueue11 = CreateObject("System.Collections.Queue")
 Set HandlerQueue12 = CreateObject("System.Collections.Queue")
-
+ 
 
 'ClearEventQueues(EventHandlerCount)
 

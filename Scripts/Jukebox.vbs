@@ -103,6 +103,10 @@ Sub MessageHandler(message)
 			Case "LoadSelectedPlaylistToRemote"
 				'Jukebox.GalaxyTabA1.10LoadSelectedPlaylistToRemote
 				LoadSelectedPlaylistToRemote GetRemoteNumber(a(1))
+			Case "ClearPlaylist"
+				'Jukebox.GalaxyTabA1.10.CleaPlayList:1
+				ClearPlaylist B(1)
+
 		End Select
 	
     Case "Song Select"

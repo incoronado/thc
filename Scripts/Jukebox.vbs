@@ -483,6 +483,7 @@ Sub LoadSelectedPlaylistToRemote(Remote)
   
   PlaylistId = split(GetPropertyValue(Remote & ".Jukebox - Selected Playlist"),"^")
   SqlStr = "select * from savedplaylists where playlistid  = " & CStr(PlaylistID(1)) 
+  SetPropertyValue "Jukebox.Debug", SqlStr
   Set r = objDB.Execute(SqlStr)
   For Row = 1 To r.Count 
      objDB.Execute su.Sprintf("INSERT INTO songqueue (playlistid, songid) VALUES (%Nq, %Nq)", 0, r(Row)("songid") )

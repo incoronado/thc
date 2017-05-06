@@ -101,8 +101,8 @@ Sub MessageHandler(message)
 				'Jukebox.GalaxyTabA1.10.ToggleEQ:1
 				ToggleEQ b(1)
 			Case "LoadSelectedPlaylistToRemote"
-				'Jukebox.Remote-1.10.LoadSelectedPlaylistToRemote
-				LoadSelectedPlaylistToRemote GetRemoteNumber(a(1))			
+				'Jukebox.GalaxyTabA1.10LoadSelectedPlaylistToRemote
+				LoadSelectedPlaylistToRemote GetRemoteNumber(a(1))
 		End Select
 	
     Case "Song Select"
@@ -477,15 +477,22 @@ Sub LoadSelectedPlaylistToRemote(Remote)
   objDB.Execute(SqlStr)
    SetPropertyValue "Jukebox.Debug", "Remote-" & CStr(Remote) & ".Jukebox - Selected Playlist"
 
-  SqlStr = "select * from savedplaylists where playlistid  = " & Right(GetPropertyValue("Remote-" & CStr(Remote) & ".Jukebox - Selected Playlist"),Len(GetPropertyValue("Remote-" & CStr(Remote) & ".Jukebox - Selected Playlist")) - 14)
+  SqlStr = "select * from savedplaylists where playlistid  = " & Right(GetPropertyValue(Remote & ".Jukebox - Selected Playlist"),Len(GetPropertyValue(Remote & ".Jukebox - Selected Playlist")) - 14)
   Set r = objDB.Execute(SqlStr)
   For Row = 1 To r.Count 
      objDB.Execute su.Sprintf("INSERT INTO songqueue (playlistid, songid) VALUES (%Nq, %Nq)", 0, r(Row)("songid") )
   Next
   Set r = Nothing
   sleep 500
-  PopulatePlayList 0, Remote
+  PopulateLibrarySongList 0, Remote
 End Sub
+
+
+
+
+
+
+
 
 
 
@@ -927,8 +934,6 @@ Sub PopulatePlayList(selectedtag,ListNo)
 	'End If
    Set r = Nothing
 End Sub
-
-
 
 Function PlayListSongID(PlayListID,ListNo)
    Dim Playlist, LeftStrPos, RightStr, RightStrPos, PlaylistRecordStr, data 

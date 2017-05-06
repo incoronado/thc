@@ -105,7 +105,7 @@ Sub MessageHandler(message)
 				LoadSelectedPlaylistToRemote GetRemoteNumber(a(1))
 			Case "ClearPlayList"
 				'Jukebox.GalaxyTabA1.10.ClearPlayList:1
-				ClearPlaylist B(1)
+				ClearPlaylist b(1)
 
 		End Select
 	
@@ -939,6 +939,34 @@ Sub PopulatePlayList(selectedtag,ListNo)
    Set r = Nothing
 End Sub
 
+Sub PopulateJukeboxPlayList(selectedtag,ListNo)
+   ' If selectedtag = 0 process as normal
+   ' If ListNo = 0 
+
+   Dim PlayList, SqlStr, r, Row
+   PlayList = ""
+  
+   SqlStr = "select songqueue.id, songs.title, songs.album, songs.track, songqueue.songid  from songqueue left join songs on songqueue.songid = songs.id where songqueue.playlistid = " & ListNo & " order by songs.album asc, CAST(songs.track AS int) asc"
+   Set r = objDB.Execute(SqlStr)
+   
+    If r.Count = 0 Then
+      PlayList     = " " & vbTAB & "Playlist Empty" & vbLF
+	Else
+      For Row = 1 To r.count
+         If CInt(selectedtag) = Row Then
+            PlayList = PlayList & "*S-" & "PlayList^" & Row & "^" & r(Row)("songid") & "^" & r(Row)("id") & vbTAB & r(Row)("title") &vbLF
+         Else
+            PlayList = PlayList & "PlayList^" & Row & "^" & r(Row)("songid") & "^" & r(Row)("id") & vbTAB & r(Row)("title") &vbLF
+         End if
+         'MusicList = Row & vbCR
+      Next
+	End If
+	SetPropertyValue "Jukebox" & CStr(ListNo) & ".Jukebox - Playlist", Left(PlayList,Len(PlayList)-1) 
+   Set r = Nothing
+End Sub
+
+
+
 Function PlayListSongID(PlayListID,ListNo)
    Dim Playlist, LeftStrPos, RightStr, RightStrPos, PlaylistRecordStr, data 
    PlayList = GetPropertyValue("Jukebox" & CStr(ListNo) & ".Jukebox - Playlist")
@@ -952,11 +980,11 @@ Function PlayListSongID(PlayListID,ListNo)
    PlayListSongID=data(2)
 End Function
 
-Function ClearPlaylist(ListNo)
+Sub ClearPlaylist(ListNo)
    objDB.Execute su.Sprintf("delete from songqueue where playlistid = " & CStr(ListNo))
    sleep 150
-   PopulatePlayList 0, ListNo
-End Function
+   PopulateJukeboxPlayList 0, ListNo
+End Sub
 
 
 Sub ClearLibrarySongList(Remote)

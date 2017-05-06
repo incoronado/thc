@@ -486,20 +486,12 @@ Sub LoadSelectedPlaylistToRemote(Remote)
   SetPropertyValue "Jukebox.Debug", SqlStr
   Set r = objDB.Execute(SqlStr)
   For Row = 1 To r.Count 
-     objDB.Execute su.Sprintf("INSERT INTO songqueue (playlistid, songid) VALUES (%Nq, %Nq)", 0, r(Row)("songid") )
+     objDB.Execute su.Sprintf("INSERT INTO librarysonglist (id, songid) VALUES (%Nq, %Nq)", 0, r(Row)("songid") )
   Next
   Set r = Nothing
   sleep 500
   PopulateLibrarySongList 0, Remote
 End Sub
-
-
-
-
-
-
-
-
 
 
 

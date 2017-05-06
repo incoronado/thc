@@ -101,7 +101,7 @@ Sub MessageHandler(message)
 				'Jukebox.GalaxyTabA1.10.ToggleEQ:1
 				ToggleEQ b(1)
 			Case "LoadSelectedPlaylistToRemote"
-				'Jukebox.GalaxyTabA1.10LoadSelectedPlaylistToRemote
+				'Jukebox.GalaxyTabA1.10.LoadSelectedPlaylistToRemote
 				LoadSelectedPlaylistToRemote GetRemoteNumber(a(1))
 			Case "ClearPlayList"
 				'Jukebox.GalaxyTabA1.10.ClearPlayList:1
@@ -475,13 +475,14 @@ Sub ToggleEQ(JukeboxNo)
 End Sub
 
 Sub LoadSelectedPlaylistToRemote(Remote)
-  Dim SqlStr, r, Row
+  Dim SqlStr, r, Row, PlayListID
   ' delete existing songs from selected savedplaylist 
   SqlStr = "delete from songqueue where playlistid = 0"
   objDB.Execute(SqlStr)
-   SetPropertyValue "Jukebox.Debug", "Remote-" & CStr(Remote) & ".Jukebox - Selected Playlist"
-
-  SqlStr = "select * from savedplaylists where playlistid  = " & Right(GetPropertyValue(Remote & ".Jukebox - Selected Playlist"),Len(GetPropertyValue(Remote & ".Jukebox - Selected Playlist")) - 14)
+  SetPropertyValue "Jukebox.Debug", Remote & ".Jukebox - Selected Playlist"
+  
+  PlaylistId = split(GetPropertyValue(Remote & ".Jukebox - Selected Playlist"),"^")
+  SqlStr = "select * from savedplaylists where playlistid  = " & CStr(PlaylistID(1)) 
   Set r = objDB.Execute(SqlStr)
   For Row = 1 To r.Count 
      objDB.Execute su.Sprintf("INSERT INTO songqueue (playlistid, songid) VALUES (%Nq, %Nq)", 0, r(Row)("songid") )

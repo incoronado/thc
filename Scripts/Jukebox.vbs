@@ -859,6 +859,8 @@ End Function
 Sub TransferWorkingPlaylist(ListNo)
     SetpropertyValue "Jukebox.Jukebox - Import Messages", "Saving Song List of Jukebox " & CStr(ListNo)
 	Dim SqlStr, r, queuenmbr
+
+
 	queuenmbr = GetPropertyValue("Jukebox" & CStr(ListNo) & ".Now Playing - Queue Number")
 	SqlStr = "CREATE TEMPORARY TABLE temp_table AS SELECT * FROM librarysonglist; UPDATE temp_table SET id=NULL, playlistid=" & ListNo & "; INSERT INTO songqueue SELECT * FROM temp_table; DROP TABLE temp_table;"
 	Set r = objDB.Execute(SqlStr)
@@ -911,7 +913,7 @@ Sub PopulatePlayList(selectedtag,ListNo)
    Dim PlayList, SqlStr, r, Row
    PlayList = ""
   
-   SqlStr = "select songqueue.id, songs.title, songs.album, songs.track, songqueue.songid  from songqueue left join songs on songqueue.songid = songs.id where songqueue.playlistid = " & ListNo & " order by songs.album asc, CAST(songs.track AS int) asc"
+   SqlStr = "select songqueue.id, songs.title, songs.album, songs.track, songqueue.songid from songqueue left join songs on songqueue.songid = songs.id where songqueue.playlistid = " & ListNo & " order by songs.album asc, CAST(songs.track AS int) asc"
    Set r = objDB.Execute(SqlStr)
    
     If r.Count = 0 Then
@@ -930,7 +932,7 @@ Sub PopulatePlayList(selectedtag,ListNo)
 	'If ListNo = 0 Then
 	'	SetPropertyValue "GalaxyProTab1 System.Jukebox - Playlist", Left(PlayList,Len(PlayList)-1) 
 	'Else
-		SetPropertyValue "Remote-" & CStr(ListNo) & ".Library - Song List", Left(PlayList,Len(PlayList)-1) 
+		SetPropertyValue "Jukebox" & CStr(ListNo) & ".Jukebox - Playlist", Left(PlayList,Len(PlayList)-1) 
 	'End If
    Set r = Nothing
 End Sub

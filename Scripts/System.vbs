@@ -37,7 +37,7 @@ HBRemoteList
 
 SleepVar = CInt(GetPropertyValue("System.Script Sleep Time"))
 Do
-	Sleep 50
+	Sleep SleepVar
   	Action = GetPropertyValue ("System.Action")
 	If Action <> "Idle" Then
 		SystemCommand(Action)
@@ -1105,6 +1105,7 @@ Sub AVOn2 (Source, Zone)
 	'Rewrite of AVOn that takes advantage of HB propery settings.  Core of the Audio Video Logic
     'Check to see if TV is applicable
     
+	' Turn Video On If Applicable to Zone and Source   
 	If ((CInt(GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV")) = 1) And (CInt(GetPropertyValue("Multiroom Audio Settings.Source " & CStr(SourceName2ID(Source)) & " TV")) = 1))  Then
 		SetpropertyValue "System.Matrix Zone " & VideoZoneName2Alpha(Zone) & " Power State", "On"
 		'Turn On Video Matrix If Off
@@ -1112,18 +1113,53 @@ Sub AVOn2 (Source, Zone)
 			SetpropertyValue "HDMI Matrix Script.Action", "PowerOn"
 			Sleep 50
 		End if
+		' Set the Vidoe Matrix to the Source and Zone
 		SetpropertyValue "HDMI Matrix Script.Action", "Set" & VideoZoneName2Alpha(Zone) & VideoSourceName2Number(Source) 
-		SetpropertyValue "System.Debug", "Set" & VideoZoneName2Alpha(Zone) & VideoSourceName2Number(Source) 
+		'SetpropertyValue "System.Debug", "Set" & VideoZoneName2Alpha(Zone) & VideoSourceName2Number(Source) 
+		
+		'Send TV On Command
 		If GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Status") <> "1" Then
 			if Trim(GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV On Command")) <> "" Then
-				SetPropertyValue "Subscriber-10.DispatchMessage", GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV On Command")
+				SendSubscriberMessage 1, GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV On Command")
 			End If	
 			SetPropertyValue "Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Status", 1
 		End if
 	End if
 
+	'Turn Blue Ray Player On 
+	If Source = "Blu-Ray"
+		SendSubscriberMessage 1, "IR.System.10.SonyBluRay:On"
+	End if
+
+	'Send Yamaha Command
 	If ((GetpropertyValue("Yamaha V2600 Settings.AV Power Master") = "Off") And (Zone = "Living Room")) Then
 		SetpropertyValue "Yamaha V2600 Settings.Action", "MasterPowerOn"
+		Select Case Source
+			Case "Cable TV"
+				SendSubscriberMessage 1, "Receiver.RS232.10.Input:Cbl/Sat"
+			Case "JukeBox 1"
+				SendSubscriberMessage 1, "Receiver.RS232.10.Input:dvr/vcr2"
+				SendSubscriberMessage 1, "Russound.System.10.ZonePower:" & Zone & ":on"
+				SendSubscriberMessage 1, "Russound.System.10.ZoneSource:" & Zone & ":" & Source
+			Case "Jukebox 2"
+				SendSubscriberMessage 1, "Receiver.RS232.10.Input:dvr/vcr2"
+				SendSubscriberMessage 1, "Russound.System.10.ZonePower:" & Zone & ":on"
+				SendSubscriberMessage 1, "Russound.System.10.ZoneSource:" & Zone & ":" & Source
+			Case "Streamer"
+				SendSubscriberMessage 1, "Receiver.RS232.10.Input:dvr/vcr2"
+				SendSubscriberMessage 1, "Russound.System.10.ZonePower:" & Zone & ":on"
+				SendSubscriberMessage 1, "Russound.System.10.ZoneSource:" & Zone & ":" & Source
+			Case "Radio"			
+				SendSubscriberMessage 1, "Receiver.RS232.10.Input:dvr/vcr2"
+				SendSubscriberMessage 1, "Russound.System.10.ZonePower:" & Zone & ":on"
+				SendSubscriberMessage 1, "Russound.System.10.ZoneSource:" & Zone & ":" & Source
+			Case "Blu-Ray"
+				SendSubscriberMessage 1, "Receiver.RS232.10.Input:Cbl/Sat"
+			Case "Kodi"
+				SendSubscriberMessage 1, "Receiver.RS232.10.Input:Cbl/Sat"
+			Case "Apple TV"
+				SendSubscriberMessage 1, "Receiver.RS232.10.Input:Cbl/Sat"
+		End Select	
 	Else
 		SendSubscriberMessage 1, "Russound.System.10.ZonePower:" & Zone & ":on"
 		SendSubscriberMessage 1, "Russound.System.10.ZoneSource:" & Zone & ":" & Source
@@ -1132,18 +1168,42 @@ Sub AVOn2 (Source, Zone)
 End Sub
 
 Sub AVOff2 (Zone)
+	Dim BluRayOn, a, item
+	BluRayOn = 0
+
+	SetpropertyValue "System.Matrix Zone " & VideoZoneName2Alpha(Zone) & " Power State", "Off"
+
 	If ((GetpropertyValue("Yamaha V2600 Settings.AV Power Master") = "On") And (Zone = "Living Room")) Then
 		SetpropertyValue "Yamaha V2600 Settings.Action", "MasterPowerOff"
 	Else
 		SendSubscriberMessage 1, "Russound.System.10.ZonePower:" & Zone & ":off"
 	End if	
 
+    ' Turn Video Off If Applicable to Zone
+    If CInt(GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV")) = 1  Then
+		SetpropertyValue "System.Matrix Zone " & VideoZoneName2Alpha(Zone) & " Power State", "Off"
+	End if	
+
 	If GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Status") <> "0" Then
 		if Trim(GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Off Command")) <> "" Then
-			SetPropertyValue "Subscriber-10.DispatchMessage", GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Off Command")
+			SendSubscriberMessage 1, GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Off Command")
 		End If	
 		SetPropertyValue "Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Status", 0
 	End if
+
+
+	a=Array("A","B","C","D")
+ 	For each item in a
+    	If GetPropertyValue("System.Matrix Zone " & item & " Power State") = "On" Then
+    		If GetPropertyValue("System.Zone " & item & " Selected Source") = "Blu-Ray" Then
+    			BluRayOn = 1
+    		End If
+    	End if
+ 	Next
+
+ 	If BluRayOn = 1 Then
+ 		SendSubscriberMessage 1, "IR.System.10.SonyBluRay:Off"
+ 	End If
 
 End Sub
 

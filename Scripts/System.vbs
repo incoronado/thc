@@ -1127,7 +1127,7 @@ Sub AVOn2 (Source, Zone)
 	End if
 
 	'Turn Blue Ray Player On 
-	If Source = "Blu-Ray"
+	If Source = "Blu-Ray" Then
 		SendSubscriberMessage 1, "IR.System.10.SonyBluRay:On"
 	End if
 

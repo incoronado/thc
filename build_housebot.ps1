@@ -36,14 +36,14 @@ $cmdArgs = @("$source","$dest",$what,$options)
 robocopy @cmdArgs
 
 
-$source="Themes"
-$dest="c:\Program Files (x86)\Housebot\Config\Themes"
+#$source="Themes"
+#$dest="c:\Program Files (x86)\Housebot\Config\Themes"
 
-$what = @("/COPYALL","/B","/MIR")
-$options = @("/R:0","/W:0","/NFL","/NDL")
+#$what = @("/COPYALL","/B","/MIR")
+#$options = @("/R:0","/W:0","/NFL","/NDL")
 
-$cmdArgs = @("$source","$dest",$what,$options)
-robocopy @cmdArgs
+#$cmdArgs = @("$source","$dest",$what,$options)
+3robocopy @cmdArgs
 
 
 If ($JOB_NAME -eq "Development") {

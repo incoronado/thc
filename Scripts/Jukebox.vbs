@@ -488,6 +488,7 @@ Sub LoadSelectedPlaylistToRemote(Remote)
   Set r = objDB.Execute(SqlStr)
   For Row = 1 To r.Count 
      objDB.Execute su.Sprintf("INSERT INTO librarysonglist (playlistid, songid) VALUES (%Nq, %Nq)", CInt(RemoteId(1)), r(Row)("songid") )
+     sleep 5
   Next
   Set r = Nothing
   sleep 500

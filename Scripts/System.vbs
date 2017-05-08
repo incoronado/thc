@@ -1120,7 +1120,7 @@ Sub AVOn2 (Source, Zone)
 		'Send TV On Command
 		If GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Status") <> "1" Then
 			if Trim(GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV On Command")) <> "" Then
-				'SetPropertyValue "Multiroom Audio Settings.Debug 2", 	
+				SetPropertyValue "Multiroom Audio Settings.Debug 2", "Multiroom Audio Settings.Source " & CStr(SourceName2ID(Source)) & " TV"	
 			    if Trim(GetPropertyValue("Multiroom Audio Settings.Source " & CStr(SourceName2ID(Source)) & " TV")) = "1" Then
 					SendSubscriberMessage 1, GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV On Command")
 				Else

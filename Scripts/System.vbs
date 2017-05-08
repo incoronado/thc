@@ -1141,7 +1141,7 @@ Sub AVOn2 (Source, Zone)
 		Select Case Source
 			Case "Cable TV"
 				SendSubscriberMessage 1, "Receiver.RS232.10.Input:Cbl/Sat"
-			Case "JukeBox 1"
+			Case "Jukebox 1"
 				SendSubscriberMessage 1, "Receiver.RS232.10.Input:dvr/vcr2"
 				SendSubscriberMessage 1, "Russound.System.10.ZonePower:" & Zone & ":on"
 				SendSubscriberMessage 1, "Russound.System.10.ZoneSource:" & Zone & ":" & Source

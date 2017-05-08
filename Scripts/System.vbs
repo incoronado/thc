@@ -1405,7 +1405,7 @@ Sub SendSubscriberMessage(SubscriberID, SubscriberMessage)
 			UnBlockSubscriber(SubscriberID) 
 			Exit Do
 		Else
-			Sleep GetRandomNumber (1,100)
+			Sleep GetRandomNumber (20,100)
 		End if
 	Loop
 

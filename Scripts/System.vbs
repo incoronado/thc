@@ -1119,12 +1119,12 @@ Sub AVOn2 (Source, Zone)
 		
 		'Send TV On Command
 		'SetPropertyValue "System.Debug", "Multiroom Audio Settings.Source " & CStr(SourceName2ID(Source)) & " TV"
-		If GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Status") = "0" Then		
+		If CInt(GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Status")) = 0 Then		
 			SendSubscriberMessage 1, GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV On Command")
 			SetPropertyValue "Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Status", "1"
 		End if	
 	Else
-		If GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Status") = "1" Then		
+		If Cint(GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Status")) = 1 Then		
 			SendSubscriberMessage 1, GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Off Command")	
 			SetPropertyValue "Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Status", "0"
 		End If
@@ -1195,11 +1195,11 @@ Sub AVOff2 (Zone)
 		SetpropertyValue "System.Matrix Zone " & VideoZoneName2Alpha(Zone) & " Power State", "Off"
 	End if	
 
-	If GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Status") <> "0" Then
+	If CInt(GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Status")) = 1 Then
 		if Trim(GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Off Command")) <> "" Then
 			SendSubscriberMessage 1, GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Off Command")
 		End If	
-		SetPropertyValue "Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Status", 0
+		SetPropertyValue "Multiroom Audio Settings.Zone " & CStr(ZoneName2ID(Zone)) & " TV Status", "0"
 	End if
 
 

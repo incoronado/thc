@@ -1131,9 +1131,13 @@ Sub AVOn2 (Source, Zone)
 		SendSubscriberMessage 1, "IR.System.10.SonyBluRay:On"
 	End if
 
-	'Send Yamaha Command
-	If ((GetpropertyValue("Yamaha V2600 Settings.AV Power Master") = "Off") And (Zone = "Living Room")) Then
-		SetpropertyValue "Yamaha V2600 Settings.Action", "MasterPowerOn"
+	If Zone = "Living Room" Then
+
+		'Send Yamaha Command
+		'If (GetpropertyValue("Yamaha V2600 Settings.AV Power Master") = "Off" Then
+			SetpropertyValue "Yamaha V2600 Settings.Action", "MasterPowerOn"	
+		'End if
+
 		Select Case Source
 			Case "Cable TV"
 				SendSubscriberMessage 1, "Receiver.RS232.10.Input:Cbl/Sat"
@@ -1159,11 +1163,14 @@ Sub AVOn2 (Source, Zone)
 				SendSubscriberMessage 1, "Receiver.RS232.10.Input:Cbl/Sat"
 			Case "Apple TV"
 				SendSubscriberMessage 1, "Receiver.RS232.10.Input:Cbl/Sat"
-		End Select	
+		End Select
 	Else
 		SendSubscriberMessage 1, "Russound.System.10.ZonePower:" & Zone & ":on"
 		SendSubscriberMessage 1, "Russound.System.10.ZoneSource:" & Zone & ":" & Source
-	End if
+	End if	
+
+
+
 
 End Sub
 

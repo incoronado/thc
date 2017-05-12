@@ -10,7 +10,6 @@ Do
 		SystemCommand(Action)
 		SetpropertyValue "IR Script.Action", "Idle"
 	End If
-	
 Loop
 
 Sub SystemCommand(Action)
@@ -46,7 +45,12 @@ Sub SystemCommand(Action)
  					End Select
  				Case "cabletv"
  					SetpropertyValue "USBUIRT.Cable TV Remote", b(1)
- 					'IR.System.10.SonyBluRay:On
+ 					'IR.System.10.CableTV:1
+ 				Case "foxnews"
+ 					SetpropertyValue "USBUIRT.Cable TV Remote", "3"
+ 					sleep 50
+ 					SetpropertyValue "USBUIRT.Cable TV Remote", "7"
+
  			End Select
 	End Select
 		

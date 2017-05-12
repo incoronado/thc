@@ -70,7 +70,7 @@ Sub SystemCommand(Action)
  					SetpropertyValue "USBUIRT.Cable TV Remote", "7"
  				Case "cbs"
  					SetpropertyValue "USBUIRT.Cable TV Remote", "8"	
- 				Case "cbs"
+ 				Case "cnn"
  					SetpropertyValue "USBUIRT.Cable TV Remote", "2"
  					sleep 50
  					SetpropertyValue "USBUIRT.Cable TV Remote", "6"		

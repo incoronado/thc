@@ -44,6 +44,9 @@ Sub SystemCommand(Action)
  						Case "off"
  							SetpropertyValue "USBUIRT.Sony BD", "Power Off"
  					End Select
+ 				Case "cabletv"
+ 					SetpropertyValue "USBUIRT.Cable TV Remote", b(1)
+ 					'IR.System.10.SonyBluRay:On
  			End Select
 	End Select
 		

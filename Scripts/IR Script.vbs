@@ -54,7 +54,10 @@ Sub SystemCommand(Action)
  					SetpropertyValue "USBUIRT.Cable TV Remote", "5"
  					sleep 50
  					SetpropertyValue "USBUIRT.Cable TV Remote", "3"
-
+ 				Case "historychannel"
+ 					SetpropertyValue "USBUIRT.Cable TV Remote", "5"
+ 					sleep 50
+ 					SetpropertyValue "USBUIRT.Cable TV Remote", "6"
 
  			End Select
 	End Select

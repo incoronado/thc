@@ -47,7 +47,6 @@ Sub MessageHandler(Action)
 				Case "mastervolumedown"
 					MasterVolumeDown	
 				Case "mastervolumeuprepeat"
-					SetPropertyValue "Yamaha V2600 Settings.AV Debug", "Yo"
 					'Receiver.RS232.10.MasterVolumeUpRepeat:5
           			MasterVolumeUpRepeat b(1)
 				Case "mastervolumedownrepeat"
@@ -216,7 +215,7 @@ Sub MasterVolumeUpRepeat(RepeatTimes)
 	for i = 1 to CInt(RepeatTimes)
 		SendStr = Chr(2) & "07A1A" 
 		SetPropertyValue "Yamaha V2600 Receiver.Yamaha Serial Command", SendStr
- 		sleep 150
+ 		sleep 50
 	next		
 End Sub
 
@@ -225,7 +224,7 @@ Sub MasterVolumeDownRepeat(RepeatTimes)
 	for i = 1 to CInt(RepeatTimes)
 		SendStr = Chr(2) & "07A1B" 
 		SetPropertyValue "Yamaha V2600 Receiver.Yamaha Serial Command", SendStr
- 		sleep 150
+ 		sleep 50
 	next		
 End Sub
 

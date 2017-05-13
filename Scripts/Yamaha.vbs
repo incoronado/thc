@@ -35,7 +35,7 @@ Sub MessageHandler(Action)
 			b=split(lcase(a(3)),":")
 			Select Case b(0)
 				Case "placeholder"
-				
+				'a
 				Case "input"
 					'Receiver.RS232.10.Input:Tuner
 					SetInput b(1)

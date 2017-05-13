@@ -42,14 +42,14 @@ Sub MessageHandler(Action)
 				Case "preset"
 					'Receiver.RS232.10.Preset:1
 					SetPresetStation b(1)
-				Case "MasterVolumeUp"
+				Case "mastervolumeUp"
           			MasterVolumeUp
-				Case "MasterVolumeDown"
+				Case "mastervolumedown"
 					MasterVolumeDown	
-				Case "MasterVolumeUpRepeat"
+				Case "masterVolumeuprepeat"
 					'Receiver.RS232.10.MasterVolumeUpRepeat:5
           			MasterVolumeUpRepeat b(1)
-				Case "MasterVolumeDownRepeat"
+				Case "mastervolumedownrepeat"
 					MasterVolumeDownRepeat b(1)		
 				End Select
 				

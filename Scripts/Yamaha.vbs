@@ -47,6 +47,7 @@ Sub MessageHandler(Action)
 				Case "mastervolumedown"
 					MasterVolumeDown	
 				Case "mastervolumeuprepeat"
+					SetPropertyValue "Yamaha V2600 Settings.AV Debug", "Yo"
 					'Receiver.RS232.10.MasterVolumeUpRepeat:5
           			MasterVolumeUpRepeat b(1)
 				Case "mastervolumedownrepeat"

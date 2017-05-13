@@ -42,7 +42,15 @@ Sub MessageHandler(Action)
 				Case "preset"
 					'Receiver.RS232.10.Preset:1
 					SetPresetStation b(1)
-			End Select
+				Case "MasterVolumeUp"
+          			MasterVolumeUp
+				Case "MasterVolumeDown"
+					MasterVolumeDown	
+				Case "MasterVolumeUpRepeat"
+          			MasterVolumeUpRepeat b(1)
+				Case "MasterVolumeDownRepeat"
+					MasterVolumeDownRepeat b(1)		
+				End Select
 				
 			
 		' Configuration Command Backwards Compatibility
@@ -201,6 +209,23 @@ Sub Zone3PowerToggle
 End Sub
 
 
+Sub MasterVolumeUpRepeat(RepeatTimes)
+	Dim SendStr
+	for i = 1 to CInt(RepeatTimes)
+		SendStr = Chr(2) & "07A1A" 
+		SetPropertyValue "Yamaha V2600 Receiver.Yamaha Serial Command", SendStr
+ 		sleep 150
+	next		
+End Sub
+
+Sub MasterVolumeDownRepeat(RepeatTimes)
+	Dim SendStr
+	for i = 1 to CInt(RepeatTimes)
+		SendStr = Chr(2) & "07A1B" 
+		SetPropertyValue "Yamaha V2600 Receiver.Yamaha Serial Command", SendStr
+ 		sleep 150
+	next		
+End Sub
 
 
 Sub MasterVolumeUp

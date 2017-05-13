@@ -46,7 +46,7 @@ Sub MessageHandler(Action)
           			MasterVolumeUp
 				Case "mastervolumedown"
 					MasterVolumeDown	
-				Case "masterVolumeuprepeat"
+				Case "mastervolumeuprepeat"
 					'Receiver.RS232.10.MasterVolumeUpRepeat:5
           			MasterVolumeUpRepeat b(1)
 				Case "mastervolumedownrepeat"

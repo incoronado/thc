@@ -76,13 +76,13 @@ Sub SelectZone(ZoneNo, Remote)
 		
 		If i = CInt(ZoneNo) Then
 			sel_str = "sel"
-			SetPropertyValue Remote  & ".Selected Zone Icon",  "Config\Themes\THC 2560 x 1440\zone" & CStr(i) & "-sel-" & status_str & ".png"
+			SetPropertyValue Remote  & ".Selected Zone Icon",  "Config\Themes\THC 2560x1440\zone" & CStr(i) & "-sel-" & status_str & ".png"
 			
 		Else
 			sel_str = "unsel"	
 			
 		End If
-		SetPropertyValue  Remote & ".Menu Icon " & Cstr(i) , "Config\Themes\THC 2560 x 1440\zone" & CStr(i) & "-" & sel_str & "-" & status_str & ".png"
+		SetPropertyValue  Remote & ".Menu Icon " & Cstr(i) , "Config\Themes\THC 2560x1440\zone" & CStr(i) & "-" & sel_str & "-" & status_str & ".png"
 	Next
 	'sleep 250
 	SetPropertyValue "Subscriber-8.DispatchMessage", "System.Desktop.10.ClosePanel:Zone Menu"

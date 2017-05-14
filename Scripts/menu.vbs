@@ -65,7 +65,7 @@ Sub SelectZone(ZoneNo, Remote)
 	SetPropertyValue Remote  & ".Selected Zone Name",  GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo)  & " Name")
 	SetPropertyValue "Subscriber-1.DispatchMessage", "System." & GetPropertyValue(Remote & ".Remote Name")  & ".10.SelectZone:" & CStr(ZoneNo)
 	
-	
+	'test
 	
     for i = 1 to 6
 		If GetPropertyValue("Multiroom Audio Settings.Zone " &  ZoneNo & " Power")  = "On" Then

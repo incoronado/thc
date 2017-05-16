@@ -806,7 +806,7 @@ Function HTTPPost(sUrl, sRequest)
 	objXmlHttpMain.send(sRequest)
 	If Err.Number = 0 Then
     	If objXmlHttpMain.Status = "200" Then
-      		HTTPPost =  = PlayerID(objXmlHttpMain.responseText)
+      		HTTPPost = PlayerID(objXmlHttpMain.responseText)
     	Else
       		HTTPPost = "HTTP " & objXmlHttpMain.Status & " " & _
         	objXmlHttpMain.StatusText

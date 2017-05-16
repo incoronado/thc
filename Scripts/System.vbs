@@ -798,7 +798,7 @@ Function HTTPPost(sUrl, sRequest)
 	dim objXmlHttpMain
 	'Set objXmlHttpMain = CreateObject("Microsoft.XMLHTTP") 
 	Set objXmlHttpMain = CreateObject("MSXML2.ServerXMLHTTP.6.0") 
-	
+	objXmlHttpMain.setTimeouts(15000,15000,15000,15000);	
 	'on error resume next 
 	objXmlHttpMain.open "POST", sUrl, False
 	'objXmlHttpMain.setRequestHeader "Authorization", "kodi kodi"

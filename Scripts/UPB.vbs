@@ -169,7 +169,7 @@ Function PollAllUPBLights
 End Function
 
 Sub SelectLight(Remote)
-	SetPropertyValue "UPB Script.Debug", Remote & ".Room Context"
+	'SetPropertyValue "UPB Script.Debug", Remote & ".Room Context"
 	Dim LightList, SqlStr, r, Row
 	LightList = ""
 	SqlStr = "SELECT lights.Name, floor.Floor, room.Room, lights.UPB_ID FROM lights left JOIN room ON room.id=lights.RoomID left join floor on floor.id=room.FloorID where lights.id = " & GetPropertyValue(Remote & ".Selected Light") & " order by Floor ASC, Room ASC, Name ASC"

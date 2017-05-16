@@ -183,7 +183,7 @@ Sub MessageHandler(message)
 	Case "Populate Playlist"
 		PopulatePlaylist 0, SelectedJukebox
 	Case "Populate Playlist 1"
-		SetPropertyValue "Jukebox.Debug", "Got Here"
+		'SetPropertyValue "Jukebox.Debug", "Got Here"
 		PopulatePlaylist 0, 1
 	Case "Populate Playlist 2"
 		PopulatePlaylist 0, 2
@@ -480,11 +480,11 @@ Sub LoadSelectedPlaylistToRemote(Remote)
   RemoteId = split(Remote,"-") 
   'SqlStr = "delete from librarysonglist where playlistid = " & RemoteId(1)
   objDB.Execute(SqlStr)
-  SetPropertyValue "Jukebox.Debug", Remote & ".Jukebox - Selected Playlist"
+  'SetPropertyValue "Jukebox.Debug", Remote & ".Jukebox - Selected Playlist"
   
   PlaylistId = split(GetPropertyValue(Remote & ".Jukebox - Selected Playlist"),"^")
   SqlStr = "select * from savedplaylists where playlistid  = " & CStr(PlaylistID(1)) 
-  SetPropertyValue "Jukebox.Debug", SqlStr
+  'SetPropertyValue "Jukebox.Debug", SqlStr
   Set r = objDB.Execute(SqlStr)
   For Row = 1 To r.Count 
      objDB.Execute su.Sprintf("INSERT INTO librarysonglist (playlistid, songid) VALUES (%Nq, %Nq)", CInt(RemoteId(1)), r(Row)("songid") )
@@ -589,7 +589,7 @@ Sub PopulateLibrarySearchList(drilldown,ListNo,Remote)
 		ElseIf tagType= "artist" Then
 			SqlStr = "select * from songs where artist = '" & Replace(Mid(GetPropertyValue (Remote & ".Jukebox - Double-Click Name"),11,Len(GetPropertyValue (Remote & ".Jukebox - Selected Name")) -10), "'","''") & "' order by title collate nocase"
 			'MsgBox "2"
-			SetPropertyValue "Remote-1.Debug", SqlStr
+			'SetPropertyValue "Remote-1.Debug", SqlStr
 			SetModeState "Block PopulateLibrarySearchList", "Inactive"
 			sleep 5
 			SetPropertyValue Remote & ".Jukebox - Tag Type", "title"

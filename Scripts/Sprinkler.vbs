@@ -149,7 +149,7 @@ End Sub
 Sub RunNextZone
   Dim ZoneStr, ZoneCount
   ZoneCount = CInt(CountSprinklerZones)
-  SetPropertyValue "Sprinklers.Debug", ZoneCount
+  'SetPropertyValue "Sprinklers.Debug", ZoneCount
   If CInt(GetPropertyValue("Sprinklers.Sprinkler Running Zone")) =>  ZoneCount Then
 	 SetpropertyValue "Sprinklers.Sprinklers Zone " & GetPropertyValue("Sprinklers.Sprinkler Running Zone") & " State", "Stopped"
 	 SetpropertyValue "Sprinklers.Sprinklers Status", "Stopped"

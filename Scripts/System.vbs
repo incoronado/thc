@@ -685,7 +685,7 @@ Sub SelectPanel(Remote, Panel, Context, TimerInSeconds)
 	
 	SetWhichRemotesToControl Remote
 	If Context = "" Then
-	    SetPropertyValue "System.Debug", Panel
+	    'SetPropertyValue "System.Debug", Panel
 		OpenRemotePanel Panel
 	Else
 		OpenRemotePanelAndSetContext Panel, Context
@@ -1294,7 +1294,7 @@ Function ZoneName2ID(ZoneName)
 			NoMoreZones = 1
 		End if
 	Loop
-	SetPropertyValue "Multiroom Audio Settings.Debug 2", ZoneNo
+	'SetPropertyValue "Multiroom Audio Settings.Debug 2", ZoneNo
 	ZoneName2ID = ZoneNo
 End Function
 

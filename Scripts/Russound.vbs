@@ -110,7 +110,7 @@ End Function
 
 Sub SerialCommand(hexstr)
 
-	SetPropertyValue "Multiroom Audio Settings.Debug 2", hexstr & ComputeRNETChecksum(hexstr) & "F7"
+	'SetPropertyValue "Multiroom Audio Settings.Debug 2", hexstr & ComputeRNETChecksum(hexstr) & "F7"
 	SetPropertyValue "Multiroom Audio Amplifier.MRA Command", Replace(hexstr," ","",1,-1) & ComputeRNETChecksum(hexstr) & "F7"
 
 End Sub
@@ -130,7 +130,7 @@ Function SourceName2ID(SourceName)
 			NoMoreSources = 1
 		End if
 	Loop
-	SetPropertyValue "Multiroom Audio Settings.Debug 2", SourceNo
+	'SetPropertyValue "Multiroom Audio Settings.Debug 2", SourceNo
 	SourceName2ID = SourceNo
 End Function
 
@@ -149,7 +149,7 @@ Function ZoneName2ID(ZoneName)
 			NoMoreZones = 1
 		End if
 	Loop
-	SetPropertyValue "Multiroom Audio Settings.Debug 2", ZoneNo
+	'SetPropertyValue "Multiroom Audio Settings.Debug 2", ZoneNo
 	ZoneName2ID = ZoneNo
 End Function
 

@@ -257,7 +257,10 @@ Sub SystemCommand(Action)
 						SetpropertyValue "HDMI Matrix Script.Action", "PowerOff"
 						SetpropertyValue "USBUIRT.Sony BD", "Power Off"
 						SetpropertyValue "USBUIRT.Direct TV Remote", "Power Off"
-					End if		
+					End if
+				Case "UpdateTimeDigits"
+					'System.GalaxyTabA1.10.UpdateTimeDigits
+					UpdateTimeDigits			
 			End Select
 			
 		Case "SetRes"
@@ -793,7 +796,9 @@ End Sub
 
 Function HTTPPost(sUrl, sRequest)
 	dim objXmlHttpMain
-	Set objXmlHttpMain = CreateObject("Microsoft.XMLHTTP") 
+	'Set objXmlHttpMain = CreateObject("Microsoft.XMLHTTP") 
+	Set objXmlHttpMain = CreateObject("MSXML2.ServerXMLHTTP.6.0") 
+	
 	'on error resume next 
 	objXmlHttpMain.open "POST", sUrl, False
 	'objXmlHttpMain.setRequestHeader "Authorization", "kodi kodi"

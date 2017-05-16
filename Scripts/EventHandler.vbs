@@ -18,7 +18,7 @@
 ' 
 ' 
 Option Explicit
-'On Error Resume Next
+On Error Resume Next
 
 Dim MessageHandlerVar, EventHandlerCount, DequeueEvent, Queue, i, SleepVar
 Dim HandlerQueue1, HandlerQueue2, HandlerQueue3, HandlerQueue4, HandlerQueue5, HandlerQueue6
@@ -28,7 +28,7 @@ Dim HandlerQueue7, HandlerQueue8, HandlerQueue9, HandlerQueue10, HandlerQueue11,
 
 EventHandlerCount = CountEventHandlers
 'Initialize Event Subscriber Queues
-'ClearEventHandlerData EventHandlerCount, Queue
+ClearEventHandlerData EventHandlerCount, Queue
 
 Set HandlerQueue1 = CreateObject("System.Collections.Queue")
 Set HandlerQueue2 = CreateObject("System.Collections.Queue")

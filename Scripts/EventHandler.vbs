@@ -28,7 +28,7 @@ Dim HandlerQueue7, HandlerQueue8, HandlerQueue9, HandlerQueue10, HandlerQueue11,
 
 EventHandlerCount = CountEventHandlers
 'Initialize Event Subscriber Queues
-ClearEventHandlerData EventHandlerCount, Queue
+'ClearEventHandlerData EventHandlerCount, Queue
 
 Set HandlerQueue1 = CreateObject("System.Collections.Queue")
 Set HandlerQueue2 = CreateObject("System.Collections.Queue")
@@ -44,7 +44,7 @@ Set HandlerQueue11 = CreateObject("System.Collections.Queue")
 Set HandlerQueue12 = CreateObject("System.Collections.Queue")
  
 
-'ClearEventQueues(EventHandlerCount)
+ClearEventQueues(EventHandlerCount)
 
 SleepVar = CInt(GetPropertyValue("System.Handler Sleep Time"))
 'SetPropertyValue "System.Debug", EventHandlerCount

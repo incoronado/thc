@@ -798,13 +798,24 @@ Function HTTPPost(sUrl, sRequest)
 	dim objXmlHttpMain
 	'Set objXmlHttpMain = CreateObject("Microsoft.XMLHTTP") 
 	Set objXmlHttpMain = CreateObject("MSXML2.ServerXMLHTTP.6.0") 
-	objXmlHttpMain.setTimeouts 15000,15000,15000,15000	
-	'on error resume next 
+	objXmlHttpMain.setTimeouts 59000,59000,59000,59000
 	objXmlHttpMain.open "POST", sUrl, False
 	'objXmlHttpMain.setRequestHeader "Authorization", "kodi kodi"
 	objXmlHttpMain.setRequestHeader "Content-Type", "application/json" 
+	On Error Resume Next
 	objXmlHttpMain.send(sRequest)
-	HTTPPost = PlayerID(objXmlHttpMain.responseText)
+	If Err.Number = 0 Then
+    	If objXmlHttpMain.Status = "200" Then
+      		HTTPPost =  = PlayerID(objXmlHttpMain.responseText)
+    	Else
+      		HTTPPost = "HTTP " & objXmlHttpMain.Status & " " & _
+        	objXmlHttpMain.StatusText
+    	End If
+  	Else
+    	HTTPPost = "Error " & Err.Number & " " & Err.Source & " " & _
+      	Err.Description
+  	End If
+  	On Error GoTo 0
 	set objXmlHttpMain = nothing
 	'set objJSONDoc = nothing 
 End Function

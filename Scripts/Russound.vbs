@@ -35,9 +35,35 @@ Sub MessageHandler(Action)
     Select Case lcase(a(0))
 		Case "russound"
 			b=split(a(3),":")
-
 			'Russound.GalaxyTabA1.10.ZonePower:1:on
 			Select Case lcase(b(0))
+				Case "InitIP"
+					'Russound.GalaxyTabA1.10.InitIP
+					SetpropertyValue "Russound IP.Send Data", "WATCH SYSTEM ON"
+					Sleep 50
+					SetPropertyValue "Russound IP.Send Data", "WATCH C[1].Z[1] ON" 
+					Sleep 50
+					SetPropertyValue "Russound IP.Send Data", "WATCH C[1].Z[2] ON" 
+					Sleep 50
+					SetPropertyValue "Russound IP.Send Data", "WATCH C[1].Z[8] ON"
+					Sleep 50
+					SetPropertyValue "Russound IP.Send Data", "WATCH S[1] ON"
+					Sleep 50
+					SetPropertyValue "Russound IP.Send Data", "WATCH S[2] ON"
+					Sleep 50
+					SetPropertyValue "Russound IP.Send Data", "WATCH S[3] ON"
+					Sleep 50
+					SetPropertyValue "Russound IP.Send Data", "WATCH S[4] ON" 
+					Sleep 50
+					SetPropertyValue "Russound IP.Send Data", "WATCH S[5] ON"
+					Sleep 50
+					SetPropertyValue "Russound IP.Send Data", "WATCH S[6] ON"
+					Sleep 50
+					SetPropertyValue "Russound IP.Send Data", "WATCH S[7] ON"
+					Sleep 50
+					SetPropertyValue "Russound IP.Send Data", "WATCH S[8] ON"
+					Sleep 50
+							
 				Case "zonepower"
 					zerobasedzone = Right("0" & cStr(cInt(ZoneName2ID(b(1))) - 1),2)
 					

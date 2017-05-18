@@ -10,7 +10,7 @@ Sleep SleepVar
 
 Sub ReadIPData(Data)
 	SetPropertyValue "Russound IP.MessageStr", GetPropertyValue("Russound IP.MessageStr") & Data
-	If Instr(Data, vbCRLF) = 0 Then
+	If Instr(Data, vbLF) = 0 Then
 		SetPropertyValue "Russound IP.MessageStr", ""
 	End if
 End Sub

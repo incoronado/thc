@@ -37,7 +37,7 @@ Sub MessageHandler(Action)
 			b=split(a(3),":")
 			'Russound.GalaxyTabA1.10.ZonePower:1:on
 			Select Case lcase(b(0))
-				Case "InitIP"
+				Case "initip"
 					'Russound.GalaxyTabA1.10.InitIP
 					SetpropertyValue "Russound IP.Send Data", "WATCH SYSTEM ON"
 					Sleep 50

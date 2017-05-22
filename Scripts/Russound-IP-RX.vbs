@@ -9,9 +9,9 @@ Sleep SleepVar
 
 
 Sub ReadIPData(Data)
-	Dim Result, line
-	listLines = Split(Data, vbCrLf)
-	For Each line In listLines
+	Dim ListLines, line
+	ListLines = Split(Data, vbCrLf)
+	For Each line In ListLines
 		SePropertyValue "IP Message", line
 	Next
 End Sub

@@ -12,6 +12,6 @@ Sub ReadIPData(Data)
 	Dim ListLines, line
 	ListLines = Split(Data, vbCrLf)
 	For Each line In ListLines
-		SePropertyValue "IP Message", line
+		SetPropertyValue "IP Message", line
 	Next
 End Sub

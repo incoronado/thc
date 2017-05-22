@@ -9,9 +9,9 @@ Sleep SleepVar
 
 
 Sub ReadIPData(Data)
-	Dim Result
-	result = Instr(Data, vbCRLF)
-	If Result <> 0 Then
-		SetPropertyValue "Russound IP.Debug", Result
-	End if
+	Dim Result, line
+	listLines = Split(Data, vbCrLf)
+	For Each line In listLines
+		SePropertyValue "IP Message", line
+	Next
 End Sub

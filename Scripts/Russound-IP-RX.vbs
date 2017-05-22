@@ -10,7 +10,7 @@ Sleep SleepVar
 
 Sub ReadIPData(Data)
 	result = Instr(Data, vbCRLF)
-	If Result <> 0
+	If Result <> 0 Then
 		SetPropertyValue "Russound IP.Debug", Result
 	End if
 End Sub

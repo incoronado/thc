@@ -1442,7 +1442,7 @@ Function RussoundRadioFrequency(frequency)
 	Dim FreqNumbers, i
 	FreqNumbers = Replace(frequency,".","")
 	For i = 1 to len(FreqNumbers)
-		SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[4]!KeyRelease Digit" & CStr(Mid(FreqNumbers,i,1))
+		SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[4]!KeyRelease Digit" & ConvertDigit(Mid(FreqNumbers,i,1))
 		sleep 50
 	Next
 End Function

@@ -401,9 +401,7 @@ Sub SystemCommand(Action)
 							StationList = StationList & "*S-" & r(Row)("id") & vbTAB & r(Row)("frequency") & vbTAB & r(Row)("call-letters") & vbTAB & r(Row)("format") & vbLF
 							SetPropertyValue "System.Radio Station Call Letters", r(Row)("call-letters")
 							SetPropertyValue "System.Radio Station Frequency", r(Row)("frequency") & "MHz"
-							FreqAR = split(r(Row)("frequency"),".")
-							SetPropertyValue "Tuner " & a(1) & ".Frequency Direct", CStr(FreqAR(0)) & "_" & Right(CStr(FreqAR(1)) & "0", 2) 
-										
+							RussoundRadioFrequency(r(Row)("frequency"))						
 						Else
 							StationList = StationList & r(Row)("id") & vbTAB & r(Row)("frequency") & vbTAB & r(Row)("call-letters") & vbTAB & r(Row)("format") & vbLF
 						End if	
@@ -1439,6 +1437,34 @@ Function GetRandomNumber (min,max)
 	Randomize
 	GetRandomNumber = Int((max-min+1)*Rnd+min)
 End Function
+
+Function RussoundRadioFrequency(frequency)
+	Dim FreqNumbers, i
+	FreqNumbers = Replace(frequency,".","")
+	For i = 1 to len(FreqNumbers)
+		SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[4]!KeyRelease Digit" & CStr(Mid(FreqNumbers,i,1))
+		sleep 50
+	Next
+End Function
+
+Function ConvertDigit (MyDigit)
+   Select Case CInt(MyDigit)
+      Case 1: ConvertDigit = "One"
+      Case 2: ConvertDigit = "Two"
+      Case 3: ConvertDigit = "Three"
+      Case 4: ConvertDigit = "Four"
+      Case 5: ConvertDigit = "Five"
+      Case 6: ConvertDigit = "Six"
+      Case 7: ConvertDigit = "Seven"
+      Case 8: ConvertDigit = "Eight"
+      Case 9: ConvertDigit = "Nine"
+      Case 0: ConvertDigit = "Zero"
+      Case Else: ConvertDigit = ""
+   End Select
+End Function
+
+
+
 
 Sub HBRemoteList
 	Dim NoMoreRemotes, RemoteCount, HBRList

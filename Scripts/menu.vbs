@@ -61,6 +61,7 @@ End Sub
 Sub SelectZone(ZoneNo, Remote)
 	'Zone: 1=Living Room; 5=Master Bedroom; 6=Patio
 	'Zone Name
+	SetPropertyValue "Menu.Debug", Remote
 	Dim status_str, sel_str, i, ThemesFolder
 	ThemesFolder =  GetPropertyValue("Remote-" & Remote  & ".Themes Folder")
 	SetPropertyValue "Menu.Debug", ThemesFolder
@@ -86,10 +87,6 @@ Sub SelectZone(ZoneNo, Remote)
 	Next
 	'sleep 250
 	SetPropertyValue "Subscriber-8.DispatchMessage", "System.Desktop.10.ClosePanel:Zone Menu"
-	
-	
-	
-
 
 End Sub
 

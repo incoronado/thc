@@ -682,8 +682,9 @@ Sub SelectPanel(Remote, Panel, Context, TimerInSeconds)
 	End if	
 	
 	SetWhichRemotesToControl Remote
-	If Context = "" Then
-	    'SetPropertyValue "System.Debug", Panel
+
+	If Trim(Context) = "" Then
+	    SetPropertyValue "System.Debug", Panel
 		OpenRemotePanel Panel
 	Else
 		OpenRemotePanelAndSetContext Panel, Context

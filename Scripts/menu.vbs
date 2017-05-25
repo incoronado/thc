@@ -81,7 +81,9 @@ Sub SelectZone(ZoneNo, Remote)
 			sel_str = "unsel"	
 			
 		End If
-		SetPropertyValue  Remote & ".Menu Icon " & Cstr(i) , "Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(i) & "-" & sel_str & "-" & status_str & ".png"
+		If GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(i)  & " Name") <> "" Then
+			SetPropertyValue  Remote & ".Menu Icon " & Cstr(i) , "Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(i) & "-" & sel_str & "-" & status_str & ".png"
+		End If	
 	Next
 	'sleep 250
 	SetPropertyValue "Subscriber-8.DispatchMessage", "System.Desktop.10.ClosePanel:Zone Menu"

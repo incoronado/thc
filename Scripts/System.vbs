@@ -680,9 +680,9 @@ Sub SelectPanel(Remote, Panel, Context, TimerInSeconds)
 	If Panel <> "Navigator" Then
 	   CloseAllPanels Remote
 	End if	
-	
+	Sleep 50
 	SetWhichRemotesToControl Remote
-
+	Sleep 50
 	If Trim(Context) = "" Then
 	    SetPropertyValue "System.Debug", Remote
 		OpenRemotePanel Panel

@@ -676,7 +676,7 @@ End Sub
 
 Sub SelectPanel(Remote, Panel, Context, TimerInSeconds)
 	 Dim hours, minutes, seconds, IntSeconds
-	 
+	UnBlankRemoteScreen 
 	If Panel <> "Navigator" Then
 	   CloseAllPanels Remote
 	End if	

@@ -61,10 +61,10 @@ End Sub
 Sub SelectZone(ZoneNo, Remote)
 	'Zone: 1=Living Room; 5=Master Bedroom; 6=Patio
 	'Zone Name
-	SetPropertyValue "Menu.Debug", Remote
+	SetPropertyValue "Menu.Debug", Remote & ".Themes Folder
 	Dim status_str, sel_str, i, ThemesFolder
-	ThemesFolder =  GetPropertyValue(Remote  & ".Themes Folder")
-	SetPropertyValue "Menu.Debug", ThemesFolder
+	ThemesFolder =  GetPropertyValue(Remote & ".Themes Folder")
+	SetPropertyValue "Menu.Debug", 
 	SetPropertyValue Remote  & ".Selected Zone Name",  GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo)  & " Name")
 	SetPropertyValue "Subscriber-1.DispatchMessage", "System." & GetPropertyValue(Remote & ".Remote Name")  & ".10.SelectZone:" & CStr(ZoneNo)
 	'test

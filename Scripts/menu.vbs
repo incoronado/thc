@@ -15,20 +15,21 @@ HousebotLocation = "C:\Program Files (x86)\housebot\"
 '-------------------------------------------------------
 '- Main: Checks Received Data and Handles Send Data ----
 '-------------------------------------------------------
-SleepVar = 5
+SleepVar = CInt(GetPropertyValue("System.Script Sleep Time"))
+
 
 Do
-	Action = GetPropertyValue ("Menu.Action")
-	If Action <> "Idle" Then
-		SetpropertyValue "Menu.Action", "Idle"
-		If Action <> "" Then
-			Call Message_Handler(Action)
-		End If
-	End If
+		
 	Sleep SleepVar
+  	Action = GetPropertyValue ("Menu.Action")
+	If Action <> "Idle" Then
+		SystemCommand(Action)
+		SetpropertyValue "Menu.Action", "Idle"
+	End If
+
 Loop
 
-Sub Message_Handler(message)
+Sub SystemCommand(message)
 
 	dim a, b
     ' menuname.function

@@ -66,7 +66,7 @@ Sub SelectZone(ZoneNo, Remote)
 	SetPropertyValue Remote  & ".Selected Zone Name",  GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo)  & " Name")
 	SetPropertyValue "Subscriber-1.DispatchMessage", "System." & GetPropertyValue(Remote & ".Remote Name")  & ".10.SelectZone:" & CStr(ZoneNo)
 	'test
-    for i = 1 to 6
+    for i = 1 to 8
 		If GetPropertyValue("Multiroom Audio Settings.Zone " &  ZoneNo & " Power")  = "On" Then
 			status_str = "on"
 		Else
@@ -75,13 +75,13 @@ Sub SelectZone(ZoneNo, Remote)
 		
 		If i = CInt(ZoneNo) Then
 			sel_str = "sel"
-			SetPropertyValue Remote  & ".Selected Zone Icon",  "Config\Themes\" & ThemesFolder & "icons\zone" & CStr(i) & "-sel-" & status_str & ".png"
+			SetPropertyValue Remote  & ".Selected Zone Icon",  "Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(i) & "-sel-" & status_str & ".png"
 			
 		Else
 			sel_str = "unsel"	
 			
 		End If
-		SetPropertyValue  Remote & ".Menu Icon " & Cstr(i) , "Config\Themes\" & ThemesFolder & "icons\zone" & CStr(i) & "-" & sel_str & "-" & status_str & ".png"
+		SetPropertyValue  Remote & ".Menu Icon " & Cstr(i) , "Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(i) & "-" & sel_str & "-" & status_str & ".png"
 	Next
 	'sleep 250
 	SetPropertyValue "Subscriber-8.DispatchMessage", "System.Desktop.10.ClosePanel:Zone Menu"

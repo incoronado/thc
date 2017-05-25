@@ -86,7 +86,7 @@ Sub SelectZone(ZoneNo, Remote)
 		End If	
 	Next
 	'sleep 250
-	SetPropertyValue "Subscriber-8.DispatchMessage", "System.Desktop.10.ClosePanel:Zone Menu"
+	SetPropertyValue "Subscriber-8.DispatchMessage", "System." & GetPropertyValue(Remote & ".Remote Name") & ".10.ClosePanel:Zone Menu"
 
 End Sub
 

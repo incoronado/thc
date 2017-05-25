@@ -680,9 +680,9 @@ Sub SelectPanel(Remote, Panel, Context, TimerInSeconds)
 	If Panel <> "Navigator" Then
 	   CloseAllPanels Remote
 	End if	
-	Sleep 50
+	
 	SetWhichRemotesToControl Remote
-	Sleep 50
+	
 	If Trim(Context) = "" Then
 	    SetPropertyValue "System.Debug", Remote
 		OpenRemotePanel Panel
@@ -729,9 +729,6 @@ Sub ZoneOff (Zone)
 	SendSubscriberMessage 1, "MRA.System.10.Off:" &  Zone
 	'SetpropertyValue "Subscriber-1.DispatchMessage", "MRA.System.10.Off:" &  Zone
 End Sub
-
-
-
 
 Sub TogglePlayer (PlayerNo)
 	If GetPropertyValue("Music Player " & PlayerNo & ".Status") = "Playing" Then

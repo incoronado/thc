@@ -62,6 +62,7 @@ Sub SelectZone(ZoneNo, Remote)
 	'Zone Name
 	Dim status_str, sel_str, i, ThemesFolder
 	ThemesFolder =  GetPropertyValue("Remote-" & Remote  & ".Themes Folder")
+	SetPropertyValue "Menu.Debug", ThemesFolder
 	SetPropertyValue "Remote-" & Remote  & ".Selected Zone Name",  GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo)  & " Name")
 	SetPropertyValue "Subscriber-1.DispatchMessage", "System." & GetPropertyValue(Remote & ".Remote Name")  & ".10.SelectZone:" & CStr(ZoneNo)
 	'test
@@ -80,7 +81,7 @@ Sub SelectZone(ZoneNo, Remote)
 			sel_str = "unsel"	
 			
 		End If
-		SetPropertyValue  Remote & ".Menu Icon " & Cstr(i) , "Config\Themes\" & ThemesFolder & "icons\zone" & CStr(i) & "-" & sel_str & "-" & status_str & ".png"
+		SetPropertyValue  "Remote-" & Remote & ".Menu Icon " & Cstr(i) , "Config\Themes\" & ThemesFolder & "icons\zone" & CStr(i) & "-" & sel_str & "-" & status_str & ".png"
 	Next
 	'sleep 250
 	SetPropertyValue "Subscriber-8.DispatchMessage", "System.Desktop.10.ClosePanel:Zone Menu"

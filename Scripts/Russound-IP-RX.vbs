@@ -10,10 +10,10 @@ Sleep SleepVar
 
 Sub ReadIPData(Data)
 	Dim ListLines, line, keyvalue, key, value, ResponseType,keydata, command, Zstr
-	ListLines = Split(Data, vbCrLf)
-	For Each line In ListLines
+	'ListLines = Split(Data, vbCrLf)
+	'For Each line In ListLines
 		'If line <> "" Then
-			SetPropertyValue "Russound IP.IP Message", line
+			'SetPropertyValue "Russound IP.IP Message", line
 			'keyvalue=split(line, "=")
 			'ResponseType = Left(keyvalue(0),1)
 			'key = Mid(keyvalue(0),3)
@@ -40,5 +40,5 @@ Sub ReadIPData(Data)
 			''		End If		
 			'End Select	
 		'End If
-	Next
+	'Next
 End Sub

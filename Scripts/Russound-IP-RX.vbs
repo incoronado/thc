@@ -24,8 +24,9 @@ Sub ReadIPData(Data)
 				command = ""	
 			End if	
 			
-			SetPropertyValue "Multiroom Audio Settings.Debug", command
-
+			If command <> "" Then
+				SetPropertyValue "Multiroom Audio Settings.Debug", command
+			End If	
 			Select Case command
 				Case "currentSource"
 					Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")

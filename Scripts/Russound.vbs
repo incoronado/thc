@@ -40,29 +40,29 @@ Sub MessageHandler(Action)
 				Case "initip"
 					'Russound.GalaxyTabA1.10.InitIP
 					SetpropertyValue "Russound IP.Send Data", "WATCH SYSTEM ON"
-					
+					Sleep 150
 					SetPropertyValue "Russound IP.Send Data", "WATCH C[1].Z[1] ON" 
-					
+					Sleep 150
 					SetPropertyValue "Russound IP.Send Data", "WATCH C[1].Z[2] ON" 
-					
+					Sleep 150
 					SetPropertyValue "Russound IP.Send Data", "WATCH C[1].Z[8] ON"
-					
+					Sleep 150
 					SetPropertyValue "Russound IP.Send Data", "WATCH S[1] ON"
-					
+					Sleep 150
 					SetPropertyValue "Russound IP.Send Data", "WATCH S[2] ON"
-					
+					Sleep 150
 					SetPropertyValue "Russound IP.Send Data", "WATCH S[3] ON"
-					
+					Sleep 150
 					SetPropertyValue "Russound IP.Send Data", "WATCH S[4] ON" 
-					
+					Sleep 150
 					SetPropertyValue "Russound IP.Send Data", "WATCH S[5] ON"
-					
+					Sleep 150
 					SetPropertyValue "Russound IP.Send Data", "WATCH S[6] ON"
-					
+					Sleep 150
 					SetPropertyValue "Russound IP.Send Data", "WATCH S[7] ON"
-					
+					Sleep 150
 					SetPropertyValue "Russound IP.Send Data", "WATCH S[8] ON"
-					
+					Sleep 150
 							
 				Case "zonepower"
 					zerobasedzone = Right("0" & cStr(cInt(ZoneName2ID(b(1))) - 1),2)

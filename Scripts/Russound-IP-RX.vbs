@@ -31,7 +31,7 @@ Sub ReadIPData(Data)
 					Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
 					SetPropertyValue "Multiroom Audio Settings.Zone " & ZStr & " Source", replace(keyvalue(1), chr(34), "")
 					SetPropertyValue "Multiroom Audio Settings.Debug 2", ZStr
-				Case "mode"	
+				Case "mode3"	
 					Zstr = replace(replace(replace(keydata(0),"[",""),"]",""),"S","")
 					'SetPropertyValue "Multiroom Audio Settings.Debug 2", replace(keyvalue(1), chr(34),"")
 					If CInt(ZStr) = 2 Then

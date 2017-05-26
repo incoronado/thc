@@ -15,7 +15,7 @@ Sub ReadIPData(Data)
 		If line <> "" Then
 			SetPropertyValue "Russound IP.IP Message", line
 			keyvalue=split(line, "=")
-			ResponseType = Left(keyvalue[0],1)
+			ResponseType = Left(keyvalue(0),1)
 			key = Mid(keyvalue[0],2)
 			keydata = split(key,".")
 			command = keydata(ubound(keydata))

@@ -17,10 +17,15 @@ Sub ReadIPData(Data)
 			keyvalue=split(line, "=")
 			ResponseType = Left(keyvalue(0),1)
 			key = Mid(keyvalue(0),2)
-			keydata = split(key,".")
-			command = keydata(ubound(keydata))
-			SetPropertyValue "Multiroom Audio Settings.Debug", command
+			If Instr(key,".") Then
+				keydata = split(key,".")
+				command = keydata(ubound(keydata))
+			Else 
+				command = ""	
+			End if	
 			
+			SetPropertyValue "Multiroom Audio Settings.Debug", command
+
 			Select Case command
 				Case "currentSource"
 					Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")

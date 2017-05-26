@@ -32,8 +32,9 @@ Sub ReadIPData(Data)
 					SetPropertyValue "Multiroom Audio Settings.Zone " & ZStr & " Source", replace(keyvalue(1), chr(34), "")
 					SetPropertyValue "Multiroom Audio Settings.Debug 2", ZStr
 				Case "mode"	
-					SetPropertyValue "Multiroom Audio Settings.Debug 2", ZStr
+
 					Zstr = replace(replace(replace(keydata(0),"[",""),"]",""),"S","")
+					SetPropertyValue "Multiroom Audio Settings.Debug 2", ZStr
 					If ZStr = "2" Then
 						SetPropertyValue "Russound.Streamer Source", replace(keyvalue(1), chr(34), "")
 

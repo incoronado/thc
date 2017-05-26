@@ -9,11 +9,21 @@ Sleep SleepVar
 
 
 Sub ReadIPData(Data)
-	Dim ListLines, line
+	Dim ListLines, line, keyvalue, key, value, ResponseType,keydata, command, Zstr
 	ListLines = Split(Data, vbCrLf)
 	For Each line In ListLines
 		If line <> "" Then
 			SetPropertyValue "Russound IP.IP Message", line
+			keyvalue=split(line, "=")
+			ResponseType = Left(keyvalue[0],1)
+			key = Mid(keyvalue[0],2)
+			keydata = split(key,".")
+			command = keydata(ubound(keydata))
+			Select Case
+				Case "currentSource"
+					Zstr = mid(keydata(1), Instr(keydata(1),"[") + 1, Instr(keydata(1),"]") - Instr(keydata(1),"[") )
+					SetPropertyValue "Multi Room Audio Settings.Zone " & ZStr & " Source", replace(keyvalue[1], chr(34), "")
+			End Select	
 		End If
 	Next
 End Sub

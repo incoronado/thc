@@ -56,21 +56,21 @@ Sub ReadSerialData(Data)
 
 					Next	
 
-					Select Case RNETHexbytes(43)
+					Select Case RNETHexbytes(4)
 						Case "06"
-							SetPropertyValue "Russound.XM Format", MessageStr
+							'SetPropertyValue "Russound.XM Format", MessageStr
 						Case "02"	
-							SetPropertyValue "Russound.XM Artist", MessageStr
+							'SetPropertyValue "Russound.XM Artist", MessageStr
 						Case "01"	
-							SetPropertyValue "Russound.XM Song", MessageStr	
+							'SetPropertyValue "Russound.XM Song", MessageStr	
 						Case "04"	
-							SetPropertyValue "Russound.XM Album", MessageStr
+							'SetPropertyValue "Russound.XM Album", MessageStr
 						Case "15"	
-							SetPropertyValue "Russound.XM URL", MessageStr
+							'SetPropertyValue "Russound.XM URL", MessageStr
 						Case "0F"	
-							SetPropertyValue "Russound.Streamer Source", MessageStr	
+							'SetPropertyValue "Russound.Streamer Source", MessageStr	
 						Case "07"
-							SetPropertyValue "Russound.XM Station", MessageStr				
+							'SetPropertyValue "Russound.XM Station", MessageStr				
 					End Select
 		
 				End if		

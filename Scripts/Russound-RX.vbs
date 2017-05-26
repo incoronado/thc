@@ -56,7 +56,7 @@ Sub ReadSerialData(Data)
 
 					Next	
 
-					Select Case RNETHexbytes(4)
+					Select Case RNETHexbytes(43)
 						Case "06"
 							SetPropertyValue "Russound.XM Format", MessageStr
 						Case "02"	

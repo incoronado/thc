@@ -38,12 +38,12 @@ Sub ReadSerialData(Data)
 				'Overall Payload Size
 				MessageLength = CLng("&h" & HexBytes(18))
 				'SourceNo = CLng(Right(RNETHexBytes(1),1)) + 1
-				SetPropertyValue "Multiroom Audio Settings.Debug", RNETMessage(Data)
+				'SetPropertyValue "Multiroom Audio Settings.Debug", RNETMessage(Data)
 				If RNETHexBytes(0) = "23" Then
 					For i = 23 To MessageLength + 19
 						'MessageStr = MessageStr & chr(CLng("&h" & HexBytes(i)))
 					Next
-					SetPropertyValue "Multiroom Audio Settings.Debug", MessageStr		
+					'SetPropertyValue "Multiroom Audio Settings.Debug", MessageStr		
 				ElseIf  RNETHexBytes(0) = "60" Then
 				    RNETPayloadHeader = ""
 				    For i = 0 To ubound(RNETHexBytes)

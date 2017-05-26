@@ -19,7 +19,8 @@ Sub ReadIPData(Data)
 			key = Mid(keyvalue(0),3)
 			If Instr(key,".") Then
 				keydata = split(key,".")
-				command = keydata(ubound(keydata))
+				'command = keydata(ubound(keydata))
+				command=""
 			Else 
 				command = ""	
 			End if	

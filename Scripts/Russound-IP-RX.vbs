@@ -22,7 +22,7 @@ Sub ReadIPData(Data)
 			Select Case command
 				Case "currentSource"
 					Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
-					SetPropertyValue "Multi Room Audio Settings.Zone " & ZStr & " Source", replace(keyvalue[1], chr(34), "")
+					SetPropertyValue "Multiroom Audio Settings.Zone " & ZStr & " Source", replace(keyvalue(1), chr(34), "")
 			End Select	
 		End If
 	Next

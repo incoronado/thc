@@ -12,7 +12,7 @@ Sub ReadIPData(Data)
 	Dim ListLines, line, keyvalue, key, value, ResponseType,keydata, command, Zstr
 	ListLines = Split(Data, vbCrLf)
 	For Each line In ListLines
-		If line <> "" Then
+		'If line <> "" Then
 			SetPropertyValue "Russound IP.IP Message", line
 			'keyvalue=split(line, "=")
 			'ResponseType = Left(keyvalue(0),1)
@@ -39,6 +39,6 @@ Sub ReadIPData(Data)
 						'SetPropertyValue "Russound.Streamer Source", replace(keyvalue(1), chr(34),"")
 			''		End If		
 			'End Select	
-		End If
+		'End If
 	Next
 End Sub

@@ -19,6 +19,8 @@ Sub ReadIPData(Data)
 			key = Mid(keyvalue(0),2)
 			keydata = split(key,".")
 			command = keydata(ubound(keydata))
+			SetPropertyValue "Multiroom Audio Settings.Debug", command
+			
 			Select Case command
 				Case "currentSource"
 					Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")

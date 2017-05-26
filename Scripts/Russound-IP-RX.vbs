@@ -19,7 +19,7 @@ Sub ReadIPData(Data)
 			key = Mid(keyvalue(0),2)
 			keydata = split(key,".")
 			command = keydata(ubound(keydata))
-			Select Case
+			Select Case command
 				Case "currentSource"
 					Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
 					SetPropertyValue "Multi Room Audio Settings.Zone " & ZStr & " Source", replace(keyvalue[1], chr(34), "")

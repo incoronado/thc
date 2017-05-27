@@ -59,6 +59,7 @@ Sub ReadIPData(Data)
 							SetPropertyValue "Multiroom Audio Settings.Source " & trim(ZStr) & " Power", "On"
 						Else
 							SetPropertyValue "Multiroom Audio Settings.Source " & trim(ZStr) & " Power", "Off"	
+						End if	
 					End if
 			End Select	
 		End If

@@ -5,7 +5,7 @@ Option Explicit
 Dim Data, SleepVar
 SleepVar = CInt(GetPropertyValue("System.Script Sleep Time"))
 ReadIPData GetPropertyValue("Russound IP.Received Data")
-Sleep SleepVar
+'Sleep SleepVar
 
 
 Sub ReadIPData(Data)
@@ -41,7 +41,6 @@ Sub ReadIPData(Data)
 				Case "volume"
 					Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
 					SetPropertyValue "Multiroom Audio Settings.Zone " & trim(ZStr) & " Volume", replace(keyvalue(1), chr(34), "")
-
 			End Select	
 		End If
 	Next

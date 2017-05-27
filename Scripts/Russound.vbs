@@ -115,10 +115,11 @@ Sub MessageHandler(Action)
 							SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!KeyPress VolumeDown"
 							'SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 F1 7F 00 00 00 00 00 01"
 					End Select
-				Case "SendDigit"
+				Case "senddigit"
 					'Russound.GalaxyTabA1.10.SendDigit:Master Bedroom:1
 					SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!KeyRelease Digit" & ConvertDigit(b(2))
-				Case "SendDigits"
+				Case "senddigits"
+					'Russound.GalaxyTabA1.10.SendDigits:Master Bedroom:1007
 					For i = 1 to len(b(2))
 				   		SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!KeyRelease Digit" & ConvertDigit(Mid(b(2),i, 1))
 				   		Sleep 50

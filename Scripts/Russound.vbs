@@ -102,7 +102,7 @@ Sub MessageHandler(Action)
 					'Russound.GalaxyTabA1.10.ZoneSource:Patio:Cable TV
 					'zerobasedzone = Right("0" & cStr(cInt(ZoneName2ID(b(1))) - 1),2)
 					'zerobasedsource = Right("0" & cStr(cInt(SourceName2ID(b(2))) - 1),2)
-					SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(2))) & "]!SelectSource " & cStr(SourceName2ID(b(2)))
+					SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!SelectSource " & cStr(SourceName2ID(b(2)))
 					'SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 00 00 00 F1 3E 00 00 00 " & zerobasedsource & " 00 01"
 				Case "volume"
 					'Russound.GalaxyTabA1.10.Volume:Master Bedroom:up

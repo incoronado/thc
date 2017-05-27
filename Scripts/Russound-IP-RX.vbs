@@ -45,7 +45,11 @@ Sub ReadIPData(Data)
 					ElseIf Mid(keydata(0), 1, 2) = "S[" Then
 							SetPropertyValue "Multiroom Audio Settings.Source " & trim(ZStr) & " Volume", replace(keyvalue(1), chr(34), "")
 
-					End if	
+					End if
+				Case "status"
+						Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
+						SetPropertyValue "Multiroom Audio Settings.Zone " & trim(ZStr) & " Power", replace(keyvalue(1), chr(34), "")
+
 			End Select	
 		End If
 	Next

@@ -106,12 +106,14 @@ Sub MessageHandler(Action)
 					'SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 00 00 00 F1 3E 00 00 00 " & zerobasedsource & " 00 01"
 				Case "volume"
 					'Russound.GalaxyTabA1.10.Volume:Master Bedroom:up
-					zerobasedzone = Right("0" & cStr(cInt(ZoneName2ID(b(1))) - 1),2)
+					'zerobasedzone = Right("0" & cStr(cInt(ZoneName2ID(b(1))) - 1),2)
 					Select Case lcase(b(2))
 						Case "up"
-							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 7F 00 00 00 00 00 01"
+							SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!KeyPress VolumeUp"
+							'SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 7F 00 00 00 00 00 01"
 						Case "down"
-							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 F1 7F 00 00 00 00 00 01"
+							SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!KeyPress VolumeDown"
+							'SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 F1 7F 00 00 00 00 00 01"
 					End Select
 
 			End Select	

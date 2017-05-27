@@ -75,29 +75,9 @@ Sub MessageHandler(Action)
 							'SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 F1 23 00 00 00 " & zerobasedzone & " 00 01"
 						Case "toggle"
 					End Select	
-				'Russound.GalaxyTabA1.10.Keypad:Patio:Previous		
+				'Russound.GalaxyTabA1.10.Keypad:Patio:Previous
 				Case "keypad"
-					zerobasedzone = Right("0" & cStr(cInt(ZoneName2ID(b(1))) - 1),2)
-					Select Case lcase(b(2))
-						Case "previous"
-							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 67 00 00 00 00 00 01"
-						Case "next"
-							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 68 00 00 00 00 00 01"
-						Case "plus"
-							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 69 00 00 00 00 00 01"
-						Case "minus"
-							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 6A 00 00 00 00 00 01"
-						Case "play"
-							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 73 00 00 00 00 00 01"
-						Case "stop"
-							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 6D 00 00 00 00 00 01"
-						Case "pause"
-							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 6E 00 00 00 00 00 01"
-						Case "F1"
-							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 6F 00 00 00 00 00 01"
-						Case "F2"
-							SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 70 00 00 00 00 00 01"
-					End Select
+						SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!KeyRelease " & b(2)
 				Case "zonesource"
 					'Russound.GalaxyTabA1.10.ZoneSource:Patio:Cable TV
 					'zerobasedzone = Right("0" & cStr(cInt(ZoneName2ID(b(1))) - 1),2)

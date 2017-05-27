@@ -68,10 +68,10 @@ Sub MessageHandler(Action)
 					zerobasedzone = Right("0" & cStr(cInt(ZoneName2ID(b(1))) - 1),2)
 					Select Case lcase(b(2))
 						Case "on"
-						    SetPropertyValue "Russound IP.Send", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!ZoneOn"
+						    SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!ZoneOn"
 							'SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 F1 23 00 01 00 " & zerobasedzone & " 00 01"
 						Case "off"
-							SetPropertyValue "Russound IP.Send", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!ZoneOff"
+							SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!ZoneOff"
 							'SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 F1 23 00 00 00 " & zerobasedzone & " 00 01"
 						Case "toggle"
 					End Select	

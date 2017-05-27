@@ -26,7 +26,7 @@ Do
 Loop
 
 Sub MessageHandler(Action)
-	Dim a, b, zerobasedzone, zerobasedsource
+	Dim a, b, i, zerobasedzone, zerobasedsource
 	'Class.Source.Priority.Command:Parameters
     'Example:  Russound.Desktop.10.ZonePower:Master Bedroom:on
 	a=split(Action,".")
@@ -118,6 +118,12 @@ Sub MessageHandler(Action)
 				Case "SendDigit"
 					'Russound.GalaxyTabA1.10.SendDigit:Master Bedroom:1
 					SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!KeyRelease Digit" & ConvertDigit(b(3))
+				Case "SendDigits"
+					For i = 1 to len(b(3)) Then
+				   		SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!KeyRelease Digit" & ConvertDigit(Mid(b(3),i, 1))
+				   		Sleep 50
+					Next x
+
 			End Select	
 	End Select
 End Sub		

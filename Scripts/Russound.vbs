@@ -115,10 +115,30 @@ Sub MessageHandler(Action)
 							SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!KeyPress VolumeDown"
 							'SerialCommand "F0 00 00 7F 00 " & zerobasedzone & " 70 05 02 02 00 00 F1 7F 00 00 00 00 00 01"
 					End Select
-
+				Case "SendDigit"
+					'Russound.GalaxyTabA1.10.SendDigit:Master Bedroom:1
+					SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[4]!KeyRelease Digit" & ConvertDigit(b(3))
 			End Select	
 	End Select
 End Sub		
+
+Function ConvertDigit (MyDigit)
+   Select Case CInt(MyDigit)
+      Case 1: ConvertDigit = "One"
+      Case 2: ConvertDigit = "Two"
+      Case 3: ConvertDigit = "Three"
+      Case 4: ConvertDigit = "Four"
+      Case 5: ConvertDigit = "Five"
+      Case 6: ConvertDigit = "Six"
+      Case 7: ConvertDigit = "Seven"
+      Case 8: ConvertDigit = "Eight"
+      Case 9: ConvertDigit = "Nine"
+      Case 0: ConvertDigit = "Zero"
+      Case Else: ConvertDigit = ""
+   End Select
+End Function
+
+
 
 
 Function ComputeRNETChecksum(hexstr)

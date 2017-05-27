@@ -49,9 +49,16 @@ Sub ReadIPData(Data)
 				Case "status"
 					If Mid(keydata(0), 1, 2) = "C[" Then
 						Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
-						SetPropertyValue "Multiroom Audio Settings.Zone " & trim(ZStr) & " Power", replace(keyvalue(1), chr(34), "")
+						If replace(keyvalue(1), chr(34), "") = "ON" Then
+							SetPropertyValue "Multiroom Audio Settings.Zone " & trim(ZStr) & " Power", "On"
+						Else
+							SetPropertyValue "Multiroom Audio Settings.Zone " & trim(ZStr) & " Power", "Off"
+						End If	
 					ElseIf Mid(keydata(0), 1, 2) = "S[" Then
-						SetPropertyValue "Multiroom Audio Settings.Source " & trim(ZStr) & " Power", replace(keyvalue(1), chr(34), "")
+						If replace(keyvalue(1), chr(34), "") = "ON" Then
+							SetPropertyValue "Multiroom Audio Settings.Source " & trim(ZStr) & " Power", "On"
+						Else
+							SetPropertyValue "Multiroom Audio Settings.Source " & trim(ZStr) & " Power", "Off"	
 					End if
 			End Select	
 		End If

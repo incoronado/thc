@@ -117,7 +117,7 @@ Sub MessageHandler(Action)
 					End Select
 				Case "SendDigit"
 					'Russound.GalaxyTabA1.10.SendDigit:Master Bedroom:1
-					SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[4]!KeyRelease Digit" & ConvertDigit(b(3))
+					SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!KeyRelease Digit" & ConvertDigit(b(3))
 			End Select	
 	End Select
 End Sub		

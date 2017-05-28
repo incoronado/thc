@@ -1055,7 +1055,7 @@ Sub SelectZone (Remote,ZoneNo)
 	SetPropertyValue Remote & ".Selected Zone", CStr(ZoneNo)
 	SetPropertyValue Remote & ".Selected Zone Power", GetpropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo) & " Power")
 	SetPropertyValue Remote & ".Selected Zone Volume", GetpropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo) & " Volume")
-	SetPropertyValue Remote & ".Selected Zone Icon", GetpropertyValue("Multiroom Audio Settings.Menu Icon " + CStr(ZoneNo))
+	SetPropertyValue Remote & ".Selected Zone Icon", GetpropertyValue(Remote & ".Menu Icon " + CStr(ZoneNo))
 
 End Sub
 

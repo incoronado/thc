@@ -1076,7 +1076,8 @@ Sub ToggleZonePower(Remote)
         If GetPropertyValue(Remote & ".Selected Zone") = 5 Then
 			SetpropertyValue "USBUIRT.Westinghouse Remote", "Power"
 		End If	
-		SendSubscriberMessage 1,"Russound." & Remote & ".10.Off:" &  GetPropertyValue(Remote & ".Selected Zone")
+		'SendSubscriberMessage 1,"Russound." & Remote & ".10.Off:" &  GetPropertyValue(Remote & ".Selected Zone")
+		SendSubscriberMessage 1, "Russound." & Remote & ".10.ZonePower:" &  GetPropertyValue(Remote & ".Selected Zone Name") & ":On"
 		'SetpropertyValue "Subscriber-1.DispatchMessage", "MRA." & Remote & ".10.Off:" &  GetPropertyValue(Remote & ".Selected Zone")
 	Else
 		SourceVar = GetPropertyValue(Remote & ".Selected Source")
@@ -1084,7 +1085,10 @@ Sub ToggleZonePower(Remote)
 		'SetPropertyValue Remote & ".Selected Zone Power", "On"
 		'SetPropertyValue "Multiroom Audio Settings.Zone " & GetPropertyValue(Remote & ".Selected Zone") & " Power", "On"
 		'SetpropertyValue "Multiroom Audio Script.Action", "On." &  GetPropertyValue(Remote & ".Selected Zone")
-		SendSubscriberMessage 1, "Russound." & Remote & ".10.On:" &  GetPropertyValue(Remote & ".Selected Zone")
+		SendSubscriberMessage 1, "Russound." & Remote & ".10.ZonePower:" &  GetPropertyValue(Remote & ".Selected Zone Name") & ":On"
+
+		'Russound.GalaxyTabA1.10.ZonePower:Master Bedroom:On
+
 		'SetpropertyValue "Subscriber-1.DispatchMessage", "MRA." & Remote & ".10.On:" &  GetPropertyValue(Remote & ".Selected Zone")
 		If GetPropertyValue(Remote & ".Selected Zone") = 5 Then
 			SetpropertyValue "USBUIRT.Westinghouse Remote", "Power"

@@ -47,6 +47,8 @@ Sub MessageHandler(Action)
 					Sleep 2000
 					SetPropertyValue "Russound IP.Send Data", "WATCH C[1].Z[8] ON"
 					Sleep 2000
+					SetPropertyValue "Russound IP.Send Data", "WATCH C[1].Z[4] ON"
+					Sleep 2000
 					SetPropertyValue "Russound IP.Send Data", "WATCH S[1] ON"
 					Sleep 250
 					SetPropertyValue "Russound IP.Send Data", "WATCH S[2] ON"

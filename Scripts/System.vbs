@@ -834,6 +834,7 @@ Sub CloseAllPanels (RemoteName)
 	CloseRemotePanel("Lights")
 	CloseRemotePanel("Movies")
 	CloseRemotePanel("Sprinklers")
+	CloseRemotePanel("Zone Menu")
 	sleep 50
 	SetWhichRemotesToControl("") 
 
@@ -1508,9 +1509,6 @@ Function ConvertDigit (MyDigit)
       Case Else: ConvertDigit = ""
    End Select
 End Function
-
-
-
 
 Sub HBRemoteList
 	Dim NoMoreRemotes, RemoteCount, HBRList

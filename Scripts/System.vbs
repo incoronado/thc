@@ -1051,10 +1051,12 @@ End Sub
 
 
 Sub SelectZone (Remote,ZoneNo)
-	SetPropertyValue Remote & ".Selected Source", GetpropertyValue("Multiroom Audio Settings.Zone " + CStr(ZoneNo) + " Source")
+	SetPropertyValue Remote & ".Selected Source", GetpropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo) & " Source")
 	SetPropertyValue Remote & ".Selected Zone", CStr(ZoneNo)
-	SetPropertyValue Remote & ".Selected Zone Power", GetpropertyValue("Multiroom Audio Settings.Zone " + CStr(ZoneNo) + " Power")
-	SetPropertyValue Remote & ".Selected Zone Volume", GetpropertyValue("Multiroom Audio Settings.Zone " + CStr(ZoneNo) + " Volume")
+	SetPropertyValue Remote & ".Selected Zone Power", GetpropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo) & " Power")
+	SetPropertyValue Remote & ".Selected Zone Volume", GetpropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo) & " Volume")
+	SetPropertyValue Remote & ".Selected Zone Icon", GetpropertyValue("Multiroom Audio Settings.Menu Icon " + CStr(ZoneNo))
+
 End Sub
 
 
@@ -1148,7 +1150,6 @@ Sub AVOn2 (Source, Zone)
 	End if
 
 	If Zone = "Living Room" Then
-
 		'Send Yamaha Command
 		'If (GetpropertyValue("Yamaha V2600 Settings.AV Power Master") = "Off" Then
 			SetpropertyValue "Yamaha V2600 Settings.Action", "MasterPowerOn"	
@@ -1184,9 +1185,6 @@ Sub AVOn2 (Source, Zone)
 		SendSubscriberMessage 1, "Russound.System.10.ZonePower:" & Zone & ":on"
 		SendSubscriberMessage 1, "Russound.System.10.ZoneSource:" & Zone & ":" & Source
 	End if	
-
-
-
 
 End Sub
 

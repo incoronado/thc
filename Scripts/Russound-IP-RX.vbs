@@ -135,7 +135,7 @@ Sub UpdateRemoteData
 	   				End If	
 	   			End if
 	   		Else
-	   			If SelectZone = CStr(x) Then
+	   			If SelectedZone = CStr(x) Then
 	   				If fso.FileExists("Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-sel-off.png") Then
 	   					SetPropertyValue "Remote-" & CStr(i) & ".Menu Icon " & Cstr(x), "Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-sel-off.png"
 	   				End If	

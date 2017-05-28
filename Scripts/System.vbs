@@ -1027,8 +1027,6 @@ Sub UpdateRemoteData
 	Dim i, SelectedZone, x, ThemesFolder, fso
 
 	Set fso = CreateObject("Scripting.FileSystemObject")
-
-
 	For i = 1 to 4
 	    ThemesFolder = GetPropertyValue("Remote-" & CStr(i) &  ".Themes Folder")
 		SelectedZone = GetPropertyValue("Remote-" & CStr(i) & ".Selected Zone")
@@ -1038,6 +1036,7 @@ Sub UpdateRemoteData
 	   			    ' Check to see if file exists. There might not be one
 	   				If fso.FileExists("Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-sel-on.png") Then
 	   					SetPropertyValue "Remote-" & CStr(i) & ".Menu Icon " & Cstr(x), "Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-sel-on.png"
+	   					SetPropertyValue "Remote-" & CStr(i) & ".Selected Zone Icon", "Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-sel-on.png"
 	   				End If	
 	   			Else
 	   				If fso.FileExists("Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-unsel-on.png") Then
@@ -1048,6 +1047,7 @@ Sub UpdateRemoteData
 	   			If SelectedZone = CStr(x) Then
 	   				If fso.FileExists("Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-sel-off.png") Then
 	   					SetPropertyValue "Remote-" & CStr(i) & ".Menu Icon " & Cstr(x), "Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-sel-off.png"
+	   					SetPropertyValue "Remote-" & CStr(i) & ".Selected Zone Icon", "Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-sel-off.png"
 	   				End If	
 	   			Else
 	   				If fso.FileExists("Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-unsel-off.png") Then 
@@ -1097,13 +1097,11 @@ End Sub
 
 
 Sub SelectZone (Remote,ZoneNo)
-
 	SetPropertyValue Remote & ".Selected Source", GetpropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo) & " Source")
 	SetPropertyValue Remote & ".Selected Zone", CStr(ZoneNo)
 	SetPropertyValue Remote & ".Selected Zone Power", GetpropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo) & " Power")
 	SetPropertyValue Remote & ".Selected Zone Volume", GetpropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo) & " Volume")
 	UpdateRemoteData
-	SetPropertyValue Remote & ".Selected Zone Icon", GetpropertyValue(Remote & ".Menu Icon " + CStr(ZoneNo))
 End Sub
 
 

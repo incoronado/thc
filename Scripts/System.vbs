@@ -188,7 +188,10 @@ Sub SystemCommand(Action)
 					
 					SelectPanel a(1), "Caller ID", "", 10	
 					
-					
+				Case "UpdateRemoteData"
+					UpdateRemoteData
+
+
 				Case "PanasonicTVOn"
 
 				
@@ -1020,6 +1023,49 @@ Sub SetZoneSource(Remote,Source)
 End Sub
 
 
+Sub UpdateRemoteData
+	Dim i, SelectedZone, x, ThemesFolder, fso
+
+	Set fso = CreateObject("Scripting.FileSystemObject")
+
+
+	For i = 1 to 4
+	    ThemesFolder = GetPropertyValue("Remote-" & CStr(i) &  ".Themes Folder")
+		SelectedZone = GetPropertyValue("Remote-" & CStr(i) & ".Selected Zone")
+		For x = 1 to 8
+	   		If GetPropertyValue("Multiroom Audio Settings.Zone " & Cstr(x) & " Power")  = "On" Then
+	   			If SelectedZone = CStr(x) Then
+	   			    ' Check to see if file exists. There might not be one
+	   				If fso.FileExists("Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-sel-on.png") Then
+	   					SetPropertyValue "Remote-" & CStr(i) & ".Menu Icon " & Cstr(x), "Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-sel-on.png"
+	   				End If	
+	   			Else
+	   				If fso.FileExists("Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-unsel-on.png") Then
+	   					SetPropertyValue "Remote-" & CStr(i) & ".Menu Icon " & Cstr(x), "Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-unsel-on.png"
+	   				End If	
+	   			End if
+	   		Else
+	   			If SelectedZone = CStr(x) Then
+	   				If fso.FileExists("Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-sel-off.png") Then
+	   					SetPropertyValue "Remote-" & CStr(i) & ".Menu Icon " & Cstr(x), "Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-sel-off.png"
+	   				End If	
+	   			Else
+	   				If fso.FileExists("Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-unsel-off.png") Then 
+	   					SetPropertyValue "Remote-" & CStr(i) & ".Menu Icon " & Cstr(x), "Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-unsel-off.png"
+	   				End If	
+	   			End if
+	   		End if
+	   	Next
+
+
+  	Next
+ 
+  	Set fso = Nothing
+
+End Sub
+
+
+
 Sub ToggleZonePower(Remote)
 	Dim SourceVar			    
 	If GetPropertyValue("Multiroom Audio Settings.Zone " & GetPropertyValue(Remote & ".Selected Zone") & " Power") = "On" Then
@@ -1056,6 +1102,7 @@ Sub SelectZone (Remote,ZoneNo)
 	SetPropertyValue Remote & ".Selected Zone Power", GetpropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo) & " Power")
 	SetPropertyValue Remote & ".Selected Zone Volume", GetpropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo) & " Volume")
 	SetPropertyValue Remote & ".Selected Zone Icon", GetpropertyValue(Remote & ".Menu Icon " + CStr(ZoneNo))
+	SetProperyValue("Subscriber-13.DispatchMessage" , "System.Russound-IP-RX.10.UpdateRemoteData")
 
 End Sub
 

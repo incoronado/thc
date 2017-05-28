@@ -33,6 +33,7 @@ Sub ReadIPData(Data)
 				Case "currentSource"
 					Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
 					SetPropertyValue "Multiroom Audio Settings.Zone " & ZStr & " Source", replace(keyvalue(1), chr(34), "")
+					UpdateRemoteData
 				Case "volume"
 				    If Mid(keydata(0), 1, 2) = "C[" Then
 						Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
@@ -55,6 +56,7 @@ Sub ReadIPData(Data)
 							SetPropertyValue "Multiroom Audio Settings.Source " & trim(ZStr) & " Power", "Off"	
 						End if	
 					End if
+					UpdateRemoteData
 				Case "mode"
 					If Mid(keydata(0), 1, 2) = "S[" Then
 					    SetPropertyValue "Russound.mode", replace(keyvalue(1),chr(34),"")
@@ -108,4 +110,46 @@ Sub ReadIPData(Data)
 			End Select	
 		End If
 	Next
+End Sub
+
+
+Sub UpdateRemoteData
+	Dim i, SelectedZone, x, ThemesFolder, fso
+
+	Set fso = CreateObject("Scripting.FileSystemObject")
+
+
+	For i = 1 to 4
+	    ThemesFolder =  GetPropertyValue("Remote-" & CStr(i) &  ".Themes Folder")
+		SelectedZone = GetPopropertyValue("Remote-" & CStr(i) & ".Selected Zone")
+		For x = 1 to 8
+	   		If GetPropertyValue("Multiroom Audio Settings.Zone " & Cstr(x) " Power")  = "On" Then
+	   			If SelectZone = CStr(x) Then
+	   			    ' Check to see if file exists. There might not be one
+	   				If fso.FileExists("Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-sel-on.png") Then
+	   					SetPropertyValue "Remote-" & CStr(i) & ".Menu Icon " & Cstr(x), "Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-sel-on.png"
+	   				End If	
+	   			Else
+	   				If fso.FileExists("Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-unsel-on.png") Then
+	   					SetPropertyValue "Remote-" & CStr(i) & ".Menu Icon " & Cstr(x), "Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-unsel-on.png"
+	   				End If	
+	   			End if
+	   		Else
+	   			If SelectZone = CStr(x) Then
+	   				If fso.FileExists("Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-sel-off.png") Then
+	   					SetPropertyValue "Remote-" & CStr(i) & ".Menu Icon " & Cstr(x), "Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-sel-off.png"
+	   				End If	
+	   			Else
+	   				If fso.FileExists("Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-unsel-off.png") Then 
+	   					SetPropertyValue "Remote-" & CStr(i) & ".Menu Icon " & Cstr(x), "Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-unsel-off.png"
+	   				End If	
+	   			End if
+	   		End if
+	   	Next
+
+
+  	Next
+ 
+  	Set fso = Nothing
+
 End Sub

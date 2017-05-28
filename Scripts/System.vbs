@@ -1097,13 +1097,13 @@ End Sub
 
 
 Sub SelectZone (Remote,ZoneNo)
+
 	SetPropertyValue Remote & ".Selected Source", GetpropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo) & " Source")
 	SetPropertyValue Remote & ".Selected Zone", CStr(ZoneNo)
 	SetPropertyValue Remote & ".Selected Zone Power", GetpropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo) & " Power")
 	SetPropertyValue Remote & ".Selected Zone Volume", GetpropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo) & " Volume")
+	UpdateRemoteData
 	SetPropertyValue Remote & ".Selected Zone Icon", GetpropertyValue(Remote & ".Menu Icon " + CStr(ZoneNo))
-	SetPropertyValue "Subscriber-13.DispatchMessage" , "System.Russound-IP-RX.10.UpdateRemoteData"
-
 End Sub
 
 

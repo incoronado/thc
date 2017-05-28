@@ -124,7 +124,7 @@ Sub UpdateRemoteData
 		SelectedZone = GetPropertyValue("Remote-" & CStr(i) & ".Selected Zone")
 		For x = 1 to 8
 	   		If GetPropertyValue("Multiroom Audio Settings.Zone " & Cstr(x) & " Power")  = "On" Then
-	   			If SelectZone = CStr(x) Then
+	   			If SelectedZone = CStr(x) Then
 	   			    ' Check to see if file exists. There might not be one
 	   				If fso.FileExists("Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-sel-on.png") Then
 	   					SetPropertyValue "Remote-" & CStr(i) & ".Menu Icon " & Cstr(x), "Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(x) & "-sel-on.png"

@@ -63,8 +63,48 @@ Sub ReadIPData(Data)
 				Case "mode"
 					If Mid(keydata(0), 1, 2) = "S[2" Then
 						Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
-						SetPropertyValue "Russound.Streamer Source", trim(ZStr)
+						SetPropertyValue "Russound.mode", trim(ZStr)
 					End if	
+				Case "playlistName"
+					If Mid(keydata(0), 1, 2) = "S[2" Then
+						Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
+						SetPropertyValue "Russound.playlistName", trim(ZStr)
+					End if	
+				Case "channelName"
+					If Mid(keydata(0), 1, 2) = "S[2" Then
+						Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
+						SetPropertyValue "Russound.channelName", trim(ZStr)
+					End if	
+				Case "albumName"
+					If Mid(keydata(0), 1, 2) = "S[2" Then
+						Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
+						SetPropertyValue "Russound.albumName", trim(ZStr)
+					End if	
+				Case "artistName"
+					If Mid(keydata(0), 1, 2) = "S[2" Then
+						Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
+						SetPropertyValue "Russound.artistName", trim(ZStr)
+					End if	
+				Case "songName"
+					If Mid(keydata(0), 1, 2) = "S[2" Then
+						Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
+						SetPropertyValue "Russound.songName", trim(ZStr)
+					End if			
+				Case "coverArtURL"
+					If Mid(keydata(0), 1, 2) = "S[2" Then
+						Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
+						SetPropertyValue "Russound.coverArtURL", trim(ZStr)
+					End if			
+				Case "repeatMode"
+					If Mid(keydata(0), 1, 2) = "S[2" Then
+						Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
+						SetPropertyValue "Russound.repeatMode", trim(ZStr)
+					End if			
+				Case "shuffleMode"
+					If Mid(keydata(0), 1, 2) = "S[2" Then
+						Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
+						SetPropertyValue "Russound.shuffleMode", trim(ZStr)
+					End if					
 			End Select	
 		End If
 	Next

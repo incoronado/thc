@@ -34,6 +34,7 @@ Sub ReadIPData(Data)
 					Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
 					SetPropertyValue "Multiroom Audio Settings.Zone " & ZStr & " Source", replace(keyvalue(1), chr(34), "")
 					SetPropertyValue "Subscriber-13.DispatchMessage" , "System.Russound-IP-RX.10.UpdateRemoteData"
+					Sleep 50
 				Case "volume"
 				    If Mid(keydata(0), 1, 2) = "C[" Then
 						Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
@@ -56,8 +57,8 @@ Sub ReadIPData(Data)
 							SetPropertyValue "Multiroom Audio Settings.Source " & trim(ZStr) & " Power", "Off"	
 						End if	
 					End if
-
 					SetPropertyValue "Subscriber-13.DispatchMessage" , "System.Russound-IP-RX.10.UpdateRemoteData"
+					Sleep 50
 				Case "mode"
 					If Mid(keydata(0), 1, 2) = "S[" Then
 					    SetPropertyValue "Russound.mode", replace(keyvalue(1),chr(34),"")

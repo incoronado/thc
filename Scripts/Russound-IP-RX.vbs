@@ -56,6 +56,7 @@ Sub ReadIPData(Data)
 							SetPropertyValue "Multiroom Audio Settings.Source " & trim(ZStr) & " Power", "Off"	
 						End if	
 					End if
+
 					SetPropertyValue "Subscriber-13.DispatchMessage" , "System.Russound-IP-RX.10.UpdateRemoteData"
 				Case "mode"
 					If Mid(keydata(0), 1, 2) = "S[" Then
@@ -88,7 +89,7 @@ Sub ReadIPData(Data)
 					End if			
 				Case "repeatMode"
 					If Mid(keydata(0), 1, 2) = "S[" Then
-						SetPropertyValue "Russound.repeatMode", treplace(keyvalue(1),chr(34),"")
+						SetPropertyValue "Russound.repeatMode", replace(keyvalue(1),chr(34),"")
 					End if			
 				Case "shuffleMode"
 					If Mid(keydata(0), 1, 2) = "S[" Then

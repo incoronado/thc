@@ -62,40 +62,40 @@ Sub ReadIPData(Data)
 					End if
 				Case "mode"
 					If Mid(keydata(0), 1, 3) = "S[2" Then
-					    SetPropertyValue "Russound.mode", replace(keyvalue[1],chr(34),"")
+					    SetPropertyValue "Russound.mode", replace(keyvalue(1),chr(34),"")
 					End if	
 				Case "playlistName"
 					If Mid(keydata(0), 1, 3) = "S[2" Then
-						SetPropertyValue "Russound.playlistName", replace(keyvalue[1],chr(34),"")
+						SetPropertyValue "Russound.playlistName", replace(keyvalue(1),chr(34),"")
 					End if	
 				Case "channelName"
 					If Mid(keydata(0), 1, 3) = "S[2" Then
-						SetPropertyValue "Russound.channelName", replace(keyvalue[1],chr(34),"")
+						SetPropertyValue "Russound.channelName", replace(keyvalue(1),chr(34),"")
 					End if	
 				Case "albumName"
 					If Mid(keydata(0), 1, 3) = "S[2" Then
-						SetPropertyValue "Russound.albumName", replace(keyvalue[1],chr(34),"")
+						SetPropertyValue "Russound.albumName", replace(keyvalue(1),chr(34),"")
 					End if	
 				Case "artistName"
 					If Mid(keydata(0), 1, 3) = "S[2" Then
-						SetPropertyValue "Russound.artistName", replace(keyvalue[1],chr(34),"")
+						SetPropertyValue "Russound.artistName", replace(keyvalue(1),chr(34),"")
 					End if	
 				Case "songName"
 					If Mid(keydata(0), 1, 3) = "S[2" Then
-						SetPropertyValue "Russound.songName", replace(keyvalue[1],chr(34),"")
+						SetPropertyValue "Russound.songName", replace(keyvalue(1),chr(34),"")
 					End if			
 				Case "coverArtURL"
 					If Mid(keydata(0), 1, 3) = "S[2" Then
 						Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
-						SetPropertyValue "Russound.coverArtURL", replace(keyvalue[1],chr(34),"")
+						SetPropertyValue "Russound.coverArtURL", replace(keyvalue(1),chr(34),"")
 					End if			
 				Case "repeatMode"
 					If Mid(keydata(0), 1, 3) = "S[2" Then
-						SetPropertyValue "Russound.repeatMode", treplace(keyvalue[1],chr(34),"")
+						SetPropertyValue "Russound.repeatMode", treplace(keyvalue(1),chr(34),"")
 					End if			
 				Case "shuffleMode"
 					If Mid(keydata(0), 1, 3) = "S[2" Then
-						SetPropertyValue "Russound.shuffleMode", replace(keyvalue[1],chr(34),"")
+						SetPropertyValue "Russound.shuffleMode", replace(keyvalue(1),chr(34),"")
 					End if					
 			End Select	
 		End If

@@ -57,37 +57,11 @@ Sub SystemCommand(message)
 End Sub
 
 
-
 Sub SelectZone(ZoneNo, Remote)
 	'Zone: 1=Living Room; 5=Master Bedroom; 6=Patio
-	'Zone Name
-	Dim status_str, sel_str, i, ThemesFolder
-	ThemesFolder =  GetPropertyValue(Remote & ".Themes Folder")
 	SetPropertyValue Remote  & ".Selected Zone Name",  GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo)  & " Name")
 	SetPropertyValue "Subscriber-1.DispatchMessage", "System." & GetPropertyValue(Remote & ".Remote Name")  & ".10.SelectZone:" & CStr(ZoneNo)
-	'test
-    for i = 1 to 8
-		If GetPropertyValue("Multiroom Audio Settings.Zone " &  ZoneNo & " Power")  = "On" Then
-			status_str = "on"
-		Else
-			status_str = "off"
-		End if
-		
-		If i = CInt(ZoneNo) Then
-			sel_str = "sel"
-			SetPropertyValue Remote  & ".Selected Zone Icon",  "Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(i) & "-sel-" & status_str & ".png"
-			
-		Else
-			sel_str = "unsel"	
-			
-		End If
-		If GetPropertyValue("Multiroom Audio Settings.Zone " & CStr(i)  & " Name") <> "" Then
-			SetPropertyValue  Remote & ".Menu Icon " & Cstr(i) , "Config\Themes\" & ThemesFolder & "\icons\zone" & CStr(i) & "-" & sel_str & "-" & status_str & ".png"
-		End If	
-	Next
-	'sleep 250
 	SetPropertyValue "Subscriber-8.DispatchMessage", "System." & GetPropertyValue(Remote & ".Remote Name") & ".10.ClosePanel:Zone Menu"
-
 End Sub
 
 Function GetRemoteNumber(RemoteName)
@@ -109,7 +83,6 @@ Function GetRemoteNumber(RemoteName)
 End Function
 
 
-
 Sub  SelectItem (MenuName, Item)
 	Dim MenuPageItem, MenuPageSize, i , MenuSelectedItem, MenuImage, NewMenuImage, SleepAfterWrite
 	MenuPageItem = CInt(Item)
@@ -123,9 +96,7 @@ Sub  SelectItem (MenuName, Item)
 	
 	
 	Sleep SleepAfterWrite
-	'SetPropertyValue "Menu.Debug", MenuName + ".Menu Page Size"
-	
-	
+	'SetPropertyValue "Menu.Debug", MenuName + ".Menu Page Size"	
 	
 	For i=1 to 10
 	    MenuImage = GetPropertyValue(MenuName + ".Menu Image " + CStr(i))
@@ -172,8 +143,12 @@ Sub  SelectItem (MenuName, Item)
 
 End Sub
 
+Sub RenderSourceIcons(Zone)
 
 
+
+
+End Sub
 
 Sub  NextItem (MenuName)
 	Dim MenuPageItem, MenuPageSize, i , MenuSelectedItem

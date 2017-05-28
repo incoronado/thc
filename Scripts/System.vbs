@@ -1077,7 +1077,7 @@ Sub ToggleZonePower(Remote)
 			SetpropertyValue "USBUIRT.Westinghouse Remote", "Power"
 		End If	
 		'SendSubscriberMessage 1,"Russound." & Remote & ".10.Off:" &  GetPropertyValue(Remote & ".Selected Zone")
-		SendSubscriberMessage 1, "Russound." & Remote & ".10.ZonePower:" &  GetPropertyValue(Remote & ".Selected Zone Name") & ":On"
+		SendSubscriberMessage 1, "Russound." & Remote & ".10.ZonePower:" &  GetPropertyValue(Remote & ".Selected Zone Name") & ":Off"
 		'SetpropertyValue "Subscriber-1.DispatchMessage", "MRA." & Remote & ".10.Off:" &  GetPropertyValue(Remote & ".Selected Zone")
 	Else
 		SourceVar = GetPropertyValue(Remote & ".Selected Source")

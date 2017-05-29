@@ -1033,7 +1033,7 @@ Sub UpdateSourceRemoteData
 	If GetPropertyValue("Russound.Mode") = "Spotify" Then
 		aSource(1) = "spotify"
 	Else
-		aSource(1) = "siriusXM"
+		aSource(1) = "sirius"
 	End If
 	
 	aSource(2) = "tv"

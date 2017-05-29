@@ -9,7 +9,7 @@ ReadIPData GetPropertyValue("Russound IP.Received Data")
 
 
 Sub ReadIPData(Data)
-	Dim ListLines, line, keyvalue, key, value, ResponseType,keydata, command, Zstr
+	Dim ListLines, line, keyvalue, key, value, ResponseType,keydata, command, Zstr, i
 	ListLines = Split(Data, vbCrLf)
 	For Each line In ListLines
 		If line <> "" Then
@@ -33,6 +33,11 @@ Sub ReadIPData(Data)
 				Case "currentSource"
 					Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
 					SetPropertyValue "Multiroom Audio Settings.Zone " & ZStr & " Source", replace(keyvalue(1), chr(34), "")
+					for i = 1 to 4
+	    				If GetPropertyValue("Remote-" & CStr(i) &  ".Selected Zone") = ZStr Then
+	    					SetPropertyValue "Remote-" & CStr(i) &  ".Selected Source", replace(keyvalue(1), chr(34), "")
+	    				End If
+					next 
 					SetPropertyValue "Subscriber-13.DispatchMessage" , "System.Russound-IP-RX.10.UpdateRemoteData"
 					Sleep 50
 				Case "volume"

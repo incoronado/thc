@@ -1027,7 +1027,7 @@ End Sub
 
 
 Sub UpdateSourceRemoteData
-	Dim i, SelectedZone, x, ThemesFolder, fs, aSource(7)
+	Dim i, SelectedSource, x, ThemesFolder, fs, aSource(7)
 	' Set up icon Array for iteration
 	aSource(0) = "dvd"
 	If GetPropertyValue("Russound.Mode") = "Spotify" Then

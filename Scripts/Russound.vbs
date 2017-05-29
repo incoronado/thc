@@ -117,13 +117,8 @@ Function ConvertDigit (MyDigit)
    End Select
 End Function
 
-
-
-
-Function ComputeRNETChecksum(hexstr)
-	
+Function ComputeRNETChecksum(hexstr)	
 	Dim HexBytes, ComputedChecksum, i
-
 	HexBytes=split(hexstr," ")
 	For i = 0 To ubound(HexBytes)
 		'Add the HEX value of every byte in the message that precedes the Checksum in decimal
@@ -138,10 +133,8 @@ End Function
 
 
 Sub SerialCommand(hexstr)
-
 	'SetPropertyValue "Multiroom Audio Settings.Debug 2", hexstr & ComputeRNETChecksum(hexstr) & "F7"
 	SetPropertyValue "Multiroom Audio Amplifier.MRA Command", Replace(hexstr," ","",1,-1) & ComputeRNETChecksum(hexstr) & "F7"
-
 End Sub
 
 Function SourceName2ID(SourceName) 
@@ -181,6 +174,3 @@ Function ZoneName2ID(ZoneName)
 	'SetPropertyValue "Multiroom Audio Settings.Debug 2", ZoneNo
 	ZoneName2ID = ZoneNo
 End Function
-
-
-

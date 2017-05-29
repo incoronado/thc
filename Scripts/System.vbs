@@ -95,8 +95,8 @@ Sub SystemCommand(Action)
 				Case "ZoneSourceOn"
 					'System.GalaxyTabA1.10.ZoneSourceOn:Zone:Source
 					'System.GalaxyTabA1.10.ZoneSourceOn:5:1
-					'Source: 1=Jukebox 1;2=Tuner 1;3=Cable TV;4=Tuner 2; 5=Jukebox 2; 6=Apple TV
-					'Zone: 1=Living Room; 5=Master Bedroom; 6=Patio
+					'Source: 1=DVD 1;2=Streamer 1;3=Cable TV;4=Radio 2; 5=Apple TV; 6=Kodi; 7=Jukebox2; 8=Jukebox1
+					'Zone: 1=Patio; 2=Master Bedroom; 4=Office; 8=Living Room
 					ZoneSourceOn b(1), b(2)
 				Case "ZoneOff"
 					ZoneOff b(1)
@@ -112,6 +112,11 @@ Sub SystemCommand(Action)
 				Case "SelectZone"
 				'System.GalaxyTabA1.10.SelectZone:1
 					SelectZone GetRemoteNumber(a(1)), b(1)
+
+				Case "SelectSource"
+				'System.GalaxyTabA1.10.SelectSource:Cable TV
+					SelectSource GetRemoteNumber(a(1)), b(1)	
+
 				Case "ToggleZonePower"
 					'System.GalaxyTabA1.10.ToggleZonePower
 					ToggleZonePower(GetRemoteNumber(a(1)))
@@ -722,6 +727,7 @@ Sub ClosePanel(Remote, Panel)
 	SetWhichRemotesToControl("")
 End Sub
 
+
 Sub ZoneSourceOn (Zone, Source)
 	SendSubscriberMessage 1, "MRA.System.10.On:" &  Zone
 	'SetpropertyValue "Subscriber-1.DispatchMessage", "MRA.System.10.On:" &  Zone
@@ -1141,6 +1147,12 @@ Sub SelectZone (Remote,ZoneNo)
 	SetPropertyValue Remote & ".Selected Zone Volume", GetpropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo) & " Volume")
 	UpdateRemoteData
 End Sub
+
+Sub SelectSource (Remote,Source)
+	'SetPropertyValue Remote & ".Selected Source", GetpropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo) & " Source")
+    SendSubscriberMessage 1, "Russound." & Remote & ".10.ZoneSource:" &  GetPropertyValue(Remote & ".Selected Zone Name") & ":" & Source
+End Sub
+
 
 
 Function GetRemoteNumber(RemoteName)

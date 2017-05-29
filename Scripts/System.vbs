@@ -1047,7 +1047,7 @@ Sub UpdateSourceRemoteData
 		ThemesFolder = GetPropertyValue("Remote-" & CStr(i) &  ".Themes Folder")
 		SelectedSource = GetPropertyValue("Remote-" & CStr(i) & ".Selected Source")
 		For x = 1 to 8
-		    	If CInt(SelectedSource)  = 1
+		    	If CInt(SelectedSource)  = 1 Then
 					SetPropertyValue "Remote-" & CStr(i) & ".Source " & Cstr(x) & " Image", "Config\Themes\" & ThemesFolder & "\icons\zone\" &  aSource(x-1) & "-icon-on.png"
 				Else
 					SetPropertyValue "Remote-" & CStr(i) & ".Source " & Cstr(x) & " Image", "Config\Themes\" & ThemesFolder & "\icons\zone\" & aSource(x-1) & "-icon-off.png"

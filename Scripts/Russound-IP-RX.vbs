@@ -90,7 +90,7 @@ Sub ReadIPData(Data)
 					End if			
 				Case "coverArtURL"
 					If Mid(keydata(0), 1, 2) = "S[" Then
-						Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
+						'Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
 						SetPropertyValue "Russound.coverArtURL", replace(keyvalue(1),chr(34),"")
 					End if			
 				Case "repeatMode"

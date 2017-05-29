@@ -191,6 +191,8 @@ Sub SystemCommand(Action)
 				Case "UpdateRemoteData"
 					UpdateRemoteData
 
+				Case "UpdateSourceRemoteData"
+					UpdateSourceRemoteData
 
 				Case "PanasonicTVOn"
 
@@ -1024,9 +1026,41 @@ Sub SetZoneSource(Remote,Source)
 End Sub
 
 
+Sub UpdateSourceRemoteData
+	Dim i, SelectedZone, x, ThemesFolder, fs, aSources(7)
+	' Set up icon Array for iteration
+	aSource(0) = "dvd"
+	If GetPropertyValue("Russound.Mode") = "Spotify" Then
+		aSource(1) = "spotify"
+	Else
+		aSource(1) = "siriusXM"
+	End If
+	
+	aSource(2) = "tv"
+	aSource(3) = "radio"
+	aSource(4) = "apple"
+	aSource(5) = "kodi"
+	aSource(6) = "ipod"
+	aSource(7) = "ipod"	
+	
+	For i = 1 to 4
+		ThemesFolder = GetPropertyValue("Remote-" & CStr(i) &  ".Themes Folder")
+		SelectedSource = GetPropertyValue("Remote-" & CStr(i) & ".Selected Source")
+		For x = 1 to 8
+		    	If CInt(SelectedSource)  = 1
+					SetPropertyValue "Remote-" & CStr(i) & ".Source " & Cstr(x) & " Image", "Config\Themes\" & ThemesFolder & "\icons\zone\" &  aSource(x-1) & "-icon-on.png"
+				Else
+					SetPropertyValue "Remote-" & CStr(i) & ".Source " & Cstr(x) & " Image", "Config\Themes\" & ThemesFolder & "\icons\zone\" & aSource(x-1) & "-icon-off.png"
+				End If	
+		Next
+	Next
+
+End Sub
 
 Sub UpdateRemoteData
-	Dim i, SelectedZone, x, ThemesFolder, fso
+	Dim i, SelectedZone, x, ThemesFolder, fso, a
+
+	a=array("blu-ray",10,15,20)
 
 	Set fso = CreateObject("Scripting.FileSystemObject")
 	For i = 1 to 4
@@ -1108,6 +1142,7 @@ Sub SelectZone (Remote,ZoneNo)
 	SetPropertyValue Remote & ".Selected Zone Power", GetpropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo) & " Power")
 	SetPropertyValue Remote & ".Selected Zone Volume", GetpropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo) & " Volume")
 	UpdateRemoteData
+	UpdateSourceRemoteData
 End Sub
 
 

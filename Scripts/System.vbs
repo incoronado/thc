@@ -1026,36 +1026,7 @@ Sub SetZoneSource(Remote,Source)
 End Sub
 
 
-Sub UpdateSourceRemoteData
-	Dim i, SelectedSource, x, ThemesFolder, fs, aSource(7)
-	' Set up icon Array for iteration
-	aSource(0) = "dvd"
-	If GetPropertyValue("Russound.Mode") = "Spotify" Then
-		aSource(1) = "spotify"
-	Else
-		aSource(1) = "sirius"
-	End If
-	
-	aSource(2) = "tv"
-	aSource(3) = "radio"
-	aSource(4) = "apple"
-	aSource(5) = "kodi"
-	aSource(6) = "ipod"
-	aSource(7) = "ipod"	
-	
-	For i = 1 to 4
-		ThemesFolder = GetPropertyValue("Remote-" & CStr(i) &  ".Themes Folder")
-		SelectedSource = GetPropertyValue("Remote-" & CStr(i) & ".Selected Source")
-		For x = 1 to 8
-		    	If CInt(SelectedSource)  = x Then
-					SetPropertyValue "Remote-" & CStr(i) & ".Source " & Cstr(x) & " Image", "Config\Themes\" & ThemesFolder & "\icons\" &  aSource(x-1) & "-icon-on.png"
-				Else
-					SetPropertyValue "Remote-" & CStr(i) & ".Source " & Cstr(x) & " Image", "Config\Themes\" & ThemesFolder & "\icons\" & aSource(x-1) & "-icon-off.png"
-				End If	
-		Next
-	Next
 
-End Sub
 
 Sub UpdateRemoteData
 	Dim i, SelectedZone, x, ThemesFolder, fso, a
@@ -1092,15 +1063,42 @@ Sub UpdateRemoteData
 	   			End if
 	   		End if
 	   	Next
-
-
   	Next
  
   	Set fso = Nothing
-
+  	UpdateSourceRemoteData
 End Sub
 
+Sub UpdateSourceRemoteData
+	Dim i, SelectedSource, x, ThemesFolder, fs, aSource(7)
+	' Set up icon Array for iteration
+	aSource(0) = "dvd"
+	If GetPropertyValue("Russound.Mode") = "Spotify" Then
+		aSource(1) = "spotify"
+	Else
+		aSource(1) = "sirius"
+	End If
+	
+	aSource(2) = "tv"
+	aSource(3) = "radio"
+	aSource(4) = "apple"
+	aSource(5) = "kodi"
+	aSource(6) = "ipod"
+	aSource(7) = "ipod"	
+	
+	For i = 1 to 4
+		ThemesFolder = GetPropertyValue("Remote-" & CStr(i) &  ".Themes Folder")
+		SelectedSource = GetPropertyValue("Remote-" & CStr(i) & ".Selected Source")
+		For x = 1 to 8
+		    	If CInt(SelectedSource)  = x Then
+					SetPropertyValue "Remote-" & CStr(i) & ".Source " & Cstr(x) & " Image", "Config\Themes\" & ThemesFolder & "\icons\" &  aSource(x-1) & "-icon-on.png"
+				Else
+					SetPropertyValue "Remote-" & CStr(i) & ".Source " & Cstr(x) & " Image", "Config\Themes\" & ThemesFolder & "\icons\" & aSource(x-1) & "-icon-off.png"
+				End If	
+		Next
+	Next
 
+End Sub
 
 Sub ToggleZonePower(Remote)
 	Dim SourceVar			    
@@ -1142,7 +1140,6 @@ Sub SelectZone (Remote,ZoneNo)
 	SetPropertyValue Remote & ".Selected Zone Power", GetpropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo) & " Power")
 	SetPropertyValue Remote & ".Selected Zone Volume", GetpropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo) & " Volume")
 	UpdateRemoteData
-	UpdateSourceRemoteData
 End Sub
 
 

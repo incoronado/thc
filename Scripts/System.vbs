@@ -928,7 +928,7 @@ Sub VolumeDown(Remote)
 	If CurrentVolume > 0 Then 
 		SetPropertyValue Remote & ".Selected Zone Volume", CurrentVolume-1
 		SetPropertyValue "Multiroom Audio Settings.Zone " & GetPropertyValue(Remote & ".Selected Zone") & " Volume", CurrentVolume-1
-		SendSubscriberMessage 1, "Russound." & Remote & ".10.Volume:" &  GetPropertyValue(Remote & ".Selected Zone Name") & ":" & CurrentVolume-1
+		SendSubscriberMessage 1, "Russound." & Remote & ".10.VolumeTo:" &  GetPropertyValue(Remote & ".Selected Zone Name") & ":" & CurrentVolume-1
 	End If
 End Sub
 
@@ -939,7 +939,7 @@ Sub VolumeUp(Remote)
 	If CurrentVolume < 50 Then 
 		SetPropertyValue Remote & ".Selected Zone Volume", CurrentVolume+1
 		SetPropertyValue "Multiroom Audio Settings.Zone " & GetPropertyValue(Remote & ".Selected Zone") & " Volume", CurrentVolume+1
-		SendSubscriberMessage 1, "Russound." & Remote & ".10.Volume:" &  GetPropertyValue(Remote & ".Selected Zone Name") & ":" & CurrentVolume+1
+		SendSubscriberMessage 1, "Russound." & Remote & ".10.VolumeTo:" &  GetPropertyValue(Remote & ".Selected Zone Name") & ":" & CurrentVolume+1
 	End If	
 End Sub
 

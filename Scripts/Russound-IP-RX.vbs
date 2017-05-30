@@ -44,9 +44,18 @@ Sub ReadIPData(Data)
 				    If Mid(keydata(0), 1, 2) = "C[" Then
 						Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
 						SetPropertyValue "Multiroom Audio Settings.Zone " & trim(ZStr) & " Volume", replace(keyvalue(1), chr(34), "")
+						for i = 1 to 4
+	    					If GetPropertyValue("Remote-" & CStr(i) &  ".Selected Zone") = ZStr Then    				
+	    						SetPropertyValue "Remote-" & CStr(i) &  ".Selected Zone Volume", replace(keyvalue(1), chr(34), "")
+	    					End If
+						next 
+
 					ElseIf Mid(keydata(0), 1, 2) = "S[" Then
 						SetPropertyValue "Multiroom Audio Settings.Source " & trim(ZStr) & " Volume", replace(keyvalue(1), chr(34), "")
 					End if
+
+
+
 
 
 				Case "status"

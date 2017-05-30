@@ -926,7 +926,7 @@ Sub VolumeDown(Remote)
 	Dim CurrentVolume
 	CurrentVolume=CInt(GetPropertyValue("Multiroom Audio Settings.Zone " & GetPropertyValue(Remote & ".Selected Zone") & " Volume"))
 	If CurrentVolume > 0 Then 
-		SetPropertyValue Remote & ".Selected Zone Volume", CurrentVolume-1
+		'SetPropertyValue Remote & ".Selected Zone Volume", CurrentVolume-1
 		SetPropertyValue "Multiroom Audio Settings.Zone " & GetPropertyValue(Remote & ".Selected Zone") & " Volume", CurrentVolume-1
 		SendSubscriberMessage 1, "Russound." & Remote & ".10.VolumeTo:" &  GetPropertyValue(Remote & ".Selected Zone Name") & ":" & CurrentVolume-1
 	End If
@@ -937,7 +937,7 @@ Sub VolumeUp(Remote)
 	Dim CurrentVolume
 	CurrentVolume=CInt(GetPropertyValue("Multiroom Audio Settings.Zone " & GetPropertyValue(Remote & ".Selected Zone") & " Volume"))
 	If CurrentVolume < 50 Then 
-		SetPropertyValue Remote & ".Selected Zone Volume", CurrentVolume+1
+		'SetPropertyValue Remote & ".Selected Zone Volume", CurrentVolume+1
 		SetPropertyValue "Multiroom Audio Settings.Zone " & GetPropertyValue(Remote & ".Selected Zone") & " Volume", CurrentVolume+1
 		SendSubscriberMessage 1, "Russound." & Remote & ".10.VolumeTo:" &  GetPropertyValue(Remote & ".Selected Zone Name") & ":" & CurrentVolume+1
 	End If	

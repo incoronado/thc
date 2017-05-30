@@ -86,8 +86,12 @@ Sub MessageHandler(Action)
 						Case "up"
 							SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!KeyPress VolumeUp"
 						Case "down"
-							SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!KeyPress VolumeDown"
+							SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!KeyPress VolumeDown"	
 					End Select
+				Case "volumeto"
+					'Russound.GalaxyTabA1.10.VolumeTo:Master Bedroom:15					
+					SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!KeyPress Volume " & b(2)
+
 				'Russound.GalaxyTabA1.10.SendDigit:Master Bedroom:1	
 				Case "senddigit"
 					SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!KeyRelease Digit" & ConvertDigit(b(2))

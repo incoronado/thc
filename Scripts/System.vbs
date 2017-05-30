@@ -897,20 +897,6 @@ Sub ToggleLinkSource(RemoteName)
 	End If
 End Sub
 
-Sub VolumeDown(Remote)
-	Dim CurrentVolume
-	SetPropertyValue "MRA Ignore Receive.Running", "Yes"
-
-	CurrentVolume=CInt(GetPropertyValue("Multiroom Audio Settings.Zone " & GetPropertyValue(Remote & ".Selected Zone") & " Volume"))
-		
-	If CurrentVolume > 0 Then 
-		'SetPropertyValue Remote & ".Selected Zone Volume", CurrentVolume-1
-		SetPropertyValue "Multiroom Audio Settings.Zone " & GetPropertyValue(Remote & ".Selected Zone") & " Volume", CurrentVolume-1
-		'SetpropertyValue "Multiroom Audio Script.Action", "Vol." &  GetPropertyValue(Remote & ".Selected Zone") & "." & CurrentVolume-1
-		SendSubscriberMessage 1, "MRA." & Remote & ".10.Vol:" &  GetPropertyValue(Remote & ".Selected Zone") & ":" & CurrentVolume-1
-		'SetpropertyValue "Subscriber-1.DispatchMessage", "MRA." & Remote & ".10.Vol:" &  GetPropertyValue(Remote & ".Selected Zone") & ":" & CurrentVolume-1
-	End If
-End Sub
 
 Function GetZoneNumber(ZoneName)
 
@@ -936,16 +922,24 @@ Function GetSourceNumber(SourceName)
 End Function
 
 
+Sub VolumeDown(Remote)
+	Dim CurrentVolume
+	CurrentVolume=CInt(GetPropertyValue("Multiroom Audio Settings.Zone " & GetPropertyValue(Remote & ".Selected Zone") & " Volume"))
+	If CurrentVolume > 0 Then 
+		SetPropertyValue Remote & ".Selected Zone Volume", CurrentVolume-1
+		SetPropertyValue "Multiroom Audio Settings.Zone " & GetPropertyValue(Remote & ".Selected Zone") & " Volume", CurrentVolume-1
+		SendSubscriberMessage 1, "Russound." & Remote & ".10.Volume:" &  GetPropertyValue(Remote & ".Selected Zone Name") & ":" & CurrentVolume-1
+	End If
+End Sub
+
 
 Sub VolumeUp(Remote)
 	Dim CurrentVolume
-	SetPropertyValue "MRA Ignore Receive.Running", "Yes"
 	CurrentVolume=CInt(GetPropertyValue("Multiroom Audio Settings.Zone " & GetPropertyValue(Remote & ".Selected Zone") & " Volume"))
-	If CurrentVolume < 38 Then 
-		'SetPropertyValue Remote & ".Selected Zone Volume", CurrentVolume+1
+	If CurrentVolume < 50 Then 
+		SetPropertyValue Remote & ".Selected Zone Volume", CurrentVolume+1
 		SetPropertyValue "Multiroom Audio Settings.Zone " & GetPropertyValue(Remote & ".Selected Zone") & " Volume", CurrentVolume+1
-		SendSubscriberMessage 1, "MRA." & Remote & ".10.Vol:" &  GetPropertyValue(Remote & ".Selected Zone") & ":" & CurrentVolume+1
-		'SetpropertyValue "Subscriber-1.DispatchMessage", "MRA." & Remote & ".10.Vol:" &  GetPropertyValue(Remote & ".Selected Zone") & ":" & CurrentVolume+1
+		SendSubscriberMessage 1, "Russound." & Remote & ".10.Volume:" &  GetPropertyValue(Remote & ".Selected Zone Name") & ":" & CurrentVolume+1
 	End If	
 End Sub
 

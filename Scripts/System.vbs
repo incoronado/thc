@@ -1135,6 +1135,7 @@ Sub SelectSource (Remote,Source)
 	'SetPropertyValue Remote & ".Selected Source", GetpropertyValue("Multiroom Audio Settings.Zone " & CStr(ZoneNo) & " Source")
     'SendSubscriberMessage 1, "Russound." & Remote & ".10.ZoneSource:" &  GetPropertyValue(Remote & ".Selected Zone Name") & ":" & Source
     AVOn2 Source, GetPropertyValue(Remote & ".Selected Zone Name") 
+    UpdateRemoteData
     'System.IRRemote.10.AVOn2:Cable TV:Living Room
 End Sub
 

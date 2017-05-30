@@ -108,15 +108,12 @@ Sub SystemCommand(Action)
 					'System.GalaxyTabA1.10.BlankRemote
 					SetWhichRemotesToControl a(1)
 					BlankRemoteScreen	
-				
 				Case "SelectZone"
 				'System.GalaxyTabA1.10.SelectZone:1
 					SelectZone GetRemoteNumber(a(1)), b(1)
-
 				Case "SelectSource"
 				'System.GalaxyTabA1.10.SelectSource:Cable TV
 					SelectSource GetRemoteNumber(a(1)), b(1)	
-
 				Case "ToggleZonePower"
 					'System.GalaxyTabA1.10.ToggleZonePower
 					ToggleZonePower(GetRemoteNumber(a(1)))
@@ -189,25 +186,17 @@ Sub SystemCommand(Action)
 					'System.GalaxyTabA1.10.CallerID
 					HTTPPost sURL, "{""jsonrpc"":""2.0"",""method"":""GUI.ShowNotification"",""params"":{""title"":""Incoming Call"",""message"":""" & GetPropertyValue("CallerID.Last Caller") & ":" & GetPropertyValue("CallerID.Last Phone Number") & """,""displaytime"":20000},""id"":1}"
 					SetWhichRemotesToControl a(1) 
-					UnBlankRemoteScreen
-					
+					UnBlankRemoteScreen	
 					SelectPanel a(1), "Caller ID", "", 10	
-					
 				Case "UpdateRemoteData"
 					UpdateRemoteData
-
 				Case "UpdateSourceRemoteData"
 					UpdateSourceRemoteData
-
 				Case "PanasonicTVOn"
-
-				
 				Case "PanasonicTVOff"
-
 				Case "WestinghouseTVPower" 
 					'System.GalaxyTabA1.10.WestinghouseTVPower
 					SetpropertyValue "USBUIRT.Westinghouse Remote", "Power"
-					
 				Case "XBMC"
 					Select Case lcase(b(1))
 						Case "guide"
@@ -1089,8 +1078,8 @@ Sub UpdateSourceRemoteData
 	aSource(3) = "radio"
 	aSource(4) = "apple"
 	aSource(5) = "kodi"
-	aSource(6) = "ipod"
-	aSource(7) = "ipod"	
+	aSource(6) = "music"
+	aSource(7) = "music"	
 	
 	For i = 1 to 4
 		ThemesFolder = GetPropertyValue("Remote-" & CStr(i) &  ".Themes Folder")

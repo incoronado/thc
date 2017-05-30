@@ -331,24 +331,24 @@ Sub SystemCommand(Action)
 						'SetpropertyValue "Multiroom Audio Settings.Debug", "Source." &  GetPropertyValue(a(1) & " System.Selected Zone") & "." & SourceVar
 						SetpropertyValue "Multiroom Audio Script.Action", "Source." &  GetPropertyValue("GalaxyProTab1" & " System.Selected Zone") & "." & SourceVar
 					End If
-				Case "VolumeUp"	
+				'Case "VolumeUp"	
 				'SetPropertyValue "Nav Panel.Running", "Yes"
-				SetPropertyValue "MRA Ignore Receive.Running", "Yes"
-					CurrentVolume=CInt(GetPropertyValue("Multiroom Audio Settings.Zone " & GetPropertyValue("GalaxyProTab1" & " System.Selected Zone") & " Volume"))
-					If CurrentVolume < 38 Then 
-						SetPropertyValue "GalaxyProTab1" & " System.Selected Zone Volume", CurrentVolume+1
-						SetPropertyValue "Multiroom Audio Settings.Zone " & GetPropertyValue("GalaxyProTab1" & " System.Selected Zone") & " Volume", CurrentVolume+1
-						SetpropertyValue "Multiroom Audio Script.Action", "Vol." &  GetPropertyValue("GalaxyProTab1" & " System.Selected Zone") & "." & CurrentVolume+1
-					End If	
-				Case "VolumeDown"
+				'SetPropertyValue "MRA Ignore Receive.Running", "Yes"
+				''	CurrentVolume=CInt(GetPropertyValue("Multiroom Audio Settings.Zone " & GetPropertyValue("GalaxyProTab1" & " System.Selected Zone") & " Volume"))
+				''	If CurrentVolume < 38 Then 
+				''		SetPropertyValue "GalaxyProTab1" & " System.Selected Zone Volume", CurrentVolume+1
+				''		SetPropertyValue "Multiroom Audio Settings.Zone " & GetPropertyValue("GalaxyProTab1" & " System.Selected Zone") & " Volume", CurrentVolume+1
+				''		SetpropertyValue "Multiroom Audio Script.Action", "Vol." &  GetPropertyValue("GalaxyProTab1" & " System.Selected Zone") & "." & CurrentVolume+1
+				''	End If	
+				'Case "VolumeDown"
 					'SetPropertyValue "Nav Panel.Running", "Yes"
-					SetPropertyValue "MRA Ignore Receive.Running", "Yes"
-					CurrentVolume=CInt(GetPropertyValue("Multiroom Audio Settings.Zone " & GetPropertyValue("GalaxyProTab1" & " System.Selected Zone") & " Volume"))
-					If CurrentVolume > 0 Then 
-						SetPropertyValue "GalaxyProTab1" & " System.Selected Zone Volume", CurrentVolume-1
-						SetPropertyValue "Multiroom Audio Settings.Zone " & GetPropertyValue("GalaxyProTab1" & " System.Selected Zone") & " Volume", CurrentVolume-1
-						SetpropertyValue "Multiroom Audio Script.Action", "Vol." &  GetPropertyValue("GalaxyProTab1" & " System.Selected Zone") & "." & CurrentVolume-1
-					End If
+				''	SetPropertyValue "MRA Ignore Receive.Running", "Yes"
+				''	CurrentVolume=CInt(GetPropertyValue("Multiroom Audio Settings.Zone " & GetPropertyValue("GalaxyProTab1" & " System.Selected Zone") & " Volume"))
+				''	If CurrentVolume > 0 Then 
+				''		SetPropertyValue "GalaxyProTab1" & " System.Selected Zone Volume", CurrentVolume-1
+				''		SetPropertyValue "Multiroom Audio Settings.Zone " & GetPropertyValue("GalaxyProTab1" & " System.Selected Zone") & " Volume", CurrentVolume-1
+				''		SetpropertyValue "Multiroom Audio Script.Action", "Vol." &  GetPropertyValue("GalaxyProTab1" & " System.Selected Zone") & "." & CurrentVolume-1
+				''	End If
 				Case "ChannelUp"
 					If CInt(GetPropertyValue("GalaxyProTab1" & " System.Selected Source")) = 2 Then 
 						SetpropertyValue "Tuner 1.Tuner Settings", "Tune Up" 

@@ -86,7 +86,7 @@ Sub MessageHandler(Action)
 						Case "up"
 							SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!KeyPress VolumeUp"
 						Case "down"
-							SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!KeyPress VolumeDown"	
+							SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!KeyPress VolumeDown"
 					End Select
 				Case "volumeto"
 					'Russound.GalaxyTabA1.10.VolumeTo:Master Bedroom:15					
@@ -104,6 +104,18 @@ Sub MessageHandler(Action)
 			End Select	
 	End Select
 End Sub		
+
+Sub SendIPCommand(Command)
+	SetModeState "Block Russound IP", "Inactive"
+	SetPropertyValue "Russound IP.Send Data", Command
+	Do Until GetPropertyValue("Russound IP.Received Data") = "S" & vbCrLf
+	
+	Loop
+	SetModeState "Block Russound IP", "Active"
+End Sub
+
+
+
 
 Function ConvertDigit (MyDigit)
    Select Case CInt(MyDigit)

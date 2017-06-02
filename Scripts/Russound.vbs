@@ -96,7 +96,7 @@ End Sub
 Sub SendIPCommand(Command)
 	SetModeState "Block Russound IP", "Inactive"
 	SetPropertyValue "Russound IP.Send Data", Command
-	Do Until GetPropertyValue("Russound IP.Received Data") = "S" & vbCrLf
+	Do Until GetPropertyValue("Russound IP.Received Data") = "SN " & Command & vbCrLf
 	
 	Loop
 	SetModeState "Block Russound IP", "Active"

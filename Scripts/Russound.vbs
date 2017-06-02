@@ -39,20 +39,33 @@ Sub MessageHandler(Action)
 			Select Case lcase(b(0))
 				Case "initip"
 					'Russound.GalaxyTabA1.10.InitIP
-					SendIPCommand "WATCH SYSTEM ON"
-					SendIPCommand "WATCH C[1].Z[1] ON" 
-					SendIPCommand "WATCH C[1].Z[2] ON" 
-					SendIPCommand "WATCH C[1].Z[8] ON"
-					SendIPCommand "WATCH C[1].Z[4] ON"
-					SendIPCommand "WATCH S[1] ON"
-					SendIPCommand "WATCH S[2] ON"
-					SendIPCommand "WATCH S[3] ON"
-					SendIPCommand "WATCH S[4] ON" 
-					SendIPCommand "WATCH S[5] ON"
-					SendIPCommand "WATCH S[6] ON"
-					SendIPCommand "WATCH S[7] ON"
-					SendIPCommand "WATCH S[8] ON"
 					
+					SetpropertyValue "Russound IP.Send Data", "WATCH SYSTEM ON"
+					Sleep 250
+					SetPropertyValue "Russound IP.Send Data", "WATCH C[1].Z[1] ON" 
+					Sleep 2000
+					SetPropertyValue "Russound IP.Send Data", "WATCH C[1].Z[2] ON" 
+					Sleep 2000
+					SetPropertyValue "Russound IP.Send Data", "WATCH C[1].Z[8] ON"
+					Sleep 2000
+					SetPropertyValue "Russound IP.Send Data", "WATCH C[1].Z[4] ON"
+					Sleep 2000
+					SetPropertyValue "Russound IP.Send Data", "WATCH S[1] ON"
+					Sleep 250
+					SetPropertyValue "Russound IP.Send Data", "WATCH S[2] ON"
+					Sleep 250
+					SetPropertyValue "Russound IP.Send Data", "WATCH S[3] ON"
+					Sleep 250
+					SetPropertyValue "Russound IP.Send Data", "WATCH S[4] ON" 
+					Sleep 250
+					SetPropertyValue "Russound IP.Send Data", "WATCH S[5] ON"
+					Sleep 250
+					SetPropertyValue "Russound IP.Send Data", "WATCH S[6] ON"
+					Sleep 250
+					SetPropertyValue "Russound IP.Send Data", "WATCH S[7] ON"
+					Sleep 250
+					SetPropertyValue "Russound IP.Send Data", "WATCH S[8] ON"
+					Sleep 250
 				'Russound.GalaxyTabA1.10.ZonePower:Master Bedroom:On			
 				Case "zonepower"
 					Select Case lcase(b(2))
@@ -96,7 +109,7 @@ End Sub
 Sub SendIPCommand(Command)
 	SetModeState "Block Russound IP", "Inactive"
 	SetPropertyValue "Russound IP.Send Data", Command
-	Do Until GetPropertyValue("Russound IP.Received Data") = "SN " & Command & vbCrLf
+	Do Until GetPropertyValue("Russound IP.Received Data") = "S" & vbCrLf
 	
 	Loop
 	SetModeState "Block Russound IP", "Active"

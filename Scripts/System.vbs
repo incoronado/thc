@@ -1097,13 +1097,16 @@ Sub ToggleZonePower(Remote)
 		'SetPropertyValue "MRA Ignore Receive.Running", "Yes"
 		'SetPropertyValue Remote & ".Selected Zone Power", "Off"
 		'SetPropertyValue "Multiroom Audio Settings.Zone " & GetPropertyValue(Remote & ".Selected Zone") & " Power", "Off"
-        If GetPropertyValue(Remote & ".Selected Zone") = 5 Then
+        'If GetPropertyValue(Remote & ".Selected Zone") = 5 Then
 			SetpropertyValue "USBUIRT.Westinghouse Remote", "Power"
-		End If	
+		'End If	
 		'SendSubscriberMessage 1,"Russound." & Remote & ".10.Off:" &  GetPropertyValue(Remote & ".Selected Zone")
-		SendSubscriberMessage 1, "Russound." & Remote & ".10.ZonePower:" &  GetPropertyValue(Remote & ".Selected Zone Name") & ":Off"
+		'SendSubscriberMessage 1, "Russound." & Remote & ".10.ZonePower:" &  GetPropertyValue(Remote & ".Selected Zone Name") & ":Off"
+		AVOff2 GetPropertyValue(Remote & ".Selected Zone Name")
 		'SetpropertyValue "Subscriber-1.DispatchMessage", "MRA." & Remote & ".10.Off:" &  GetPropertyValue(Remote & ".Selected Zone")
 	Else
+
+
 		SourceVar = GetPropertyValue(Remote & ".Selected Source")
 		'SetPropertyValue "MRA Ignore Receive.Running", "Yes"
 		'SetPropertyValue Remote & ".Selected Zone Power", "On"

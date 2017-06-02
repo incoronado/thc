@@ -1092,37 +1092,10 @@ Sub UpdateSourceRemoteData
 End Sub
 
 Sub ToggleZonePower(Remote)
-	Dim SourceVar			    
 	If GetPropertyValue("Multiroom Audio Settings.Zone " & GetPropertyValue(Remote & ".Selected Zone") & " Power") = "On" Then
-		'SetPropertyValue "MRA Ignore Receive.Running", "Yes"
-		'SetPropertyValue Remote & ".Selected Zone Power", "Off"
-		'SetPropertyValue "Multiroom Audio Settings.Zone " & GetPropertyValue(Remote & ".Selected Zone") & " Power", "Off"
-        If GetPropertyValue(Remote & ".Selected Zone") = 5 Then
-			SetpropertyValue "USBUIRT.Westinghouse Remote", "Power"
-		End If	
-		'SendSubscriberMessage 1,"Russound." & Remote & ".10.Off:" &  GetPropertyValue(Remote & ".Selected Zone")
-		SendSubscriberMessage 1, "Russound." & Remote & ".10.ZonePower:" &  GetPropertyValue(Remote & ".Selected Zone Name") & ":Off"
-		'SetpropertyValue "Subscriber-1.DispatchMessage", "MRA." & Remote & ".10.Off:" &  GetPropertyValue(Remote & ".Selected Zone")
+		AVOff2 GetPropertyValue(Remote & ".Selected Zone Name")
 	Else
-
-	
-		SourceVar = GetPropertyValue(Remote & ".Selected Source")
-		'SetPropertyValue "MRA Ignore Receive.Running", "Yes"
-		'SetPropertyValue Remote & ".Selected Zone Power", "On"
-		'SetPropertyValue "Multiroom Audio Settings.Zone " & GetPropertyValue(Remote & ".Selected Zone") & " Power", "On"
-		'SetpropertyValue "Multiroom Audio Script.Action", "On." &  GetPropertyValue(Remote & ".Selected Zone")
-		SendSubscriberMessage 1, "Russound." & Remote & ".10.ZonePower:" &  GetPropertyValue(Remote & ".Selected Zone Name") & ":On"
-
-		'Russound.GalaxyTabA1.10.ZonePower:Master Bedroom:On
-
-		'SetpropertyValue "Subscriber-1.DispatchMessage", "MRA." & Remote & ".10.On:" &  GetPropertyValue(Remote & ".Selected Zone")
-		If GetPropertyValue(Remote & ".Selected Zone") = 5 Then
-			SetpropertyValue "USBUIRT.Westinghouse Remote", "Power"
-		End If
-		sleep 50
-		'SendSubscriberMessage 1, "MRA." & Remote & ".10.Source:" &  GetPropertyValue(Remote & ".Selected Zone") & ":" & SourceVar
-		'SetpropertyValue "Subscriber-1.DispatchMessage", "MRA." & Remote & ".10.Source:" &  GetPropertyValue(Remote & ".Selected Zone") & ":" & SourceVar
-		'SetpropertyValue "Subscriber-1.DispatchMessage", "MRA." & Remote & ".10.Off:" &  GetPropertyValue(Remote & ".Selected Zone")
+		AVOn2 GetPropertyValue(Remote & ".Selected Source"), GetPropertyValue(Remote & ".Selected Zone Name")
 	End If
 End Sub
 

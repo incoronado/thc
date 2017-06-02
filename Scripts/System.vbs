@@ -1092,10 +1092,11 @@ Sub UpdateSourceRemoteData
 End Sub
 
 Sub ToggleZonePower(Remote)
+	Dim SourceVar			    
 	If GetPropertyValue("Multiroom Audio Settings.Zone " & GetPropertyValue(Remote & ".Selected Zone") & " Power") = "On" Then
 		AVOff2 GetPropertyValue(Remote & ".Selected Zone Name")
 	Else
-		AVOn2 GetPropertyValue(Remote & ".Selected Source"), GetPropertyValue(Remote & ".Selected Zone Name")
+		AVOn2 GetPropertyValue("Multiroom Audio Settings.Source " & GetPropertyValue(Remote & ".Selected Source") & " Name", GetPropertyValue(Remote & ".Selected Zone Name")
 	End If
 End Sub
 

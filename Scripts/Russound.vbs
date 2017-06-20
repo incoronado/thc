@@ -71,8 +71,10 @@ Sub MessageHandler(Action)
 					Select Case lcase(b(2))
 						Case "on"
 						    SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!ZoneOn"
+						    SetPropertyValue "Multiroom Audio Settings.Zone " & cStr(ZoneName2ID(b(1))) & " Power", "On"
 						Case "off"
 							SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!ZoneOff"
+							SetPropertyValue "Multiroom Audio Settings.Zone " & cStr(ZoneName2ID(b(1))) & " Power", "Off"
 						Case "toggle"
 					End Select	
 				'Russound.GalaxyTabA1.10.Keypad:Patio:Previous

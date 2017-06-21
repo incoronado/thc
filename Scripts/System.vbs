@@ -679,6 +679,7 @@ Sub SelectPanel(Remote, Panel, Context, TimerInSeconds)
 	If Panel <> "Navigator" Then
 	   CloseAllPanels Remote
 	End if	
+	sleep 50
 	
 	SetWhichRemotesToControl Remote
 	
@@ -838,7 +839,7 @@ Sub CloseAllPanels (RemoteName)
 End Sub
 
 Sub SelectCurrentRemote (RemoteName)
-CloseAllPanels GetPropertyValue(Remote & ".Remote Name")
+    CloseAllPanels GetPropertyValue(Remote & ".Remote Name")
 	CloseAllPanels GetPropertyValue(RemoteName & ".Remote Name")
 	SetWhichRemotesToControl(GetPropertyValue(RemoteName & ".Remote Name")) 
 	OpenRemotePanelAndSetContext "Remote", GetPropertyValue(RemoteName & ".Selected Remote")	

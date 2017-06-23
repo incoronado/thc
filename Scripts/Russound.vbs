@@ -103,7 +103,7 @@ Sub SendIPCommand(Command)
 	    Exit Do
 	  End If  
 	Loop
-	SetPropertyValue "Russound IP.Command Successful", 1
+	'SetPropertyValue "Russound IP.Command Successful", 1
 End Sub
 
 

@@ -4,9 +4,9 @@ Option Explicit
 
 Dim Data, SleepVar
 SleepVar = CInt(GetPropertyValue("System.Script Sleep Time"))
-SetPropertyValue "Russound IP.Ready To Send". 0
+SetPropertyValue "Russound IP.Ready To Send", 0
 ReadIPData GetPropertyValue("Russound IP.Received Data")
-SetPropertyValue "Russound IP.Ready To Send". 1
+SetPropertyValue "Russound IP.Ready To Send", 1
 'Sleep SleepVar
 
 Sub ReadIPData(Data)
@@ -14,7 +14,7 @@ Sub ReadIPData(Data)
 	ListLines = Split(Data, vbCrLf)
 	For Each line In ListLines
 		If line <> "" Then
-			If trim(line) = "S" Then
+			If line = "S" Then
 				command = "Command Successful"
 			Else
 				SetPropertyValue "Russound IP.IP Message", line

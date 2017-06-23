@@ -110,7 +110,7 @@ Sub SendIPCommand(Command)
 	SetPropertyValue "Russound IP.Send Data", Command
 	Do Until GetPropertyValue("Russound IP.Command Successful") = 1
 	  If (Timer() - StartTime) >= 3 Then
-	    SetPropertyValue "Russound IP.Trace Errors", "No Acknowlege Received"
+	    SetPropertyValue "Russound IP.Trace Errors", "No Acknowlege Received-" & Command
 	    Exit Do
 	  End If  
 	Loop

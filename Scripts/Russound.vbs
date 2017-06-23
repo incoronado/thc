@@ -39,33 +39,19 @@ Sub MessageHandler(Action)
 			Select Case lcase(b(0))
 				Case "initip"
 					'Russound.GalaxyTabA1.10.InitIP
-					
-					SetpropertyValue "Russound IP.Send Data", "WATCH SYSTEM ON"
-					Sleep 250
-					SetPropertyValue "Russound IP.Send Data", "WATCH C[1].Z[1] ON" 
-					Sleep 2000
-					SetPropertyValue "Russound IP.Send Data", "WATCH C[1].Z[2] ON" 
-					Sleep 2000
-					SetPropertyValue "Russound IP.Send Data", "WATCH C[1].Z[8] ON"
-					Sleep 2000
-					SetPropertyValue "Russound IP.Send Data", "WATCH C[1].Z[4] ON"
-					Sleep 2000
-					SetPropertyValue "Russound IP.Send Data", "WATCH S[1] ON"
-					Sleep 250
-					SetPropertyValue "Russound IP.Send Data", "WATCH S[2] ON"
-					Sleep 250
-					SetPropertyValue "Russound IP.Send Data", "WATCH S[3] ON"
-					Sleep 250
-					SetPropertyValue "Russound IP.Send Data", "WATCH S[4] ON" 
-					Sleep 250
-					SetPropertyValue "Russound IP.Send Data", "WATCH S[5] ON"
-					Sleep 250
-					SetPropertyValue "Russound IP.Send Data", "WATCH S[6] ON"
-					Sleep 250
-					SetPropertyValue "Russound IP.Send Data", "WATCH S[7] ON"
-					Sleep 250
-					SetPropertyValue "Russound IP.Send Data", "WATCH S[8] ON"
-					Sleep 250
+					SendIPCommand("WATCH SYSTEM ON")
+					SendIPCommand("WATCH C[1].Z[1] ON")
+					SendIPCommand("WATCH C[1].Z[2] ON")
+					SendIPCommand("WATCH C[1].Z[8] ON")
+					SendIPCommand("WATCH C[1].Z[4] ON")
+					SendIPCommand("WATCH S[1] ON")
+					SendIPCommand("WATCH S[2] ON")
+					SendIPCommand("WATCH S[3] ON")
+					SendIPCommand("WATCH S[4] ON")
+					SendIPCommand("WATCH S[5] ON")
+					SendIPCommand("WATCH S[6] ON")
+					SendIPCommand("WATCH S[7] ON")
+					SendIPCommand("WATCH S[8] ON")
 				'Russound.GalaxyTabA1.10.ZonePower:Master Bedroom:On			
 				Case "zonepower"
 					Select Case lcase(b(2))
@@ -94,7 +80,6 @@ Sub MessageHandler(Action)
 				Case "volumeto"
 					'Russound.GalaxyTabA1.10.VolumeTo:Master Bedroom:15					
 					SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!KeyPress Volume " & b(2)
-
 				'Russound.GalaxyTabA1.10.SendDigit:Master Bedroom:1	
 				Case "senddigit"
 					SetPropertyValue "Russound IP.Send Data", "EVENT C[1].Z[" & cStr(ZoneName2ID(b(1))) & "]!KeyRelease Digit" & ConvertDigit(b(2))
@@ -109,12 +94,16 @@ Sub MessageHandler(Action)
 End Sub		
 
 Sub SendIPCommand(Command)
-	SetModeState "Block Russound IP", "Inactive"
+    Dim StartTime
+    StartTime = Timer() 
+	SetPropertyValue "Russound IP.Command Successful", 0
 	SetPropertyValue "Russound IP.Send Data", Command
-	Do Until GetPropertyValue("Russound IP.Received Data") = "S" & vbCrLf
-	
+	Do Until GetPropertyValue("Russound IP.Command Successful") = 1
+	  If Timer() - StartTime >= 3 Then
+	    Exit while
+	  End If  
 	Loop
-	SetModeState "Block Russound IP", "Active"
+	SetPropertyValue "Russound IP.Command Successful", 1
 End Sub
 
 

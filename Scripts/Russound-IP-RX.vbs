@@ -4,32 +4,36 @@ Option Explicit
 
 Dim Data, SleepVar
 SleepVar = CInt(GetPropertyValue("System.Script Sleep Time"))
+SetPropertyValue "Russound IP.Ready To Send". 0
 ReadIPData GetPropertyValue("Russound IP.Received Data")
+SetPropertyValue "Russound IP.Ready To Send". 1
 'Sleep SleepVar
-
 
 Sub ReadIPData(Data)
 	Dim ListLines, line, keyvalue, key, value, ResponseType,keydata, command, Zstr, i
 	ListLines = Split(Data, vbCrLf)
 	For Each line In ListLines
 		If line <> "" Then
-			SetPropertyValue "Russound IP.IP Message", line
-			keyvalue=split(line, "=")
-			ResponseType = Left(keyvalue(0),1)
-			key = Mid(keyvalue(0),3)
-
-			If Instr(key,".") Then
-				keydata = split(key,".")
-				command = keydata(ubound(keydata))
-			Else 
-				command = ""	
-			End if	
-			
-			If command <> "" Then
-				SetPropertyValue "Multiroom Audio Settings.Debug", command
-			End If
+			If line == "S" Then
+				command = "Command Successful"
+			Else
+				SetPropertyValue "Russound IP.IP Message", line
+				keyvalue=split(line, "=")
+				ResponseType = Left(keyvalue(0),1)
+				key = Mid(keyvalue(0),3)
+				If Instr(key,".") Then
+					keydata = split(key,".")
+					command = keydata(ubound(keydata))
+				Else 
+					command = "Invalid Command"
+				End if	
+			End if
 
 			Select Case command
+				Case "Command Successful"
+					SetPropertyValue "Russound IP.Command Successful", 1
+			    Case "Invalid Command"
+			       SetPropertyValue "Russound IP.Trace Errors", "Invalid Command"
 				Case "currentSource"
 					Zstr = replace(replace(replace(keydata(1),"[",""),"]",""),"Z","")
 					SetPropertyValue "Multiroom Audio Settings.Zone " & ZStr & " Source", replace(keyvalue(1), chr(34), "")
@@ -123,7 +127,6 @@ Sub ReadIPData(Data)
 					If Mid(keydata(0), 1, 2) = "S[" Then
 						SetPropertyValue "Russound.radioText", replace(keyvalue(1),chr(34),"")
 					End if	
-
 			End Select	
 		End If
 	Next

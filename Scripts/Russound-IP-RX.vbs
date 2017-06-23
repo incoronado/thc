@@ -14,6 +14,7 @@ Sub ReadIPData(Data)
 	ListLines = Split(Data, vbCrLf)
 	For Each line In ListLines
 		If line <> "" Then
+		   SetPropertyValue "Russound IP.Trace Errors", "Got Milk"
 			If line = "S" Then
 				command = "Command Successful"
 			Else

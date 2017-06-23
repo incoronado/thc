@@ -100,7 +100,7 @@ Sub SendIPCommand(Command)
 	SetPropertyValue "Russound IP.Send Data", Command
 	Do Until GetPropertyValue("Russound IP.Command Successful") = 1
 	  If Timer() - StartTime >= 3 Then
-	    Exit while
+	    Exit Do
 	  End If  
 	Loop
 	SetPropertyValue "Russound IP.Command Successful", 1

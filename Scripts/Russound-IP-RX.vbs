@@ -7,7 +7,7 @@ SleepVar = CInt(GetPropertyValue("System.Script Sleep Time"))
 SetPropertyValue "Russound IP.Ready To Send", 0
 ReadIPData GetPropertyValue("Russound IP.Received Data")
 SetPropertyValue "Russound IP.Ready To Send", 1
-Sleep SleepVar
+'Sleep SleepVar
 
 Sub ReadIPData(Data)
 	Dim ListLines, line, keyvalue, key, value, ResponseType,keydata, command, Zstr, i

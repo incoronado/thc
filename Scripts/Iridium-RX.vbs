@@ -1,5 +1,6 @@
 SetPropertyValue "Subscriber-14.DispatchMessage", Iridium2HB GetPropertyValue("Received Data")
 
+
 Class VbsJson
     'Author: Demon
     'Date: 2012/5/3

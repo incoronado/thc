@@ -14,6 +14,12 @@ function Iridium2HB (HBCommand)
 End Function
 
 
+'=====================================
+' ENCODE / DECODE JSON
+' http://demon.tw/my-work/vbs-json.html
+'======================================
+
+
 Class VbsJson
     'Author: Demon
     'Date: 2012/5/3
@@ -148,7 +154,7 @@ Class VbsJson
         idx = SkipWhitespace(str, 1)
 
         If Mid(str, idx, 1) = "{" Then
-            Set Decode = ScanOnce(str, 1)
+            set Decode = ScanOnce(str, 1)
         Else
             Decode = ScanOnce(str, 1)
         End If
@@ -159,10 +165,15 @@ Class VbsJson
 
         idx = SkipWhitespace(str, idx)
         c = Mid(str, idx, 1)
-
         If c = "{" Then
+            ' This case happens when there isn't any value between {}
+            if Mid(str, idx, 2) = "{}" then
+                str = Left(str, idx) & _
+                      """" & "|" & """" & ":" & """" & "|" & """" & _
+                      Right(str, Len(str) - idx)
+            end if
             idx = idx + 1
-            Set ScanOnce = ParseObject(str, idx)
+            set ScanOnce = ParseObject(str, idx)
             Exit Function
         ElseIf c = "[" Then
             idx = idx + 1
@@ -192,7 +203,6 @@ Class VbsJson
             ScanOnce = CDbl(ms(0))
             Exit Function
         End If
-        
         Err.Raise 8732,,"No JSON object could be ScanOnced"
     End Function
 
@@ -201,7 +211,6 @@ Class VbsJson
         Set ParseObject = CreateObject("Scripting.Dictionary")
         idx = SkipWhitespace(str, idx)
         c = Mid(str, idx, 1)
-        
         If c = "}" Then
             Exit Function
         ElseIf c <> """" Then
@@ -340,5 +349,3 @@ Class VbsJson
     End Function
 
 End Class
-
-

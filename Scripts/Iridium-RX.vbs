@@ -1,6 +1,19 @@
 SetPropertyValue "Subscriber-14.DispatchMessage", Iridium2HB(GetPropertyValue("Received Data"))
 
 
+function Iridium2HB (HBCommand)
+    Dim json, str, o, i, CmdStr
+    Set json = New VbsJson
+    str = GetPropertyValue ("Received Data")
+    Set o = json.Decode(str)
+    CmdStr = o("Command")("Class") & "." &  o("Command")("Source") & "." & o("Command")("Priority") & "." & o("Command")("HBCommand")
+    For Each i In o("Command")("ARGs")
+        CmdStr = CmdStr & ":" & CStr(i)
+    Next
+    Iridium2HB = CmdStr
+End Function
+
+
 Class VbsJson
     'Author: Demon
     'Date: 2012/5/3
@@ -329,14 +342,3 @@ Class VbsJson
 End Class
 
 
-function Iridium2HB (HBCommand)
-    Dim json, str, o, i, CmdStr
-    Set json = New VbsJson
-    str = GetPropertyValue ("Received Data")
-    Set o = json.Decode(str)
-    CmdStr = o("Command")("Class") & "." &  o("Command")("Source") & "." & o("Command")("Priority") & "." & o("Command")("HBCommand")
-    For Each i In o("Command")("ARGs")
-        CmdStr = CmdStr & ":" & i
-    Next
-    Iridium2HB = CmdStr
-End Function

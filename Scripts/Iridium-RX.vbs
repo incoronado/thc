@@ -1,11 +1,11 @@
-SetPropertyValue "Subscriber-14.DispatchMessage", Iridium2HB(GetPropertyValue("Received Data"))
+SetPropertyValue "Subscriber-14.DispatchMessage", Iridium2HB(GetPropertyValue("Iridium.Received Data"))
 
 
-function Iridium2HB (HBCommand)
+function Iridium2HB (ByRef HBCommand)
     Dim json, str, o, i, CmdStr
     Set json = New VbsJson
-    str = GetPropertyValue ("Received Data")
-    Set o = json.Decode(str)
+    Set o = json.Decode(HBCommand)
+
     CmdStr = o("Command")("Class") & "." &  o("Command")("Source") & "." & o("Command")("Priority") & "." & o("Command")("HBCommand")
     For Each i In o("Command")("ARGs")
         CmdStr = CmdStr & ":" & CStr(i)

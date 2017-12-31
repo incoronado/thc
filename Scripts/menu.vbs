@@ -18,19 +18,16 @@ HousebotLocation = "C:\Program Files (x86)\housebot\"
 SleepVar = CInt(GetPropertyValue("System.Script Sleep Time"))
 
 
-Do
-		
+Do	
 	Sleep SleepVar
   	Action = GetPropertyValue ("Menu.Action")
 	If Action <> "Idle" Then
 		SystemCommand(Action)
 		SetpropertyValue "Menu.Action", "Idle"
 	End If
-
 Loop
 
 Sub SystemCommand(message)
-
 	dim a, b
     ' menuname.function
 	a=split(Action,".")

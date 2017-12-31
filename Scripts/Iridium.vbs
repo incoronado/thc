@@ -24,7 +24,7 @@ Do
 	End If
 Loop
 
-Sub SystemCommand(Action)
+Sub MessageHandler(Action)
 
 
 
